@@ -80,7 +80,7 @@ header.hdr{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px so
 .lines{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .ltile{border-radius:var(--radius);overflow:hidden;text-decoration:none;display:grid;grid-template-columns:1fr 46%;min-height:220px;background:color-mix(in srgb,var(--c) 16%,#fff);border:1px solid color-mix(in srgb,var(--c) 30%,#fff);transition:transform .2s}
 .ltile:hover{transform:translateY(-3px)}
-.ltile.wide{grid-column:1/-1;min-height:180px;grid-template-columns:1fr 50%}
+.ltile.wide{grid-column:span 2;min-height:180px;grid-template-columns:1fr 50%}
 .ltile .txt{padding:22px;display:flex;flex-direction:column;gap:8px}
 .ltile .bar{width:36px;height:6px;border-radius:3px;background:var(--c)}
 .ltile h3{margin:6px 0 0;font-size:24px;line-height:1.1;font-weight:900}
