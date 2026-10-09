@@ -264,6 +264,37 @@ sup{font-size:.6em}
 @media (max-width:980px){.ns-open-grid,.ns-two,.ns-dif{grid-template-columns:1fr}.ns-open-grid img{max-height:none;height:auto}}
 @media (max-width:640px){.difs{grid-template-columns:1fr 1fr}}
 
+/* Blog */
+.bgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:32px 28px}
+.bcard{text-decoration:none;display:flex;flex-direction:column;gap:12px}
+.bcard .bimg{aspect-ratio:16/10;border-radius:var(--radius);overflow:hidden;background:color-mix(in srgb,var(--c) 15%,#fff);display:block;position:relative}
+.bcard .bimg img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;transform:scale(1.05)}
+.bcard small{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.bcard strong{font-size:22px;line-height:1.2}
+.bcard span.ex{font-size:15px;line-height:1.5;color:#3b3833;font-weight:300}
+.art-hero{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:48px;align-items:center;padding:28px 0 48px}
+.art-hero h1{font-size:clamp(34px,4vw,54px);line-height:1.05;font-weight:700;margin:14px 0 16px}
+.art-hero .lead{margin:0}
+.art-hero .bimg{aspect-ratio:1/1;border-radius:22px;overflow:hidden;background:color-mix(in srgb,var(--c) 15%,#fff)}
+.art-hero .bimg img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.art-body{max-width:740px;margin:0 auto;padding:0 var(--pad) 40px;font-size:18px;line-height:1.7;color:#2a2826}
+.art-body h2{font-size:28px;line-height:1.2;margin:40px 0 12px;color:var(--ink)}
+.art-body p{margin:0 0 18px}
+.art-body ul{padding-left:22px;margin:0 0 18px}
+.art-body li{margin-bottom:8px}
+.art-body .note{background:var(--cream);border-radius:12px;padding:14px 18px;font-size:16px}
+.art-body .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0}
+.art-body .stats div{border-top:3px solid var(--c);padding-top:10px}
+.art-body .stats b{display:block;font-size:34px;font-weight:900;color:var(--ink)}
+.art-body .stats span{font-size:14px;line-height:1.4;display:block}
+.art-src{max-width:740px;margin:0 auto 32px;padding:0 var(--pad);font-size:14px;color:var(--muted)}
+.art-src h3{font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:0 0 8px;color:var(--ink)}
+.art-src li{margin-bottom:6px}
+.art-cta{max-width:740px;margin:0 auto 80px;padding:0 var(--pad)}
+.art-cta div{background:var(--c);color:var(--ink2,#fff);border-radius:18px;padding:26px;display:flex;flex-wrap:wrap;gap:16px;justify-content:space-between;align-items:center}
+.art-cta strong{font-size:22px}
+@media (max-width:980px){.art-hero{grid-template-columns:1fr}.art-body .stats{grid-template-columns:1fr}}
+
 /* Catalogue page */
 .cat-head{padding:44px 0 28px}
 .cat-head h1{font-size:clamp(36px,4.4vw,56px);font-weight:300;margin:10px 0 8px;line-height:1.05}
@@ -390,7 +421,7 @@ sup{font-size:.6em}
     <nav class="nav" aria-label="Principal">
       <a href="#productos" data-nav="productos">Productos</a>
       <a href="#recetas" data-nav="recetas">Recetas</a>
-      <a href="#blog">Blog</a>
+      <a href="#blog" data-nav="blog">Blog</a>
       <a href="#nosotros" data-nav="nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -503,17 +534,13 @@ sup{font-size:.6em}
 
 
 
-<section class="sec" id="blog">
+<section class="sec" id="blog-home">
   <div class="wrap">
     <div class="sec-head">
       <h2 class="h2">Del <b>blog</b></h2>
       <a class="link" href="#blog">Todos los artículos</a>
     </div>
-    <div class="blog">
-      <a href="#blog"><small>Nutrición · 13/05/2025</small><strong>Cómo ayuda la proteína a controlar el peso</strong><span>Saciedad, metabolismo y masa muscular: por qué la proteína importa cuando quieres perder peso.</span></a>
-      <a href="#blog"><small>Nutrición · 13/05/2025</small><strong>Proteína: ¿es solo para deportistas?</strong><span>Por qué la proteína es clave en el día a día, hagas deporte o no.</span></a>
-      <a href="#blog"><small>Producto · 29/02/2024</small><strong>Picada vegetal Bocado</strong><span>Una nueva carne vegetal a base de proteína de guisante, lista para tus recetas.</span></a>
-    </div>
+    <div class="bgrid" id="blogHome"></div>
   </div>
 </section>
 
@@ -561,6 +588,17 @@ sup{font-size:.6em}
 
 <!-- ============ RECETA ============ -->
 <main class="page" id="page-receta" hidden><div id="rp"></div></main>
+
+<!-- ============ BLOG ============ -->
+<main class="page" id="page-blog" hidden>
+  <div class="wrap cat-head">
+    <nav class="crumb" aria-label="Ruta"><a href="#home">Inicio</a> / Blog</nav>
+    <h1>Nuestro <b>blog</b></h1>
+    <p class="lead" style="margin:0;max-width:680px">Nutrición, ciencia y las historias detrás de nuestros productos.</p>
+  </div>
+  <div class="wrap"><div class="bgrid" id="blogGrid" style="margin:24px 0 96px"></div></div>
+</main>
+<main class="page" id="page-articulo" hidden><div id="art"></div></main>
 
 <!-- ============ RECETARIO ============ -->
 <main class="page" id="page-recetas" hidden>
@@ -732,6 +770,7 @@ sup{font-size:.6em}
 <script src="js/imagenes.js"></script>
 <script src="js/productos.js"></script>
 <script src="js/recetas.js"></script>
+<script src="js/blog.js"></script>
 <script>
 (function(){
 var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
@@ -808,6 +847,22 @@ function recipesHTML(list){return list.map(function(r){var p=BY[r.product];retur
 var FEATURED=['rollitos-de-hummus-y-verduritas','tostadas-con-langostinos','bocadillo-de-atun-veraniego'];
 $('#recipes').innerHTML=recipesHTML(FEATURED.map(function(s){return RBY[s]}).filter(Boolean));
 $('#nRec').textContent=RECIPES.length;
+/* blog */
+function blogCover(b){var p=BY[b.cover];return {img:p?src(p.imgs[0]):b.cover,c:p?p.color:'#c99a5b',ink:p?p.ink:'#111'}}
+function blogHTML(list){return list.map(function(b){var c=blogCover(b);return '<a class="bcard" href="#b/'+b.slug+'" style="--c:'+c.c+'"><span class="bimg"><img loading="lazy" src="'+c.img+'" alt=""></span><small>'+esc(b.cat)+' · '+esc(b.date)+'</small><strong>'+esc(b.title)+'</strong><span class="ex">'+esc(b.excerpt)+'</span></a>'}).join('')}
+$('#blogHome').innerHTML=blogHTML(BLOG.slice(0,3));
+function renderBlog(){$('#blogGrid').innerHTML=blogHTML(BLOG);}
+function renderArticulo(slug){
+  var b=BLOG.filter(function(x){return x.slug===slug})[0]; if(!b){location.hash='#blog';return;}
+  var c=blogCover(b), more=BLOG.filter(function(x){return x!==b}).slice(0,3);
+  var el=$('#art'); el.style.cssText='--c:'+c.c+';--ink2:'+c.ink;
+  el.innerHTML='<div class="wrap"><nav class="crumb" style="padding-top:28px" aria-label="Ruta"><a href="#home">Inicio</a> / <a href="#blog">Blog</a> / '+esc(b.cat)+'</nav>'+
+   '<div class="art-hero"><div><div class="eyebrow">'+esc(b.cat)+' · '+esc(b.date)+'</div><h1>'+esc(b.title)+'</h1><p class="lead">'+esc(b.excerpt)+'</p></div><div class="bimg"><img src="'+c.img+'" alt=""></div></div></div>'+
+   '<article class="art-body">'+b.body+'</article>'+
+   (b.sources.length?'<div class="art-src"><h3>Fuentes</h3><ul>'+b.sources.map(function(s){return '<li>'+esc(s)+'</li>'}).join('')+'</ul></div>':'')+
+   '<div class="art-cta"><div><strong>'+esc(b.cta.text)+'</strong><a class="btn light" href="'+b.cta.href+'">Ver ahora</a></div></div>'+
+   '<section class="sec" style="padding-top:0"><div class="wrap"><div class="sec-head"><h2 class="h2">Más del <b>blog</b></h2><a class="link" href="#blog">Todos los artículos</a></div><div class="bgrid">'+blogHTML(more)+'</div></div></section>';
+}
 /* recetario */
 var rstate={p:'all',q:''};
 var RPROD=[]; RECIPES.forEach(function(r){var k=r.product||('cat:'+r.cat); if(RPROD.indexOf(k)<0)RPROD.push(k)});
@@ -912,8 +967,8 @@ function renderProduct(slug){
 }
 
 /* ---- routing ---- */
-function show(id){['home','productos','producto','receta','recetas','nosotros'].forEach(function(x){$('#page-'+x).hidden=(x!==id)});
-  $$('.nav a[data-nav]').forEach(function(a){a.toggleAttribute('aria-current',a.dataset.nav===id||(id==='producto'&&a.dataset.nav==='productos')||(id==='receta'&&a.dataset.nav==='recetas'));if(a.hasAttribute('aria-current'))a.setAttribute('aria-current','page')});}
+function show(id){['home','productos','producto','receta','recetas','nosotros','blog','articulo'].forEach(function(x){$('#page-'+x).hidden=(x!==id)});
+  $$('.nav a[data-nav]').forEach(function(a){a.toggleAttribute('aria-current',a.dataset.nav===id||(id==='producto'&&a.dataset.nav==='productos')||(id==='receta'&&a.dataset.nav==='recetas')||(id==='articulo'&&a.dataset.nav==='blog'));if(a.hasAttribute('aria-current'))a.setAttribute('aria-current','page')});}
 function route(){
   var h=location.hash.slice(1)||'home', q={};
   var parts=h.split('?'); var path=parts[0];
@@ -921,6 +976,8 @@ function route(){
   if(path==='productos'){state.cat=q.cat||'all';show('productos');renderCat();window.scrollTo(0,0);return;}
   if(path.indexOf('p/')===0){show('producto');renderProduct(path.slice(2));window.scrollTo(0,0);return;}
   if(path==='recetas'||path==='receta'){show('recetas');renderRecetas();window.scrollTo(0,0);return;}
+  if(path==='blog'){show('blog');renderBlog();window.scrollTo(0,0);return;}
+  if(path.indexOf('b/')===0){show('articulo');renderArticulo(path.slice(2));window.scrollTo(0,0);return;}
   if(path.indexOf('r/')===0){show('receta');renderReceta(path.slice(2));window.scrollTo(0,0);return;}
   if(path==='nosotros'){show('nosotros');window.scrollTo(0,0);return;}
   if(path==='home'){show('home');window.scrollTo(0,0);return;}
