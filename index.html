@@ -446,8 +446,8 @@ var FEATURED=['rollitos-de-hummus-y-verduritas','tostadas-con-langostinos','boca
 $('#recipes').innerHTML=recipesHTML(FEATURED.map(function(s){return RBY[s]}).filter(Boolean));
 $('#nRec').textContent=RECIPES.length;
 /* blog */
-function blogCover(b){var p=BY[b.cover];return {img:p?src(p.imgs[0]):b.cover,c:p?p.color:'#c99a5b',ink:p?p.ink:'#111'}}
-function blogHTML(list){return list.map(function(b){var c=blogCover(b);return '<a class="bcard" href="blog/'+b.slug+'.html" style="--c:'+c.c+'"><span class="bimg"><img loading="lazy" src="'+c.img+'" alt=""></span><small>'+esc(b.cat)+' · '+esc(b.date)+'</small><strong>'+esc(b.title)+'</strong><span class="ex">'+esc(b.excerpt)+'</span></a>'}).join('')}
+function blogCover(b){var p=BY[b.cover];return {img:p?src(p.imgs[0]):b.cover,c:p?p.color:'#c99a5b',ink:p?p.ink:'#111',photo:!p}}
+function blogHTML(list){return list.map(function(b){var c=blogCover(b);return '<a class="bcard" href="blog/'+b.slug+'.html" style="--c:'+c.c+'"><span class="bimg'+(c.photo?' photo':'')+'"><img loading="lazy" src="'+c.img+'" alt=""></span><small>'+esc(b.cat)+' · '+esc(b.date)+'</small><strong>'+esc(b.title)+'</strong><span class="ex">'+esc(b.excerpt)+'</span></a>'}).join('')}
 $('#blogHome').innerHTML=blogHTML(BLOG.slice(0,3));
 function renderBlog(){$('#blogGrid').innerHTML=blogHTML(BLOG);}
 function renderArticulo(slug){
