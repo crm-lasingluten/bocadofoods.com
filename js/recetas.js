@@ -101,7 +101,7 @@ var RECIPES = [
 "Wrap Low Carb",
 "Aceite y especias mexicanas",
 "Queso",
-"Pollo desmechado",
+"Pollo desmenuzado",
 "Guacamole",
 "Salsa mexicana",
 "Queso crema",
@@ -996,7 +996,7 @@ var RECIPES = [
 "steps": [
 "Hacer un sandwich mixto de jamón y queso",
 "Cortar en 4",
-"Armar brochetas intercalando tomate",
+"Montar brochetas intercalando tomate",
 "Terminar con una aceituna"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG 24",
@@ -1573,7 +1573,7 @@ var RECIPES = [
 ],
 "steps": [
 "Cocinar el huevo a la plancha sobre la tostada",
-"Agregar queso feta en los bordes hasta que quede crujiente"
+"Añadir queso feta en los bordes hasta que quede crujiente"
 ],
 "nut": "1 unidad: 20g proteína, 1g carbohidratos, 4g fibra (aprox)",
 "video": null
@@ -1664,7 +1664,7 @@ var RECIPES = [
 "Mezclar hasta unificar y llevar a la nevera 30 minutos para hidratar",
 "Formar 2 hamburguesas con la mezcla",
 "Tostar el Pan de Hamburguesa Low Carb",
-"Armar con los toppings elegidos"
+"Montar con los toppings elegidos"
 ],
 "nut": "1 hamburguesa: 30g proteína, menos de 2g azúcares, 11g fibra",
 "video": null
@@ -1682,7 +1682,7 @@ var RECIPES = [
 "Aceite de oliva virgen extra"
 ],
 "steps": [
-"Tostar el pan y untar con aguacate pisado",
+"Tostar el pan y untar con aguacate chafado",
 "Forrar un vaso con papel film y un poco de AOVE",
 "Romper un huevo dentro y cerrar bien enroscando las puntas",
 "Hervir agua en un cazo y sumergir el huevo sujeto con una pinza",
@@ -1756,7 +1756,7 @@ var RECIPES = [
 "Cortar los wraps en formas divertidas o triángulos",
 "Remojar los wraps en el huevo batido",
 "Hornear u airfryer 5-7 minutos",
-"Dejar enfriar hasta que estén crocantes",
+"Dejar enfriar hasta que estén crujientes",
 "Batir el queso untable con puré de manzana y endulzante",
 "Decorar con canela y servir con la mezcla de queso como dip"
 ],
@@ -1840,7 +1840,7 @@ var RECIPES = [
 ],
 "steps": [
 "Calentar una sartén con aceite y batir el huevo directamente en ella",
-"Agregar la mozzarella y las espinacas",
+"Añadir la mozzarella y las espinacas",
 "Colocar el wrap encima y cocinar 1 minuto más"
 ],
 "nut": "Comida rápida alta en proteína, ideal para llevar",
@@ -1924,7 +1924,7 @@ var RECIPES = [
 "Fruta fresca (para acompañar)"
 ],
 "steps": [
-"Armar la primera capa con queso light, aguacate y pavo",
+"Montar la primera capa con queso light, aguacate y pavo",
 "Añadir la segunda capa con huevo a la plancha y tomate",
 "Cerrar el sándwich triple",
 "Guardar en tupper con fruta fresca"
@@ -1947,7 +1947,7 @@ var RECIPES = [
 "steps": [
 "Cocinar la hamburguesa de carne a la parrilla o sartén",
 "Preparar la ensalada de lentejas y vegetales",
-"Armar la burger con el pan, la carne, el queso mozzarella y la ensalada"
+"Montar la burger con el pan, la carne, el queso mozzarella y la ensalada"
 ],
 "nut": "Pan de Hamburguesa Low Carb, alto en proteína para recuperación muscular",
 "video": null
@@ -2014,7 +2014,7 @@ var RECIPES = [
 "steps": [
 "Saltear las judías en sartén con aceite de oliva y reservar",
 "Rallar la zanahoria y el pepino",
-"Mezclar el queso fresco con el aguacate pisado",
+"Mezclar el queso fresco con el aguacate chafado",
 "Incorporar el atún y las judías",
 "Untar el pan con yogur griego natural",
 "Rellenar con la preparación y acompañar con tomates cherry"
@@ -2039,7 +2039,7 @@ var RECIPES = [
 "Batir las claras y los huevos para hacer una tortilla en sartén caliente",
 "Colocar las 2 rebanadas de pan encima de la tortilla",
 "Dar vuelta para terminar de cocinar",
-"Agregar aguacate y tomate antes de doblar y servir"
+"Añadir aguacate y tomate antes de doblar y servir"
 ],
 "nut": "37g de proteína. 2 rebanadas de Pan IG24: 17g proteína, 3g hidratos, 9g fibra",
 "video": null
@@ -2083,14 +2083,14 @@ var RECIPES = [
 "Abrir el bagel y tostarlo",
 "Mezclar el queso untable con el eneldo",
 "Untar el queso en ambas mitades del bagel",
-"Agregar canónigos, aguacate en rodajas, salmón y pepino"
+"Añadir canónigos, aguacate en rodajas, salmón y pepino"
 ],
 "nut": "40g de proteína",
 "video": null
 },
 {
-"slug": "canastillas-de-bolognesa",
-"title": "Canastillas de Bolognesa",
+"slug": "cestitas-de-bolognesa",
+"title": "Cestitas de Bolognesa",
 "img": "recipe_096",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
@@ -2101,8 +2101,8 @@ var RECIPES = [
 ],
 "steps": [
 "Estirar y aplanar las rebanadas de pan con un palo de amasar",
-"Disponer las rebanadas sobre un molde de magdalenas formando canastillas",
-"Agregar la salsa bolognesa y el queso parmesano",
+"Disponer las rebanadas sobre un molde de magdalenas formando cestitas",
+"Añadir la salsa bolognesa y el queso parmesano",
 "Hornear a 200°C por 10 minutos"
 ],
 "nut": "28% de proteína",
@@ -2125,7 +2125,7 @@ var RECIPES = [
 "Abrir el bagel y tostarlo (opcional)",
 "Batir los huevos y cocinar en sartén como tortilla",
 "Añadir el cheddar sobre la tortilla y doblar",
-"Armar el bagel con el huevo, queso, pavo y tomate en rodajas"
+"Montar el bagel con el huevo, queso, pavo y tomate en rodajas"
 ],
 "nut": "55g de proteína, menos de 10g de carbohidratos, 25g de fibra",
 "video": null
@@ -2172,7 +2172,7 @@ var RECIPES = [
 "Cortar la manzana en cubos pequeños",
 "Mezclar en un bol apto para microondas con aceite de coco, canela, jengibre y sirope",
 "Microondas 2 minutos hasta que estén tiernas",
-"Dejar entibiar",
+"Dejar templar",
 "Rellenar los wraps con la mezcla, reservando el líquido",
 "Decorar con el líquido restante"
 ],
@@ -2222,30 +2222,30 @@ var RECIPES = [
 "Cocinar la clara de huevo en sartén con un poco de aceite, colocando encima la mitad superior del bagel",
 "Poner la yema en el agujero del bagel y dejar cocinar",
 "Tostar la otra mitad del bagel en la misma sartén",
-"Armar el bagel con aguacate, tomate y la tapa con clara y yema"
+"Montar el bagel con aguacate, tomate y la tapa con clara y yema"
 ],
 "nut": "Más de 30g de proteína, ácidos grasos Omega 9, 20g de fibra",
 "video": null
 },
 {
-"slug": "conos-de-espinaca-y-ricota",
-"title": "Conos de Espinaca y Ricota",
+"slug": "conos-de-espinaca-y-ricotta",
+"title": "Conos de Espinaca y Ricotta",
 "img": "recipe_102",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "3 Protein Wraps (en mitades)",
-"200g de ricota",
+"200g de ricotta",
 "3 manojos de espinaca fresca",
 "Bacon",
 "Queso mozzarella rallado",
 "Sal, aceite y pimienta"
 ],
 "steps": [
-"Armar conos con las mitades de wrap, sujetando con un palillo",
+"Montar conos con las mitades de wrap, sujetando con un palillo",
 "Hornear 10 minutos con un poco de aceite hasta dorar",
 "Saltear las espinacas con el bacon",
-"Mezclar con la ricota, sal, pimienta y mozzarella",
+"Mezclar con la ricotta, sal, pimienta y mozzarella",
 "Rellenar los conos con la mezcla"
 ],
 "nut": "Entrante para compartir en familia",
@@ -2267,7 +2267,7 @@ var RECIPES = [
 ],
 "steps": [
 "Rellenar el bagel con crema de cacahuete en ambas mitades",
-"Agregar rodajas de plátano y cerrar",
+"Añadir rodajas de plátano y cerrar",
 "Decorar como reno: nariz de fresa, ojos con crema de cacahuete y arándanos, cuernos de almendras"
 ],
 "nut": "Desayuno festivo alto en proteína",
@@ -2373,7 +2373,7 @@ var RECIPES = [
 "Cocinar a la plancha hasta que esté tierno y jugoso",
 "Mezclar la mayonesa light con zumo de limón, sal, agave y AOVE",
 "Combinar con los vegetales rallados para el cole slaw",
-"Armar el bocata con el pan, el pollo y el cole slaw, con queso gratinado"
+"Montar el bocata con el pan, el pollo y el cole slaw, con queso gratinado"
 ],
 "nut": "Listo en 15 minutos",
 "video": null
@@ -2393,7 +2393,7 @@ var RECIPES = [
 "steps": [
 "Separar la clara de la yema",
 "Batir las claras con una pizca de sal hasta formar una espuma firme y brillante",
-"Colocar las claras sobre una placa de horno aceitada, formando un círculo con un hueco en el medio",
+"Colocar las claras sobre una bandeja de horno engrasada, formando un círculo con un hueco en el medio",
 "Poner la yema en el hueco",
 "Hornear a temperatura fuerte hasta cocinar, cuidando que la yema no se pase",
 "Montar sobre la tostada de Pan IG24"
