@@ -143,11 +143,3 @@ var PRODUCTS = [
   desc:'Mezcla para preparar en casa un brownie de chocolate sin gluten, denso y jugoso.'}
 ];
 
-var RECIPES = [
- {img:'r035', title:'Rollitos de hummus y verduritas', product:'wrap-low-carb'},
- {img:'r017', title:'Tostadas con langostinos', product:'the-original-protein-bread'},
- {img:'r001', title:'Bocadillo de atún veraniego', product:'panecillos-low-carb'},
- {img:'r003', title:'Hamburguesas vegetales rellenas de queso', product:'mezcla-picada-vegetal-150'},
- {img:'r042', title:'Pizza caprese', product:'mezcla-pizza-proteica'},
- {img:'r008', title:'Bocaditos de wrap con salmón', product:'wrap-low-carb'}
-];
