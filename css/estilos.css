@@ -263,6 +263,7 @@ sup{font-size:.6em}
 .bcard{text-decoration:none;display:flex;flex-direction:column;gap:12px}
 .bcard .bimg{aspect-ratio:16/10;border-radius:var(--radius);overflow:hidden;background:color-mix(in srgb,var(--c) 15%,#fff);display:block;position:relative}
 .bcard .bimg img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;transform:scale(1.05)}
+.bcard .bimg.photo img,.art-hero .bimg.photo img{object-fit:cover;mix-blend-mode:normal;transform:none}
 .bcard small{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .bcard strong{font-size:22px;line-height:1.2}
 .bcard span.ex{font-size:15px;line-height:1.5;color:#3b3833;font-weight:300}
