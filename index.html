@@ -148,7 +148,7 @@
       <h2 style="margin:0 0 6px;font-size:28px">Recetas nuevas y novedades, cada mes</h2>
       <p style="margin:0;color:var(--muted)">Puedes darte de baja cuando quieras.</p>
     </div>
-    <form action="#"><label class="sr" for="nl">Correo electrónico</label><input id="nl" type="email" placeholder="tu@email.com"><button class="btn" type="submit">Suscribirme</button></form>
+    <form action="#" class="nlform"><label class="sr" for="nl">Correo electrónico</label><input id="nl" type="email" required placeholder="tu@email.com"><button class="btn" type="submit">Suscribirme</button><label class="nlok"><input type="checkbox" required><span>Acepto recibir la newsletter y he leído la <a href="legal/politica-de-privacidad.html">política de privacidad</a>.</span></label><p class="nlinfo"><b>Responsable:</b> Bauer Lemans, S.L. <b>Finalidad:</b> enviarte recetas, novedades y promociones. <b>Base legal:</b> tu consentimiento. <b>Destinatarios:</b> no se ceden datos, salvo obligación legal. <b>Derechos:</b> acceso, rectificación, supresión y otros, en hola@bocadofoods.com.</p></form>
   </div>
 </section>
 <section class="plband" aria-labelledby="plb-t">
@@ -334,16 +334,16 @@
       </div>
       <div>
         <h4>Información</h4>
-        <a href="#"><b>Términos y condiciones generales</b></a>
+        <a href="legal/condiciones-de-venta.html"><b>Condiciones generales de venta</b></a>
         <a href="#productos">Productos</a>
         <a href="#private-label">Private label</a>
       </div>
       <div>
         <h4>Legal</h4>
-        <a href="#">Aviso legal</a>
-        <a href="#">Política de privacidad</a>
-        <a href="#">Política de privacidad en Redes Sociales</a>
-        <a href="#">Política de cookies</a>
+        <a href="legal/aviso-legal.html">Aviso legal</a>
+        <a href="legal/politica-de-privacidad.html">Política de privacidad</a>
+        <a href="legal/privacidad-redes-sociales.html">Política de privacidad en redes sociales</a>
+        <a href="legal/politica-de-cookies.html">Política de cookies</a>
       </div>
     </div>
     <div class="ftr-bottom">
@@ -446,6 +446,9 @@ function recipesHTML(list){return list.map(function(r){var p=BY[r.product];retur
 var FEATURED=['rollitos-de-hummus-y-verduritas','tostadas-con-langostinos','bocadillo-de-atun-veraniego'];
 $('#recipes').innerHTML=recipesHTML(FEATURED.map(function(s){return RBY[s]}).filter(Boolean));
 $('#nRec').textContent=RECIPES.length;
+/* youtube: carga solo al pulsar, con dominio sin cookies */
+function wireYT(){$$('.video[data-yt]').forEach(function(v){var b=$('.yt-play',v);if(!b||b._w)return;b._w=1;b.onclick=function(){
+  v.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+encodeURIComponent(v.dataset.yt)+'?autoplay=1&rel=0" title="Vídeo: '+v.dataset.title+'" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';};});}
 /* blog */
 function blogCover(b){var p=BY[b.cover];return {img:p?src(p.imgs[0]):b.cover,c:p?p.color:'#c99a5b',ink:p?p.ink:'#111',photo:!p}}
 function blogHTML(list){return list.map(function(b){var c=blogCover(b);return '<a class="bcard" href="blog/'+b.slug+'.html" style="--c:'+c.c+'"><span class="bimg'+(c.photo?' photo':'')+'"><img loading="lazy" src="'+c.img+'" alt=""></span><small>'+esc(b.cat)+' · '+esc(b.date)+'</small><strong>'+esc(b.title)+'</strong><span class="ex">'+esc(b.excerpt)+'</span></a>'}).join('')}
@@ -492,7 +495,7 @@ function renderReceta(slug){
    '<div class="rp-body"><div class="wrap rp-cols"><div><h2>Ingredientes</h2><ul class="ings">'+r.ing.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>'+
    (r.nut?'<div class="rnut"><small>Información nutricional</small>'+esc(r.nut)+'</div>':'')+'</div>'+
    '<div><h2>Preparación</h2><ol class="stp">'+r.steps.map(function(x,i){return '<li><b>'+(i<9?'0':'')+(i+1)+'</b>'+esc(x)+'</li>'}).join('')+'</ol>'+
-   (r.video?'<div class="video"><iframe loading="lazy" src="https://www.youtube.com/embed/'+encodeURIComponent(r.video)+'" title="Vídeo: '+esc(r.title)+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>':'')+
+   (r.video?'<div class="video" data-yt="'+esc(r.video)+'" data-title="'+esc(r.title)+'"><img src="'+rImg(r)+'" alt=""><button type="button" class="yt-play" aria-label="Reproducir el vídeo de YouTube"><svg width="68" height="48" viewBox="0 0 68 48" aria-hidden="true"><path d="M66.5 7.7a8.6 8.6 0 0 0-6-6C55.2.2 34 .2 34 .2s-21.2 0-26.5 1.5a8.6 8.6 0 0 0-6 6C0 13 0 24 0 24s0 11 1.5 16.3a8.6 8.6 0 0 0 6 6C12.8 47.8 34 47.8 34 47.8s21.2 0 26.5-1.5a8.6 8.6 0 0 0 6-6C68 35 68 24 68 24s0-11-1.5-16.3z" fill="#f00"/><path d="M27 34l18-10-18-10z" fill="#fff"/></svg></button><p class="yt-note">Al reproducir el vídeo, YouTube puede instalar cookies. <a href="legal/politica-de-cookies.html">Más información</a>.</p></div>':'')+
    '</div></div></div>'+
    (more.length?'<section class="sec"><div class="wrap"><div class="sec-head"><h2 class="h2">Más recetas con <b>'+esc(withLabel(r))+'</b></h2><a class="link" href="#recetas">Ver el recetario completo</a></div><div class="rgrid r4">'+recipesHTML(more)+'</div></div></section>':'');
 }
@@ -577,7 +580,7 @@ function route(){
   if(path==='recetas'||path==='receta'){show('recetas');renderRecetas();window.scrollTo(0,0);return;}
   if(path==='blog'){show('blog');renderBlog();window.scrollTo(0,0);return;}
   if(path.indexOf('b/')===0){show('articulo');renderArticulo(path.slice(2));window.scrollTo(0,0);return;}
-  if(path.indexOf('r/')===0){show('receta');renderReceta(path.slice(2));window.scrollTo(0,0);return;}
+  if(path.indexOf('r/')===0){show('receta');renderReceta(path.slice(2));wireYT();window.scrollTo(0,0);return;}
   if(path==='nosotros'){show('nosotros');window.scrollTo(0,0);return;}
   if(path==='home'){show('home');window.scrollTo(0,0);return;}
   var el=document.getElementById(path);
