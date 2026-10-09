@@ -1,0 +1,153 @@
+// Datos de producto leídos de las etiquetas enviadas. "null" = pendiente de cargar.
+var ING_IG = 'Mezcla de proteínas (28%) (<b>proteína de trigo</b>, <b>proteína de soja</b>), granos de <b>soja</b> (21%), linaza (15%), semillas de girasol (9%), harina de <b>soja</b> (6%), harina de <b>trigo</b> integral (6%), salvado de <b>trigo</b> (6%), fibra de manzana (3%), <b>sésamo</b> (2%), sal (2%), harina de malta de <b>cebada</b> (&lt;2%), emulsionante: lecitina de <b>soja</b> (&lt;2%), regulador de acidez: diacetato de sodio (&lt;2%), propionato de calcio, ácido sórbico, agua y levadura.';
+var ALG_IG = 'Contiene cereales que contienen gluten, soja y sésamo. Puede contener trazas de altramuz, avellana, huevo y leche.';
+var ING_LC = 'Mezcla de proteínas (35%) (<b>proteína de trigo</b>, <b>proteína de soja</b>, <b>proteína de altramuz</b>), harina de <b>soja</b>, harina de <b>trigo</b>, harina de <b>trigo</b> integral, sémola de <b>soja</b>, salvado de <b>soja</b>, azúcar, fibra de <b>avena</b>, sal, emulsionante: lecitina de girasol; regulador de acidez: diacetato de sodio; conservante: propionato de calcio; carbonato cálcico; levadura inactiva.';
+var ALG_LC = 'Contiene gluten de trigo, avena, soja y altramuces. Puede contener trazas de cebada, centeno, espelta, huevo y leche.';
+var ING_MIX = 'Mezcla de proteínas (35%) (<b>proteína de trigo</b>, harina de semilla de girasol, <b>proteína de soja</b>), harina de <b>trigo</b> integral (17%), sémola de <b>soja</b> (12%), salvado de <b>trigo</b> (10%), semillas de lino (7%), harina de <b>soja</b> (6%), harina de linaza (5%), fibra de <b>avena</b> (5%), sal (&lt;2%), emulsionante: lecitina de <b>soja</b> (&lt;2%); regulador de acidez: diacetato de sodio (&lt;2%).';
+var ALG_MIX = 'Contiene gluten de trigo, avena y soja. Puede contener trazas de cebada, centeno, espelta, huevo, leche, avellanas, sésamo y altramuces.';
+var N_IG = {kj:1167,kcal:250,fat:'14',sat:'0,4',carb:'5',sug:'1,2',fib:'15',prot:'28',salt:'1,2'};
+var N_LC = {kj:1024,kcal:244,fat:'6,6',sat:'1,0',carb:'13',sug:'3,8',fib:'8,2',prot:'29',salt:'1,2'};
+var N_MIX = {kj:1018,kcal:243,fat:'6,6',sat:'0,8',carb:'11,9',sug:'1,1',fib:'13,4',prot:'27,3',salt:'1,28'};
+
+var CATS_MAIN = [
+  {id:'all', label:'Todos'},
+  {id:'proteicos', label:'Proteicos y Low Carb'},
+  {id:'ig24', label:'Productos IG24'},
+  {id:'singluten', label:'Sin gluten'},
+  {id:'veganos', label:'Veganos'}
+];
+var CATS_SUB = [
+  {id:'panes', label:'Panes'},
+  {id:'wrap', label:'Wrap'},
+  {id:'dulces', label:'Dulces'},
+  {id:'mezclas', label:'Mezclas'}
+];
+
+var LINES = {
+  original:{name:'The Original Protein Bread', short:'Original', color:'#e3342f'},
+  ig24:{name:'IG24', short:'IG24', color:'#5b7db1'},
+  lowcarb:{name:'Low Carb · High Protein', short:'Low Carb', color:'#ec6f5f'},
+  mezclas:{name:'Mezclas para hornear', short:'Mezcla', color:'#c99a5b'},
+  sweet:{name:'Sweet Protein', short:'Sweet', color:'#e0307c'},
+  vegetal:{name:'Vegetal', short:'Vegano', color:'#8cbf3f'},
+  nuevo:{name:'Nuevo', short:'Nuevo', color:'#1a1a1a'},
+  lsg:{name:'La Sin Gluten', short:'La Sin Gluten', color:'#8fc5d6'}
+};
+
+var PRODUCTS = [
+ {slug:'the-original-protein-bread', igSeal:true, name:'The Original Protein Bread', line:'original', cats:['proteicos','panes'], weight:'500 g', color:'#e3342f', ink:'#fff',
+  imgs:['0b40383c','953dcf47'], macros:['28 g','5 g','15 g','<1,2 g'], best:true,
+  seals:['Vegano'], nut:N_IG, ing:ING_IG, alg:ALG_IG,
+  desc:'El pan que dio origen a Bocado. The Original Protein Bread es un pan de molde elaborado con una mezcla de proteínas vegetales, semillas de lino, girasol y sésamo, que aporta 28 g de proteínas y solo 5 g de hidratos de carbono por cada 100 g. Su miga densa y su sabor a pan de semillas lo hacen perfecto para tostadas, sándwiches y desayunos completos. Es un producto vegano, con alto contenido de fibra (15 g por 100 g), pensado para quienes buscan una alimentación rica en proteínas sin renunciar al pan de todos los días.'},
+ {slug:'pan-ig24', igSeal:true, igLogo:true, name:'Pan IG24', line:'ig24', cats:['ig24'], weight:'500 g', color:'#5b7db1', ink:'#fff',
+  imgs:['1ae5f940'], macros:['28 g','5 g','15 g','<1 g'],
+  seals:['Vegano','Sin leche','Sin huevo'], nut:Object.assign({},N_IG,{sug:'1'}), ing:ING_IG, alg:ALG_IG,
+  desc:'Pan IG24 es nuestro pan de molde con índice glucémico 24, testado. Elaborado con proteínas de trigo y soja, granos de soja, linaza y semillas de girasol, ofrece 28 g de proteínas vegetales y 15 g de fibra por cada 100 g, con solo 5 g de hidratos de carbono. Sin leche y sin huevo, es apto para una alimentación vegana. Una opción para el desayuno o la merienda de quienes cuidan la respuesta glucémica de su dieta y no quieren dejar de comer pan.'},
+ {slug:'panecillos-ig24', igSeal:true, igLogo:true, name:'Panecillos IG24', line:'ig24', cats:['ig24'], weight:'350 g · 7 uds de 50 g', color:'#5b7db1', ink:'#fff',
+  imgs:['ac127db3'], macros:['28 g','5 g','15 g','<1 g'],
+  seals:['Vegano','Sin leche','Sin huevo'], nut:Object.assign({},N_IG,{sug:'1'}), ing:ING_IG, alg:ALG_IG,
+  desc:'Los Panecillos IG24 son la versión individual de nuestro pan con índice glucémico 24. Cada bolsa trae 7 panecillos de 50 g, listos para rellenar o tostar. Con 28 g de proteínas vegetales, 15 g de fibra y 5 g de hidratos de carbono por cada 100 g, son una alternativa práctica al pan blanco para bocadillos, almuerzos y desayunos fuera de casa. Sin leche, sin huevo y aptos para veganos.'},
+ {slug:'panecillos-low-carb', name:'Panecillos proteicos Low Carb', line:'lowcarb', cats:['proteicos','panes'], weight:'350 g · 7 uds de 50 g', color:'#ec6f5f', ink:'#111',
+  imgs:['d1c797e9','235c5a93'], macros:['29 g','13 g','8,2 g','<3,8 g'],
+  seals:['Vegetariano'], nut:N_LC, ing:ING_LC, alg:ALG_LC,
+  desc:'Panecillos Low Carb High Protein: 7 panecillos de 50 g con 29 g de proteínas y 8,2 g de fibra por cada 100 g. Su tamaño es perfecto para bocadillos, hamburguesas caseras o para acompañar las comidas. Elaborados con una mezcla de proteínas de trigo, soja y altramuz, son una forma sencilla de sumar proteína a cualquier comida del día.'},
+ {slug:'baguettes-low-carb', name:'Baguettes Low Carb', line:'lowcarb', cats:['proteicos','panes'], weight:'220 g · 2 uds de 110 g', color:'#ec6f5f', ink:'#111',
+  imgs:['ee920018','7349ab3c'], macros:['27 g','13 g','12 g','<1,6 g'],
+  seals:[], nut:{kj:1257,kcal:301,fat:'13',sat:'1,9',carb:'13',sug:'1,6',fib:'12',prot:'27',salt:'1,3'}, ing:'Mezcla de proteínas (35%) (<b>proteína de trigo</b>, harina de semilla de girasol, <b>proteína de soja</b>), harina de <b>trigo</b> integral (17%), sémola de <b>soja</b> (12%), salvado de <b>trigo</b> (10%), semillas de lino (7%), harina de <b>soja</b> (6%), harina de linaza (5%), fibra de <b>avena</b> (5%), sal (&lt;2%), emulsionante: lecitina de <b>soja</b> (&lt;2%); regulador de acidez: diacetato de sodio (&lt;2%), propionato de calcio, ácido sórbico, agua y levadura.', alg:ALG_MIX,
+  desc:'Dos baguettes de 110 g con 27 g de proteínas y 12 g de fibra por cada 100 g. Crujientes por fuera y tiernas por dentro, son la base perfecta para bocadillos rellenos, montaditos o para gratinar en el horno. Forman parte de la línea Low Carb · High Protein, elaborada a partir de la receta de The Original Protein Bread.'},
+ {slug:'wrap-low-carb', name:'Wrap Low Carb', line:'lowcarb', cats:['proteicos','wrap'], weight:'320 g · 8 tortillas de 40 g', color:'#ec6f5f', ink:'#111',
+  imgs:['cbfc085c','cab78d2e'], macros:['22 g','35 g','6,2 g','1,7 g'], perUnit:'9 g de proteína por tortilla',
+  seals:[], nut:{kj:1329,kcal:316,fat:'8,4',sat:'1,2',carb:'35',sug:'1,7',fib:'6,2',prot:'22',salt:'1,0'},
+  ing:'Harina de <b>trigo</b> (43%), agua, mezcla de proteínas (19%) (<b>trigo</b>, guisantes, arroz), aceite de colza, humectante: glicerol; harina de linaza, fibra vegetal de <b>avena</b>, harina de quinoa, dextrosa, emulsionante: mono- y diglicéridos de ácidos grasos; sal de mesa yodada (sal, yodato potásico), reguladores de acidez: acetatos de sodio, ácido málico.', alg:'Contiene cereales que contienen gluten y productos derivados.',
+  desc:'Tortillas de trigo con 9 g de proteína por unidad. Cada paquete trae 8 wraps de 40 g, flexibles y fáciles de enrollar, para preparar burritos, fajitas, quesadillas o rollitos fríos para llevar. Con 22 g de proteínas y 6,2 g de fibra por cada 100 g, son una forma práctica de hacer comidas rápidas más completas.'},
+ {slug:'tostadas-low-carb', name:'Tostadas Low Carb', line:'lowcarb', cats:['proteicos','panes'], weight:'125 g', color:'#ec6f5f', ink:'#111',
+  imgs:['f7b5d319','77ad3cef'], macros:['44 g','16 g','19 g','<1,3 g'],
+  seals:['Vegetariano'], nut:{kj:null,kcal:null,fat:null,sat:null,carb:'16',sug:'1,3',fib:'19',prot:'44',salt:null}, ing:ING_IG, alg:ALG_IG, check:true,
+  desc:'Pequeñas tostadas crujientes hechas a partir de nuestro pan proteico. Con 44 g de proteínas y 19 g de fibra por cada 100 g, son un snack para picar entre horas, acompañar cremas y ensaladas o servir con patés y quesos untables.'},
+ {slug:'mezcla-pan-de-proteinas', name:'Mezcla de Pan de proteínas', line:'mezclas', cats:['proteicos','mezclas'], weight:'1 kg', color:'#e2493b', ink:'#fff',
+  imgs:['9254e231','8af20366'], macros:['28 g','5 g','15 g','<1,2 g'], prepared:true,
+  seals:[], nut:{kj:1167,kcal:280,fat:'14',sat:'0,4',carb:'5',sug:'1,2',fib:'15',prot:'28',salt:'1,2'},
+  ing:'Mezcla de proteínas (28%) (<b>proteína de trigo</b>, <b>proteína de soja</b>, <b>proteína de altramuz</b>), sémola de <b>soja</b>, semillas de lino, semillas de girasol, harina de <b>trigo</b> integral, harina de <b>soja</b>, salvado de <b>trigo</b>, fibra de manzana, <b>sésamo</b>, sal, harina de malta de <b>cebada</b>, emulsionante: lecitina de <b>soja</b>.', alg:'Contiene gluten de trigo, cebada, soja y altramuces. Puede contener trazas de centeno, avena, espelta, huevo, leche y avellanas.',
+  use:['1 kg de mezcla + 30 g de levadura + 830 ml de agua (30–40 °C).','Amasar unos 6 min a velocidad lenta y 8–20 min a velocidad rápida. Temperatura de la masa: 26–28 °C.','Dividir en 2 piezas de unos 500 g y poner en molde. Fermentar 35–45 min.','Hornear a 180–190 °C durante 50–60 min.'],
+  desc:'La receta de The Original Protein Bread, lista para hacer en casa o en tu obrador. Con 1 kg de mezcla, levadura y agua obtienes dos panes de 500 g con 28 g de proteínas y 15 g de fibra por cada 100 g de producto terminado. Funciona en amasadora, panificadora o a mano.'},
+ {slug:'mezcla-panecillos-y-baguettes', name:'Mezcla de Panecillos y baguettes', line:'mezclas', cats:['proteicos','mezclas'], weight:'500 g', color:'#e88a3a', ink:'#111',
+  imgs:['e4d83879','c9614c88'], macros:['27,3 g','11,9 g','13,4 g','<1,1 g'], prepared:true,
+  seals:[], nut:N_MIX, ing:ING_MIX, alg:ALG_MIX,
+  use:['500 g de mezcla + 15 g de levadura + 415 ml de agua a 30 °C.','Amasar 6 min a velocidad lenta y 10 min a velocidad rápida (masa a 26–32 °C).','Dividir: panecillos de 50 g o baguettes de 110 g. Fermentar 45 min cubiertos con film.','Hornear a 230 °C, bajar a 200 °C y cocer 20–25 min.'],
+  desc:'Mezcla para hornear panecillos y baguettes proteicos en casa. Con 500 g de mezcla, levadura y agua preparas tus propias piezas con 27,3 g de proteínas y 13,4 g de fibra por cada 100 g de producto terminado, del tamaño que prefieras.'},
+ {slug:'mezcla-sandwich-proteico', name:'Mezcla de Sándwich proteico', line:'mezclas', cats:['proteicos','mezclas'], weight:'500 g', color:'#b9662e', ink:'#fff',
+  imgs:['ba7c5658','7a3311c7'], macros:['27,3 g','11,9 g','13,4 g','<1,1 g'], prepared:true,
+  seals:[], nut:N_MIX, ing:ING_MIX, alg:ALG_MIX,
+  use:['500 g de mezcla + 15 g de levadura + 450 ml de agua a 30 °C.','Amasar 6 min a velocidad lenta y 10 min a velocidad rápida (masa a 26–32 °C).','Dar forma rectangular, poner en molde, cubrir con film y fermentar 45 min.','Precalentar a 230 °C, hornear y bajar a 200 °C. Cocer 20–25 min.'],
+  desc:'Prepara en casa un pan de molde para sándwich con 27,3 g de proteínas y 13,4 g de fibra por cada 100 g. Una mezcla pensada para conseguir una miga uniforme, fácil de cortar en rebanadas finas para sándwiches, tostadas y torrijas.'},
+ {slug:'mezcla-pizza-proteica', name:'Mezcla de Pizza proteica', line:'mezclas', cats:['proteicos','mezclas'], weight:'500 g', color:'#2e6a3e', ink:'#fff',
+  imgs:['60b0a358','192daf47'], macros:['27,3 g','11,9 g','13,4 g','<1,1 g'], prepared:true,
+  seals:[], nut:N_MIX, ing:ING_MIX, alg:ALG_MIX,
+  use:['500 g de mezcla + 15 g de levadura + 415 ml de agua a 30 °C. Mezclar y dejar reposar 10 min.','Dividir en porciones de 150–180 g, bolear y dejar reposar otros 10 min.','Aplastar hasta 2–3 mm, pinchar con un tenedor y reposar 15 min.','Precocinar 5 min, añadir los ingredientes y hornear a 190–200 °C durante 16–20 min.'],
+  desc:'Masa de pizza proteica para hacer en casa: 27,3 g de proteínas y 13,4 g de fibra por cada 100 g de masa horneada. Con una sola bolsa preparas varias bases finas y crujientes para personalizar con tus ingredientes favoritos.'},
+ {slug:'mezcla-pan-de-hamburguesa', name:'Mezcla de Pan de hamburguesa', line:'mezclas', cats:['proteicos','mezclas'], weight:'1 kg', color:'#8b4a2b', ink:'#fff',
+  imgs:['1b463064','9e4d88e5'], macros:['29 g','13 g','8,2 g','<3,8 g'], prepared:true,
+  seals:[], nut:N_LC, ing:'Mezcla de proteínas (35%) (<b>proteína de trigo</b>, <b>proteína de soja</b>, <b>proteína de altramuz</b>), harina de <b>soja</b>, harina de <b>trigo</b>, harina de <b>trigo</b> integral, sémola de <b>soja</b>, salvado de <b>soja</b>, azúcar, fibra de <b>avena</b>, sal, emulsionante: lecitina de girasol; regulador de acidez: diacetato de sodio; levadura inactiva.', alg:ALG_LC,
+  use:['1 kg de mezcla + 20 g de levadura + unos 900 ml de agua.','Amasar 10 min a nivel 1 y 8–15 min a nivel 2. Masa a 26–28 °C.','Formar bolas de unos 75 g, aplastar ligeramente y fermentar 35–45 min.','Decorar con sésamo, linaza o girasol y hornear a 230 °C durante 20–24 min.'],
+  desc:'Mezcla para preparar panes de hamburguesa proteicos, con 29 g de proteínas por cada 100 g de producto terminado. Con 1 kg salen unas 25 piezas de 75 g, tiernas y doradas, perfectas para hamburguesas caseras de carne o vegetales.'},
+ {slug:'mezcla-crackers-proteicos', name:'Mezcla de Crackers proteicos', line:'mezclas', cats:['proteicos','mezclas'], weight:'500 g', color:'#d6b22a', ink:'#111',
+  imgs:['0064e104','d5583323'], macros:['26 g','18,4 g','12 g','<4,4 g'], prepared:true,
+  seals:[], nut:{kj:2127,kcal:512,fat:'34,2',sat:'5,2',carb:'18,4',sug:'4,4',fib:'12',prot:'26',salt:'1,07'},
+  ing:'Semillas de girasol (22%), linaza (22%), <b>gluten de trigo</b> (12%), copos de <b>avena</b> (11%), <b>sésamo</b> (6%), jarabe de glucosa deshidratada (5%), salvado de <b>trigo</b> (5%), polvo de grasa de palma (5%) (aceite de palma, jarabe de glucosa, <b>proteína de leche</b>), <b>proteína de leche</b> (4%), almidón de <b>trigo</b> (2%), harina de <b>cebada</b> malteada (&lt;2%), aceite de canola (&lt;2%), sal (&lt;2%), glucosa (&lt;2%), masa fermentada de <b>centeno</b> seca, extracto de levadura (&lt;2%).', alg:'Contiene gluten, sésamo y leche. Puede contener trazas de altramuz, soja y avellana.',
+  use:['500 g de mezcla + 200 ml de agua a 30 °C.','Colocar papel de horno en una bandeja y rociarlo bien con agua.','Espolvorear la mezcla de manera uniforme y volver a rociar con agua hasta que quede húmeda.','Hornear unos 16 min a 160 °C. Partir y servir.'],
+  desc:'Crackers de semillas crujientes, con 26 g de proteínas y 12 g de fibra por cada 100 g. Solo necesitas agua y el horno: se extiende la mezcla en una bandeja y en 16 minutos tienes una base para dips, quesos, hummus o para picar.'},
+ {slug:'sweet-protein-chocolate', name:'Sweet Protein Chocolate', line:'sweet', cats:['proteicos','dulces'], weight:'500 g', color:'#e0307c', ink:'#fff',
+  imgs:['d5d6e740','c93d2cc7'], macros:['20 g','17,4 g','8 g','15,6 g'], prepared:true,
+  seals:[], nut:{kj:1250,kcal:300,fat:'15,6',sat:'2,6',carb:'17,4',sug:'15,6',fib:'8,0',prot:'20',salt:'1,27'},
+  ing:'Mezcla de proteínas (31%) (concentrado de <b>proteína de suero</b> (emulgente: lecitina E322 (girasol)), <b>proteína de trigo</b>, harina de semillas de girasol, <b>proteína de leche</b> (emulgente: lecitina E322 (girasol)), <b>clara de huevo</b> en polvo), fructosa, fibra de <b>avena</b>, hidrolizado de colágeno (carne de vacuno), cacao en polvo desgrasado (8%), salvado de <b>trigo</b>, gasificantes: difosfato disódico E450(i), hidrógeno carbonato de sodio E500(ii); emulsionantes: mono- y diglicéridos y ésteres de poliglicerol de ácidos grasos E471 y E475; aroma, sal, conservante: sorbato de potasio E202; edulcorante: glucósidos de esteviol E960; espesante: xantana E415.', alg:'Puede contener trazas de cebada, centeno, espelta, soja, altramuz y productos derivados.',
+  desc:'Un ingrediente, innumerables recetas. Sweet Protein Chocolate es una mezcla para preparar brownies, muffins, bizcochos y tortitas de chocolate con 20 g de proteínas por cada 100 g de producto preparado. Lleva cacao desgrasado y una mezcla de proteína de suero, leche, trigo y huevo.'},
+ {slug:'sweet-protein-vainilla', name:'Sweet Protein Vainilla', line:'sweet', cats:['proteicos','dulces'], weight:'500 g', color:'#f1c84b', ink:'#111',
+  imgs:['65ff0c67','308758cd'], macros:['20 g','19,8 g','6,4 g','16 g'], prepared:true,
+  seals:[], nut:{kj:1271,kcal:304,fat:'15,2',sat:'2,4',carb:'19,8',sug:'16,0',fib:'6,4',prot:'20',salt:'1,28'},
+  ing:null, alg:null,
+  desc:'La versión de vainilla de nuestra mezcla dulce: muffins, bizcochos, tortitas y blondies con 20 g de proteínas por cada 100 g de producto preparado. Una base sencilla para repostería casera que puedes combinar con fruta, frutos secos o chocolate.'},
+ {slug:'mezcla-picada-vegetal-500', name:'Mezcla de Picada vegetal 500 g', line:'vegetal', cats:['veganos'], weight:'500 g', color:'#8cbf3f', ink:'#111',
+  imgs:['902968b2'], macros:['11 g','10 g','5 g','<1 g'],
+  seals:['100% vegano','Sin gluten','Proteína de guisante'], nut:{kj:null,kcal:null,fat:null,sat:null,carb:'10',sug:'1',fib:'5',prot:'11',salt:null}, ing:null, alg:null,
+  desc:'Mezcla para preparar picada vegetal a base de proteína de guisante, 100% vegana y sin gluten, en formato de 500 g. Rinde el triple de su peso en picada lista para cocinar: hamburguesas, albóndigas, boloñesa, tacos o rellenos. Solo hay que hidratar, dejar reposar y dar forma.'},
+ {slug:'mezcla-picada-vegetal-150', name:'Mezcla de Picada vegetal 150 g', line:'vegetal', cats:['veganos'], weight:'150 g · rinde 450 g', color:'#8cbf3f', ink:'#111',
+  imgs:['c415f57f','e3dfdf02'], macros:['11 g','10 g','5 g','<1 g'],
+  seals:['100% vegano','Sin gluten','Proteína de guisante'], nut:{kj:null,kcal:null,fat:null,sat:null,carb:'10',sug:'1',fib:'5',prot:'11',salt:null}, ing:null, alg:null,
+  desc:'Mezcla para preparar picada vegetal a base de proteína de guisante, 100% vegana y sin gluten. Con 150 g de mezcla obtienes 450 g de picada lista para cocinar: hamburguesas, albóndigas, boloñesa, tacos o rellenos. Solo hay que hidratar, dejar reposar y dar forma.'},
+ {slug:'protein-bagel', name:'Protein Bagel', line:'lowcarb', cats:['proteicos','panes'], weight:'[peso]', color:'#e2463b', ink:'#fff', isNew:true,
+  imgs:['bagel'], macros:['27 g','8 g','14 g','—'], seals:[], nut:{kj:null,kcal:null,fat:null,sat:null,carb:'8',sug:null,fib:'14',prot:'27',salt:null}, ing:null, alg:null,
+  desc:'Protein Bagel Low Carb High Protein: el clásico bagel con semillas, ahora con 27 g de proteínas y 14 g de fibra por cada 100 g. Ábrelo, tuéstalo y rellénalo de salmón y queso crema, huevo y aguacate o tu combinación favorita para un desayuno o un almuerzo completo.'},
+ {slug:'protein-bagel-soft', name:'Protein Bagel Soft', line:'lowcarb', cats:['proteicos','panes'], weight:'[peso]', color:'#a9c23f', ink:'#111', isNew:true,
+  imgs:['bagel-soft'], macros:['29 g','13 g','8,2 g','—'], seals:[], nut:{kj:null,kcal:null,fat:null,sat:null,carb:'13',sug:null,fib:'8,2',prot:'29',salt:null}, ing:null, alg:null,
+  desc:'Protein Bagel Soft Low Carb High Protein: un bagel de miga tierna cubierto de sésamo, con 29 g de proteínas y 8,2 g de fibra por cada 100 g. Su textura suave lo hace perfecto para comer sin tostar, en bocadillos fríos, para el almuerzo o para llevar.'},
+ {slug:'protein-chocolate-muffin', name:'Protein Chocolate Muffin', line:'sweet', cats:['proteicos','dulces'], weight:'50 g', color:'#6b3b2a', ink:'#fff', isNew:true,
+  imgs:['muffin'], macros:['20 g','—','—','—'], seals:[], nut:{kj:null,kcal:null,fat:null,sat:null,carb:null,sug:null,fib:null,prot:'20',salt:null}, ing:null, alg:null,
+  desc:'Muffin de chocolate listo para comer, con un 20 % de proteínas. Viene en formato individual de 50 g, cómodo para llevar en el bolso, en la mochila o en la bolsa del gimnasio, y es una merienda dulce con más proteína.'},
+ {slug:'brownie-sin-gluten', name:'Brownie sin gluten', line:'lsg', cats:['singluten'], weight:'[peso]', color:'#8fc5d6', ink:'#111', brand:'La Sin Gluten',
+  imgs:['lsg-brownie'], macros:['—','—','—','—'], seals:['Sin gluten'], nut:{kj:null,kcal:null,fat:null,sat:null,carb:null,sug:null,fib:null,prot:null,salt:null}, ing:null, alg:null, noMacros:true,
+  desc:'Brownie de chocolate sin gluten de La Sin Gluten, en formato individual. Jugoso por dentro y con la costra crujiente del brownie clásico, para disfrutar de un dulce de siempre sin gluten.'},
+ {slug:'mezcla-pan-sin-gluten', name:'Mezcla para pan sin gluten', line:'lsg', cats:['singluten'], weight:'1 kg', color:'#8fc5d6', ink:'#111', brand:'La Sin Gluten',
+  imgs:['lsg-pan'], macros:['—','—','—','—'], seals:['Sin gluten'], nut:{kj:null,kcal:null,fat:null,sat:null,carb:null,sug:null,fib:null,prot:null,salt:null}, ing:null, alg:null, noMacros:true,
+  desc:'Mezcla para preparar en casa pan de molde sin gluten, tierno y fácil de cortar, para sándwiches y tostadas. El sabor de siempre, ahora sin gluten.'},
+ {slug:'mezcla-pizza-sin-gluten', name:'Mezcla para pizza sin gluten', line:'lsg', cats:['singluten'], weight:'1 kg', color:'#8fc5d6', ink:'#111', brand:'La Sin Gluten',
+  imgs:['lsg-pizza'], macros:['—','—','—','—'], seals:['Sin gluten'], nut:{kj:null,kcal:null,fat:null,sat:null,carb:null,sug:null,fib:null,prot:null,salt:null}, ing:null, alg:null, noMacros:true,
+  desc:'Mezcla para masa de pizza sin gluten. Prepara bases caseras crujientes y personalízalas con tus ingredientes favoritos.'},
+ {slug:'mezcla-muffin-sin-gluten', name:'Mezcla para muffin sin gluten', line:'lsg', cats:['singluten'], weight:'1 kg', color:'#8fc5d6', ink:'#111', brand:'La Sin Gluten',
+  imgs:['lsg-muffin'], macros:['—','—','—','—'], seals:['Sin gluten'], nut:{kj:null,kcal:null,fat:null,sat:null,carb:null,sug:null,fib:null,prot:null,salt:null}, ing:null, alg:null, noMacros:true,
+  desc:'Mezcla para muffins sin gluten, esponjosos y fáciles de preparar. Una base para repostería casera que puedes combinar con frutos rojos, chocolate o frutos secos.'},
+ {slug:'mezcla-cookie-chocolate-sin-gluten', name:'Mezcla para cookie de chocolate sin gluten', line:'lsg', cats:['singluten'], weight:'1 kg', color:'#8fc5d6', ink:'#111', brand:'La Sin Gluten',
+  imgs:['lsg-cookie'], macros:['—','—','—','—'], seals:['Sin gluten'], nut:{kj:null,kcal:null,fat:null,sat:null,carb:null,sug:null,fib:null,prot:null,salt:null}, ing:null, alg:null, noMacros:true,
+  desc:'Mezcla para cookies de chocolate sin gluten. Galletas caseras con el sabor de siempre, para la merienda o para acompañar el café.'},
+ {slug:'mezcla-brownie-sin-gluten', name:'Mezcla para brownie sin gluten', line:'lsg', cats:['singluten'], weight:'1 kg', color:'#8fc5d6', ink:'#111', brand:'La Sin Gluten',
+  imgs:['lsg-mbrownie'], macros:['—','—','—','—'], seals:['Sin gluten'], nut:{kj:null,kcal:null,fat:null,sat:null,carb:null,sug:null,fib:null,prot:null,salt:null}, ing:null, alg:null, noMacros:true,
+  desc:'Mezcla para preparar en casa un brownie de chocolate sin gluten, denso y jugoso.'}
+];
+
+var RECIPES = [
+ {img:'r035', title:'Rollitos de hummus y verduritas', product:'wrap-low-carb'},
+ {img:'r017', title:'Tostadas con langostinos', product:'the-original-protein-bread'},
+ {img:'r001', title:'Bocadillo de atún veraniego', product:'panecillos-low-carb'},
+ {img:'r003', title:'Hamburguesas vegetales rellenas de queso', product:'mezcla-picada-vegetal-150'},
+ {img:'r042', title:'Pizza caprese', product:'mezcla-pizza-proteica'},
+ {img:'r008', title:'Bocaditos de wrap con salmón', product:'wrap-low-carb'}
+];

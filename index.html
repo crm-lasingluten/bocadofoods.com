@@ -1,1 +1,920 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bocado Functional Foods · Panes y productos altos en proteína, low carb e IG bajo</title>
+<meta name="description" content="Panes proteicos, low carb e IG24, wraps, dulces y mezclas para hornear en casa. Bocado Functional Foods.">
+<link rel="icon" href="assets/marca/logo-negro.png">
+<style>
+@font-face{font-family:'Concasse';src:url(assets/fonts/Concasse-Light.woff2) format('woff2');font-weight:300;font-display:swap}@font-face{font-family:'Concasse';src:url(assets/fonts/Concasse-Regular.woff2) format('woff2');font-weight:400;font-display:swap}@font-face{font-family:'Concasse';src:url(assets/fonts/Concasse-Bold.woff2) format('woff2');font-weight:700;font-display:swap}@font-face{font-family:'Concasse';src:url(assets/fonts/Concasse-Black.woff2) format('woff2');font-weight:900;font-display:swap}
+:root{
+  --ink:#111; --paper:#fff; --cream:#f6f3ee; --line:#e6e1d9; --muted:#5c5852;
+  --red:#d42a25; --coral:#eb5b4f; --blue:#5b7db1;
+  --wrap:1280px; --pad:32px; --radius:18px;
+  --hdr:72px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Concasse','Trebuchet MS',sans-serif;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.h2{font-size:clamp(30px,3.6vw,44px);font-weight:300;line-height:1.08;margin:0}
+.h2 b{font-weight:900}
+.lead{font-size:18px;line-height:1.55;font-weight:300;color:#333}
+.sec{padding:88px 0}
+.sec-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:32px}
+.link{font-weight:700;font-size:15px;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 26px;border-radius:999px;font-size:16px;font-weight:700;text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:#fff;cursor:pointer;white-space:nowrap}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.light{background:#fff;color:var(--ink);border-color:#fff}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.btn.sm{min-height:44px;padding:0 18px;font-size:15px}
+.page[hidden]{display:none!important}
+.tbd{color:#9a948b;font-style:italic}
 
+/* Announcement + header */
+.announce{background:var(--ink);color:#fff;font-size:13px;font-weight:700;letter-spacing:.05em;text-align:center;padding:9px 16px}
+.announce span{color:var(--coral)}
+header.hdr{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--line)}
+.hdr-in{height:var(--hdr);display:flex;align-items:center;gap:36px}
+.hdr .logo img{width:132px;height:auto}
+.nav{display:flex;gap:28px;font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;flex:1;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nav a{text-decoration:none;padding:10px 0;white-space:nowrap;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current="page"]{border-bottom-color:var(--ink)}
+.hdr-actions{display:flex;align-items:center;gap:12px;position:relative}
+.lang{min-height:44px;border:1.5px solid var(--ink);background:#fff;border-radius:999px;padding:0 14px;font-size:14px;font-weight:700;display:flex;align-items:center;gap:6px;cursor:pointer}
+.shop{min-height:44px;border-radius:999px;padding:0 22px;background:var(--red);color:#fff;text-decoration:none;font-weight:900;letter-spacing:.12em;font-size:14px;display:flex;align-items:center;gap:8px}
+#langMenu{position:absolute;top:calc(100% + 8px);right:0;background:#fff;border:1px solid var(--line);border-radius:14px;padding:6px;min-width:170px;box-shadow:0 16px 40px rgba(0,0,0,.14);display:flex;flex-direction:column;z-index:40}
+#langMenu[hidden]{display:none}
+#langMenu button{background:none;border:0;text-align:left;padding:10px 12px;border-radius:8px;min-height:44px;font-size:15px;cursor:pointer}
+#langMenu button:hover,#langMenu button[aria-current="true"]{background:var(--cream);font-weight:700}
+
+/* Category bar */
+.catbar{background:#fff;border-bottom:1px solid var(--line)}
+.catbar.sticky{position:sticky;top:var(--hdr);z-index:20}
+.catbar-in{display:flex;align-items:center;gap:6px;overflow-x:auto;padding:12px 0;scrollbar-width:thin}
+.cat-group{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 6px 0 10px;white-space:nowrap}
+.cat-sep{width:1px;height:24px;background:var(--line);margin:0 6px;flex:0 0 1px}
+.chip{flex:0 0 auto;min-height:40px;padding:0 12px;border-radius:999px;border:1.5px solid var(--line);background:#fff;font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;text-decoration:none}
+.chip:hover{border-color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.chip .n{font-weight:400;opacity:.6;margin-left:6px;font-size:13px}
+
+/* Hero */
+.hero{padding:56px 0 72px;background:linear-gradient(#fff, #fff)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.hero h1{font-size:clamp(44px,5.6vw,76px);line-height:.98;font-weight:300;margin:18px 0 22px;letter-spacing:-.01em}
+.hero h1 b{font-weight:900}
+.hero .lead{max-width:500px;margin:0 0 30px}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-stats{display:flex;gap:28px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line);flex-wrap:wrap}
+.hero-stats div{display:flex;flex-direction:column;gap:2px}
+.hero-stats b{font-size:30px;font-weight:900}
+.hero-stats span{font-size:13px;color:var(--muted);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.hero-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:end}
+.htile{border-radius:22px;overflow:hidden;position:relative;background:color-mix(in srgb,var(--c) 20%,#fff);display:flex;flex-direction:column;text-decoration:none}
+.htile img{mix-blend-mode:multiply;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:center 60%;transform:scale(1.15)}
+.htile .tag{background:var(--c);color:var(--ink2,#fff);font-size:clamp(11px,1.2vw,13px);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:700;letter-spacing:.06em;padding:12px 14px;position:relative;z-index:1}
+.htile:nth-child(1){margin-bottom:48px}
+.htile img.hseal{position:absolute;top:10px;right:10px;width:58px;height:58px;aspect-ratio:auto;transform:none;mix-blend-mode:normal;background:#fff;border-radius:50%;padding:3px;z-index:2;object-fit:contain}
+.htile:nth-child(3){margin-bottom:24px}
+
+/* Lines */
+.lines{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.ltile{border-radius:var(--radius);overflow:hidden;text-decoration:none;display:grid;grid-template-columns:1fr 46%;min-height:220px;background:color-mix(in srgb,var(--c) 16%,#fff);border:1px solid color-mix(in srgb,var(--c) 30%,#fff);transition:transform .2s}
+.ltile:hover{transform:translateY(-3px)}
+.ltile.wide{grid-column:1/-1;min-height:180px;grid-template-columns:1fr 50%}
+.ltile .txt{padding:22px;display:flex;flex-direction:column;gap:8px}
+.ltile .bar{width:36px;height:6px;border-radius:3px;background:var(--c)}
+.ltile h3{margin:6px 0 0;font-size:24px;line-height:1.1;font-weight:900}
+.ltile p{margin:0;font-size:15px;line-height:1.45;color:#3b3833}
+.ltile .go{margin-top:auto;font-size:14px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.ltile .pic{display:flex;align-items:center;justify-content:center;overflow:hidden}
+.ltile .pic img{mix-blend-mode:multiply;width:118%;max-width:none}
+
+/* Product cards */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px}
+.card{display:flex;flex-direction:column;border-radius:var(--radius);overflow:hidden;background:#fff;border:1px solid var(--line);position:relative}
+.card::before{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:var(--c);z-index:2}
+.card-media{position:relative;display:block;aspect-ratio:1/1;background:color-mix(in srgb,var(--c) 14%,#fff);overflow:hidden}
+.card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply;transition:opacity .35s, transform .35s;transform:scale(1.06)}
+.card-media img.alt{opacity:0}
+.card:hover .card-media img.alt{opacity:1}
+.card:hover .card-media img.main.has-alt{opacity:0}
+.ltag{position:absolute;left:12px;top:18px;z-index:2;background:var(--c);color:var(--ink2,#fff);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+.badge{position:absolute;left:12px;bottom:12px;z-index:2;background:#111;color:#fff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px}
+.card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card-name{font-size:20px;font-weight:700;line-height:1.15;text-decoration:none}
+.card-name:hover{text-decoration:underline;text-underline-offset:4px}
+.card-w{font-size:14px;color:var(--muted)}
+.macros{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:2px}
+.macros div{padding:10px 0;display:flex;flex-direction:column;gap:1px}
+.macros div+div{padding-left:10px;border-left:1px solid var(--line)}
+.macros b{font-size:19px;font-weight:900}
+.macros span{font-size:12px;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.card-note{font-size:13px;color:var(--muted)}
+.card-ctas{display:flex;gap:8px;margin-top:auto;padding-top:4px}
+.card-ctas .btn{flex:1;padding:0 12px}
+
+.card-media img.seal-sm{position:absolute;inset:auto 10px 10px auto;width:64px;height:64px;z-index:2;background:#fff;border-radius:50%;padding:3px;object-fit:contain;transform:none;mix-blend-mode:normal;opacity:1!important}
+.card-media img.seal-sm.brand{background:none;padding:0;width:66px;height:66px}
+.macros.nm{grid-template-columns:1fr}
+.pp-top{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ig-logo{height:84px;width:auto}
+.seals .seal-img{display:inline-flex;align-items:center;gap:8px;padding:4px 12px 4px 4px}
+.seals .seal-img img{width:40px;height:40px}
+.ig-mark{width:120px;height:120px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
+.ig-mark img{width:84px}
+.tile-logo{width:64px;height:auto;margin-bottom:4px}
+.ltile .pic .ovl{position:absolute;top:12px;right:12px;width:58px}
+.ltile .pic{position:relative}
+.lsg-row{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px;height:100%;align-items:center}
+.lsg-row img{mix-blend-mode:multiply;width:100%!important;max-width:100%!important}
+/* Horizontal scroller */
+.hscroll{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(250px,1fr);gap:22px;overflow-x:auto;padding-bottom:12px;scroll-snap-type:x mandatory}
+.hscroll>*{scroll-snap-align:start}
+
+/* IG24 band */
+.ig{background:var(--blue);color:#fff}
+.ig-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:center;padding:80px 0}
+.ig h2{font-size:clamp(34px,4vw,54px);font-weight:300;line-height:1.05;margin:14px 0 18px}
+.ig h2 b{font-weight:900}
+.ig p{font-size:18px;line-height:1.55;font-weight:300;margin:0 0 28px;max-width:520px}
+.ig-nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:32px;max-width:560px}
+.ig-nums div{border-top:2px solid rgba(255,255,255,.5);padding-top:10px}
+.ig-nums b{display:block;font-size:34px;font-weight:900}
+.ig-nums span{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.9}
+.ig-pic{background:#fff;border-radius:28px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;position:relative}
+.ig-pic img{width:100%;aspect-ratio:1/1.2;object-fit:cover}
+
+/* Recipes */
+.rgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.rcard{text-decoration:none;display:flex;flex-direction:column;gap:12px}
+.rcard img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--radius)}
+.rcard .with{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
+.rcard .with i{width:10px;height:10px;border-radius:50%;background:var(--c);display:inline-block}
+.rcard h3{margin:0;font-size:22px;line-height:1.2;font-weight:700}
+
+/* Private label */
+.pl{background:var(--cream)}
+.pl-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px;align-items:center}
+.steps{list-style:none;padding:0;margin:28px 0 32px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1.5px solid var(--ink)}
+.steps li{padding:14px 12px 0 0;display:flex;flex-direction:column;gap:6px}
+.steps b{font-size:13px;font-weight:700;letter-spacing:.12em;color:var(--muted)}
+.steps span{font-size:17px;font-weight:700}
+.pl-pics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.pl-pics div{border-radius:16px;overflow:hidden;background:color-mix(in srgb,var(--c) 16%,#fff)}
+.pl-pics img{mix-blend-mode:multiply;width:100%;aspect-ratio:1/1;object-fit:cover;transform:scale(1.12)}
+.pl-note{font-size:14px;color:var(--muted);margin-top:14px}
+
+/* Blog + newsletter + footer */
+.blog{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;border-top:1.5px solid var(--ink)}
+.blog a{text-decoration:none;padding:24px 0;display:flex;flex-direction:column;gap:10px;border-bottom:1px solid var(--line)}
+.blog small{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.blog strong{font-size:22px;line-height:1.2}
+.blog span{font-size:15px;line-height:1.5;color:#3b3833;font-weight:300}
+.news{background:var(--cream);padding:56px 0}
+.news-in{display:flex;flex-wrap:wrap;gap:20px 48px;align-items:center;justify-content:space-between}
+.news form{display:flex;gap:10px;flex:1 1 420px;flex-wrap:wrap}
+.news input{flex:1 1 220px;min-height:50px;border:1.5px solid var(--ink);border-radius:999px;padding:0 20px;font:inherit;font-size:16px;background:#fff}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+footer.ftr{background:#fff;color:var(--ink);border-top:1px solid var(--line)}
+.ftr-social{display:flex;justify-content:center;align-items:center;gap:10px;padding:36px 0 8px;font-weight:900}
+.ftr-social a{display:inline-flex;min-width:44px;min-height:44px;align-items:center;justify-content:center}
+.ftr-grid{display:grid;grid-template-columns:1.1fr 1fr 1fr 1fr;gap:36px;padding:32px 0 40px}
+.ftr-logo{width:150px;height:auto}
+.ftr h4{margin:0 0 10px;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.02em}
+.ftr a{text-decoration:none;display:flex;align-items:center;gap:6px;padding:3px 0;color:var(--ink);font-size:14px;min-height:28px}
+.ftr a:hover{text-decoration:underline}
+.ftr p{color:var(--ink);font-size:14px;line-height:1.5;margin:0 0 6px}
+.ftr-bottom{border-top:1px solid var(--line);padding:18px 0 26px;display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;font-size:13px;color:var(--muted)}
+.ftr-bottom nav{display:flex;flex-wrap:wrap;gap:4px 16px}
+.ftr-bottom a{display:inline;padding:0;font-size:13px;color:var(--muted);min-height:0}
+@media (max-width:820px){.ftr-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.ftr-grid{grid-template-columns:1fr}}
+
+/* Private label band */
+.plband{border-top:1px solid var(--line);background:#fff}
+.plband-in{display:flex;flex-wrap:wrap;align-items:center;gap:16px 40px;padding:36px var(--pad)}
+.plt{margin:0;font-size:30px;line-height:1;text-transform:uppercase;letter-spacing:.02em;white-space:nowrap}
+.plt span{font-weight:300}
+.plt b{font-weight:900}
+.plband p{flex:1 1 420px;margin:0;font-size:16px;line-height:1.5;color:#2c2a27}
+.catbar-sub{display:flex;gap:6px;overflow-x:auto;padding:0 0 12px}
+.catbar-sub[hidden]{display:none}
+.sub{flex:0 0 auto;min-height:36px;padding:0 14px;border-radius:999px;border:0;background:var(--cream);font-size:14px;font-weight:700;cursor:pointer;white-space:nowrap}
+.sub:hover{background:#ebe5db}
+.sub[aria-pressed="true"]{background:#e9e2d6;box-shadow:inset 0 0 0 1.5px var(--ink)}
+.ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background-color:#f1efeb;background-image:url(assets/marca/pattern-negro.png);background-size:110px auto}
+.ph::before{content:"";position:absolute;inset:0;background:rgba(241,239,235,.93)}
+.ph span{position:relative;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);border:1.5px dashed #c9c2b7;border-radius:999px;padding:8px 14px}
+
+
+/* Nosotros */
+:root{--terra:#cd6658}
+.ns-open{background:#0b0b0b;color:#fff}
+.ns-open-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch;max-width:1440px;margin:0 auto}
+.ns-open-grid img{width:100%;height:100%;object-fit:cover}
+.ns-open-txt{background:#fff;color:var(--ink);padding:56px clamp(24px,5vw,72px);display:flex;flex-direction:column;justify-content:center;gap:2px}
+.ns-open-txt .crumb{margin-bottom:22px}
+.ns-txt p,.ns-open-txt p{font-size:19px;line-height:1.55;font-weight:300;margin:0 0 18px}
+.ns-txt b,.ns-open-txt b{font-weight:700}
+.ns-cta{font-size:22px!important}
+.ns-two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:56px;align-items:start}
+.bigt{margin:0;text-transform:uppercase;line-height:.95;letter-spacing:.01em;font-size:clamp(40px,5.4vw,78px)}
+.bigt span{display:block;font-weight:300}
+.bigt b{display:block;font-weight:900}
+.bigt.one span,.bigt.one b{display:inline}
+.year{font-size:clamp(70px,9vw,140px);font-weight:900;color:var(--terra);line-height:1;margin-top:28px;opacity:.9}
+.ns-inno{background:var(--cream)}
+.hl{color:var(--terra)}
+.mark{margin:0 0 28px;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.mark span{background:var(--terra);color:#fff;font-weight:700;font-size:clamp(26px,3vw,40px);line-height:1.1;padding:6px 16px}
+.mark span+span{font-weight:900;letter-spacing:.02em}
+.nutri-ico{list-style:none;padding:0;margin:8px 0 18px;display:flex;gap:28px;flex-wrap:wrap}
+.nutri-ico li{display:flex;flex-direction:column;align-items:center;gap:8px;font-weight:700;font-size:14px}
+.dicon{width:64px;height:64px;border-radius:50%;background:var(--terra);display:inline-flex;align-items:center;justify-content:center;flex:0 0 64px}
+.src{font-size:13px!important;color:var(--muted)}
+sup{font-size:.6em}
+.ns-dif{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:56px;align-items:center;margin-top:40px}
+.wheel{width:100%;max-width:440px;height:auto;justify-self:center}
+.difs{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px}
+.dif{display:flex;flex-direction:column;gap:12px}
+.dn{font-size:34px;font-weight:900;color:var(--terra);line-height:1}
+.dif .dicon{border-radius:0 26px 0 26px;width:100%;height:auto;aspect-ratio:1/1;max-width:150px;background:#fff;border:1.5px solid var(--terra);flex:none}
+.dif .dicon svg{width:64px;height:64px;padding:16px;background:var(--terra);border-radius:50%;box-sizing:content-box;width:34px;height:34px}
+.dif p{margin:0;font-size:16px;line-height:1.45}
+.ns-pl{border-top:1px solid var(--line)}
+.ns-pl .tag{font-size:24px!important;line-height:1.25!important;margin:6px 0 26px!important}
+@media (max-width:980px){.ns-open-grid,.ns-two,.ns-dif{grid-template-columns:1fr}.ns-open-grid img{max-height:none;height:auto}}
+@media (max-width:640px){.difs{grid-template-columns:1fr 1fr}}
+
+/* Catalogue page */
+.cat-head{padding:44px 0 28px}
+.cat-head h1{font-size:clamp(36px,4.4vw,56px);font-weight:300;margin:10px 0 8px;line-height:1.05}
+.cat-head h1 b{font-weight:900}
+.crumb{font-size:14px;color:var(--muted)}
+.crumb a{text-decoration:none}
+.crumb a:hover{text-decoration:underline}
+.cat-tools{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:22px 0}
+.cat-tools .count{font-weight:700}
+.active-line{display:inline-flex;align-items:center;gap:8px;background:color-mix(in srgb,var(--c) 18%,#fff);border-radius:999px;padding:6px 6px 6px 14px;font-size:14px;font-weight:700}
+.active-line button{border:0;background:#fff;border-radius:999px;width:32px;height:32px;cursor:pointer}
+.empty{background:var(--cream);border-radius:var(--radius);padding:36px;font-size:17px;line-height:1.5}
+
+/* Product page */
+.pp{padding:28px 0 72px}
+.pp-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:56px;align-items:start;margin-top:20px}
+.gallery{position:sticky;top:calc(var(--hdr) + 20px)}
+.g-main{border-radius:24px;overflow:hidden;background:color-mix(in srgb,var(--c) 15%,#fff);position:relative;aspect-ratio:1/1}
+.g-main::after{content:"";position:absolute;right:0;top:0;width:34%;height:100%;background-image:url(assets/marca/pattern-negro.png);background-size:96px auto;opacity:.05;pointer-events:none}
+.g-main img{width:100%;height:100%;object-fit:contain;mix-blend-mode:multiply}
+.thumbs{display:flex;gap:10px;margin-top:12px}
+.thumbs button{width:78px;height:78px;border-radius:12px;overflow:hidden;border:2px solid transparent;padding:0;background:color-mix(in srgb,var(--c) 15%,#fff);cursor:pointer}
+.thumbs button[aria-current="true"]{border-color:var(--ink)}
+.thumbs img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
+.pp-info{display:flex;flex-direction:column;gap:18px}
+.pp-info .ltag{position:static;align-self:flex-start}
+.pp-info h1{font-size:clamp(34px,3.8vw,50px);line-height:1.04;margin:0;font-weight:900}
+.pp-w{font-size:16px;color:var(--muted);margin-top:-8px}
+.mband{background:var(--c);color:var(--ink2,#fff);border-radius:16px;padding:18px 20px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.mband b{display:block;font-size:30px;font-weight:900;line-height:1}
+.mband span{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.mband-note{font-size:13px;color:var(--muted);margin-top:-10px}
+.seals{display:flex;flex-wrap:wrap;gap:8px}
+.seals span{border:1.5px solid var(--ink);border-radius:999px;padding:6px 12px;font-size:13px;font-weight:700;display:inline-flex;align-items:center;min-height:34px}
+.pp-lead{font-size:18px;line-height:1.55;font-weight:300;margin:0;color:#2c2a27}
+.pp-ctas{display:flex;flex-wrap:wrap;gap:10px}
+.ship{font-size:14px;color:var(--muted);display:flex;gap:8px;align-items:center}
+.acc{border-top:1.5px solid var(--ink);margin-top:8px}
+.acc details{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;cursor:pointer;padding:18px 0;font-size:19px;font-weight:700;display:flex;justify-content:space-between;align-items:center;min-height:44px}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";font-size:26px;font-weight:300;line-height:1}
+.acc details[open] summary::after{content:"–"}
+.acc .body{padding:0 0 22px;font-size:16px;line-height:1.65;color:#2c2a27}
+.acc .body p{margin:0 0 12px}
+.acc .alg{background:var(--cream);border-radius:12px;padding:12px 14px;font-size:15px}
+.ntable{width:100%;border-collapse:collapse;font-size:15px}
+.ntable caption{text-align:left;font-size:13px;color:var(--muted);padding-bottom:8px}
+.ntable th,.ntable td{padding:10px 8px;border-bottom:1px solid var(--line);text-align:right}
+.ntable th:first-child,.ntable td:first-child{text-align:left;padding-left:0}
+.ntable thead th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-bottom:1.5px solid var(--ink)}
+.ntable .sub td:first-child{padding-left:16px;color:var(--muted)}
+.nnote{font-size:13px;color:var(--muted);margin-top:10px}
+.warn{background:#fff4d6;border-radius:10px;padding:10px 12px;font-size:14px;margin-top:10px}
+.use{margin:0;padding-left:20px}
+.use li{margin-bottom:8px}
+
+/* Recipe page */
+.rp-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:56px;align-items:center;padding:28px 0 64px}
+.rp-hero img{border-radius:22px;width:100%;aspect-ratio:4/5;object-fit:cover}
+.rp-hero h1{font-size:clamp(38px,4.6vw,62px);font-weight:300;line-height:1.02;margin:14px 0 18px}
+.rp-hero h1 b{font-weight:900}
+.madewith{display:flex;align-items:center;gap:16px;border:1px solid var(--line);border-radius:16px;padding:12px;margin-top:24px;max-width:520px;position:relative;overflow:hidden}
+.madewith::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--c)}
+.madewith .mw-img{width:92px;height:92px;border-radius:12px;background:color-mix(in srgb,var(--c) 15%,#fff);flex:0 0 92px;overflow:hidden;margin-left:6px}
+.madewith .mw-img img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
+.madewith .mw-t{flex:1;display:flex;flex-direction:column;gap:3px}
+.madewith small{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.madewith strong{font-size:19px}
+.rp-body{background:var(--cream);padding:72px 0}
+.rp-cols{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:56px}
+.rp-cols h2{font-size:30px;margin:0 0 16px}
+.ings{list-style:none;padding:0;margin:0;border-top:1.5px solid var(--ink)}
+.ings li{padding:14px 0;border-bottom:1px solid #ddd6cb;font-size:17px}
+.stp{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+.stp li{background:#fff;border-radius:16px;padding:22px;display:flex;gap:18px;font-size:18px;line-height:1.5;font-weight:300}
+.stp b{font-size:32px;font-weight:900;line-height:1;min-width:48px}
+
+/* SHOP notice */
+#aviso{position:fixed;inset:0;z-index:60;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;padding:16px}
+#aviso[hidden]{display:none}
+.dlg{background:#fff;border-radius:22px;max-width:580px;width:100%;padding:36px;position:relative;display:flex;flex-direction:column;gap:16px}
+.dlg h2{margin:0;font-size:32px;font-weight:300;line-height:1.1}
+.dlg h2 b{font-weight:900}
+.dlg p{margin:0;font-size:17px;line-height:1.55;color:#333;font-weight:300}
+.dlg .x{position:absolute;top:12px;right:12px;width:44px;height:44px;border:0;background:none;cursor:pointer;font-size:26px}
+.demo{position:fixed;left:16px;bottom:16px;z-index:50;background:#fff;border:1.5px solid var(--ink);border-radius:999px;padding:9px 16px;font-size:13px;box-shadow:0 8px 24px rgba(0,0,0,.15);max-width:calc(100% - 32px)}
+
+@media (max-width:980px){
+  .hero-grid,.ig-grid,.pl-grid,.pp-grid,.rp-hero,.rp-cols{grid-template-columns:1fr}
+  .lines{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rgrid,.blog{grid-template-columns:1fr 1fr}
+  .gallery{position:static}
+  .hdr-in{gap:18px}
+}
+@media (max-width:640px){
+  :root{--pad:16px;--hdr:64px}
+  .hdr .logo img{width:104px}
+  .nav{display:none}
+  .shop{padding:0 16px}
+  .lines,.rgrid,.blog{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr;row-gap:14px}
+  .mband{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:16px}
+  .ig-nums{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .sec{padding:64px 0}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .card-body{padding:12px}
+  .card-name{font-size:17px}
+  .macros b{font-size:16px}
+  .card-ctas{flex-direction:column}
+  .mobile-nav{display:flex!important}
+}
+.mobile-nav{display:none;gap:18px;overflow-x:auto;padding:0 var(--pad) 12px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#fff}
+.mobile-nav a{text-decoration:none;white-space:nowrap}
+</style>
+</head>
+<body>
+
+<div class="announce">Envío gratis en España peninsular a partir de 45 € · <span>Nuevo: Sweet Protein Vainilla</span></div>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="#home" aria-label="Bocado Functional Foods — inicio"><img data-k="logo-black" alt="Bocado functional foods"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#productos" data-nav="productos">Productos</a>
+      <a href="#receta" data-nav="receta">Recetas</a>
+      <a href="#blog">Blog</a>
+      <a href="#nosotros" data-nav="nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="hdr-actions">
+      <button type="button" class="lang" id="langBtn" aria-haspopup="true" aria-label="Idioma: Español. Cambiar idioma"><span id="langCode">ES</span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></button>
+      <div id="langMenu" hidden></div>
+      <a class="shop" href="https://shop.bocadofoods.com" data-shop>SHOP<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 2h2l1.6 8.2h7.2L14 5H5"/><circle cx="6.5" cy="13.2" r="1"/><circle cx="12" cy="13.2" r="1"/></svg></a>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Principal móvil">
+    <a href="#productos">Productos</a><a href="#receta">Recetas</a><a href="#blog">Blog</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<!-- ============ HOME ============ -->
+<main class="page" id="page-home">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Productos funcionales · Low carb · Altos en proteína</div>
+      <h1>Más proteína<br>en cada <b>bocado.</b></h1>
+      <p class="lead">Panes, panecillos, wraps, pizza y mezclas para hornear en casa, con más proteína y fibra que el pan de siempre. Y el mismo sabor.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#productos">Ver productos</a>
+        <a class="btn ghost" href="https://shop.bocadofoods.com" data-shop>Comprar online</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>28 g</b><span>Proteína / 100 g</span></div>
+        <div><b>15 g</b><span>Fibra / 100 g</span></div>
+        <div><b id="nProd">20</b><span>Productos</span></div>
+      </div>
+    </div>
+    <div class="hero-tiles" id="heroTiles"></div>
+  </div>
+</section>
+
+<div class="catbar">
+  <div class="wrap catbar-in" id="homeCats" aria-label="Categorías"></div>
+</div>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2">Nuestros <b>productos</b></h2>
+      <a class="link" href="#productos">Ver todo el catálogo</a>
+    </div>
+    <div class="lines" id="lines"></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2">Los más <b>pedidos</b></h2>
+      <a class="link" href="#productos">Ver todos los productos</a>
+    </div>
+    <div class="grid" id="bestGrid"></div>
+  </div>
+</section>
+
+<section class="ig" aria-labelledby="ig-title">
+  <div class="wrap ig-grid">
+    <div>
+      <div class="ig-mark"><img data-k="ig24-logo" alt="IG24"></div>
+      <div class="eyebrow">Línea IG24</div>
+      <h2 id="ig-title">Índice glucémico <b>24.</b><br>Testado.</h2>
+      <p>Nuestro pan y panecillos IG24 tienen un índice glucémico de 24. Están hechos con proteínas vegetales, granos de soja, linaza y semillas, sin leche y sin huevo.</p>
+      <div class="ig-nums">
+        <div><b>28 g</b><span>Proteína</span></div>
+        <div><b>15 g</b><span>Fibra</span></div>
+        <div><b>5 g</b><span>Hidratos</span></div>
+        <div><b>&lt;1 g</b><span>Azúcares</span></div>
+      </div>
+      <a class="btn light" href="#productos?cat=ig24">Descubrir IG24</a>
+    </div>
+    <div class="ig-pic">
+      <img data-k="1ae5f940" alt="Pan IG24 500 g">
+      <img data-k="ac127db3" alt="Panecillos IG24 350 g">
+      <img data-k="ig-seal" alt="Índice glucémico testeado IG24" style="position:absolute;right:18px;bottom:18px;width:96px;height:96px;aspect-ratio:auto;background:#fff;border-radius:50%;padding:4px">
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" style="margin-bottom:10px">Mezclas</div>
+        <h2 class="h2">Hornea en casa con <b>nuestras mezclas</b></h2>
+      </div>
+      <a class="link" href="#productos?cat=mezclas">Ver todas las mezclas</a>
+    </div>
+    <div class="hscroll" id="mixRow"></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" style="margin-bottom:10px">Recetario</div>
+        <h2 class="h2"><b>108 recetas</b> con nuestros productos</h2>
+      </div>
+      <a class="btn" href="#receta">Ver el recetario</a>
+    </div>
+    <div class="rgrid" id="recipes"></div>
+  </div>
+</section>
+
+
+
+<section class="sec" id="blog">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2">Del <b>blog</b></h2>
+      <a class="link" href="#blog">Todos los artículos</a>
+    </div>
+    <div class="blog">
+      <a href="#blog"><small>Nutrición · 13/05/2025</small><strong>Cómo ayuda la proteína a controlar el peso</strong><span>Saciedad, metabolismo y masa muscular: por qué la proteína importa cuando quieres perder peso.</span></a>
+      <a href="#blog"><small>Nutrición · 13/05/2025</small><strong>Proteína: ¿es solo para deportistas?</strong><span>Por qué la proteína es clave en el día a día, hagas deporte o no.</span></a>
+      <a href="#blog"><small>Producto · 29/02/2024</small><strong>Picada vegetal Bocado</strong><span>Una nueva carne vegetal a base de proteína de guisante, lista para tus recetas.</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="news">
+  <div class="wrap news-in">
+    <div>
+      <h2 style="margin:0 0 6px;font-size:28px">Recetas nuevas y novedades, cada mes</h2>
+      <p style="margin:0;color:var(--muted)">Puedes darte de baja cuando quieras.</p>
+    </div>
+    <form action="#"><label class="sr" for="nl">Correo electrónico</label><input id="nl" type="email" placeholder="tu@email.com"><button class="btn" type="submit">Suscribirme</button></form>
+  </div>
+</section>
+<section class="plband" aria-labelledby="plb-t">
+  <div class="wrap plband-in">
+    <h2 id="plb-t" class="plt"><span>Private</span> <b>label</b></h2>
+    <p>Brindamos al cliente la oportunidad de crear un producto a medida, con su propia marca, packaging e identidad corporativa. <b>Tú lo imaginas, nosotros lo producimos.</b></p>
+    <a class="btn ghost sm" href="#private-label">Consúltanos</a>
+  </div>
+</section>
+</main>
+
+<!-- ============ CATÁLOGO ============ -->
+<main class="page" id="page-productos" hidden>
+  <div class="wrap cat-head">
+    <nav class="crumb" aria-label="Ruta"><a href="#home">Inicio</a> / Productos</nav>
+    <h1>Nuestros <b>productos</b></h1>
+    <p class="lead" style="margin:0;max-width:640px">Panes, wraps, dulces y mezclas con más proteína. Elige una categoría.</p>
+  </div>
+  <div class="catbar sticky">
+    <div class="wrap catbar-in" id="catChips" aria-label="Categorías"></div>
+    <div class="wrap catbar-sub" id="subChips" aria-label="Subcategorías"></div>
+  </div>
+  <div class="wrap">
+    <div class="cat-tools"><span class="count" id="count"></span><span id="activeLine"></span></div>
+    <div class="grid" id="catGrid"></div>
+    <div class="empty" id="empty" hidden>Todavía no hay productos en esta categoría. <a href="#productos">Ver todos</a>.</div>
+    <p class="card-note" style="margin:28px 0 80px">Venta online solo en España peninsular. Para otros países o private label, <a href="#contacto">escríbenos</a>.</p>
+  </div>
+</main>
+
+<!-- ============ FICHA DE PRODUCTO ============ -->
+<main class="page" id="page-producto" hidden>
+  <div class="wrap pp" id="pp"></div>
+</main>
+
+<!-- ============ RECETA ============ -->
+<main class="page" id="page-receta" hidden>
+  <div class="wrap">
+    <nav class="crumb" style="padding-top:28px" aria-label="Ruta"><a href="#home">Inicio</a> / <a href="#receta">Recetas</a> / Wraps</nav>
+    <div class="rp-hero">
+      <img data-k="r035" alt="Rollitos de wrap low carb con hummus, zanahoria, pimiento y pepino">
+      <div>
+        <div class="eyebrow">Receta · Sin cocción · 10 min</div>
+        <h1>Rollitos de hummus <b>y verduritas</b></h1>
+        <p class="lead" style="margin:0">Un almuerzo fresco y rápido: hummus y verduras crujientes enrollados en un wrap proteico.</p>
+        <a class="madewith" href="#p/wrap-low-carb" style="--c:#ec6f5f;text-decoration:none">
+          <span class="mw-img"><img data-k="cbfc085c" alt=""></span>
+          <span class="mw-t"><small>Hecha con</small><strong>Wrap Low Carb</strong><span style="font-size:14px;color:var(--muted)">9 g de proteína por tortilla</span></span>
+          <span class="btn sm" data-shop-btn>Comprar</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="rp-body">
+    <div class="wrap rp-cols">
+      <div>
+        <h2>Ingredientes</h2>
+        <ul class="ings"><li><a href="#p/wrap-low-carb"><b>Wrap Low Carb Bocado</b></a></li><li>Hummus</li><li>Zanahoria</li><li>Pimiento rojo</li><li>Pepino</li></ul>
+      </div>
+      <div>
+        <h2>Preparación</h2>
+        <ol class="stp"><li><b>01</b>Pon una capa de hummus sobre la base del wrap.</li><li><b>02</b>Añade palitos de zanahoria, pimiento y pepino.</li><li><b>03</b>Enrolla bien apretado y corta por la mitad.</li></ol>
+      </div>
+    </div>
+  </div>
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="h2">Más <b>recetas</b></h2><a class="link" href="#receta">Ver el recetario completo</a></div>
+      <div class="rgrid" id="recipes2"></div>
+    </div>
+  </section>
+</main>
+
+
+<!-- ============ NOSOTROS ============ -->
+<main class="page" id="page-nosotros" hidden>
+  <section class="ns-open">
+    <div class="ns-open-grid">
+      <img data-k="quote" alt="Comer es una necesidad, pero comer inteligentemente es un arte. François de La Rochefoucauld">
+      <div class="ns-open-txt">
+        <nav class="crumb" aria-label="Ruta"><a href="#home">Inicio</a> / Nosotros</nav>
+        <p>Somos una <b>compañía de alimentos funcionales</b> en permanente evolución.</p>
+        <p><b>Cada bocado de nuestros productos</b> genera beneficios y busca dar respuesta a problemáticas cotidianas.</p>
+        <p>Ofrecemos los mejores panes low carb y ricos en proteínas, además de un amplio catálogo de productos acabados y mezclas para preparar en casa.</p>
+        <p><b>Somos tu partner perfecto.</b> Sabemos satisfacer el paladar de un consumidor informado y cada vez más exigente, que busca y prefiere productos premium saludables, con conciencia medioambiental, y elaborados con ingredientes de alta calidad y valor nutricional.</p>
+        <p class="ns-cta"><b>Conócenos.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap ns-two">
+      <div>
+        <h2 class="bigt"><span>Un bocado</span><b>de historia</b></h2>
+        <div class="year">2015</div>
+      </div>
+      <div class="ns-txt">
+        <p>En el año 2015, <b>lanzamos al mercado nuestro primer pan llamado The Original Protein Bread</b> y empezamos nuestro camino en el mundo de la panadería española.</p>
+        <p>Muy pronto detectamos que el cliente nos pedía, cada vez más, productos bajos en carbohidratos, proteínas e incluso sin azúcar y <b>decidimos crear nuestra primera línea de alimentos funcionales y gourmet denominada Bocado Functional Foods.</b></p>
+        <p>Las dietas keto se popularizaron.<br>En el mercado <b>soplaban vientos de cambio y nosotros tomábamos nota de las tendencias.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ns-inno">
+    <div class="wrap ns-two">
+      <div class="ns-txt">
+        <p>El 80 % de los consumidores admitía <b>la importancia de reconocer los ingredientes en las etiquetas de los productos.</b><sup>*</sup></p>
+        <p>En un relevamiento, más de 2.000 consumidores <b>relacionaron un menor contenido de azúcares con alimentos más saludables,</b> menos grasas y calorías con productos que ayudan a perder peso.<sup>*</sup></p>
+        <p>También mostraron una <b>mayor preferencia por aquellos alimentos que contenían como nutrientes mayoritarios <span class="hl">proteína, fibra y Omega 3.</span></b></p>
+        <ul class="nutri-ico">
+          <li><span class="dicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17c1-6 3-10 7-12l2 2-2 3 3 1c3 0 6 2 6 5 0 2-2 4-5 4H7c-2 0-3-1-3-3z"/><path d="M9 15c1.5 1 3.5 1 5 0"/></svg></span>Proteína</li>
+          <li><span class="dicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V8"/><path d="M12 12c-3 0-5-2-5-5 3 0 5 2 5 5zM12 12c3 0 5-2 5-5-3 0-5 2-5 5zM12 8c-1.8-1-2.5-3-2-5 1.8 1 2.5 3 2 5z"/></svg></span>Fibra</li>
+          <li><span class="dicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4s-5 6-5 9.5a5 5 0 0 0 10 0C15 10 10 4 10 4z"/><circle cx="17.5" cy="6.5" r="2.5"/></svg></span>Omega 3</li>
+        </ul>
+        <p class="src">* Fuente: [pendiente de citar]</p>
+      </div>
+      <div class="ns-txt">
+        <h2 class="mark"><span>Decidimos responder con</span><span>INNOVACIÓN</span></h2>
+        <p><b>Hicimos un compromiso:</b> utilizar ingredientes de la más <b>alta calidad, sin transgénicos,</b> y lograr <b>un sabor perfecto con la menor cantidad de carbohidratos.</b></p>
+        <p class="ns-cta"><b>Este es el resultado.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <h2 class="bigt one"><span>Lo que nos</span> <b>diferencia</b></h2>
+      <div class="ns-dif">
+        <svg class="wheel" viewBox="0 0 440 440" role="img" aria-label="Bocado: funcional, nutritivo, sabroso, premium">
+  <defs>
+    <path id="aTL" d="M60,220 A160,160 0 0 1 220,60"/><path id="aTR" d="M220,60 A160,160 0 0 1 380,220"/>
+    <path id="aBL" d="M60,220 A160,160 0 0 0 220,380"/><path id="aBR" d="M220,380 A160,160 0 0 0 380,220"/>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity=".18"/></filter>
+  </defs>
+  <path d="M220,220 L20,220 A200,200 0 0 1 220,20 Z" fill="#7dbb90"/>
+  <path d="M220,220 L220,20 A200,200 0 0 1 420,220 Z" fill="#e8b24a"/>
+  <path d="M220,220 L420,220 A200,200 0 0 1 220,420 Z" fill="#8a4a2c"/>
+  <path d="M220,220 L220,420 A200,200 0 0 1 20,220 Z" fill="#d45a6e"/>
+  <g font-family="Concasse, sans-serif" font-weight="900" font-size="30" letter-spacing="3" fill="#fff" dominant-baseline="central" text-anchor="middle">
+    <text><textPath href="#aTL" startOffset="50%">FUNCIONAL</textPath></text>
+    <text><textPath href="#aTR" startOffset="50%">NUTRITIVO</textPath></text>
+    <text><textPath href="#aBL" startOffset="50%">PREMIUM</textPath></text>
+    <text><textPath href="#aBR" startOffset="50%">SABROSO</textPath></text>
+  </g>
+  <circle cx="220" cy="220" r="118" fill="#f7f6f3" filter="url(#sh)"/>
+  <image href="assets/marca/logo-negro.png" x="140" y="187" width="160" height="66"/>
+</svg>
+        <ol class="difs"><li class="dif"><span class="dn">01</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0-3.5 10.9V16h7v-2.1A6 6 0 0 0 12 3z"/><path d="M9.5 19h5M10.5 21.5h3"/><path d="M12 13V9.5c0-1.2.9-2 2-2"/></svg></span><p><b>Innovación saludable</b> acorde a las tendencias de consumo.</p></li><li class="dif"><span class="dn">02</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19l7-7"/></svg></span><p><b>Productos veganos y vegetarianos</b> y libres de transgénicos.</p></li><li class="dif"><span class="dn">03</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17c1-6 3-10 7-12l2 2-2 3 3 1c3 0 6 2 6 5 0 2-2 4-5 4H7c-2 0-3-1-3-3z"/><path d="M9 15c1.5 1 3.5 1 5 0"/></svg></span><p><b>Alto valor nutricional</b> alimentos bajos en carbohidratos y altos en proteínas, fibra y Omega 3.</p></li><li class="dif"><span class="dn">04</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l1 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7z"/><path d="M6 7h12"/><path d="M10 16c0-3 2-5 4-5 0 3-2 5-4 5z"/></svg></span><p><b>Fecha de caducidad prolongada</b> (hasta 9 meses) gracias al envasado en atmósfera protectora.</p></li><li class="dif"><span class="dn">05</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h4c4 0 6 10 10 10h4"/><path d="M3 17h4c1.6 0 2.8-1.6 3.8-3.6M13.2 9.6C14.2 8.4 15.4 7 17 7h4"/><path d="M18 4l3 3-3 3M18 14l3 3-3 3"/></svg></span><p><b>Productos versátiles</b> para todas las comidas del día, de sabores dulces y salados.</p></li><li class="dif"><span class="dn">06</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></span><p><b>Para un público objetivo</b> y para la población en general.</p></li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ns-pl" id="private-label">
+    <div class="wrap ns-two">
+      <h2 class="bigt"><span>Private</span><b>label</b></h2>
+      <div class="ns-txt">
+        <p><b>Brindamos al cliente la oportunidad de crear un producto a medida,</b> con su propia marca, packaging e identidad corporativa, de modo que se ajuste a las preferencias del público objetivo.</p>
+        <p class="tag"><b>Tú lo imaginas,<br>nosotros lo producimos.</b></p>
+        <a class="btn" href="mailto:hola@bocadofoods.com?subject=Private%20label">Consúltanos</a>
+        <p class="src" style="margin-top:14px">Atendemos en español, inglés, italiano, francés, alemán y portugués.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr" id="contacto">
+  <div class="wrap">
+    <div class="ftr-social">
+      <a href="https://www.facebook.com/bocado.functional.foods" aria-label="Facebook"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="4" fill="#111"/><path d="M20.5 30V18.6h3.6l.6-4.3h-4.2v-2.7c0-1.2.4-2.1 2.1-2.1h2.2V5.7c-.4 0-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.3h-3.6v4.3h3.6V30z" fill="#fff"/></svg></a>
+      <span aria-hidden="true">·</span>
+      <a href="https://www.instagram.com/bocado.functional.foods/" aria-label="Instagram"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#111" stroke-width="2.6" aria-hidden="true"><rect x="2.3" y="2.3" width="25.4" height="25.4" rx="7"/><circle cx="15" cy="15" r="6"/><circle cx="22.4" cy="7.6" r="1.2" fill="#111" stroke="none"/></svg></a>
+    </div>
+    <div class="ftr-grid">
+      <div><img data-k="logo-black" alt="Bocado functional foods" class="ftr-logo"></div>
+      <div>
+        <h4>Sobre nosotros</h4>
+        <p>Travessia Industrial, 191<br>08907 L'Hospitalet de Llobregat<br>(Barcelona)</p>
+        <h4 style="margin-top:22px">Atención al cliente</h4>
+        <p><i>Lunes a jueves de 8 a 15 h<br>Viernes de 8 a 14 h</i></p>
+        <a href="mailto:hola@bocadofoods.com">hola@bocadofoods.com</a>
+        <a href="tel:+34931592650"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path fill="#111" d="M3.6 1h2.6l1.3 3.4-1.7 1.1a8.6 8.6 0 0 0 4.7 4.7l1.1-1.7 3.4 1.3v2.6c0 .9-.7 1.6-1.6 1.6C7.1 14 2 8.9 2 2.6 2 1.7 2.7 1 3.6 1z"/></svg> +34 931 592 650</a>
+        <a href="https://wa.me/34646698281"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#111" stroke-width="1.4" aria-hidden="true"><path d="M2.2 13.8l.8-2.9A6.2 6.2 0 1 1 5.3 13z"/></svg> +34 646 698 281</a>
+      </div>
+      <div>
+        <h4>Información</h4>
+        <a href="#"><b>Términos y condiciones generales</b></a>
+        <a href="#productos">Productos</a>
+        <a href="#private-label">Private label</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Aviso legal</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">Política de privacidad en Redes Sociales</a>
+        <a href="#">Política de cookies</a>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© 2026 Bocado Functional Foods</span>
+      <nav aria-label="Idiomas" id="ftrLangs"></nav>
+    </div>
+  </div>
+</footer>
+
+<div id="aviso" hidden>
+  <div class="dlg" role="dialog" aria-modal="true" aria-labelledby="av-t">
+    <button class="x" type="button" aria-label="Cerrar" data-close>×</button>
+    <div class="eyebrow">Online shop</div>
+    <h2 id="av-t">We currently ship to <b>mainland Spain only</b></h2>
+    <p>Our online shop is in Spanish. If you are in another country, or you are a distributor or brand interested in private label, get in touch and we will reply in your language.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn" href="#contacto" data-close>Contact us</a><a class="btn ghost" href="#private-label" data-close>Private label</a><a class="link" style="align-self:center;padding:0 8px" href="https://shop.bocadofoods.com" data-close>Go to the shop (ES)</a></div>
+  </div>
+</div>
+
+<div class="demo" role="status"><b>Maqueta v4</b> · <span id="demoTxt">Cambia el idioma a EN y pulsa SHOP para ver el aviso.</span></div>
+
+<script src="js/imagenes.js"></script>
+<script src="js/productos.js"></script>
+<script>
+(function(){
+var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+function src(k){return IMG[k]||''}
+function fillImgs(root){$$('img[data-k]',root).forEach(function(i){if(!i.getAttribute('src'))i.src=src(i.dataset.k);});}
+var BY={}; PRODUCTS.forEach(function(p){BY[p.slug]=p;});
+function lineOf(p){return LINES[p.line]}
+function styleVars(c,ink){return '--c:'+c+';--ink2:'+(ink||'#fff')}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+function card(p){
+  var alt=p.imgs[1]?'<img class="alt" src="'+src(p.imgs[1])+'" alt="">':'';
+  var m=p.macros;
+  var media=p.imgs.length?'<img class="main'+(p.imgs[1]?' has-alt':'')+'" src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+alt:'<span class="ph"><span>Foto pendiente</span></span>';
+  return '<article class="card" style="'+styleVars(p.color,p.ink)+'">'+
+    '<a class="card-media" href="#p/'+p.slug+'" aria-label="'+esc(p.name)+'">'+media+
+    '<span class="ltag">'+esc(lineOf(p).short)+'</span>'+(p.best?'<span class="badge">Más vendido</span>':(p.isNew?'<span class="badge">Nuevo</span>':''))+(p.igSeal?'<img class="seal-sm" src="'+src('ig-seal')+'" alt="Índice glucémico testeado IG24">':'')+(p.brand?'<img class="seal-sm brand" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'')+'</a>'+
+    '<div class="card-body"><a class="card-name" href="#p/'+p.slug+'">'+esc(p.name)+'</a><div class="card-w">'+esc(p.weight)+'</div>'+
+    (p.noMacros?'<div class="macros nm"><div><b>Sin gluten</b><span>'+esc(p.brand||'')+'</span></div></div>':'<div class="macros"><div><b>'+esc(m[0])+'</b><span>Proteína</span></div><div><b>'+esc(m[1])+'</b><span>Hidratos</span></div><div><b>'+esc(m[2])+'</b><span>Fibra</span></div></div>')+
+    '<div class="card-note">'+((p.pending||p.noMacros)?'Datos pendientes de cargar':(p.perUnit?esc(p.perUnit):(p.prepared?'Por 100 g de producto terminado':'Por 100 g')))+'</div>'+
+    '<div class="card-ctas"><a class="btn sm ghost" href="#p/'+p.slug+'">Ver ficha</a><a class="btn sm" href="https://shop.bocadofoods.com" data-shop>Comprar</a></div></div></article>';
+}
+
+/* ---- category chips ---- */
+var SUB_IDS=CATS_SUB.map(function(c){return c.id});
+function countCat(id){return id==='all'?PRODUCTS.length:PRODUCTS.filter(function(p){return p.cats.indexOf(id)>=0}).length}
+function catLabel(id){var c=CATS_MAIN.concat(CATS_SUB).filter(function(x){return x.id===id})[0];return c?c.label:''}
+function mainChipsHTML(active){
+  return CATS_MAIN.map(function(c){
+    return '<button type="button" class="chip" data-cat="'+c.id+'" aria-pressed="'+(c.id===active)+'">'+c.label+'</button>';
+  }).join('');
+}
+function homeChipsHTML(){
+  var out='';
+  CATS_MAIN.forEach(function(c){ if(c.id==='all')return;
+    out+='<a class="chip" href="#productos?cat='+c.id+'">'+c.label+'</a>';
+    if(c.id==='proteicos'){ CATS_SUB.forEach(function(s){out+='<a class="sub" style="display:inline-flex;align-items:center;text-decoration:none" href="#productos?cat='+s.id+'">'+s.label+'</a>'}); out+='<span class="cat-sep" aria-hidden="true"></span>'; }
+  });
+  return out;
+}
+
+/* ---- home ---- */
+$('#homeCats').innerHTML=homeChipsHTML();
+/* Hero: editable list, later used for novedades */
+var HERO_TILES=[
+  {slug:'pan-ig24', label:'Pan IG24'},
+  {slug:'the-original-protein-bread', label:'Protein Bread'},
+  {slug:'panecillos-ig24', label:'Panecillos IG24'}
+];
+$('#heroTiles').innerHTML=HERO_TILES.map(function(h){var p=BY[h.slug];
+  return '<a class="htile" href="#p/'+p.slug+'" style="--c:'+p.color+'"><img src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+(p.igSeal?'<img class="hseal" src="'+src('ig-seal')+'" alt="Índice glucémico testeado IG24">':'')+'<span class="tag">'+esc(h.label)+'</span></a>';}).join('');
+$('#nProd').textContent=PRODUCTS.filter(function(p){return !p.pending}).length;
+var TILES=[
+  ['panes','Panes','The Original Protein Bread, panecillos, baguettes, tostadas y bagels.','0b40383c','#e3342f'],
+  ['wrap','Wrap','Tortillas con 9 g de proteína por unidad para wraps, fajitas y quesadillas.','cbfc085c','#ec6f5f'],
+  ['dulces','Dulces','Protein Chocolate Muffin y Sweet Protein de chocolate y vainilla.','d5d6e740','#e0307c'],
+  ['mezclas','Mezclas','Pan, panecillos, sándwich, pizza, hamburguesa y crackers para hornear en casa.','9254e231','#c99a5b'],
+  ['ig24','Productos IG24','Pan y panecillos con índice glucémico 24, testado.','1ae5f940','#5b7db1'],
+  ['veganos','Veganos','Picada vegetal de proteína de guisante, en 150 g y 500 g.','e3dfdf02','#8cbf3f'],
+  ['singluten','Sin gluten','Brownie y mezclas para pan, pizza, muffin, cookies y brownie de La Sin Gluten.','LSG','#8fc5d6']
+];
+$('#lines').innerHTML=TILES.map(function(l){
+  var n=countCat(l[0]);
+  var pic=l[3]==='LSG'?'<div class="pic"><div class="lsg-row"><img src="'+src('lsg-pan')+'" alt=""><img src="'+src('lsg-pizza')+'" alt=""><img src="'+src('lsg-brownie')+'" alt=""></div></div>':'<div class="pic"><img src="'+src(l[3])+'" alt="">'+(l[0]==='ig24'?'<img class="ovl" src="'+src('ig24-logo')+'" alt="IG24">':'')+'</div>';
+  return '<a class="ltile'+(l[3]==='LSG'?' wide':'')+'" href="#productos?cat='+l[0]+'" style="--c:'+l[4]+'"><div class="txt">'+(l[3]==='LSG'?'<img class="tile-logo" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'<span class="bar"></span>')+'<h3>'+l[1]+'</h3><p>'+l[2]+'</p><span class="go">'+n+(n===1?' producto':' productos')+'</span></div>'+pic+'</a>';
+}).join('');
+$('#bestGrid').innerHTML=['the-original-protein-bread','panecillos-low-carb','wrap-low-carb','pan-ig24'].map(function(s){return card(BY[s])}).join('');
+$('#mixRow').innerHTML=PRODUCTS.filter(function(p){return p.line==='mezclas'||p.line==='sweet'}).map(card).join('');
+function recipesHTML(list){return list.map(function(r){var p=BY[r.product];return '<a class="rcard" href="#receta" style="--c:'+p.color+'"><img src="'+src(r.img)+'" alt="'+esc(r.title)+'"><span class="with"><i></i>Con '+esc(p.name)+'</span><h3>'+esc(r.title)+'</h3></a>'}).join('')}
+$('#recipes').innerHTML=recipesHTML(RECIPES.slice(0,3));
+$('#recipes2').innerHTML=recipesHTML(RECIPES.slice(3,6));
+
+/* ---- catalogue ---- */
+var state={cat:'all'};
+function setCat(id){state.cat=id;history.replaceState(null,'','#productos'+(id==='all'?'':'?cat='+id));renderCat();}
+function renderCat(){
+  var isSub=SUB_IDS.indexOf(state.cat)>=0, main=isSub?'proteicos':state.cat;
+  $('#catChips').innerHTML=mainChipsHTML(main);
+  $$('#catChips [data-cat]').forEach(function(b){b.onclick=function(){setCat(b.dataset.cat)}});
+  var sc=$('#subChips'); sc.hidden=(main!=='proteicos');
+  sc.innerHTML='<button type="button" class="sub" data-sub="proteicos" aria-pressed="'+(state.cat==='proteicos')+'">Todos</button>'+CATS_SUB.map(function(s){return '<button type="button" class="sub" data-sub="'+s.id+'" aria-pressed="'+(state.cat===s.id)+'">'+s.label+'</button>'}).join('');
+  $$('#subChips [data-sub]').forEach(function(b){b.onclick=function(){setCat(b.dataset.sub)}});
+  var list=PRODUCTS.filter(function(p){return state.cat==='all'||p.cats.indexOf(state.cat)>=0});
+  $('#catGrid').innerHTML=list.map(card).join('');
+  $('#empty').hidden=list.length>0;
+  $('#count').textContent=(state.cat==='all'?'Todos':catLabel(state.cat))+' · '+list.length+(list.length===1?' producto':' productos');
+  $('#activeLine').innerHTML='';
+  wireShop($('#page-productos'));
+}
+
+/* ---- product page ---- */
+function val(v,u){return (v===null||v===undefined)?'<span class="tbd">—</span>':esc(v)+(u||'')}
+function nutTable(p){
+  var n=p.nut, rows=[
+    ['Valor energético', (n.kj===null?'<span class="tbd">— kJ / — kcal</span>':n.kj+' kJ / '+n.kcal+' kcal'), false],
+    ['Grasas', val(n.fat,' g'), false],['de las cuales saturadas', val(n.sat,' g'), true],
+    ['Hidratos de carbono', val(n.carb,' g'), false],['de los cuales azúcares', val(n.sug,' g'), true],
+    ['Fibra alimentaria', val(n.fib,' g'), false],['Proteínas', val(n.prot,' g'), false],['Sal', val(n.salt,' g'), false]];
+  return '<table class="ntable"><caption>Información nutricional'+(p.prepared?' (producto terminado)':'')+'</caption><thead><tr><th scope="col">Valores medios</th><th scope="col">Por 100 g</th><th scope="col">Por ración*</th></tr></thead><tbody>'+
+    rows.map(function(r){return '<tr'+(r[2]?' class="sub"':'')+'><td>'+r[0]+'</td><td>'+r[1]+'</td><td><span class="tbd">—</span></td></tr>'}).join('')+
+    '</tbody></table><p class="nnote">* Ración: [pendiente de definir]. Los valores nutricionales están sujetos a las variaciones típicas de los productos naturales.</p>'+
+    (p.check?'<p class="warn">A revisar: la trasera de este envase muestra la tabla del pan (28 g de proteína), pero la frontal indica 44 % de proteína.</p>':'');
+}
+function renderProduct(slug){
+  var p=BY[slug]; if(!p){location.hash='#productos';return;}
+  var L=lineOf(p), m=p.macros;
+  var cat=p.cats[p.cats.length-1];
+  var thumbs=p.imgs.length>1?'<div class="thumbs">'+p.imgs.map(function(k,i){return '<button type="button" data-i="'+i+'" aria-label="Foto '+(i+1)+'" aria-current="'+(i===0)+'"><img src="'+src(k)+'" alt=""></button>'}).join('')+'</div>':'';
+  var lead=p.desc.split('. ')[0]+'.';
+  var related=PRODUCTS.filter(function(x){return x.cats.indexOf(cat)>=0&&x.slug!==p.slug&&!x.pending}).slice(0,4);
+  if(related.length<2) related=related.concat(PRODUCTS.filter(function(x){return x.slug!==p.slug&&!x.pending&&related.indexOf(x)<0}).slice(0,4-related.length));
+  var recs=RECIPES.filter(function(r){return r.product===p.slug});
+  $('#pp').style.cssText=styleVars(p.color,p.ink);
+  $('#pp').innerHTML=
+   '<nav class="crumb" aria-label="Ruta"><a href="#home">Inicio</a> / <a href="#productos">Productos</a> / <a href="#productos?cat='+cat+'">'+esc(catLabel(cat))+'</a> / '+esc(p.name)+'</nav>'+
+   '<div class="pp-grid">'+
+    '<div class="gallery"><div class="g-main">'+(p.imgs.length?'<img id="gMain" src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">':'<span class="ph"><span>Foto pendiente</span></span>')+'</div>'+thumbs+'</div>'+
+    '<div class="pp-info">'+
+      '<div class="pp-top"><span class="ltag">'+esc(L.name)+'</span>'+(p.igLogo?'<img class="ig-logo" src="'+src('ig24-logo')+'" alt="IG24">':'')+(p.brand?'<img class="ig-logo" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'')+'</div>'+
+      '<h1>'+esc(p.name)+'</h1><div class="pp-w">'+esc(p.weight)+'</div>'+
+      (p.noMacros?'<div class="mband-note">Información nutricional pendiente de cargar.</div>':'<div class="mband"><div><b>'+esc(m[0])+'</b><span>Proteínas</span></div><div><b>'+esc(m[1])+'</b><span>Hidratos</span></div><div><b>'+esc(m[2])+'</b><span>Fibra</span></div><div><b>'+esc(m[3])+'</b><span>Azúcares</span></div></div>'+
+      '<div class="mband-note">'+(p.prepared?'Por 100 g de producto terminado':'Por 100 g')+(p.perUnit?' · '+esc(p.perUnit):'')+'</div>')+
+      ((p.seals.length||p.igSeal)?'<div class="seals">'+(p.igSeal?'<span class="seal-img"><img src="'+src('ig-seal')+'" alt="">Índice glucémico testeado</span>':'')+p.seals.map(function(s){return '<span>'+esc(s)+'</span>'}).join('')+'</div>':'')+
+      (p.pending?'':'<p class="pp-lead">'+esc(lead)+'</p>')+
+      '<div class="pp-ctas"><a class="btn" href="https://shop.bocadofoods.com" data-shop>Comprar en la tienda</a></div>'+
+      '<div class="ship"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M1.5 4.5h9v7h-9zM10.5 7h3.5l2.5 2.5v2h-6"/><circle cx="4.5" cy="13" r="1.5"/><circle cx="13" cy="13" r="1.5"/></svg>Envío a España peninsular. ¿Otro país? <a href="#contacto">Escríbenos</a></div>'+
+      '<div class="acc">'+
+        '<details open><summary>Descripción</summary><div class="body"><p>'+esc(p.desc)+'</p></div></details>'+
+        '<details><summary>Ingredientes y alérgenos</summary><div class="body">'+(p.ing?'<p>'+p.ing+'</p>':'<p class="tbd">Ingredientes pendientes de cargar.</p>')+(p.alg?'<div class="alg"><b>Alérgenos:</b> '+esc(p.alg)+'</div>':'<div class="alg"><b>Alérgenos:</b> <span class="tbd">pendiente</span></div>')+'</div></details>'+
+        '<details><summary>Información nutricional</summary><div class="body">'+nutTable(p)+'</div></details>'+
+        (p.use?'<details><summary>Modo de empleo</summary><div class="body"><ol class="use">'+p.use.map(function(u){return '<li>'+esc(u)+'</li>'}).join('')+'</ol></div></details>':'')+
+      '</div>'+
+    '</div>'+
+   '</div>'+
+   (recs.length?'<section style="margin-top:72px"><div class="sec-head"><h2 class="h2">Recetas con <b>'+esc(p.name)+'</b></h2><a class="link" href="#receta">Ver el recetario</a></div><div class="rgrid">'+recipesHTML(recs)+'</div></section>':'')+
+   '<section style="margin-top:72px"><div class="sec-head"><h2 class="h2">También te puede <b>gustar</b></h2></div><div class="grid">'+related.map(card).join('')+'</div></section>';
+  $$('#pp .thumbs button').forEach(function(b){b.onclick=function(){$('#gMain').src=src(p.imgs[+b.dataset.i]);$$('#pp .thumbs button').forEach(function(x){x.setAttribute('aria-current',x===b)});}});
+  wireShop($('#pp'));
+}
+
+/* ---- routing ---- */
+function show(id){['home','productos','producto','receta','nosotros'].forEach(function(x){$('#page-'+x).hidden=(x!==id)});
+  $$('.nav a[data-nav]').forEach(function(a){a.toggleAttribute('aria-current',a.dataset.nav===id||(id==='producto'&&a.dataset.nav==='productos'));if(a.hasAttribute('aria-current'))a.setAttribute('aria-current','page')});}
+function route(){
+  var h=location.hash.slice(1)||'home', q={};
+  var parts=h.split('?'); var path=parts[0];
+  if(parts[1])parts[1].split('&').forEach(function(kv){var s=kv.split('=');q[s[0]]=decodeURIComponent(s[1]||'')});
+  if(path==='productos'){state.cat=q.cat||'all';show('productos');renderCat();window.scrollTo(0,0);return;}
+  if(path.indexOf('p/')===0){show('producto');renderProduct(path.slice(2));window.scrollTo(0,0);return;}
+  if(path==='receta'){show('receta');window.scrollTo(0,0);return;}
+  if(path==='nosotros'){show('nosotros');window.scrollTo(0,0);return;}
+  if(path==='home'){show('home');window.scrollTo(0,0);return;}
+  var el=document.getElementById(path);
+  if(el){var pg=el.closest('.page');show(pg?pg.id.replace('page-',''):'home');setTimeout(function(){el.scrollIntoView()},0);}
+  else {show('home');}
+}
+window.addEventListener('hashchange',route);
+
+/* ---- language + shop ---- */
+var LANGS=[['ES','Español'],['EN','English'],['IT','Italiano'],['FR','Français'],['DE','Deutsch'],['PT','Português']], lang='ES';
+var menu=$('#langMenu');
+menu.innerHTML=LANGS.map(function(l){return '<button type="button" data-l="'+l[0]+'">'+l[1]+'</button>'}).join('');
+$('#ftrLangs').innerHTML=LANGS.map(function(l){return '<a href="#" data-l="'+l[0]+'">'+l[1]+'</a>'}).join('');
+function setLang(c){lang=c;$('#langCode').textContent=c;menu.hidden=true;
+  $$('[data-l]').forEach(function(b){b.setAttribute('aria-current',b.dataset.l===c)});
+  $('#demoTxt').textContent=c==='ES'?'En español, SHOP lleva directo a la tienda.':'Idioma '+c+': pulsa SHOP o Comprar para ver el aviso.';}
+$('#langBtn').onclick=function(e){e.stopPropagation();menu.hidden=!menu.hidden};
+$$('[data-l]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();setLang(b.dataset.l)})});
+document.addEventListener('click',function(e){if(!menu.contains(e.target))menu.hidden=true});
+function openShop(e){e.preventDefault(); if(lang!=='ES')$('#aviso').hidden=false; else alert('Aquí se abriría la tienda: shop.bocadofoods.com');}
+function wireShop(root){$$('[data-shop]',root).forEach(function(a){if(!a._w){a._w=1;a.addEventListener('click',openShop)}})}
+$$('[data-shop-btn]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();openShop(e)})});
+wireShop(document);
+$$('[data-close]').forEach(function(b){b.addEventListener('click',function(e){$('#aviso').hidden=true; if(b.getAttribute('href')&&b.getAttribute('href').indexOf('http')===0)e.preventDefault();})});
+$('#aviso').addEventListener('click',function(e){if(e.target===this)this.hidden=true});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){$('#aviso').hidden=true;menu.hidden=true}});
+$$('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault()})});
+$$('a[href="#"]').forEach(function(a){if(!a.dataset.l)a.addEventListener('click',function(e){e.preventDefault()})});
+
+fillImgs(document);
+route();
+})();
+</script>
+</body>
+</html>
