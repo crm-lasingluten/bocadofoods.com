@@ -3,7 +3,7 @@ var BLOG = [
 {
  slug:'the-original-protein-bread-indice-glucemico-24',
  title:'The Original Protein Bread: un pan con índice glucémico 24',
- date:'Octubre 2026', cat:'Nuestros productos', cover:'pan-ig24',
+ date:'Octubre 2026', cat:'Nuestros productos', cover:'assets/blog/the-original-protein-bread-indice-glucemico-24.jpg',
  excerpt:'Un estudio de la Universidad de Sídney midió el índice glucémico de nuestro pan insignia: 24, dentro de la categoría de IG bajo. Te contamos qué significa.',
  body:`
 <p>The Original Protein Bread nació en Alemania, inspirado en antiguas recetas de pan bajo en hidratos de carbono y muy nutritivo. Su receta combina proteínas de cereales y legumbres, semillas de lino, girasol y sésamo, harinas integrales y fibra. El resultado es un pan con <b>28 g de proteínas, 15 g de fibra y 5 g de hidratos de carbono por cada 100 g</b>, con el color, el aroma y la textura de un buen pan de semillas.</p>
@@ -26,7 +26,7 @@ var BLOG = [
 {
  slug:'indice-glucemico-que-es',
  title:'Índice glucémico: qué es y cómo tenerlo en cuenta en tu día a día',
- date:'Octubre 2026', cat:'Nutrición', cover:'panecillos-ig24',
+ date:'Octubre 2026', cat:'Nutrición', cover:'assets/blog/indice-glucemico-que-es.jpg',
  excerpt:'No todos los hidratos de carbono suben la glucosa igual ni a la misma velocidad. El índice glucémico lo mide, y con unos pocos cambios puedes aprovecharlo.',
  body:`
 <p>Cuando comemos alimentos con hidratos de carbono, la glucosa en sangre sube. Pero no todos lo hacen igual: algunos la elevan rápido y mucho, y otros poco a poco. El <b>índice glucémico (IG)</b> mide esa diferencia en una escala de 0 a 100, tomando como referencia la glucosa pura, que vale 100.</p>
@@ -59,7 +59,7 @@ var BLOG = [
 {
  slug:'proteina-cuanta-necesitas',
  title:'Proteína: cuánta necesitas y cómo repartirla a lo largo del día',
- date:'Octubre 2026', cat:'Nutrición', cover:'the-original-protein-bread',
+ date:'Octubre 2026', cat:'Nutrición', cover:'assets/blog/proteina-cuanta-necesitas.jpg',
  excerpt:'La proteína es el material de construcción del cuerpo. Te contamos cuánta recomienda la EFSA y por qué conviene repartirla entre desayuno, comida y cena.',
  body:`
 <p>Junto con los hidratos de carbono y las grasas, la proteína es uno de los tres macronutrientes que necesitamos en mayor cantidad. Pero su papel principal no es dar energía rápida, sino <b>construir y mantener</b>: forma parte de los músculos, la piel, las enzimas, los anticuerpos y muchas hormonas.</p>
@@ -84,7 +84,7 @@ var BLOG = [
 {
  slug:'fibra-el-nutriente-que-falta',
  title:'Fibra: el nutriente que casi nadie alcanza',
- date:'Octubre 2026', cat:'Nutrición', cover:'mezcla-pan-de-proteinas',
+ date:'Octubre 2026', cat:'Nutrición', cover:'assets/blog/fibra-el-nutriente-que-falta.jpg',
  excerpt:'La EFSA recomienda al menos 25 g de fibra al día, y en Europa la mayoría nos quedamos cortos. Qué hace la fibra y cómo sumar más sin cambiar tus hábitos.',
  body:`
 <p>Si hay un nutriente al que la mayoría de los europeos no llegamos, es la fibra. La Autoridad Europea de Seguridad Alimentaria (EFSA) recomienda que un adulto consuma <b>al menos 25 g de fibra al día</b>. Sin embargo, el consumo medio en Europa ronda los 18-24 g en hombres y los 16-20 g en mujeres.</p>
@@ -110,7 +110,7 @@ var BLOG = [
 {
  slug:'pan-y-control-de-peso-dr-pape',
  title:'Pan y control de peso: la historia del Dr. Pape y nuestro pan de proteínas',
- date:'Octubre 2026', cat:'Nuestra historia', cover:'the-original-protein-bread',
+ date:'Octubre 2026', cat:'Nuestra historia', cover:'assets/blog/pan-y-control-de-peso-dr-pape.jpg',
  excerpt:'Un médico alemán especialista en nutrición y obesidad quiso que sus pacientes no tuvieran que renunciar al pan. Así nació la receta de The Original Protein Bread.',
  body:`
 <p>Durante años, el médico alemán <b>Detlef Pape (1954-2017)</b>, especialista en nutrición y obesidad, estudió los hábitos y los alimentos relacionados con el sobrepeso. Con esa experiencia desarrolló un método que recogió en varios libros y que, según él mismo decía, no era más que una forma sencilla de organizar las comidas.</p>
@@ -129,7 +129,7 @@ var BLOG = [
 {
  slug:'celiaquia-que-es-y-cifras',
  title:'Celiaquía: qué es y cuántas personas conviven con ella',
- date:'Octubre 2026', cat:'Sin gluten', cover:'mezcla-pan-sin-gluten',
+ date:'Octubre 2026', cat:'Sin gluten', cover:'assets/blog/celiaquia-que-es-y-cifras.jpg',
  excerpt:'Alrededor del 1 % de la población es celíaca, y la mayoría aún no lo sabe. Qué es la celiaquía, qué dicen las cifras en España y cómo es comer sin gluten en casa.',
  body:`
 <p>La celiaquía no es una alergia ni una intolerancia leve: es una <b>enfermedad autoinmune</b>. Cuando una persona celíaca come gluten, la proteína del trigo, la cebada y el centeno, su sistema inmunitario daña la mucosa del intestino delgado, que es la encargada de absorber los nutrientes. Hoy el único tratamiento es seguir una dieta sin gluten estricta y de por vida.</p>
