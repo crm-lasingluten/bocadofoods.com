@@ -159,6 +159,16 @@ header.hdr{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px so
 .rcard .with{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
 .rcard .with i{width:10px;height:10px;border-radius:50%;background:var(--c);display:inline-block}
 .rcard h3{margin:0;font-size:22px;line-height:1.2;font-weight:700}
+.rgrid.r4{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.rgrid.r4 .rcard h3{font-size:18px}
+.rcard .vid{position:absolute;top:10px;left:10px;background:#111;color:#fff;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border-radius:999px;padding:5px 10px}
+.rcard .imgw{position:relative;display:block}
+.rsearch{flex:0 0 260px;min-height:40px;border:1.5px solid var(--line);border-radius:999px;padding:0 16px;font:inherit;font-size:15px}
+.rsearch:focus{outline:none;border-color:var(--ink)}
+.video{position:relative;aspect-ratio:9/16;max-width:360px;border-radius:18px;overflow:hidden;background:#000;margin-top:24px}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.rnut{background:#fff;border-radius:16px;padding:18px 20px;margin-top:22px;font-size:16px;line-height:1.5}
+.rnut small{display:block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
 
 /* Private label */
 .pl{background:var(--cream)}
@@ -314,7 +324,7 @@ sup{font-size:.6em}
 /* Recipe page */
 .rp-hero{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:56px;align-items:center;padding:28px 0 64px}
 .rp-hero img{border-radius:22px;width:100%;aspect-ratio:4/5;object-fit:cover}
-.rp-hero h1{font-size:clamp(38px,4.6vw,62px);font-weight:300;line-height:1.02;margin:14px 0 18px}
+.rp-hero h1{font-size:clamp(36px,4.2vw,58px);font-weight:700;line-height:1.02;margin:14px 0 18px}
 .rp-hero h1 b{font-weight:900}
 .madewith{display:flex;align-items:center;gap:16px;border:1px solid var(--line);border-radius:16px;padding:12px;margin-top:24px;max-width:520px;position:relative;overflow:hidden}
 .madewith::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--c)}
@@ -379,7 +389,7 @@ sup{font-size:.6em}
     <a class="logo" href="#home" aria-label="Bocado Functional Foods — inicio"><img data-k="logo-black" alt="Bocado functional foods"></a>
     <nav class="nav" aria-label="Principal">
       <a href="#productos" data-nav="productos">Productos</a>
-      <a href="#receta" data-nav="receta">Recetas</a>
+      <a href="#recetas" data-nav="recetas">Recetas</a>
       <a href="#blog">Blog</a>
       <a href="#nosotros" data-nav="nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
@@ -391,7 +401,7 @@ sup{font-size:.6em}
     </div>
   </div>
   <nav class="mobile-nav" aria-label="Principal móvil">
-    <a href="#productos">Productos</a><a href="#receta">Recetas</a><a href="#blog">Blog</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
+    <a href="#productos">Productos</a><a href="#recetas">Recetas</a><a href="#blog">Blog</a><a href="#nosotros">Nosotros</a><a href="#contacto">Contacto</a>
   </nav>
 </header>
 
@@ -483,9 +493,9 @@ sup{font-size:.6em}
     <div class="sec-head">
       <div>
         <div class="eyebrow" style="margin-bottom:10px">Recetario</div>
-        <h2 class="h2"><b>108 recetas</b> con nuestros productos</h2>
+        <h2 class="h2"><b><span id="nRec">108</span> recetas</b> con nuestros productos</h2>
       </div>
-      <a class="btn" href="#receta">Ver el recetario</a>
+      <a class="btn" href="#recetas">Ver el recetario</a>
     </div>
     <div class="rgrid" id="recipes"></div>
   </div>
@@ -550,41 +560,29 @@ sup{font-size:.6em}
 </main>
 
 <!-- ============ RECETA ============ -->
-<main class="page" id="page-receta" hidden>
+<main class="page" id="page-receta" hidden><div id="rp"></div></main>
+
+<!-- ============ RECETARIO ============ -->
+<main class="page" id="page-recetas" hidden>
+  <div class="wrap cat-head">
+    <nav class="crumb" aria-label="Ruta"><a href="#home">Inicio</a> / Recetas</nav>
+    <h1>Nuestro <b>recetario</b></h1>
+    <p class="lead" style="margin:0;max-width:680px">Ideas para desayunos, comidas, cenas y meriendas con nuestros productos. Elige un producto o busca una receta.</p>
+  </div>
+  <div class="catbar sticky">
+    <div class="wrap catbar-in">
+      <label class="sr" for="rq">Buscar receta</label>
+      <input id="rq" class="rsearch" type="search" placeholder="Buscar receta o ingrediente">
+      <span class="cat-sep" aria-hidden="true"></span>
+      <span id="recChips" style="display:contents"></span>
+    </div>
+  </div>
   <div class="wrap">
-    <nav class="crumb" style="padding-top:28px" aria-label="Ruta"><a href="#home">Inicio</a> / <a href="#receta">Recetas</a> / Wraps</nav>
-    <div class="rp-hero">
-      <img data-k="r035" alt="Rollitos de wrap low carb con hummus, zanahoria, pimiento y pepino">
-      <div>
-        <div class="eyebrow">Receta · Sin cocción · 10 min</div>
-        <h1>Rollitos de hummus <b>y verduritas</b></h1>
-        <p class="lead" style="margin:0">Un almuerzo fresco y rápido: hummus y verduras crujientes enrollados en un wrap proteico.</p>
-        <a class="madewith" href="#p/wrap-low-carb" style="--c:#ec6f5f;text-decoration:none">
-          <span class="mw-img"><img data-k="cbfc085c" alt=""></span>
-          <span class="mw-t"><small>Hecha con</small><strong>Wrap Low Carb</strong><span style="font-size:14px;color:var(--muted)">9 g de proteína por tortilla</span></span>
-          <span class="btn sm" data-shop-btn>Comprar</span>
-        </a>
-      </div>
-    </div>
+    <div class="cat-tools"><span class="count" id="rCount"></span></div>
+    <div class="rgrid r4" id="recGrid"></div>
+    <div class="empty" id="rEmpty" hidden>No hay recetas con esa búsqueda.</div>
+    <div style="height:80px"></div>
   </div>
-  <div class="rp-body">
-    <div class="wrap rp-cols">
-      <div>
-        <h2>Ingredientes</h2>
-        <ul class="ings"><li><a href="#p/wrap-low-carb"><b>Wrap Low Carb Bocado</b></a></li><li>Hummus</li><li>Zanahoria</li><li>Pimiento rojo</li><li>Pepino</li></ul>
-      </div>
-      <div>
-        <h2>Preparación</h2>
-        <ol class="stp"><li><b>01</b>Pon una capa de hummus sobre la base del wrap.</li><li><b>02</b>Añade palitos de zanahoria, pimiento y pepino.</li><li><b>03</b>Enrolla bien apretado y corta por la mitad.</li></ol>
-      </div>
-    </div>
-  </div>
-  <section class="sec">
-    <div class="wrap">
-      <div class="sec-head"><h2 class="h2">Más <b>recetas</b></h2><a class="link" href="#receta">Ver el recetario completo</a></div>
-      <div class="rgrid" id="recipes2"></div>
-    </div>
-  </section>
 </main>
 
 
@@ -733,6 +731,7 @@ sup{font-size:.6em}
 
 <script src="js/imagenes.js"></script>
 <script src="js/productos.js"></script>
+<script src="js/recetas.js"></script>
 <script>
 (function(){
 var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
@@ -801,9 +800,48 @@ $('#lines').innerHTML=TILES.map(function(l){
 }).join('');
 $('#bestGrid').innerHTML=['the-original-protein-bread','panecillos-low-carb','wrap-low-carb','pan-ig24'].map(function(s){return card(BY[s])}).join('');
 $('#mixRow').innerHTML=PRODUCTS.filter(function(p){return p.line==='mezclas'||p.line==='sweet'}).map(card).join('');
-function recipesHTML(list){return list.map(function(r){var p=BY[r.product];return '<a class="rcard" href="#receta" style="--c:'+p.color+'"><img src="'+src(r.img)+'" alt="'+esc(r.title)+'"><span class="with"><i></i>Con '+esc(p.name)+'</span><h3>'+esc(r.title)+'</h3></a>'}).join('')}
-$('#recipes').innerHTML=recipesHTML(RECIPES.slice(0,3));
-$('#recipes2').innerHTML=recipesHTML(RECIPES.slice(3,6));
+function rImg(r){return 'assets/recetas/'+r.img+'.jpg'}
+var RBY={}; RECIPES.forEach(function(r){RBY[r.slug]=r});
+function shortName(n){return n.replace(/^Mezcla de /,'').replace(/ \d+ g$/,'').replace(/^./,function(c){return c.toUpperCase()})}
+function withLabel(r){var p=BY[r.product];return p?shortName(p.name):r.cat}
+function recipesHTML(list){return list.map(function(r){var p=BY[r.product];return '<a class="rcard" href="#r/'+r.slug+'" style="--c:'+(p?p.color:'#999')+'"><span class="imgw"><img loading="lazy" src="'+rImg(r)+'" alt="'+esc(r.title)+'">'+(r.video?'<span class="vid">Vídeo</span>':'')+'</span><span class="with"><i></i>Con '+esc(withLabel(r))+'</span><h3>'+esc(r.title)+'</h3></a>'}).join('')}
+var FEATURED=['rollitos-de-hummus-y-verduritas','tostadas-con-langostinos','bocadillo-de-atun-veraniego'];
+$('#recipes').innerHTML=recipesHTML(FEATURED.map(function(s){return RBY[s]}).filter(Boolean));
+$('#nRec').textContent=RECIPES.length;
+/* recetario */
+var rstate={p:'all',q:''};
+var RPROD=[]; RECIPES.forEach(function(r){var k=r.product||('cat:'+r.cat); if(RPROD.indexOf(k)<0)RPROD.push(k)});
+function rLabel(k){return k.indexOf('cat:')===0?k.slice(4):shortName(BY[k].name)}
+function rCountFor(k){return RECIPES.filter(function(r){return (r.product||('cat:'+r.cat))===k}).length}
+RPROD.sort(function(a,b){return rCountFor(b)-rCountFor(a)});
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function renderRecetas(){
+  $('#recChips').innerHTML='<button type="button" class="chip" data-rp="all" aria-pressed="'+(rstate.p==='all')+'">Todas</button>'+RPROD.map(function(k){return '<button type="button" class="chip" data-rp="'+k+'" aria-pressed="'+(rstate.p===k)+'">'+esc(rLabel(k))+'<span class="n">'+rCountFor(k)+'</span></button>'}).join('');
+  $$('#recChips [data-rp]').forEach(function(b){b.onclick=function(){rstate.p=b.dataset.rp;renderRecetas()}});
+  var q=norm(rstate.q);
+  var list=RECIPES.filter(function(r){var k=r.product||('cat:'+r.cat); if(rstate.p!=='all'&&k!==rstate.p)return false; if(!q)return true; return norm(r.title+' '+r.ing.join(' ')).indexOf(q)>=0});
+  $('#recGrid').innerHTML=recipesHTML(list);
+  $('#rEmpty').hidden=list.length>0;
+  $('#rCount').textContent=list.length+(list.length===1?' receta':' recetas');
+}
+$('#rq').addEventListener('input',function(){rstate.q=this.value;renderRecetas()});
+/* receta */
+function renderReceta(slug){
+  var r=RBY[slug]; if(!r){location.hash='#recetas';return;}
+  var p=BY[r.product];
+  var more=RECIPES.filter(function(x){return x.slug!==r.slug&&x.product===r.product}).slice(0,4);
+  $('#rp').innerHTML='<div class="wrap"><nav class="crumb" style="padding-top:28px" aria-label="Ruta"><a href="#home">Inicio</a> / <a href="#recetas">Recetas</a> / '+esc(r.title)+'</nav>'+
+   '<div class="rp-hero"><img src="'+rImg(r)+'" alt="'+esc(r.title)+'"><div><div class="eyebrow">Receta · Con '+esc(withLabel(r))+'</div><h1>'+esc(r.title)+'</h1>'+
+   '<div class="seals"><span>'+r.ing.length+' ingredientes</span><span>'+r.steps.length+' pasos</span>'+(r.video?'<span>Con vídeo</span>':'')+'</div>'+
+   (p?'<a class="madewith" href="#p/'+p.slug+'" style="--c:'+p.color+';text-decoration:none"><span class="mw-img">'+(p.imgs.length?'<img src="'+src(p.imgs[0])+'" alt="">':'')+'</span><span class="mw-t"><small>Hecha con</small><strong>'+esc(p.name)+'</strong><span style="font-size:14px;color:var(--muted)">'+esc(p.weight)+'</span></span><span class="btn sm">Ver producto</span></a>':'')+
+   '</div></div></div>'+
+   '<div class="rp-body"><div class="wrap rp-cols"><div><h2>Ingredientes</h2><ul class="ings">'+r.ing.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>'+
+   (r.nut?'<div class="rnut"><small>Información nutricional</small>'+esc(r.nut)+'</div>':'')+'</div>'+
+   '<div><h2>Preparación</h2><ol class="stp">'+r.steps.map(function(x,i){return '<li><b>'+(i<9?'0':'')+(i+1)+'</b>'+esc(x)+'</li>'}).join('')+'</ol>'+
+   (r.video?'<div class="video"><iframe loading="lazy" src="https://www.youtube.com/embed/'+encodeURIComponent(r.video)+'" title="Vídeo: '+esc(r.title)+'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>':'')+
+   '</div></div></div>'+
+   (more.length?'<section class="sec"><div class="wrap"><div class="sec-head"><h2 class="h2">Más recetas con <b>'+esc(withLabel(r))+'</b></h2><a class="link" href="#recetas">Ver el recetario completo</a></div><div class="rgrid r4">'+recipesHTML(more)+'</div></div></section>':'');
+}
 
 /* ---- catalogue ---- */
 var state={cat:'all'};
@@ -844,7 +882,7 @@ function renderProduct(slug){
   var lead=p.desc.split('. ')[0]+'.';
   var related=PRODUCTS.filter(function(x){return x.cats.indexOf(cat)>=0&&x.slug!==p.slug&&!x.pending}).slice(0,4);
   if(related.length<2) related=related.concat(PRODUCTS.filter(function(x){return x.slug!==p.slug&&!x.pending&&related.indexOf(x)<0}).slice(0,4-related.length));
-  var recs=RECIPES.filter(function(r){return r.product===p.slug});
+  var recs=RECIPES.filter(function(r){return r.product===p.slug}).slice(0,4);
   $('#pp').style.cssText=styleVars(p.color,p.ink);
   $('#pp').innerHTML=
    '<nav class="crumb" aria-label="Ruta"><a href="#home">Inicio</a> / <a href="#productos">Productos</a> / <a href="#productos?cat='+cat+'">'+esc(catLabel(cat))+'</a> / '+esc(p.name)+'</nav>'+
@@ -867,22 +905,23 @@ function renderProduct(slug){
       '</div>'+
     '</div>'+
    '</div>'+
-   (recs.length?'<section style="margin-top:72px"><div class="sec-head"><h2 class="h2">Recetas con <b>'+esc(p.name)+'</b></h2><a class="link" href="#receta">Ver el recetario</a></div><div class="rgrid">'+recipesHTML(recs)+'</div></section>':'')+
+   (recs.length?'<section style="margin-top:72px"><div class="sec-head"><h2 class="h2">Recetas con <b>'+esc(p.name)+'</b></h2><a class="link" href="#recetas">Ver todas</a></div><div class="rgrid r4">'+recipesHTML(recs)+'</div></section>':'')+
    '<section style="margin-top:72px"><div class="sec-head"><h2 class="h2">También te puede <b>gustar</b></h2></div><div class="grid">'+related.map(card).join('')+'</div></section>';
   $$('#pp .thumbs button').forEach(function(b){b.onclick=function(){$('#gMain').src=src(p.imgs[+b.dataset.i]);$$('#pp .thumbs button').forEach(function(x){x.setAttribute('aria-current',x===b)});}});
   wireShop($('#pp'));
 }
 
 /* ---- routing ---- */
-function show(id){['home','productos','producto','receta','nosotros'].forEach(function(x){$('#page-'+x).hidden=(x!==id)});
-  $$('.nav a[data-nav]').forEach(function(a){a.toggleAttribute('aria-current',a.dataset.nav===id||(id==='producto'&&a.dataset.nav==='productos'));if(a.hasAttribute('aria-current'))a.setAttribute('aria-current','page')});}
+function show(id){['home','productos','producto','receta','recetas','nosotros'].forEach(function(x){$('#page-'+x).hidden=(x!==id)});
+  $$('.nav a[data-nav]').forEach(function(a){a.toggleAttribute('aria-current',a.dataset.nav===id||(id==='producto'&&a.dataset.nav==='productos')||(id==='receta'&&a.dataset.nav==='recetas'));if(a.hasAttribute('aria-current'))a.setAttribute('aria-current','page')});}
 function route(){
   var h=location.hash.slice(1)||'home', q={};
   var parts=h.split('?'); var path=parts[0];
   if(parts[1])parts[1].split('&').forEach(function(kv){var s=kv.split('=');q[s[0]]=decodeURIComponent(s[1]||'')});
   if(path==='productos'){state.cat=q.cat||'all';show('productos');renderCat();window.scrollTo(0,0);return;}
   if(path.indexOf('p/')===0){show('producto');renderProduct(path.slice(2));window.scrollTo(0,0);return;}
-  if(path==='receta'){show('receta');window.scrollTo(0,0);return;}
+  if(path==='recetas'||path==='receta'){show('recetas');renderRecetas();window.scrollTo(0,0);return;}
+  if(path.indexOf('r/')===0){show('receta');renderReceta(path.slice(2));window.scrollTo(0,0);return;}
   if(path==='nosotros'){show('nosotros');window.scrollTo(0,0);return;}
   if(path==='home'){show('home');window.scrollTo(0,0);return;}
   var el=document.getElementById(path);
