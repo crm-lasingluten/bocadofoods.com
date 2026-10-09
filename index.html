@@ -380,7 +380,7 @@ function styleVars(c,ink){return '--c:'+c+';--ink2:'+(ink||'#fff')}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 
 function card(p){
-  var alt=p.imgs[1]?'<img class="alt" src="'+src(p.imgs[1])+'" alt="">':'';
+  var alt=p.imgs[1]?'<img class="alt'+((p.amb||[]).indexOf(p.imgs[1])>=0?' amb':'')+'" src="'+src(p.imgs[1])+'" alt="">':'';
   var m=p.macros;
   var media=p.imgs.length?'<img class="main'+(p.imgs[1]?' has-alt':'')+'" src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+alt:'<span class="ph"><span>Foto pendiente</span></span>';
   return '<article class="card" style="'+styleVars(p.color,p.ink)+'">'+
@@ -388,7 +388,7 @@ function card(p){
     '<span class="ltag">'+esc(lineOf(p).short)+'</span>'+(p.best?'<span class="badge">Más vendido</span>':(p.isNew?'<span class="badge">Nuevo</span>':''))+(p.igSeal?'<img class="seal-sm" src="'+src('ig-seal')+'" alt="Índice glucémico testeado IG24">':'')+(p.brand?'<img class="seal-sm brand" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'')+'</a>'+
     '<div class="card-body"><a class="card-name" href="#p/'+p.slug+'">'+esc(p.name)+'</a><div class="card-w">'+esc(p.weight)+'</div>'+
     (p.noMacros?'<div class="macros nm"><div><b>Sin gluten</b><span>'+esc(p.brand||'')+'</span></div></div>':'<div class="macros"><div><b>'+esc(m[0])+'</b><span>Proteína</span></div><div><b>'+esc(m[1])+'</b><span>Hidratos</span></div><div><b>'+esc(m[2])+'</b><span>Fibra</span></div></div>')+
-    '<div class="card-note">'+((p.pending||p.noMacros)?'Datos pendientes de cargar':(p.perUnit?esc(p.perUnit):(p.prepared?'Por 100 g de producto terminado':'Por 100 g')))+'</div>'+
+    '<div class="card-note">'+((p.pending||p.noMacros)?'Datos pendientes de cargar':(p.perUnit?esc(p.perUnit):(p.nutLabel?p.nutLabel:(p.prepared?'Por 100 g de producto terminado':'Por 100 g'))))+'</div>'+
     '<div class="card-ctas"><a class="btn sm ghost" href="#p/'+p.slug+'">Ver ficha</a><a class="btn sm" href="https://shop.bocadofoods.com" data-shop>Comprar</a></div></div></article>';
 }
 
@@ -522,7 +522,7 @@ function nutTable(p){
     ['Grasas', val(n.fat,' g'), false],['de las cuales saturadas', val(n.sat,' g'), true],
     ['Hidratos de carbono', val(n.carb,' g'), false],['de los cuales azúcares', val(n.sug,' g'), true],
     ['Fibra alimentaria', val(n.fib,' g'), false],['Proteínas', val(n.prot,' g'), false],['Sal', val(n.salt,' g'), false]];
-  return '<table class="ntable"><caption>Información nutricional'+(p.prepared?' (producto terminado)':'')+'</caption><thead><tr><th scope="col">Valores medios</th><th scope="col">Por 100 g</th><th scope="col">Por ración*</th></tr></thead><tbody>'+
+  return '<table class="ntable"><caption>Información nutricional'+(p.nutLabel?' (premezcla)':(p.prepared?' (producto terminado)':''))+'</caption><thead><tr><th scope="col">Valores medios</th><th scope="col">Por 100 g</th><th scope="col">Por ración*</th></tr></thead><tbody>'+
     rows.map(function(r){return '<tr'+(r[2]?' class="sub"':'')+'><td>'+r[0]+'</td><td>'+r[1]+'</td><td><span class="tbd">—</span></td></tr>'}).join('')+
     '</tbody></table><p class="nnote">* Ración: [pendiente de definir]. Los valores nutricionales están sujetos a las variaciones típicas de los productos naturales.</p>'+
     (p.check?'<p class="warn">A revisar: la trasera de este envase muestra la tabla del pan (28 g de proteína), pero la frontal indica 44 % de proteína.</p>':'');
@@ -531,7 +531,7 @@ function renderProduct(slug){
   var p=BY[slug]; if(!p){location.hash='#productos';return;}
   var L=lineOf(p), m=p.macros;
   var cat=p.cats[p.cats.length-1];
-  var thumbs=p.imgs.length>1?'<div class="thumbs">'+p.imgs.map(function(k,i){return '<button type="button" data-i="'+i+'" aria-label="Foto '+(i+1)+'" aria-current="'+(i===0)+'"><img src="'+src(k)+'" alt=""></button>'}).join('')+'</div>':'';
+  var thumbs=p.imgs.length>1?'<div class="thumbs">'+p.imgs.map(function(k,i){return '<button type="button" data-i="'+i+'" aria-label="Foto '+(i+1)+'" aria-current="'+(i===0)+'"><img class="'+((p.amb||[]).indexOf(k)>=0?'amb':'')+'" src="'+src(k)+'" alt=""></button>'}).join('')+'</div>':'';
   var lead=p.desc.split('. ')[0]+'.';
   var related=PRODUCTS.filter(function(x){return x.cats.indexOf(cat)>=0&&x.slug!==p.slug&&!x.pending}).slice(0,4);
   if(related.length<2) related=related.concat(PRODUCTS.filter(function(x){return x.slug!==p.slug&&!x.pending&&related.indexOf(x)<0}).slice(0,4-related.length));
@@ -545,7 +545,7 @@ function renderProduct(slug){
       '<div class="pp-top"><span class="ltag">'+esc(L.name)+'</span>'+(p.igLogo?'<img class="ig-logo" src="'+src('ig24-logo')+'" alt="IG24">':'')+(p.brand?'<img class="ig-logo" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'')+'</div>'+
       '<h1>'+esc(p.name)+'</h1><div class="pp-w">'+esc(p.weight)+'</div>'+
       (p.noMacros?'<div class="mband-note">Información nutricional pendiente de cargar.</div>':'<div class="mband"><div><b>'+esc(m[0])+'</b><span>Proteínas</span></div><div><b>'+esc(m[1])+'</b><span>Hidratos</span></div><div><b>'+esc(m[2])+'</b><span>Fibra</span></div><div><b>'+esc(m[3])+'</b><span>Azúcares</span></div></div>'+
-      '<div class="mband-note">'+(p.prepared?'Por 100 g de producto terminado':'Por 100 g')+(p.perUnit?' · '+esc(p.perUnit):'')+'</div>')+
+      '<div class="mband-note">'+(p.nutLabel?p.nutLabel:(p.prepared?'Por 100 g de producto terminado':'Por 100 g'))+(p.perUnit?' · '+esc(p.perUnit):'')+'</div>')+
       ((p.seals.length||p.igSeal)?'<div class="seals">'+(p.igSeal?'<span class="seal-img"><img src="'+src('ig-seal')+'" alt="">Índice glucémico testeado</span>':'')+p.seals.map(function(s){return '<span>'+esc(s)+'</span>'}).join('')+'</div>':'')+
       (p.pending?'':'<p class="pp-lead">'+esc(lead)+'</p>')+
       '<div class="pp-ctas"><a class="btn" href="https://shop.bocadofoods.com" data-shop>Comprar en la tienda</a></div>'+
@@ -560,7 +560,7 @@ function renderProduct(slug){
    '</div>'+
    (recs.length?'<section style="margin-top:72px"><div class="sec-head"><h2 class="h2">Recetas con <b>'+esc(p.name)+'</b></h2><a class="link" href="#recetas">Ver todas</a></div><div class="rgrid r4">'+recipesHTML(recs)+'</div></section>':'')+
    '<section style="margin-top:72px"><div class="sec-head"><h2 class="h2">También te puede <b>gustar</b></h2></div><div class="grid">'+related.map(card).join('')+'</div></section>';
-  $$('#pp .thumbs button').forEach(function(b){b.onclick=function(){$('#gMain').src=src(p.imgs[+b.dataset.i]);$$('#pp .thumbs button').forEach(function(x){x.setAttribute('aria-current',x===b)});}});
+  $$('#pp .thumbs button').forEach(function(b){b.onclick=function(){var k=p.imgs[+b.dataset.i];$('#gMain').src=src(k);$('#gMain').classList.toggle('amb',(p.amb||[]).indexOf(k)>=0);$$('#pp .thumbs button').forEach(function(x){x.setAttribute('aria-current',x===b)});}});
   wireShop($('#pp'));
 }
 
