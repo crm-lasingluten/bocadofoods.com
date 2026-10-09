@@ -27,6 +27,8 @@ var IMG = {
  "f7b5d319": "assets/productos/tostadas-low-carb-frontal.jpg",
  "p2-tostadas-low-carb": "assets/productos/tostadas-low-carb-producto.jpg",
  "77ad3cef": "assets/productos/tostadas-low-carb-trasera.jpg",
+ "macarrones-frontal": "assets/productos/macarrones-proteicos-frontal.jpg",
+ "p2-macarrones-proteicos": "assets/productos/macarrones-proteicos-producto.jpg",
  "9254e231": "assets/productos/mezcla-pan-de-proteinas-frontal.jpg",
  "p2-mezcla-pan-de-proteinas": "assets/productos/mezcla-pan-de-proteinas-producto.jpg",
  "8af20366": "assets/productos/mezcla-pan-de-proteinas-trasera.jpg",
