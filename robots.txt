@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://crm-lasingluten.github.io/bocadofoods.com/sitemap.xml
