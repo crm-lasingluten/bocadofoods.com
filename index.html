@@ -7,7 +7,7 @@
 <meta name="description" content="Panes proteicos, low carb e IG24, wraps, dulces y mezclas para hornear en casa. Bocado Functional Foods.">
 <link rel="icon" href="assets/marca/logo-negro.png">
 <link rel="canonical" href="https://crm-lasingluten.github.io/bocadofoods.com/">
-<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/estilos.css?v=202610101210">
 </head>
 <body>
 
@@ -365,10 +365,10 @@
 
 <div class="demo" role="status"><b>Maqueta v4</b> · <span id="demoTxt">Cambia el idioma a EN y pulsa SHOP para ver el aviso.</span></div>
 
-<script src="js/imagenes.js"></script>
-<script src="js/productos.js"></script>
-<script src="js/recetas.js"></script>
-<script src="js/blog.js"></script>
+<script src="js/imagenes.js?v=202610101210"></script>
+<script src="js/productos.js?v=202610101210"></script>
+<script src="js/recetas.js?v=202610101210"></script>
+<script src="js/blog.js?v=202610101210"></script>
 <script>
 (function(){
 var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
@@ -384,12 +384,12 @@ function card(p){
   var m=p.macros;
   var media=p.imgs.length?'<img class="main'+(p.imgs[1]?' has-alt':'')+'" src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+alt:'<span class="ph"><span>Foto pendiente</span></span>';
   return '<article class="card" style="'+styleVars(p.color,p.ink)+'">'+
-    '<a class="card-media" href="#p/'+p.slug+'" aria-label="'+esc(p.name)+'">'+media+
+    '<a class="card-media" href="productos/'+p.slug+'.html" aria-label="'+esc(p.name)+'">'+media+
     '<span class="ltag">'+esc(lineOf(p).short)+'</span>'+(p.best?'<span class="badge">Más vendido</span>':(p.isNew?'<span class="badge">Nuevo</span>':''))+(p.igSeal?'<img class="seal-sm" src="'+src('ig-seal')+'" alt="Índice glucémico testeado IG24">':'')+(p.brand?'<img class="seal-sm brand" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'')+'</a>'+
-    '<div class="card-body"><a class="card-name" href="#p/'+p.slug+'">'+esc(p.name)+'</a><div class="card-w">'+esc(p.weight)+'</div>'+
+    '<div class="card-body"><a class="card-name" href="productos/'+p.slug+'.html">'+esc(p.name)+'</a><div class="card-w">'+esc(p.weight)+'</div>'+
     (p.noMacros?'<div class="macros nm"><div><b>Sin gluten</b><span>'+esc(p.brand||'')+'</span></div></div>':'<div class="macros"><div><b>'+esc(m[0])+'</b><span>Proteína</span></div><div><b>'+esc(m[1])+'</b><span>Hidratos</span></div><div><b>'+esc(m[2])+'</b><span>Fibra</span></div></div>')+
     '<div class="card-note">'+((p.pending||p.noMacros)?'Datos pendientes de cargar':(p.perUnit?esc(p.perUnit):(p.nutLabel?p.nutLabel:(p.prepared?'Por 100 g de producto terminado':'Por 100 g'))))+'</div>'+
-    '<div class="card-ctas"><a class="btn sm ghost" href="#p/'+p.slug+'">Ver ficha</a><a class="btn sm" href="https://shop.bocadofoods.com" data-shop>Comprar</a></div></div></article>';
+    '<div class="card-ctas"><a class="btn sm ghost" href="productos/'+p.slug+'.html">Ver ficha</a><a class="btn sm" href="https://shop.bocadofoods.com" data-shop>Comprar</a></div></div></article>';
 }
 
 /* ---- category chips ---- */
@@ -419,7 +419,7 @@ var HERO_TILES=[
   {slug:'panecillos-ig24', label:'Panecillos IG24'}
 ];
 $('#heroTiles').innerHTML=HERO_TILES.map(function(h){var p=BY[h.slug];
-  return '<a class="htile" href="#p/'+p.slug+'" style="--c:'+p.color+'"><img src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+(p.igSeal?'<img class="hseal" src="'+src('ig-seal')+'" alt="Índice glucémico testeado IG24">':'')+'<span class="tag">'+esc(h.label)+'</span></a>';}).join('');
+  return '<a class="htile" href="productos/'+p.slug+'.html" style="--c:'+p.color+'"><img src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+(p.igSeal?'<img class="hseal" src="'+src('ig-seal')+'" alt="Índice glucémico testeado IG24">':'')+'<span class="tag">'+esc(h.label)+'</span></a>';}).join('');
 $('#nProd').textContent=PRODUCTS.filter(function(p){return !p.pending}).length;
 var TILES=[
   ['panes','Panes','The Original Protein Bread, panecillos, baguettes, tostadas y bagels.','0b40383c','#e3342f'],
@@ -442,7 +442,7 @@ function rImg(r){return 'assets/recetas/'+r.img+'.jpg'}
 var RBY={}; RECIPES.forEach(function(r){RBY[r.slug]=r});
 function shortName(n){return n.replace(/^Mezcla de /,'').replace(/ \d+ g$/,'').replace(/^./,function(c){return c.toUpperCase()})}
 function withLabel(r){var p=BY[r.product];return p?shortName(p.name):r.cat}
-function recipesHTML(list){return list.map(function(r){var p=BY[r.product];return '<a class="rcard" href="#r/'+r.slug+'" style="--c:'+(p?p.color:'#999')+'"><span class="imgw"><img loading="lazy" src="'+rImg(r)+'" alt="'+esc(r.title)+'">'+(r.video?'<span class="vid">Vídeo</span>':'')+'</span><span class="with"><i></i>Con '+esc(withLabel(r))+'</span><h3>'+esc(r.title)+'</h3></a>'}).join('')}
+function recipesHTML(list){return list.map(function(r){var p=BY[r.product];return '<a class="rcard" href="recetas/'+r.slug+'.html" style="--c:'+(p?p.color:'#999')+'"><span class="imgw"><img loading="lazy" src="'+rImg(r)+'" alt="'+esc(r.title)+'">'+(r.video?'<span class="vid">Vídeo</span>':'')+'</span><span class="with"><i></i>Con '+esc(withLabel(r))+'</span><h3>'+esc(r.title)+'</h3></a>'}).join('')}
 var FEATURED=['rollitos-de-hummus-y-verduritas','tostadas-con-langostinos','bocadillo-de-atun-veraniego'];
 $('#recipes').innerHTML=recipesHTML(FEATURED.map(function(s){return RBY[s]}).filter(Boolean));
 $('#nRec').textContent=RECIPES.length;
@@ -490,7 +490,7 @@ function renderReceta(slug){
   $('#rp').innerHTML='<div class="wrap"><nav class="crumb" style="padding-top:28px" aria-label="Ruta"><a href="#home">Inicio</a> / <a href="#recetas">Recetas</a> / '+esc(r.title)+'</nav>'+
    '<div class="rp-hero"><img src="'+rImg(r)+'" alt="'+esc(r.title)+'"><div><div class="eyebrow">Receta · Con '+esc(withLabel(r))+'</div><h1>'+esc(r.title)+'</h1>'+
    '<div class="seals"><span>'+r.ing.length+' ingredientes</span><span>'+r.steps.length+' pasos</span>'+(r.video?'<span>Con vídeo</span>':'')+'</div>'+
-   (p?'<a class="madewith" href="#p/'+p.slug+'" style="--c:'+p.color+';text-decoration:none"><span class="mw-img">'+(p.imgs.length?'<img src="'+src(p.imgs[0])+'" alt="">':'')+'</span><span class="mw-t"><small>Hecha con</small><strong>'+esc(p.name)+'</strong><span style="font-size:14px;color:var(--muted)">'+esc(p.weight)+'</span></span><span class="btn sm">Ver producto</span></a>':'')+
+   (p?'<a class="madewith" href="productos/'+p.slug+'.html" style="--c:'+p.color+';text-decoration:none"><span class="mw-img">'+(p.imgs.length?'<img src="'+src(p.imgs[0])+'" alt="">':'')+'</span><span class="mw-t"><small>Hecha con</small><strong>'+esc(p.name)+'</strong><span style="font-size:14px;color:var(--muted)">'+esc(p.weight)+'</span></span><span class="btn sm">Ver producto</span></a>':'')+
    '</div></div></div>'+
    '<div class="rp-body"><div class="wrap rp-cols"><div><h2>Ingredientes</h2><ul class="ings">'+r.ing.map(function(x){return '<li>'+esc(x)+'</li>'}).join('')+'</ul>'+
    (r.nut?'<div class="rnut"><small>Información nutricional</small>'+esc(r.nut)+'</div>':'')+'</div>'+
@@ -576,11 +576,11 @@ function route(){
   var parts=h.split('?'); var path=parts[0];
   if(parts[1])parts[1].split('&').forEach(function(kv){var s=kv.split('=');q[s[0]]=decodeURIComponent(s[1]||'')});
   if(path==='productos'){state.cat=q.cat||'all';show('productos');renderCat();window.scrollTo(0,0);return;}
-  if(path.indexOf('p/')===0){show('producto');renderProduct(path.slice(2));window.scrollTo(0,0);return;}
   if(path==='recetas'||path==='receta'){show('recetas');renderRecetas();window.scrollTo(0,0);return;}
   if(path==='blog'){show('blog');renderBlog();window.scrollTo(0,0);return;}
+  if(path.indexOf('p/')===0){location.replace('productos/'+path.slice(2)+'.html');return;}
+  if(path.indexOf('r/')===0){location.replace('recetas/'+path.slice(2)+'.html');return;}
   if(path.indexOf('b/')===0){show('articulo');renderArticulo(path.slice(2));window.scrollTo(0,0);return;}
-  if(path.indexOf('r/')===0){show('receta');renderReceta(path.slice(2));wireYT();window.scrollTo(0,0);return;}
   if(path==='nosotros'){show('nosotros');window.scrollTo(0,0);return;}
   if(path==='home'){show('home');window.scrollTo(0,0);return;}
   var el=document.getElementById(path);
