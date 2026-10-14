@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bocado Functional Foods · Pains et produits riches en protéines, low carb et à IG bas</title>
+<meta name="description" content="Pains protéinés, low carb et IG24, wraps, douceurs et préparations à cuire chez soi. Bocado Functional Foods.">
+<link rel="icon" href="../assets/marca/logo-negro.png">
+<link rel="canonical" href="https://crm-lasingluten.github.io/bocadofoods.com/fr/">
+<link rel="alternate" hreflang="es" href="https://crm-lasingluten.github.io/bocadofoods.com/">
+<link rel="alternate" hreflang="ca" href="https://crm-lasingluten.github.io/bocadofoods.com/ca/">
+<link rel="alternate" hreflang="en" href="https://crm-lasingluten.github.io/bocadofoods.com/en/">
+<link rel="alternate" hreflang="it" href="https://crm-lasingluten.github.io/bocadofoods.com/it/">
+<link rel="alternate" hreflang="fr" href="https://crm-lasingluten.github.io/bocadofoods.com/fr/">
+<link rel="alternate" hreflang="de" href="https://crm-lasingluten.github.io/bocadofoods.com/de/">
+<link rel="alternate" hreflang="pt" href="https://crm-lasingluten.github.io/bocadofoods.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://crm-lasingluten.github.io/bocadofoods.com/">
+<meta property="og:locale" content="fr_FR">
+<link rel="stylesheet" href="../css/estilos.css?v=202610141047">
+</head>
+<body>
+
+<div class="announce">Livraison gratuite en Espagne péninsulaire dès 45 € d’achat · <span>Nouveau : Sweet Protein Vanille</span></div>
+
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="#home" aria-label="Bocado Functional Foods — accueil"><img data-k="logo-black" alt="Bocado functional foods"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#productos" data-nav="productos">Produits</a>
+      <a href="#recetas" data-nav="recetas">Recettes</a>
+      <a href="blog/" data-nav="blog">Blog</a>
+      <a href="#nosotros" data-nav="nosotros">Qui sommes-nous</a>
+      <a href="#contacto">Contact</a>
+    </nav>
+    <div class="hdr-actions">
+      <details class="langdd"><summary class="lang" aria-label="Langue: Français">FR<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></summary><div class="langmenu"><a href="../" hreflang="es" lang="es" data-lang="es" aria-current="false">Español</a><a href="../ca/" hreflang="ca" lang="ca" data-lang="ca" aria-current="false">Català</a><a href="../en/" hreflang="en" lang="en" data-lang="en" aria-current="false">English</a><a href="../it/" hreflang="it" lang="it" data-lang="it" aria-current="false">Italiano</a><a href="../fr/" hreflang="fr" lang="fr" data-lang="fr" aria-current="true">Français</a><a href="../de/" hreflang="de" lang="de" data-lang="de" aria-current="false">Deutsch</a><a href="../pt/" hreflang="pt" lang="pt" data-lang="pt" aria-current="false">Português</a></div></details>
+      <a class="shop" href="https://shop.bocadofoods.com" data-shop>SHOP<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 2h2l1.6 8.2h7.2L14 5H5"/><circle cx="6.5" cy="13.2" r="1"/><circle cx="12" cy="13.2" r="1"/></svg></a>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="Principal (mobile)">
+    <a href="#productos">Produits</a><a href="#recetas">Recettes</a><a href="blog/">Blog</a><a href="#nosotros">Qui sommes-nous</a><a href="#contacto">Contact</a>
+  </nav>
+</header>
+
+<!-- ============ HOME ============ -->
+<main class="page" id="page-home">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Aliments fonctionnels · Low carb · Riches en protéines</div>
+      <h1>Plus de protéines<br>à chaque <b>bouchée.</b></h1>
+      <p class="lead">Pains, petits pains, wraps, pizza et préparations à cuire chez soi, avec plus de protéines et de fibres que le pain de tous les jours. Et le même goût.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="#productos">Voir les produits</a>
+        <a class="btn ghost" href="https://shop.bocadofoods.com" data-shop>Acheter en ligne</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>28 g</b><span>Protéines / 100 g</span></div>
+        <div><b>15 g</b><span>Fibres / 100 g</span></div>
+        <div><b id="nProd">20</b><span>Produits</span></div>
+      </div>
+    </div>
+    <div class="hero-tiles" id="heroTiles"></div>
+  </div>
+</section>
+
+<div class="catbar">
+  <div class="wrap catbar-in" id="homeCats" aria-label="Catégories"></div>
+</div>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2">Nos <b>produits</b></h2>
+      <a class="link" href="#productos">Voir tout le catalogue</a>
+    </div>
+    <div class="lines" id="lines"></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2">Les plus <b>demandés</b></h2>
+      <a class="link" href="#productos">Voir tous les produits</a>
+    </div>
+    <div class="grid" id="bestGrid"></div>
+  </div>
+</section>
+
+<section class="ig" aria-labelledby="ig-title">
+  <div class="wrap ig-grid">
+    <div>
+      <div class="ig-mark"><img data-k="ig24-logo" alt="IG24"></div>
+      <div class="eyebrow">Gamme IG24</div>
+      <h2 id="ig-title">Index glycémique <b>24.</b><br>Testé.</h2>
+      <p>Notre pain et nos petits pains IG24 ont un index glycémique de 24. Ils sont faits avec des protéines végétales, des graines de soja, du lin et des graines, sans lait et sans œuf.</p>
+      <div class="ig-nums">
+        <div><b>28 g</b><span>Protéines</span></div>
+        <div><b>15 g</b><span>Fibres</span></div>
+        <div><b>5 g</b><span>Glucides</span></div>
+        <div><b>&lt;1 g</b><span>Sucres</span></div>
+      </div>
+      <a class="btn light" href="#productos?cat=ig24">Découvrir IG24</a>
+    </div>
+    <div class="ig-pic">
+      <img data-k="1ae5f940" alt="Pain IG24 500 g">
+      <img data-k="ac127db3" alt="Petits pains IG24 350 g">
+      <img data-k="ig-seal" alt="Index glycémique testé IG24" style="position:absolute;right:18px;bottom:18px;width:96px;height:96px;aspect-ratio:auto;background:#fff;border-radius:50%;padding:4px">
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" style="margin-bottom:10px">Préparations</div>
+        <h2 class="h2">Cuisez chez vous avec <b>nos préparations</b></h2>
+      </div>
+      <a class="link" href="#productos?cat=mezclas">Voir toutes les préparations</a>
+    </div>
+    <div class="hscroll" id="mixRow"></div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" style="margin-bottom:10px">Livre de recettes</div>
+        <h2 class="h2"><b><span id="nRec">108</span> recettes</b> avec nos produits</h2>
+      </div>
+      <a class="btn" href="#recetas">Voir les recettes</a>
+    </div>
+    <div class="rgrid" id="recipes"></div>
+  </div>
+</section>
+
+
+
+<section class="sec" id="blog-home">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2 class="h2">Sur le <b>blog</b></h2>
+      <a class="link" href="blog/">Tous les articles</a>
+    </div>
+    <div class="bgrid" id="blogHome"></div>
+  </div>
+</section>
+
+<section class="news">
+  <div class="wrap news-in">
+    <div>
+      <h2 style="margin:0 0 6px;font-size:28px">Nouvelles recettes et nouveautés, chaque mois</h2>
+      <p style="margin:0;color:var(--muted)">Vous pouvez vous désabonner à tout moment.</p>
+    </div>
+    <form action="#" class="nlform"><label class="sr" for="nl">E-mail</label><input id="nl" type="email" required placeholder="vous@email.com"><button class="btn" type="submit">Je m’abonne</button><label class="nlok"><input type="checkbox" required><span>J’accepte de recevoir la newsletter et j’ai lu la <a href="legal/politique-de-confidentialite.html">politique de confidentialité</a>.</span></label><p class="nlinfo"><b>Responsable :</b> Bauer Lemans, S.L. <b>Finalité :</b> vous envoyer des recettes, des nouveautés et des promotions. <b>Base légale :</b> votre consentement. <b>Destinataires :</b> aucune donnée n’est cédée, sauf obligation légale. <b>Droits :</b> accès, rectification, effacement et autres, à hola@bocadofoods.com.</p></form>
+  </div>
+</section>
+<section class="plband" aria-labelledby="plb-t">
+  <div class="wrap plband-in">
+    <h2 id="plb-t" class="plt"><span>Private</span> <b>label</b></h2>
+    <p>Nous offrons à nos clients la possibilité de créer un produit sur mesure, avec leur propre marque, leur packaging et leur identité. <b>Vous l’imaginez, nous le fabriquons.</b></p>
+    <a class="btn ghost sm" href="mailto:hola@bocadofoods.com?subject=Private%20label">Contactez-nous</a>
+  </div>
+</section>
+</main>
+
+<!-- ============ CATÁLOGO ============ -->
+<main class="page" id="page-productos" hidden>
+  <div class="wrap cat-head">
+    <nav class="crumb" aria-label="Fil d’Ariane"><a href="#home">Accueil</a> / Produits</nav>
+    <h1>Nos <b>produits</b></h1>
+    <p class="lead" style="margin:0;max-width:640px">Pains, wraps, douceurs et préparations avec plus de protéines. Choisissez une catégorie.</p>
+  </div>
+  <div class="catbar sticky">
+    <div class="wrap catbar-in" id="catChips" aria-label="Catégories"></div>
+    <div class="wrap catbar-sub" id="subChips" aria-label="Sous-catégories"></div>
+  </div>
+  <div class="wrap">
+    <div class="cat-tools"><span class="count" id="count"></span><span id="activeLine"></span></div>
+    <div class="grid" id="catGrid"></div>
+    <div class="empty" id="empty" hidden>Il n’y a pas encore de produits dans cette catégorie. <a href="#productos">Voir tout</a>.</div>
+    <p class="card-note" style="margin:28px 0 80px">Vente en ligne uniquement en Espagne péninsulaire. Pour les autres pays ou le private label, <a href="mailto:hola@bocadofoods.com">écrivez-nous</a>.</p>
+  </div>
+</main>
+
+<!-- ============ FICHA DE PRODUCTO ============ -->
+<main class="page" id="page-producto" hidden>
+  <div class="wrap pp" id="pp"></div>
+</main>
+
+<!-- ============ RECETA ============ -->
+<main class="page" id="page-receta" hidden><div id="rp"></div></main>
+
+<!-- ============ BLOG ============ -->
+<main class="page" id="page-blog" hidden>
+  <div class="wrap cat-head">
+    <nav class="crumb" aria-label="Fil d’Ariane"><a href="#home">Accueil</a> / Blog</nav>
+    <h1>Notre <b>blog</b></h1>
+    <p class="lead" style="margin:0;max-width:680px">Nutrition, science et les histoires derrière nos produits.</p>
+  </div>
+  <div class="wrap"><div class="bgrid" id="blogGrid" style="margin:24px 0 96px"></div></div>
+</main>
+<main class="page" id="page-articulo" hidden><div id="art"></div></main>
+
+<!-- ============ RECETARIO ============ -->
+<main class="page" id="page-recetas" hidden>
+  <div class="wrap cat-head">
+    <nav class="crumb" aria-label="Fil d’Ariane"><a href="#home">Accueil</a> / Recettes</nav>
+    <h1>Nos <b>recettes</b></h1>
+    <p class="lead" style="margin:0;max-width:680px">Des idées pour le petit-déjeuner, le déjeuner, le dîner et le goûter avec nos produits. Choisissez un produit ou cherchez une recette.</p>
+  </div>
+  <div class="catbar sticky">
+    <div class="wrap catbar-in">
+      <label class="sr" for="rq">Chercher une recette</label>
+      <input id="rq" class="rsearch" type="search" placeholder="Chercher une recette ou un ingrédient">
+      <span class="cat-sep" aria-hidden="true"></span>
+      <span id="recChips" style="display:contents"></span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="cat-tools"><span class="count" id="rCount"></span></div>
+    <div class="rgrid r4" id="recGrid"></div>
+    <div class="empty" id="rEmpty" hidden>Aucune recette ne correspond à votre recherche.</div>
+    <div style="height:80px"></div>
+  </div>
+</main>
+
+
+<!-- ============ NOSOTROS ============ -->
+<main class="page" id="page-nosotros" hidden>
+  <section class="ns-open">
+    <div class="ns-open-grid">
+      <img data-k="quote" alt="Manger est un besoin, mais savoir manger est un art. François de La Rochefoucauld">
+      <div class="ns-open-txt">
+        <nav class="crumb" aria-label="Fil d’Ariane"><a href="#home">Accueil</a> / Qui sommes-nous</nav>
+        <p>Nous sommes une <b>entreprise d’aliments fonctionnels</b> en évolution permanente.</p>
+        <p><b>Chaque bouchée de nos produits</b> apporte des bienfaits et cherche à répondre à des besoins du quotidien.</p>
+        <p>Nous proposons les meilleurs pains low carb et riches en protéines, ainsi qu’un large catalogue de produits prêts à consommer et de préparations à faire chez soi.</p>
+        <p><b>Nous sommes votre partenaire idéal.</b> Nous savons satisfaire un consommateur informé et de plus en plus exigeant, qui recherche et préfère des produits premium sains, respectueux de l’environnement et élaborés avec des ingrédients de grande qualité et de haute valeur nutritionnelle.</p>
+        <p class="ns-cta"><b>Découvrez-nous.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap ns-two">
+      <div>
+        <h2 class="bigt"><span>Une bouchée</span><b>d’histoire</b></h2>
+        <div class="year">2015</div>
+      </div>
+      <div class="ns-txt">
+        <p>En 2015, <b>nous avons lancé notre premier pain, The Original Protein Bread,</b> et commencé notre parcours dans le monde de la boulangerie espagnole.</p>
+        <p>Nous avons vite remarqué que nos clients demandaient de plus en plus de produits pauvres en glucides, riches en protéines et même sans sucre, et <b>nous avons décidé de créer notre première gamme d’aliments fonctionnels et gourmets : Bocado Functional Foods.</b></p>
+        <p>Les régimes cétogènes se sont popularisés.<br>Sur le marché, <b>un vent de changement soufflait et nous prenions note des tendances.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ns-inno">
+    <div class="wrap ns-two">
+      <div class="ns-txt">
+        <p>80 % des consommateurs reconnaissaient <b>l’importance de pouvoir identifier les ingrédients sur les étiquettes des produits.</b><sup>*</sup></p>
+        <p>Dans une enquête, plus de 2 000 consommateurs <b>associaient une teneur réduite en sucres à des aliments plus sains,</b> et moins de graisses et de calories à des produits qui aident à perdre du poids.<sup>*</sup></p>
+        <p>Ils montraient aussi une <b>préférence marquée pour les aliments dont les principaux nutriments étaient <span class="hl">les protéines, les fibres et les oméga-3.</span></b></p>
+        <ul class="nutri-ico">
+          <li><span class="dicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17c1-6 3-10 7-12l2 2-2 3 3 1c3 0 6 2 6 5 0 2-2 4-5 4H7c-2 0-3-1-3-3z"/><path d="M9 15c1.5 1 3.5 1 5 0"/></svg></span>Protéines</li>
+          <li><span class="dicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21V8"/><path d="M12 12c-3 0-5-2-5-5 3 0 5 2 5 5zM12 12c3 0 5-2 5-5-3 0-5 2-5 5zM12 8c-1.8-1-2.5-3-2-5 1.8 1 2.5 3 2 5z"/></svg></span>Fibres</li>
+          <li><span class="dicon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4s-5 6-5 9.5a5 5 0 0 0 10 0C15 10 10 4 10 4z"/><circle cx="17.5" cy="6.5" r="2.5"/></svg></span>Omega 3</li>
+        </ul>
+        <p class="src">* Source : [à citer]</p>
+      </div>
+      <div class="ns-txt">
+        <h2 class="mark"><span>Nous avons décidé de répondre par</span><span>L’INNOVATION</span></h2>
+        <p><b>Nous avons pris un engagement :</b> utiliser des ingrédients de <b>très grande qualité, sans OGM,</b> et obtenir <b>un goût parfait avec le moins de glucides possible.</b></p>
+        <p class="ns-cta"><b>Voici le résultat.</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="wrap">
+      <h2 class="bigt one"><span>Ce qui nous</span> <b>distingue</b></h2>
+      <div class="ns-dif">
+        <svg class="wheel" viewBox="0 0 440 440" role="img" aria-label="Bocado : fonctionnel, nutritif, savoureux, premium">
+  <defs>
+    <path id="aTL" d="M60,220 A160,160 0 0 1 220,60"/><path id="aTR" d="M220,60 A160,160 0 0 1 380,220"/>
+    <path id="aBL" d="M60,220 A160,160 0 0 0 220,380"/><path id="aBR" d="M220,380 A160,160 0 0 0 380,220"/>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-opacity=".18"/></filter>
+  </defs>
+  <path d="M220,220 L20,220 A200,200 0 0 1 220,20 Z" fill="#7dbb90"/>
+  <path d="M220,220 L220,20 A200,200 0 0 1 420,220 Z" fill="#e8b24a"/>
+  <path d="M220,220 L420,220 A200,200 0 0 1 220,420 Z" fill="#8a4a2c"/>
+  <path d="M220,220 L220,420 A200,200 0 0 1 20,220 Z" fill="#d45a6e"/>
+  <g font-family="Concasse, sans-serif" font-weight="900" font-size="30" letter-spacing="3" fill="#fff" dominant-baseline="central" text-anchor="middle">
+    <text><textPath href="#aTL" startOffset="50%">FONCTIONNEL</textPath></text>
+    <text><textPath href="#aTR" startOffset="50%">NUTRITIF</textPath></text>
+    <text><textPath href="#aBL" startOffset="50%">PREMIUM</textPath></text>
+    <text><textPath href="#aBR" startOffset="50%">SAVOUREUX</textPath></text>
+  </g>
+  <circle cx="220" cy="220" r="118" fill="#f7f6f3" filter="url(#sh)"/>
+  <image href="../assets/marca/logo-negro.png" x="140" y="187" width="160" height="66"/>
+</svg>
+        <ol class="difs"><li class="dif"><span class="dn">01</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0-3.5 10.9V16h7v-2.1A6 6 0 0 0 12 3z"/><path d="M9.5 19h5M10.5 21.5h3"/><path d="M12 13V9.5c0-1.2.9-2 2-2"/></svg></span><p><b>Innovation saine,</b> en phase avec les tendances de consommation.</p></li><li class="dif"><span class="dn">02</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19l7-7"/></svg></span><p><b>Produits végans et végétariens,</b> sans OGM.</p></li><li class="dif"><span class="dn">03</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17c1-6 3-10 7-12l2 2-2 3 3 1c3 0 6 2 6 5 0 2-2 4-5 4H7c-2 0-3-1-3-3z"/><path d="M9 15c1.5 1 3.5 1 5 0"/></svg></span><p><b>Haute valeur nutritionnelle :</b> aliments pauvres en glucides et riches en protéines, en fibres et en oméga-3.</p></li><li class="dif"><span class="dn">04</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3h10l1 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7z"/><path d="M6 7h12"/><path d="M10 16c0-3 2-5 4-5 0 3-2 5-4 5z"/></svg></span><p><b>Longue durée de conservation</b> (jusqu’à 9 mois) grâce au conditionnement sous atmosphère protectrice.</p></li><li class="dif"><span class="dn">05</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h4c4 0 6 10 10 10h4"/><path d="M3 17h4c1.6 0 2.8-1.6 3.8-3.6M13.2 9.6C14.2 8.4 15.4 7 17 7h4"/><path d="M18 4l3 3-3 3M18 14l3 3-3 3"/></svg></span><p><b>Produits polyvalents</b> pour tous les repas de la journée, sucrés comme salés.</p></li><li class="dif"><span class="dn">06</span><span class="dicon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/></svg></span><p><b>Pour un public ciblé</b> et pour tout le monde.</p></li></ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec ns-pl" id="private-label">
+    <div class="wrap ns-two">
+      <h2 class="bigt"><span>Private</span><b>label</b></h2>
+      <div class="ns-txt">
+        <p><b>Nous offrons à nos clients la possibilité de créer un produit sur mesure,</b> avec leur propre marque, leur packaging et leur identité, adapté aux préférences de leur public cible.</p>
+        <p class="tag"><b>Vous l’imaginez,<br>nous le fabriquons.</b></p>
+        <a class="btn" href="mailto:hola@bocadofoods.com?subject=Private%20label">Contactez-nous</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr" id="contacto">
+  <div class="wrap">
+    <div class="ftr-social">
+      <a href="https://www.facebook.com/bocado.functional.foods" aria-label="Facebook"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="4" fill="#111"/><path d="M20.5 30V18.6h3.6l.6-4.3h-4.2v-2.7c0-1.2.4-2.1 2.1-2.1h2.2V5.7c-.4 0-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.3h-3.6v4.3h3.6V30z" fill="#fff"/></svg></a>
+      <span aria-hidden="true">·</span>
+      <a href="https://www.instagram.com/bocado.functional.foods/" aria-label="Instagram"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="#111" stroke-width="2.6" aria-hidden="true"><rect x="2.3" y="2.3" width="25.4" height="25.4" rx="7"/><circle cx="15" cy="15" r="6"/><circle cx="22.4" cy="7.6" r="1.2" fill="#111" stroke="none"/></svg></a>
+    </div>
+    <div class="ftr-grid">
+      <div><img data-k="logo-black" alt="Bocado functional foods" class="ftr-logo"></div>
+      <div>
+        <h4>Qui sommes-nous</h4>
+        <p>Travessia Industrial, 191<br>08907 L'Hospitalet de Llobregat<br>(Barcelona)</p>
+        <h4 style="margin-top:22px">Service client</h4>
+        <p><i>Du lundi au jeudi, de 8 h à 15 h<br>Le vendredi, de 8 h à 14 h (CET)</i></p>
+        <a href="mailto:hola@bocadofoods.com">hola@bocadofoods.com</a>
+        <a href="tel:+34931592650"><svg width="13" height="13" viewBox="0 0 16 16" aria-hidden="true"><path fill="#111" d="M3.6 1h2.6l1.3 3.4-1.7 1.1a8.6 8.6 0 0 0 4.7 4.7l1.1-1.7 3.4 1.3v2.6c0 .9-.7 1.6-1.6 1.6C7.1 14 2 8.9 2 2.6 2 1.7 2.7 1 3.6 1z"/></svg> +34 931 592 650</a>
+        <a href="https://wa.me/34646698281"><svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="#111" stroke-width="1.4" aria-hidden="true"><path d="M2.2 13.8l.8-2.9A6.2 6.2 0 1 1 5.3 13z"/></svg> +34 646 698 281</a>
+      </div>
+      <div>
+        <h4>Informations</h4>
+        <a href="legal/conditions-generales-de-vente.html"><b>Conditions générales de vente</b></a>
+        <a href="#productos">Produits</a>
+        <a href="#private-label">Private label</a>
+      </div>
+      <div>
+        <h4>Mentions légales</h4>
+        <a href="legal/mentions-legales.html">Mentions légales</a>
+        <a href="legal/politique-de-confidentialite.html">Politique de confidentialité</a>
+        <a href="legal/politique-de-confidentialite-sur-les-reseaux-sociaux.html">Politique de confidentialité sur les réseaux sociaux</a>
+        <a href="legal/politique-de-cookies.html">Politique de cookies</a>
+      </div>
+    </div>
+    <div class="ftr-bottom">
+      <span>© 2026 Bocado Functional Foods</span>
+      <nav aria-label="Langues"><a href="../" hreflang="es" lang="es" data-lang="es" aria-current="false">Español</a><a href="../ca/" hreflang="ca" lang="ca" data-lang="ca" aria-current="false">Català</a><a href="../en/" hreflang="en" lang="en" data-lang="en" aria-current="false">English</a><a href="../it/" hreflang="it" lang="it" data-lang="it" aria-current="false">Italiano</a><a href="../fr/" hreflang="fr" lang="fr" data-lang="fr" aria-current="true">Français</a><a href="../de/" hreflang="de" lang="de" data-lang="de" aria-current="false">Deutsch</a><a href="../pt/" hreflang="pt" lang="pt" data-lang="pt" aria-current="false">Português</a></nav>
+    </div>
+  </div>
+</footer>
+
+<div id="aviso" hidden>
+  <div class="dlg" role="dialog" aria-modal="true" aria-labelledby="av-t">
+    <button class="x" type="button" aria-label="Fermer" data-close>×</button>
+    <div class="eyebrow">Boutique en ligne</div>
+    <h2 id="av-t">Nous livrons pour le moment <b>uniquement en Espagne péninsulaire</b></h2>
+    <p>Notre boutique en ligne est en espagnol. Si vous êtes dans un autre pays, ou si vous êtes un distributeur ou une marque intéressée par le private label, écrivez-nous et nous vous répondrons en français.</p>
+    <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="btn" href="mailto:hola@bocadofoods.com" data-close>Écrivez-nous</a><a class="btn ghost" href="#private-label" data-close>Private label</a><a class="link" style="align-self:center;padding:0 8px" href="https://shop.bocadofoods.com" data-close>Aller à la boutique (ES)</a></div>
+  </div>
+</div>
+
+
+<script src="../js/imagenes.js?v=202610141047"></script>
+<script src="js/productos.js?v=202610141047"></script>
+<script src="js/recetas.js?v=202610141047"></script>
+<script src="js/blog.js?v=202610141047"></script>
+<script>
+(function(){
+var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+var ROOT='../';
+function src(k){return IMG[k]?ROOT+IMG[k]:''}
+function fillImgs(root){$$('img[data-k]',root).forEach(function(i){if(!i.getAttribute('src'))i.src=src(i.dataset.k);});}
+var BY={}; PRODUCTS.forEach(function(p){BY[p.slug]=p;});
+function lineOf(p){return LINES[p.line]}
+function styleVars(c,ink){return '--c:'+c+';--ink2:'+(ink||'#fff')}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+function card(p){
+  var alt=p.imgs[1]?'<img class="alt'+((p.amb||[]).indexOf(p.imgs[1])>=0?' amb':'')+'" src="'+src(p.imgs[1])+'" alt="">':'';
+  var m=p.macros;
+  var media=p.imgs.length?'<img class="main'+(p.imgs[1]?' has-alt':'')+'" src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+alt:'<span class="ph"><span>Photo à venir</span></span>';
+  return '<article class="card" style="'+styleVars(p.color,p.ink)+'">'+
+    '<a class="card-media" href="'+p.href+'" aria-label="'+esc(p.name)+'">'+media+
+    '<span class="ltag">'+esc(lineOf(p).short)+'</span>'+(p.best?'<span class="badge">Meilleure vente</span>':(p.isNew?'<span class="badge">Nouveau</span>':''))+(p.igSeal?'<img class="seal-sm" src="'+src('ig-seal')+'" alt="Index glycémique testé IG24">':'')+(p.brand?'<img class="seal-sm brand" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'')+'</a>'+
+    '<div class="card-body"><a class="card-name" href="'+p.href+'">'+esc(p.name)+'</a><div class="card-w">'+esc(p.weight)+'</div>'+
+    (p.noMacros?'<div class="macros nm"><div><b>Sans gluten</b><span>'+esc(p.brand||'')+'</span></div></div>':'<div class="macros"><div><b>'+esc(m[0])+'</b><span>Protéines</span></div><div><b>'+esc(m[1])+'</b><span>Glucides</span></div><div><b>'+esc(m[2])+'</b><span>Fibres</span></div></div>')+
+    '<div class="card-note">'+((p.pending||p.noMacros)?'Données à venir':(p.perUnit?esc(p.perUnit):(p.nutLabel?p.nutLabel:(p.prepared?'Pour 100 g de produit fini':'Pour 100 g'))))+'</div>'+
+    '<div class="card-ctas"><a class="btn sm ghost" href="'+p.href+'">Voir la fiche</a><a class="btn sm" href="https://shop.bocadofoods.com" data-shop>Acheter</a></div></div></article>';
+}
+
+/* ---- category chips ---- */
+var SUB_IDS=CATS_SUB.map(function(c){return c.id});
+function countCat(id){return id==='all'?PRODUCTS.length:PRODUCTS.filter(function(p){return p.cats.indexOf(id)>=0}).length}
+function catLabel(id){var c=CATS_MAIN.concat(CATS_SUB).filter(function(x){return x.id===id})[0];return c?c.label:''}
+function mainChipsHTML(active){
+  return CATS_MAIN.map(function(c){
+    return '<button type="button" class="chip" data-cat="'+c.id+'" aria-pressed="'+(c.id===active)+'">'+c.label+'</button>';
+  }).join('');
+}
+function homeChipsHTML(){
+  var out='';
+  CATS_MAIN.forEach(function(c){ if(c.id==='all')return;
+    out+='<a class="chip" href="#productos?cat='+c.id+'">'+c.label+'</a>';
+    if(c.id==='proteicos'){ CATS_SUB.forEach(function(s){out+='<a class="sub" style="display:inline-flex;align-items:center;text-decoration:none" href="#productos?cat='+s.id+'">'+s.label+'</a>'}); out+='<span class="cat-sep" aria-hidden="true"></span>'; }
+  });
+  return out;
+}
+
+/* ---- home ---- */
+$('#homeCats').innerHTML=homeChipsHTML();
+/* Hero: editable list, later used for novedades */
+var HERO_TILES=[
+  {slug:'pan-ig24', label:'Pain IG24'},
+  {slug:'the-original-protein-bread', label:'Protein Bread'},
+  {slug:'panecillos-ig24', label:'Petits pains IG24'}
+];
+$('#heroTiles').innerHTML=HERO_TILES.map(function(h){var p=BY[h.slug];
+  return '<a class="htile" href="'+p.href+'" style="--c:'+p.color+'"><img src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+(p.igSeal?'<img class="hseal" src="'+src('ig-seal')+'" alt="Index glycémique testé IG24">':'')+'<span class="tag">'+esc(h.label)+'</span></a>';}).join('');
+$('#nProd').textContent=PRODUCTS.filter(function(p){return !p.pending}).length;
+var TILES=[
+  ['panes','Pains','The Original Protein Bread, petits pains, baguettes, pains grillés et bagels.','0b40383c','#e3342f'],
+  ['wrap','Wrap','Tortillas avec 9 g de protéines chacune pour wraps, fajitas et quesadillas.','cbfc085c','#ec6f5f'],
+  ['pasta','Pâtes','Macaronis protéinés avec 30 g de protéines et 52 g de fibres pour 100 g.','macarrones-frontal','#e2463b'],
+  ['dulces','Douceurs','Protein Chocolate Muffin et Sweet Protein chocolat et vanille.','d5d6e740','#e0307c'],
+  ['mezclas','Préparations','Pain, petits pains, pain de mie, pizza, pains burger et crackers à cuire chez soi.','9254e231','#c99a5b'],
+  ['ig24','Produits IG24','Pain et petits pains à index glycémique 24, testé.','1ae5f940','#5b7db1'],
+  ['veganos','Végan','Haché végétal à base de protéines de pois, en 150 g et 500 g.','e3dfdf02','#8cbf3f'],
+  ['singluten','Sans gluten','Brownie et préparations pour pain, pizza, muffins, cookies et brownie de La Sin Gluten.','LSG','#8fc5d6']
+];
+$('#lines').innerHTML=TILES.map(function(l){
+  var n=countCat(l[0]);
+  var pic=l[3]==='LSG'?'<div class="pic"><div class="lsg-row"><img src="'+src('lsg-pan')+'" alt=""><img src="'+src('lsg-pizza')+'" alt=""><img src="'+src('lsg-brownie')+'" alt=""></div></div>':'<div class="pic"><img src="'+src(l[3])+'" alt="">'+(l[0]==='ig24'?'<img class="ovl" src="'+src('ig24-logo')+'" alt="IG24">':'')+'</div>';
+  return '<a class="ltile'+(l[3]==='LSG'?' wide':'')+'" href="#productos?cat='+l[0]+'" style="--c:'+l[4]+'"><div class="txt">'+(l[3]==='LSG'?'<img class="tile-logo" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'<span class="bar"></span>')+'<h3>'+l[1]+'</h3><p>'+l[2]+'</p><span class="go">'+n+(n===1?' produit':' produits')+'</span></div>'+pic+'</a>';
+}).join('');
+$('#bestGrid').innerHTML=['the-original-protein-bread','panecillos-low-carb','wrap-low-carb','pan-ig24'].map(function(s){return card(BY[s])}).join('');
+$('#mixRow').innerHTML=PRODUCTS.filter(function(p){return p.line==='mezclas'||p.line==='sweet'}).map(card).join('');
+function rImg(r){return ROOT+'assets/recetas/'+r.img+'.jpg'}
+var RBY={}; RECIPES.forEach(function(r){RBY[r.slug]=r});
+function shortName(n){return n.replace(/^Mezcla de /,'').replace(/ \d+ g$/,'').replace(/^./,function(c){return c.toUpperCase()})}
+function withLabel(r){var p=BY[r.product];return p?(p.short||shortName(p.name)):r.cat}
+function recipesHTML(list){return list.map(function(r){var p=BY[r.product];return '<a class="rcard" href="'+r.href+'" style="--c:'+(p?p.color:'#999')+'"><span class="imgw"><img loading="lazy" src="'+rImg(r)+'" alt="'+esc(r.title)+'">'+(r.video?'<span class="vid">Vidéo</span>':'')+'</span><span class="with"><i></i>Avec '+esc(withLabel(r))+'</span><h3>'+esc(r.title)+'</h3></a>'}).join('')}
+var FEATURED=['rollitos-de-hummus-y-verduritas','tostadas-con-langostinos','bocadillo-de-atun-veraniego'];
+$('#recipes').innerHTML=recipesHTML(FEATURED.map(function(s){return RBY[s]}).filter(Boolean));
+$('#nRec').textContent=RECIPES.length;
+/* youtube: carga solo al pulsar, con dominio sin cookies */
+function wireYT(){$$('.video[data-yt]').forEach(function(v){var b=$('.yt-play',v);if(!b||b._w)return;b._w=1;b.onclick=function(){
+  v.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+encodeURIComponent(v.dataset.yt)+'?autoplay=1&rel=0" title="Vidéo: '+v.dataset.title+'" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';};});}
+/* blog */
+function blogCover(b){var p=BY[b.cover];return {img:p?src(p.imgs[0]):ROOT+b.cover,c:p?p.color:'#c99a5b',ink:p?p.ink:'#111',photo:!p}}
+function blogHTML(list){return list.map(function(b){var c=blogCover(b);return '<a class="bcard" href="'+b.href+'" style="--c:'+c.c+'"><span class="bimg'+(c.photo?' photo':'')+'"><img loading="lazy" src="'+c.img+'" alt=""></span><small>'+esc(b.cat)+' · '+esc(b.date)+'</small><strong>'+esc(b.title)+'</strong><span class="ex">'+esc(b.excerpt)+'</span></a>'}).join('')}
+$('#blogHome').innerHTML=blogHTML(BLOG.slice(0,3));
+function renderBlog(){$('#blogGrid').innerHTML=blogHTML(BLOG);}
+/* recetario */
+var rstate={p:'all',q:''};
+var RPROD=[]; RECIPES.forEach(function(r){var k=r.product||('cat:'+r.cat); if(RPROD.indexOf(k)<0)RPROD.push(k)});
+function rLabel(k){return k.indexOf('cat:')===0?k.slice(4):(BY[k].short||shortName(BY[k].name))}
+function rCountFor(k){return RECIPES.filter(function(r){return (r.product||('cat:'+r.cat))===k}).length}
+RPROD.sort(function(a,b){return rCountFor(b)-rCountFor(a)});
+function norm(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function renderRecetas(){
+  $('#recChips').innerHTML='<button type="button" class="chip" data-rp="all" aria-pressed="'+(rstate.p==='all')+'">Toutes</button>'+RPROD.map(function(k){return '<button type="button" class="chip" data-rp="'+k+'" aria-pressed="'+(rstate.p===k)+'">'+esc(rLabel(k))+'<span class="n">'+rCountFor(k)+'</span></button>'}).join('');
+  $$('#recChips [data-rp]').forEach(function(b){b.onclick=function(){rstate.p=b.dataset.rp;renderRecetas()}});
+  var q=norm(rstate.q);
+  var list=RECIPES.filter(function(r){var k=r.product||('cat:'+r.cat); if(rstate.p!=='all'&&k!==rstate.p)return false; if(!q)return true; return norm(r.title+' '+r.ing.join(' ')).indexOf(q)>=0});
+  $('#recGrid').innerHTML=recipesHTML(list);
+  $('#rEmpty').hidden=list.length>0;
+  $('#rCount').textContent=list.length+(list.length===1?' recette':' recettes');
+}
+$('#rq').addEventListener('input',function(){rstate.q=this.value;renderRecetas()});
+/* ---- catalogue ---- */
+var state={cat:'all'};
+function setCat(id){state.cat=id;history.replaceState(null,'','#productos'+(id==='all'?'':'?cat='+id));renderCat();}
+function renderCat(){
+  var isSub=SUB_IDS.indexOf(state.cat)>=0, main=isSub?'proteicos':state.cat;
+  $('#catChips').innerHTML=mainChipsHTML(main);
+  $$('#catChips [data-cat]').forEach(function(b){b.onclick=function(){setCat(b.dataset.cat)}});
+  var sc=$('#subChips'); sc.hidden=(main!=='proteicos');
+  sc.innerHTML='<button type="button" class="sub" data-sub="proteicos" aria-pressed="'+(state.cat==='proteicos')+'">Tous</button>'+CATS_SUB.map(function(s){return '<button type="button" class="sub" data-sub="'+s.id+'" aria-pressed="'+(state.cat===s.id)+'">'+s.label+'</button>'}).join('');
+  $$('#subChips [data-sub]').forEach(function(b){b.onclick=function(){setCat(b.dataset.sub)}});
+  var list=PRODUCTS.filter(function(p){return state.cat==='all'||p.cats.indexOf(state.cat)>=0});
+  $('#catGrid').innerHTML=list.map(card).join('');
+  $('#empty').hidden=list.length>0;
+  $('#count').textContent=(state.cat==='all'?'Tous':catLabel(state.cat))+' · '+list.length+(list.length===1?' produit':' produits');
+  $('#activeLine').innerHTML='';
+  wireShop($('#page-productos'));
+}
+
+/* ---- routing ---- */
+function show(id){['home','productos','producto','receta','recetas','nosotros','blog','articulo'].forEach(function(x){$('#page-'+x).hidden=(x!==id)});
+  $$('.nav a[data-nav]').forEach(function(a){a.toggleAttribute('aria-current',a.dataset.nav===id||(id==='producto'&&a.dataset.nav==='productos')||(id==='receta'&&a.dataset.nav==='recetas')||(id==='articulo'&&a.dataset.nav==='blog'));if(a.hasAttribute('aria-current'))a.setAttribute('aria-current','page')});}
+function route(){
+  var h=location.hash.slice(1)||'home', q={};
+  var parts=h.split('?'); var path=parts[0];
+  if(parts[1])parts[1].split('&').forEach(function(kv){var s=kv.split('=');q[s[0]]=decodeURIComponent(s[1]||'')});
+  if(path==='productos'){state.cat=q.cat||'all';show('productos');renderCat();window.scrollTo(0,0);return;}
+  if(path==='recetas'||path==='receta'){show('recetas');renderRecetas();window.scrollTo(0,0);return;}
+  if(path==='blog'){show('blog');renderBlog();window.scrollTo(0,0);return;}
+  if(path.indexOf('p/')===0){location.replace((BY[path.slice(2)]||{href:'#productos'}).href);return;}
+  if(path.indexOf('r/')===0){location.replace((RBY[path.slice(2)]||{href:'#recetas'}).href);return;}
+  if(path.indexOf('b/')===0){location.replace((BLOG.filter(function(x){return x.slug===path.slice(2)})[0]||{href:'blog/'}).href);return;}
+  if(path==='nosotros'){show('nosotros');window.scrollTo(0,0);return;}
+  if(path==='home'){show('home');window.scrollTo(0,0);return;}
+  var el=document.getElementById(path);
+  if(el){var pg=el.closest('.page');show(pg?pg.id.replace('page-',''):'home');setTimeout(function(){el.scrollIntoView()},0);}
+  else {show('home');}
+}
+window.addEventListener('hashchange',route);
+
+/* ---- language + shop ---- */
+var SHOP_AVISO=true;
+$$('a[data-lang]').forEach(function(a){a.addEventListener('click',function(){var h=location.hash;if(h&&h!=='#home')a.href=a.getAttribute('href').split('#')[0]+h;})});
+document.addEventListener('click',function(e){$$('details.langdd[open]').forEach(function(d){if(!d.contains(e.target))d.open=false})});
+function openShop(e){if(SHOP_AVISO){e.preventDefault();$('#aviso').hidden=false;}}
+function wireShop(root){$$('[data-shop]',root).forEach(function(a){if(!a._w){a._w=1;a.addEventListener('click',openShop)}})}
+wireShop(document);
+$$('[data-close]').forEach(function(b){b.addEventListener('click',function(){$('#aviso').hidden=true;})});
+$('#aviso').addEventListener('click',function(e){if(e.target===this)this.hidden=true});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){$('#aviso').hidden=true;$$('details.langdd[open]').forEach(function(d){d.open=false})}});
+$$('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault()})});
+
+fillImgs(document);
+route();
+})();
+</script>
+</body>
+</html>
