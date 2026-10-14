@@ -1,4 +1,4 @@
-// Clave interna -> ruta de la foto en el repositorio
+// Clave interna -> ruta de la foto en el repositorio (común a todos los idiomas)
 var IMG = {
  "logo-black": "assets/marca/logo-negro.png",
  "logo-white": "assets/marca/logo-blanco.png",

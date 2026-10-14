@@ -1,4 +1,4 @@
-// Recetario: 108 recetas. product = ficha enlazada (null si el producto ya no está en la web)
+// Recetario (es)
 var RECIPES = [
 {
 "slug": "bocadillo-de-atun-veraniego",
