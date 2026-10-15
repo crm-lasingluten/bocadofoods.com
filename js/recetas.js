@@ -21,7 +21,8 @@ var RECIPES = [
 "Rellenar los panecillos"
 ],
 "nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
-"video": "NQH9-sNL5zU"
+"video": "NQH9-sNL5zU",
+"href": "recetas/bocadillo-de-atun-veraniego.html"
 },
 {
 "slug": "baguettes-dulce-salado-de-verano",
@@ -43,7 +44,8 @@ var RECIPES = [
 "Terminar con cebollino"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/baguettes-dulce-salado-de-verano.html"
 },
 {
 "slug": "hamburguesas-vegetales-rellenas-de-queso",
@@ -67,7 +69,8 @@ var RECIPES = [
 "Cocinar en sartén"
 ],
 "nut": "",
-"video": "JyKoSk2LrbQ"
+"video": "JyKoSk2LrbQ",
+"href": "recetas/hamburguesas-vegetales-rellenas-de-queso.html"
 },
 {
 "slug": "tostadas-veraniegas-con-sandia",
@@ -89,7 +92,8 @@ var RECIPES = [
 "Añadir sandía en cubitos, hierbabuena, lima y queso feta"
 ],
 "nut": "",
-"video": "P4Zr0aEbkQ0"
+"video": "P4Zr0aEbkQ0",
+"href": "recetas/tostadas-veraniegas-con-sandia.html"
 },
 {
 "slug": "nachos-con-pollo-y-guacamole",
@@ -114,7 +118,8 @@ var RECIPES = [
 "Añadir toppings: pollo, guacamole, salsa, queso crema y cilantro"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": null
+"video": null,
+"href": "recetas/nachos-con-pollo-y-guacamole.html"
 },
 {
 "slug": "cheesecake-de-frutos-rojos-con-tostadas",
@@ -139,7 +144,8 @@ var RECIPES = [
 "Montar la cheesecake por capas"
 ],
 "nut": "",
-"video": "t0iq2uo2aNY"
+"video": "t0iq2uo2aNY",
+"href": "recetas/cheesecake-de-frutos-rojos-con-tostadas.html"
 },
 {
 "slug": "pizza-de-calabacin",
@@ -159,7 +165,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
-"video": null
+"video": null,
+"href": "recetas/pizza-de-calabacin.html"
 },
 {
 "slug": "bocaditos-de-wrap-con-salmon",
@@ -182,7 +189,8 @@ var RECIPES = [
 "Enrollar y cortar"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": null
+"video": null,
+"href": "recetas/bocaditos-de-wrap-con-salmon.html"
 },
 {
 "slug": "bocaditos-de-sandwich-con-atun",
@@ -203,7 +211,8 @@ var RECIPES = [
 "Rellenar los bocaditos"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG24",
-"video": null
+"video": null,
+"href": "recetas/bocaditos-de-sandwich-con-atun.html"
 },
 {
 "slug": "tartaletas-de-puerro-y-bacon",
@@ -224,7 +233,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": null
+"video": null,
+"href": "recetas/tartaletas-de-puerro-y-bacon.html"
 },
 {
 "slug": "baguette-rellena-mundial",
@@ -245,7 +255,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "1 baguette (110g): 14g carbohidratos, 30g proteínas, 13g fibra",
-"video": null
+"video": null,
+"href": "recetas/baguette-rellena-mundial.html"
 },
 {
 "slug": "3-ideas-de-tostas-hummus-salmon-aguacate",
@@ -269,7 +280,8 @@ var RECIPES = [
 "Untar aguacate y poner huevos de codorniz para la tercera"
 ],
 "nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
-"video": null
+"video": null,
+"href": "recetas/3-ideas-de-tostas-hummus-salmon-aguacate.html"
 },
 {
 "slug": "conitos-rellenos-navidenos",
@@ -292,7 +304,8 @@ var RECIPES = [
 "Rellenar los conitos"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": null
+"video": null,
+"href": "recetas/conitos-rellenos-navidenos.html"
 },
 {
 "slug": "tostadas-dulces-saladas-fin-de-ano",
@@ -314,7 +327,8 @@ var RECIPES = [
 "Terminar con perejil"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/tostadas-dulces-saladas-fin-de-ano.html"
 },
 {
 "slug": "baguettes-rellenas",
@@ -337,7 +351,8 @@ var RECIPES = [
 "Hornear a 160°C unos 15 min"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/baguettes-rellenas.html"
 },
 {
 "slug": "tostadas-tarta-de-manzana",
@@ -361,7 +376,8 @@ var RECIPES = [
 "Airfryer 5 min"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/tostadas-tarta-de-manzana.html"
 },
 {
 "slug": "tostadas-con-langostinos",
@@ -386,7 +402,8 @@ var RECIPES = [
 "Montar las tostadas con guacamole, pico de gallo y langostinos"
 ],
 "nut": "",
-"video": "WW5jdmpGrPk"
+"video": "WW5jdmpGrPk",
+"href": "recetas/tostadas-con-langostinos.html"
 },
 {
 "slug": "sandwich-viral-de-huevo-dia-del-sandwich",
@@ -409,7 +426,8 @@ var RECIPES = [
 "Cerrar el sándwich"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
-"video": null
+"video": null,
+"href": "recetas/sandwich-viral-de-huevo-dia-del-sandwich.html"
 },
 {
 "slug": "tarta-salada-de-brocoli-con-wrap",
@@ -431,7 +449,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": "ECuwmS6OX3A"
+"video": "ECuwmS6OX3A",
+"href": "recetas/tarta-salada-de-brocoli-con-wrap.html"
 },
 {
 "slug": "bocadillo-mundial",
@@ -457,7 +476,8 @@ var RECIPES = [
 "Montar el bocadillo con pimientos asados y queso"
 ],
 "nut": "1 baguette (110g): 14g carbohidratos, 30g proteínas, 13g fibra",
-"video": null
+"video": null,
+"href": "recetas/bocadillo-mundial.html"
 },
 {
 "slug": "tostadas-sabor-tarta-de-manzana",
@@ -481,7 +501,8 @@ var RECIPES = [
 "Airfryer 5 min"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
-"video": "jovD3jRV33A"
+"video": "jovD3jRV33A",
+"href": "recetas/tostadas-sabor-tarta-de-manzana.html"
 },
 {
 "slug": "pizza-de-verduras",
@@ -502,7 +523,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
-"video": "cQVAwwOV8bY"
+"video": "cQVAwwOV8bY",
+"href": "recetas/pizza-de-verduras.html"
 },
 {
 "slug": "pizza-de-calabaza-con-sabor-a-otono",
@@ -524,7 +546,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
-"video": null
+"video": null,
+"href": "recetas/pizza-de-calabaza-con-sabor-a-otono.html"
 },
 {
 "slug": "tacos-vegetales-con-base-de-lechuga",
@@ -545,7 +568,8 @@ var RECIPES = [
 "Especiar al gusto"
 ],
 "nut": "Alto en proteína, bajo en grasas, fuente de fibra, sin colesterol, gluten free, vegano",
-"video": "AtBnyGm3nnc"
+"video": "AtBnyGm3nnc",
+"href": "recetas/tacos-vegetales-con-base-de-lechuga.html"
 },
 {
 "slug": "mini-quiches-de-pan-de-proteinas",
@@ -567,7 +591,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/mini-quiches-de-pan-de-proteinas.html"
 },
 {
 "slug": "panecillos-rellenos-de-pesto-y-huevo",
@@ -587,7 +612,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
-"video": "-rS00CdsJZo"
+"video": "-rS00CdsJZo",
+"href": "recetas/panecillos-rellenos-de-pesto-y-huevo.html"
 },
 {
 "slug": "pizza-rolls",
@@ -609,7 +635,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
-"video": "fo6PPEA7MOE"
+"video": "fo6PPEA7MOE",
+"href": "recetas/pizza-rolls.html"
 },
 {
 "slug": "mini-tacos-de-picada-vegetal",
@@ -632,7 +659,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": "iqSarAyYzcM"
+"video": "iqSarAyYzcM",
+"href": "recetas/mini-tacos-de-picada-vegetal.html"
 },
 {
 "slug": "quesadilla-de-halloween",
@@ -653,7 +681,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": "dQMx6h8Qve4"
+"video": "dQMx6h8Qve4",
+"href": "recetas/quesadilla-de-halloween.html"
 },
 {
 "slug": "sandwich-de-huevo-vuelta-al-cole",
@@ -675,7 +704,8 @@ var RECIPES = [
 "Rellenar los panecillos"
 ],
 "nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
-"video": null
+"video": null,
+"href": "recetas/sandwich-de-huevo-vuelta-al-cole.html"
 },
 {
 "slug": "canelones-de-berenjena-con-picada-vegetal",
@@ -698,7 +728,8 @@ var RECIPES = [
 "Hornear hasta gratinar"
 ],
 "nut": "Alto en proteína, bajo en grasas, fuente de fibra, sin colesterol, gluten free",
-"video": null
+"video": null,
+"href": "recetas/canelones-de-berenjena-con-picada-vegetal.html"
 },
 {
 "slug": "bocadillo-de-pollo-y-verduras-asadas",
@@ -719,7 +750,8 @@ var RECIPES = [
 "Montar el sándwich"
 ],
 "nut": "1 baguette (110g): 14g carbohidratos, 30g proteínas, 13g fibra",
-"video": "f7bFZ4LNhik"
+"video": "f7bFZ4LNhik",
+"href": "recetas/bocadillo-de-pollo-y-verduras-asadas.html"
 },
 {
 "slug": "sandwich-de-espinacas-y-queso",
@@ -741,7 +773,8 @@ var RECIPES = [
 "Tostar"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
-"video": "gYPTRU4dMqM"
+"video": "gYPTRU4dMqM",
+"href": "recetas/sandwich-de-espinacas-y-queso.html"
 },
 {
 "slug": "pizza-de-salmon-queso-y-rucula",
@@ -762,7 +795,8 @@ var RECIPES = [
 "Añadir rúcula fresca al sacar del horno"
 ],
 "nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
-"video": "pn2vgx9_l24"
+"video": "pn2vgx9_l24",
+"href": "recetas/pizza-de-salmon-queso-y-rucula.html"
 },
 {
 "slug": "rollitos-de-hummus-y-verduritas",
@@ -783,7 +817,8 @@ var RECIPES = [
 "Enrollar y cortar a la mitad"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": null
+"video": null,
+"href": "recetas/rollitos-de-hummus-y-verduritas.html"
 },
 {
 "slug": "sandwich-saludable-vuelta-a-la-rutina",
@@ -804,7 +839,8 @@ var RECIPES = [
 "Rellenar con huevo a la plancha y espinacas"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG bajo",
-"video": null
+"video": null,
+"href": "recetas/sandwich-saludable-vuelta-a-la-rutina.html"
 },
 {
 "slug": "bocaditos-de-platano",
@@ -828,7 +864,8 @@ var RECIPES = [
 "Acompañar con yogur"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": null
+"video": null,
+"href": "recetas/bocaditos-de-platano.html"
 },
 {
 "slug": "bocadillo-de-berenjenas",
@@ -850,7 +887,8 @@ var RECIPES = [
 "Llevar a la plancha o tostadora"
 ],
 "nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
-"video": null
+"video": null,
+"href": "recetas/bocadillo-de-berenjenas.html"
 },
 {
 "slug": "napolitanas-rellenas-de-jamon-y-queso",
@@ -872,7 +910,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": "JVXXhPz2OE0"
+"video": "JVXXhPz2OE0",
+"href": "recetas/napolitanas-rellenas-de-jamon-y-queso.html"
 },
 {
 "slug": "tostadas-de-huevo",
@@ -893,7 +932,8 @@ var RECIPES = [
 "Hornear en airfryer, horno o sartén con tapa"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG 24",
-"video": null
+"video": null,
+"href": "recetas/tostadas-de-huevo.html"
 },
 {
 "slug": "tostadas-de-atun",
@@ -916,7 +956,8 @@ var RECIPES = [
 "Colocar el relleno encima de las tostadas"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG 24",
-"video": null
+"video": null,
+"href": "recetas/tostadas-de-atun.html"
 },
 {
 "slug": "pizza-caprese",
@@ -938,7 +979,8 @@ var RECIPES = [
 "Añadir albahaca fresca y crema de vinagre balsámico"
 ],
 "nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
-"video": "vXZQqdO_pxo"
+"video": "vXZQqdO_pxo",
+"href": "recetas/pizza-caprese.html"
 },
 {
 "slug": "triangulos-rellenos-de-pollo-y-espinacas",
@@ -958,7 +1000,8 @@ var RECIPES = [
 "Dorar en airfryer, sartén u horno"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": "bJzmfnEtpyw"
+"video": "bJzmfnEtpyw",
+"href": "recetas/triangulos-rellenos-de-pollo-y-espinacas.html"
 },
 {
 "slug": "panecillos-rellenos",
@@ -978,7 +1021,8 @@ var RECIPES = [
 "Hornear 10 min a 180°C"
 ],
 "nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
-"video": null
+"video": null,
+"href": "recetas/panecillos-rellenos.html"
 },
 {
 "slug": "brochetas-de-sandwich",
@@ -1000,7 +1044,8 @@ var RECIPES = [
 "Terminar con una aceituna"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG 24",
-"video": "9r6JJGlKMgI"
+"video": "9r6JJGlKMgI",
+"href": "recetas/brochetas-de-sandwich.html"
 },
 {
 "slug": "mini-quesadillas",
@@ -1019,7 +1064,8 @@ var RECIPES = [
 "Doblar y hacer a la plancha"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra, apto vegano",
-"video": "aeLrPJJbxus"
+"video": "aeLrPJJbxus",
+"href": "recetas/mini-quesadillas.html"
 },
 {
 "slug": "tostadas-de-pizza",
@@ -1041,7 +1087,8 @@ var RECIPES = [
 "Airfryer u horno"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
-"video": null
+"video": null,
+"href": "recetas/tostadas-de-pizza.html"
 },
 {
 "slug": "desayuno-ideal-con-wrap",
@@ -1061,7 +1108,8 @@ var RECIPES = [
 "Doblar y pasar por la plancha"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": "ql4e49ayU6w"
+"video": "ql4e49ayU6w",
+"href": "recetas/desayuno-ideal-con-wrap.html"
 },
 {
 "slug": "hamburguesas-vegetales-rellenas-de-queso-2",
@@ -1083,7 +1131,8 @@ var RECIPES = [
 "Cocinar a la sartén"
 ],
 "nut": "Alto en proteína, bajo en grasas, fuente de fibra, sin colesterol, gluten free, apto vegano",
-"video": "JyKoSk2LrbQ"
+"video": "JyKoSk2LrbQ",
+"href": "recetas/hamburguesas-vegetales-rellenas-de-queso-2.html"
 },
 {
 "slug": "pizza-sin-gluten-proteica",
@@ -1106,7 +1155,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "Sin gluten, alta en proteínas, apto vegano/veggie",
-"video": null
+"video": null,
+"href": "recetas/pizza-sin-gluten-proteica.html"
 },
 {
 "slug": "tostadas-de-hummus-con-queso-feta",
@@ -1127,7 +1177,8 @@ var RECIPES = [
 "Terminar con queso feta"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG24",
-"video": null
+"video": null,
+"href": "recetas/tostadas-de-hummus-con-queso-feta.html"
 },
 {
 "slug": "galette-con-bordes-rellenos-dulce",
@@ -1148,7 +1199,8 @@ var RECIPES = [
 "Cocinar en sartén"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": null
+"video": null,
+"href": "recetas/galette-con-bordes-rellenos-dulce.html"
 },
 {
 "slug": "galette-con-bordes-rellenos-salada",
@@ -1169,7 +1221,8 @@ var RECIPES = [
 "Cocinar en sartén a fuego bajo con tapa"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/galette-con-bordes-rellenos-salada.html"
 },
 {
 "slug": "sandwich-saludable-para-llevar-a-la-playa",
@@ -1190,7 +1243,8 @@ var RECIPES = [
 "Rellenar el sándwich"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
-"video": "zvKAlQRqIIM"
+"video": "zvKAlQRqIIM",
+"href": "recetas/sandwich-saludable-para-llevar-a-la-playa.html"
 },
 {
 "slug": "paninis-proteicos",
@@ -1213,7 +1267,8 @@ var RECIPES = [
 "Hornear hasta fundir el queso"
 ],
 "nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
-"video": "L-fQKm7XRG0"
+"video": "L-fQKm7XRG0",
+"href": "recetas/paninis-proteicos.html"
 },
 {
 "slug": "raviolis-de-calabacin-con-picada-vegetal",
@@ -1235,7 +1290,8 @@ var RECIPES = [
 "Hornear 15-20 min"
 ],
 "nut": "Alto en proteína, bajo en grasas, fuente de fibra, sin colesterol, gluten free, vegano",
-"video": "tlu3aUvuK4I"
+"video": "tlu3aUvuK4I",
+"href": "recetas/raviolis-de-calabacin-con-picada-vegetal.html"
 },
 {
 "slug": "tostada-con-huevo-al-hueco",
@@ -1256,7 +1312,8 @@ var RECIPES = [
 "Tostar el pan sobrante"
 ],
 "nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG 24",
-"video": null
+"video": null,
+"href": "recetas/tostada-con-huevo-al-hueco.html"
 },
 {
 "slug": "pizza-quesadilla",
@@ -1278,7 +1335,8 @@ var RECIPES = [
 "Airfryer 15 min a 170°C"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 3g fibra",
-"video": "-Wt276b0LDM"
+"video": "-Wt276b0LDM",
+"href": "recetas/pizza-quesadilla.html"
 },
 {
 "slug": "sandwich-de-huevo-al-curry",
@@ -1299,7 +1357,8 @@ var RECIPES = [
 "Montar el sándwich con el pan, la lechuga y el relleno"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/sandwich-de-huevo-al-curry.html"
 },
 {
 "slug": "panecillos-rellenos-de-atun",
@@ -1319,7 +1378,8 @@ var RECIPES = [
 "Abrir el panecillo a la mitad y rellenar"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/panecillos-rellenos-de-atun.html"
 },
 {
 "slug": "sandwich-de-pollo",
@@ -1344,7 +1404,8 @@ var RECIPES = [
 "Rellenar el sándwich"
 ],
 "nut": "",
-"video": "Jn53L0u9n58"
+"video": "Jn53L0u9n58",
+"href": "recetas/sandwich-de-pollo.html"
 },
 {
 "slug": "baguette-rellena",
@@ -1364,7 +1425,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "",
-"video": "N7Wak5W3b38"
+"video": "N7Wak5W3b38",
+"href": "recetas/baguette-rellena.html"
 },
 {
 "slug": "taco-burger",
@@ -1388,7 +1450,8 @@ var RECIPES = [
 "Doblar a la mitad"
 ],
 "nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
-"video": "-LJmgKUqeFA"
+"video": "-LJmgKUqeFA",
+"href": "recetas/taco-burger.html"
 },
 {
 "slug": "sandwich-de-queso-cottage-y-salmon",
@@ -1409,7 +1472,8 @@ var RECIPES = [
 "Rellenar con salmón ahumado y pepino"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/sandwich-de-queso-cottage-y-salmon.html"
 },
 {
 "slug": "crackers-de-halloween-fantasmas",
@@ -1429,7 +1493,8 @@ var RECIPES = [
 "Hornear con cuidado"
 ],
 "nut": "",
-"video": "a1TAIMgboFE"
+"video": "a1TAIMgboFE",
+"href": "recetas/crackers-de-halloween-fantasmas.html"
 },
 {
 "slug": "tostadas-francesas-saladas-ig24",
@@ -1451,7 +1516,8 @@ var RECIPES = [
 "Cocinar a la plancha"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/tostadas-francesas-saladas-ig24.html"
 },
 {
 "slug": "tiramisu-expres",
@@ -1473,7 +1539,8 @@ var RECIPES = [
 "Terminar con cacao en polvo"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/tiramisu-expres.html"
 },
 {
 "slug": "panecillos-4-quesos",
@@ -1497,7 +1564,8 @@ var RECIPES = [
 "Airfryer 10 min a 180°C"
 ],
 "nut": "",
-"video": "gfvBm-O32I4"
+"video": "gfvBm-O32I4",
+"href": "recetas/panecillos-4-quesos.html"
 },
 {
 "slug": "bocaditos-de-cacao",
@@ -1519,7 +1587,8 @@ var RECIPES = [
 "Terminar con cacao en polvo y sirope sin azúcar"
 ],
 "nut": "",
-"video": "GuWVfJtZlCM"
+"video": "GuWVfJtZlCM",
+"href": "recetas/bocaditos-de-cacao.html"
 },
 {
 "slug": "cestitas-con-salmon-y-aguacate",
@@ -1539,7 +1608,8 @@ var RECIPES = [
 "Rellenar las cestitas"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/cestitas-con-salmon-y-aguacate.html"
 },
 {
 "slug": "sandwich-navideno",
@@ -1558,7 +1628,8 @@ var RECIPES = [
 "Montar el sándwich"
 ],
 "nut": "",
-"video": null
+"video": null,
+"href": "recetas/sandwich-navideno.html"
 },
 {
 "slug": "tostada-feta-crunchy",
@@ -1576,7 +1647,8 @@ var RECIPES = [
 "Añadir queso feta en los bordes hasta que quede crujiente"
 ],
 "nut": "1 unidad: 20g proteína, 1g carbohidratos, 4g fibra (aprox)",
-"video": null
+"video": null,
+"href": "recetas/tostada-feta-crunchy.html"
 },
 {
 "slug": "pancakes-sweet-protein-chocolate",
@@ -1595,7 +1667,8 @@ var RECIPES = [
 "Cocinar en sartén como pancakes tradicionales"
 ],
 "nut": "Más del doble de proteína que unos pancakes clásicos, sin azúcar agregada, alto en fibra",
-"video": null
+"video": null,
+"href": "recetas/pancakes-sweet-protein-chocolate.html"
 },
 {
 "slug": "nachos-con-guacamole",
@@ -1618,7 +1691,8 @@ var RECIPES = [
 "Servir con guacamole"
 ],
 "nut": "Con 2 wraps (16 nachos): 18g proteína, 5g fibra",
-"video": null
+"video": null,
+"href": "recetas/nachos-con-guacamole.html"
 },
 {
 "slug": "mona-mix-vainilla",
@@ -1640,7 +1714,8 @@ var RECIPES = [
 "Dejar enfriar y decorar"
 ],
 "nut": "20% proteína, sin azúcares añadidos",
-"video": null
+"video": null,
+"href": "recetas/mona-mix-vainilla.html"
 },
 {
 "slug": "hamburguesa-vegana",
@@ -1667,7 +1742,8 @@ var RECIPES = [
 "Montar con los toppings elegidos"
 ],
 "nut": "1 hamburguesa: 30g proteína, menos de 2g azúcares, 11g fibra",
-"video": null
+"video": null,
+"href": "recetas/hamburguesa-vegana.html"
 },
 {
 "slug": "huevo-poche-sobre-tostada",
@@ -1690,7 +1766,8 @@ var RECIPES = [
 "Servir sobre la tostada de aguacate"
 ],
 "nut": "15g proteína, ácidos grasos Omega 3, alto en fibra, bajo en carbohidratos",
-"video": null
+"video": null,
+"href": "recetas/huevo-poche-sobre-tostada.html"
 },
 {
 "slug": "desayuno-3-ingredientes",
@@ -1709,7 +1786,8 @@ var RECIPES = [
 "Hornear"
 ],
 "nut": "30g de proteína, muy bajo en hidratos de carbono",
-"video": null
+"video": null,
+"href": "recetas/desayuno-3-ingredientes.html"
 },
 {
 "slug": "tostadas-virales",
@@ -1733,7 +1811,8 @@ var RECIPES = [
 "Montar la tostada con el hummus como base y el resto de ingredientes encima"
 ],
 "nut": "35g de proteína, ideal post entreno",
-"video": null
+"video": null,
+"href": "recetas/tostadas-virales.html"
 },
 {
 "slug": "merienda-para-ninos",
@@ -1761,7 +1840,8 @@ var RECIPES = [
 "Decorar con canela y servir con la mezcla de queso como dip"
 ],
 "nut": "Snack alto en proteína, bajo en azúcares, apto para niños",
-"video": null
+"video": null,
+"href": "recetas/merienda-para-ninos.html"
 },
 {
 "slug": "tostadas-de-colores",
@@ -1783,7 +1863,8 @@ var RECIPES = [
 "Segunda tostada: cubrir con aguacate y fresas"
 ],
 "nut": "Pan Bio: 25,4g proteína por 100g. Queso cottage: 14g proteína por 100g",
-"video": null
+"video": null,
+"href": "recetas/tostadas-de-colores.html"
 },
 {
 "slug": "galletas-sweet-protein",
@@ -1804,7 +1885,8 @@ var RECIPES = [
 "Opcional: bañar en chocolate"
 ],
 "nut": "Casi 40g de proteína, sin azúcares añadidos, rica en fibra y grasas saludables",
-"video": null
+"video": null,
+"href": "recetas/galletas-sweet-protein.html"
 },
 {
 "slug": "croissants-de-chocolate",
@@ -1824,7 +1906,8 @@ var RECIPES = [
 "Hornear 15 minutos"
 ],
 "nut": "Protein Choco Spread: 20% proteína, sin azúcares añadidos",
-"video": null
+"video": null,
+"href": "recetas/croissants-de-chocolate.html"
 },
 {
 "slug": "tortilla-express-para-llevar",
@@ -1844,7 +1927,8 @@ var RECIPES = [
 "Colocar el wrap encima y cocinar 1 minuto más"
 ],
 "nut": "Comida rápida alta en proteína, ideal para llevar",
-"video": null
+"video": null,
+"href": "recetas/tortilla-express-para-llevar.html"
 },
 {
 "slug": "ensalada-para-llevar-en-wrap",
@@ -1866,7 +1950,8 @@ var RECIPES = [
 "Rellenar el wrap con la ensalada y enrollar"
 ],
 "nut": "Ensalada fresca para llevar, alta en nutrientes",
-"video": null
+"video": null,
+"href": "recetas/ensalada-para-llevar-en-wrap.html"
 },
 {
 "slug": "helado-proteico-de-chocolate",
@@ -1884,7 +1969,8 @@ var RECIPES = [
 "Congelar"
 ],
 "nut": "28g de proteína por helado, muy bajo en hidratos",
-"video": null
+"video": null,
+"href": "recetas/helado-proteico-de-chocolate.html"
 },
 {
 "slug": "bocadillo-playero",
@@ -1906,7 +1992,8 @@ var RECIPES = [
 "Rellenar con el aguacate, huevo duro en rodajas, jamón, queso, canónigos y tomate cherry"
 ],
 "nut": "Bocadillo completo, alto en proteína",
-"video": null
+"video": null,
+"href": "recetas/bocadillo-playero.html"
 },
 {
 "slug": "tupper-triple-de-protein-bread",
@@ -1930,7 +2017,8 @@ var RECIPES = [
 "Guardar en tupper con fruta fresca"
 ],
 "nut": "3 rebanadas de pan aportan 22,5g de proteína",
-"video": null
+"video": null,
+"href": "recetas/tupper-triple-de-protein-bread.html"
 },
 {
 "slug": "burger-de-camping",
@@ -1950,7 +2038,8 @@ var RECIPES = [
 "Montar la burger con el pan, la carne, el queso mozzarella y la ensalada"
 ],
 "nut": "Pan de Hamburguesa Low Carb, alto en proteína para recuperación muscular",
-"video": null
+"video": null,
+"href": "recetas/burger-de-camping.html"
 },
 {
 "slug": "bruschettas-de-pesto-mozzarella-y-jamon-serrano",
@@ -1973,7 +2062,8 @@ var RECIPES = [
 "Servir con uvas, pasas y frutos secos"
 ],
 "nut": "Receta con solo 4 ingredientes",
-"video": null
+"video": null,
+"href": "recetas/bruschettas-de-pesto-mozzarella-y-jamon-serrano.html"
 },
 {
 "slug": "merienda-vuelta-al-cole",
@@ -1992,7 +2082,8 @@ var RECIPES = [
 "Cubrir con fruta en rodajas"
 ],
 "nut": "Sin azúcares añadidos, alta en proteína y fibra",
-"video": null
+"video": null,
+"href": "recetas/merienda-vuelta-al-cole.html"
 },
 {
 "slug": "tupper-para-toda-la-familia",
@@ -2020,7 +2111,8 @@ var RECIPES = [
 "Rellenar con la preparación y acompañar con tomates cherry"
 ],
 "nut": "28% de la proteína diaria requerida, 15% de fibra",
-"video": null
+"video": null,
+"href": "recetas/tupper-para-toda-la-familia.html"
 },
 {
 "slug": "tostadas-virales-de-pan-ig24",
@@ -2042,7 +2134,8 @@ var RECIPES = [
 "Añadir aguacate y tomate antes de doblar y servir"
 ],
 "nut": "37g de proteína. 2 rebanadas de Pan IG24: 17g proteína, 3g hidratos, 9g fibra",
-"video": null
+"video": null,
+"href": "recetas/tostadas-virales-de-pan-ig24.html"
 },
 {
 "slug": "mantequilla-saludable-de-aove",
@@ -2062,7 +2155,8 @@ var RECIPES = [
 "Terminar con tomate y albahaca (o especias a gusto)"
 ],
 "nut": "Snack bajo en hidratos, alto en proteínas y grasas saludables",
-"video": null
+"video": null,
+"href": "recetas/mantequilla-saludable-de-aove.html"
 },
 {
 "slug": "nyc-salmon-bagel",
@@ -2086,7 +2180,8 @@ var RECIPES = [
 "Añadir canónigos, aguacate en rodajas, salmón y pepino"
 ],
 "nut": "40g de proteína",
-"video": null
+"video": null,
+"href": "recetas/nyc-salmon-bagel.html"
 },
 {
 "slug": "cestitas-de-bolognesa",
@@ -2106,7 +2201,8 @@ var RECIPES = [
 "Hornear a 200°C por 10 minutos"
 ],
 "nut": "28% de proteína",
-"video": null
+"video": null,
+"href": "recetas/cestitas-de-bolognesa.html"
 },
 {
 "slug": "bagel-con-55g-de-proteina",
@@ -2128,7 +2224,8 @@ var RECIPES = [
 "Montar el bagel con el huevo, queso, pavo y tomate en rodajas"
 ],
 "nut": "55g de proteína, menos de 10g de carbohidratos, 25g de fibra",
-"video": null
+"video": null,
+"href": "recetas/bagel-con-55g-de-proteina.html"
 },
 {
 "slug": "muffins-de-halloween-con-frosting-de-calabaza",
@@ -2153,7 +2250,8 @@ var RECIPES = [
 "Cubrir los muffins con el frosting"
 ],
 "nut": "Muffins especiados sin chucherías procesadas",
-"video": null
+"video": null,
+"href": "recetas/muffins-de-halloween-con-frosting-de-calabaza.html"
 },
 {
 "slug": "apple-pie-express-en-wrap",
@@ -2177,7 +2275,8 @@ var RECIPES = [
 "Decorar con el líquido restante"
 ],
 "nut": "Listo en menos de 5 minutos",
-"video": null
+"video": null,
+"href": "recetas/apple-pie-express-en-wrap.html"
 },
 {
 "slug": "shakshuka-con-protein-bread",
@@ -2204,7 +2303,8 @@ var RECIPES = [
 "Decorar con perejil y servir con el Protein Bread"
 ],
 "nut": "25g de proteína con solo 350 kcal, baja en hidratos, alta en fibra",
-"video": null
+"video": null,
+"href": "recetas/shakshuka-con-protein-bread.html"
 },
 {
 "slug": "bagel-con-huevo-y-yema-jugosa",
@@ -2225,7 +2325,8 @@ var RECIPES = [
 "Montar el bagel con aguacate, tomate y la tapa con clara y yema"
 ],
 "nut": "Más de 30g de proteína, ácidos grasos Omega 9, 20g de fibra",
-"video": null
+"video": null,
+"href": "recetas/bagel-con-huevo-y-yema-jugosa.html"
 },
 {
 "slug": "conos-de-espinaca-y-ricotta",
@@ -2249,7 +2350,8 @@ var RECIPES = [
 "Rellenar los conos con la mezcla"
 ],
 "nut": "Entrante para compartir en familia",
-"video": null
+"video": null,
+"href": "recetas/conos-de-espinaca-y-ricotta.html"
 },
 {
 "slug": "bagel-navideno-de-reno",
@@ -2271,7 +2373,8 @@ var RECIPES = [
 "Decorar como reno: nariz de fresa, ojos con crema de cacahuete y arándanos, cuernos de almendras"
 ],
 "nut": "Desayuno festivo alto en proteína",
-"video": null
+"video": null,
+"href": "recetas/bagel-navideno-de-reno.html"
 },
 {
 "slug": "queso-navideno-relleno-de-pistachos-y-arandanos",
@@ -2296,7 +2399,8 @@ var RECIPES = [
 "Refrigerar antes de servir"
 ],
 "nut": "Queso untable navideño para compartir",
-"video": null
+"video": null,
+"href": "recetas/queso-navideno-relleno-de-pistachos-y-arandanos.html"
 },
 {
 "slug": "barquetas-de-jamon-y-queso",
@@ -2318,7 +2422,8 @@ var RECIPES = [
 "Hornear a 200°C por 15 minutos"
 ],
 "nut": "Alto en proteínas, muy bajo en hidratos de carbono",
-"video": null
+"video": null,
+"href": "recetas/barquetas-de-jamon-y-queso.html"
 },
 {
 "slug": "french-toast-de-ano-nuevo",
@@ -2344,7 +2449,8 @@ var RECIPES = [
 "Cocinar en sartén caliente con aceite de coco, vuelta y vuelta"
 ],
 "nut": "Desayuno alto en proteína, 6 ingredientes",
-"video": null
+"video": null,
+"href": "recetas/french-toast-de-ano-nuevo.html"
 },
 {
 "slug": "bocata-de-pollo-bbq-con-cole-slaw",
@@ -2376,7 +2482,8 @@ var RECIPES = [
 "Montar el bocata con el pan, el pollo y el cole slaw, con queso gratinado"
 ],
 "nut": "Listo en 15 minutos",
-"video": null
+"video": null,
+"href": "recetas/bocata-de-pollo-bbq-con-cole-slaw.html"
 },
 {
 "slug": "tostada-nube-huevos-nube",
@@ -2399,6 +2506,7 @@ var RECIPES = [
 "Montar sobre la tostada de Pan IG24"
 ],
 "nut": "Receta baja en hidratos, solo 2 ingredientes base",
-"video": null
+"video": null,
+"href": "recetas/tostada-nube-huevos-nube.html"
 }
 ];

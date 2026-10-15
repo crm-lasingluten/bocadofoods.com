@@ -15,7 +15,8 @@ var BLOG = [
 "cta": {
 "text": "Ver productos IG24",
 "href": "#productos?cat=ig24"
-}
+},
+"href": "blog/the-original-protein-bread-indice-glucemico-24.html"
 },
 {
 "slug": "indice-glucemico-que-es",
@@ -32,7 +33,8 @@ var BLOG = [
 "cta": {
 "text": "Descubrir la línea IG24",
 "href": "#productos?cat=ig24"
-}
+},
+"href": "blog/indice-glucemico-que-es.html"
 },
 {
 "slug": "proteina-cuanta-necesitas",
@@ -48,7 +50,8 @@ var BLOG = [
 "cta": {
 "text": "Ver productos proteicos",
 "href": "#productos?cat=proteicos"
-}
+},
+"href": "blog/proteina-cuanta-necesitas.html"
 },
 {
 "slug": "fibra-el-nutriente-que-falta",
@@ -65,7 +68,8 @@ var BLOG = [
 "cta": {
 "text": "Ver panes y mezclas",
 "href": "#productos?cat=panes"
-}
+},
+"href": "blog/fibra-el-nutriente-que-falta.html"
 },
 {
 "slug": "pan-y-control-de-peso-dr-pape",
@@ -79,7 +83,8 @@ var BLOG = [
 "cta": {
 "text": "Conocer The Original Protein Bread",
 "href": "#p/the-original-protein-bread"
-}
+},
+"href": "blog/pan-y-control-de-peso-dr-pape.html"
 },
 {
 "slug": "celiaquia-que-es-y-cifras",
@@ -96,6 +101,7 @@ var BLOG = [
 "cta": {
 "text": "Ver productos sin gluten",
 "href": "#productos?cat=singluten"
-}
+},
+"href": "blog/celiaquia-que-es-y-cifras.html"
 }
 ];
