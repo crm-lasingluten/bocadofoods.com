@@ -16,7 +16,7 @@
 <link rel="alternate" hreflang="pt" href="https://crm-lasingluten.github.io/bocadofoods.com/pt/">
 <link rel="alternate" hreflang="x-default" href="https://crm-lasingluten.github.io/bocadofoods.com/">
 <meta property="og:locale" content="es_ES">
-<link rel="stylesheet" href="css/estilos.css?v=202610140924">
+<link rel="stylesheet" href="css/estilos.css?v=202610141047">
 </head>
 <body>
 
@@ -363,10 +363,10 @@
 <div id="aviso" hidden></div>
 
 
-<script src="js/imagenes.js?v=202610140924"></script>
-<script src="js/productos.js?v=202610140924"></script>
-<script src="js/recetas.js?v=202610140924"></script>
-<script src="js/blog.js?v=202610140924"></script>
+<script src="js/imagenes.js?v=202610141047"></script>
+<script src="js/productos.js?v=202610141047"></script>
+<script src="js/recetas.js?v=202610141047"></script>
+<script src="js/blog.js?v=202610141047"></script>
 <script>
 (function(){
 var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
@@ -383,12 +383,12 @@ function card(p){
   var m=p.macros;
   var media=p.imgs.length?'<img class="main'+(p.imgs[1]?' has-alt':'')+'" src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+alt:'<span class="ph"><span>Foto pendiente</span></span>';
   return '<article class="card" style="'+styleVars(p.color,p.ink)+'">'+
-    '<a class="card-media" href="productos/'+p.slug+'.html" aria-label="'+esc(p.name)+'">'+media+
+    '<a class="card-media" href="'+p.href+'" aria-label="'+esc(p.name)+'">'+media+
     '<span class="ltag">'+esc(lineOf(p).short)+'</span>'+(p.best?'<span class="badge">Más vendido</span>':(p.isNew?'<span class="badge">Nuevo</span>':''))+(p.igSeal?'<img class="seal-sm" src="'+src('ig-seal')+'" alt="Índice glucémico testeado IG24">':'')+(p.brand?'<img class="seal-sm brand" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'')+'</a>'+
-    '<div class="card-body"><a class="card-name" href="productos/'+p.slug+'.html">'+esc(p.name)+'</a><div class="card-w">'+esc(p.weight)+'</div>'+
+    '<div class="card-body"><a class="card-name" href="'+p.href+'">'+esc(p.name)+'</a><div class="card-w">'+esc(p.weight)+'</div>'+
     (p.noMacros?'<div class="macros nm"><div><b>Sin gluten</b><span>'+esc(p.brand||'')+'</span></div></div>':'<div class="macros"><div><b>'+esc(m[0])+'</b><span>Proteína</span></div><div><b>'+esc(m[1])+'</b><span>Hidratos</span></div><div><b>'+esc(m[2])+'</b><span>Fibra</span></div></div>')+
     '<div class="card-note">'+((p.pending||p.noMacros)?'Datos pendientes de cargar':(p.perUnit?esc(p.perUnit):(p.nutLabel?p.nutLabel:(p.prepared?'Por 100 g de producto terminado':'Por 100 g'))))+'</div>'+
-    '<div class="card-ctas"><a class="btn sm ghost" href="productos/'+p.slug+'.html">Ver ficha</a><a class="btn sm" href="https://shop.bocadofoods.com" data-shop>Comprar</a></div></div></article>';
+    '<div class="card-ctas"><a class="btn sm ghost" href="'+p.href+'">Ver ficha</a><a class="btn sm" href="https://shop.bocadofoods.com" data-shop>Comprar</a></div></div></article>';
 }
 
 /* ---- category chips ---- */
@@ -418,7 +418,7 @@ var HERO_TILES=[
   {slug:'panecillos-ig24', label:'Panecillos IG24'}
 ];
 $('#heroTiles').innerHTML=HERO_TILES.map(function(h){var p=BY[h.slug];
-  return '<a class="htile" href="productos/'+p.slug+'.html" style="--c:'+p.color+'"><img src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+(p.igSeal?'<img class="hseal" src="'+src('ig-seal')+'" alt="Índice glucémico testeado IG24">':'')+'<span class="tag">'+esc(h.label)+'</span></a>';}).join('');
+  return '<a class="htile" href="'+p.href+'" style="--c:'+p.color+'"><img src="'+src(p.imgs[0])+'" alt="'+esc(p.name)+'">'+(p.igSeal?'<img class="hseal" src="'+src('ig-seal')+'" alt="Índice glucémico testeado IG24">':'')+'<span class="tag">'+esc(h.label)+'</span></a>';}).join('');
 $('#nProd').textContent=PRODUCTS.filter(function(p){return !p.pending}).length;
 var TILES=[
   ['panes','Panes','The Original Protein Bread, panecillos, baguettes, tostadas y bagels.','0b40383c','#e3342f'],
@@ -441,7 +441,7 @@ function rImg(r){return ROOT+'assets/recetas/'+r.img+'.jpg'}
 var RBY={}; RECIPES.forEach(function(r){RBY[r.slug]=r});
 function shortName(n){return n.replace(/^Mezcla de /,'').replace(/ \d+ g$/,'').replace(/^./,function(c){return c.toUpperCase()})}
 function withLabel(r){var p=BY[r.product];return p?(p.short||shortName(p.name)):r.cat}
-function recipesHTML(list){return list.map(function(r){var p=BY[r.product];return '<a class="rcard" href="recetas/'+r.slug+'.html" style="--c:'+(p?p.color:'#999')+'"><span class="imgw"><img loading="lazy" src="'+rImg(r)+'" alt="'+esc(r.title)+'">'+(r.video?'<span class="vid">Vídeo</span>':'')+'</span><span class="with"><i></i>Con '+esc(withLabel(r))+'</span><h3>'+esc(r.title)+'</h3></a>'}).join('')}
+function recipesHTML(list){return list.map(function(r){var p=BY[r.product];return '<a class="rcard" href="'+r.href+'" style="--c:'+(p?p.color:'#999')+'"><span class="imgw"><img loading="lazy" src="'+rImg(r)+'" alt="'+esc(r.title)+'">'+(r.video?'<span class="vid">Vídeo</span>':'')+'</span><span class="with"><i></i>Con '+esc(withLabel(r))+'</span><h3>'+esc(r.title)+'</h3></a>'}).join('')}
 var FEATURED=['rollitos-de-hummus-y-verduritas','tostadas-con-langostinos','bocadillo-de-atun-veraniego'];
 $('#recipes').innerHTML=recipesHTML(FEATURED.map(function(s){return RBY[s]}).filter(Boolean));
 $('#nRec').textContent=RECIPES.length;
@@ -450,7 +450,7 @@ function wireYT(){$$('.video[data-yt]').forEach(function(v){var b=$('.yt-play',v
   v.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+encodeURIComponent(v.dataset.yt)+'?autoplay=1&rel=0" title="Vídeo: '+v.dataset.title+'" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';};});}
 /* blog */
 function blogCover(b){var p=BY[b.cover];return {img:p?src(p.imgs[0]):ROOT+b.cover,c:p?p.color:'#c99a5b',ink:p?p.ink:'#111',photo:!p}}
-function blogHTML(list){return list.map(function(b){var c=blogCover(b);return '<a class="bcard" href="blog/'+b.slug+'.html" style="--c:'+c.c+'"><span class="bimg'+(c.photo?' photo':'')+'"><img loading="lazy" src="'+c.img+'" alt=""></span><small>'+esc(b.cat)+' · '+esc(b.date)+'</small><strong>'+esc(b.title)+'</strong><span class="ex">'+esc(b.excerpt)+'</span></a>'}).join('')}
+function blogHTML(list){return list.map(function(b){var c=blogCover(b);return '<a class="bcard" href="'+b.href+'" style="--c:'+c.c+'"><span class="bimg'+(c.photo?' photo':'')+'"><img loading="lazy" src="'+c.img+'" alt=""></span><small>'+esc(b.cat)+' · '+esc(b.date)+'</small><strong>'+esc(b.title)+'</strong><span class="ex">'+esc(b.excerpt)+'</span></a>'}).join('')}
 $('#blogHome').innerHTML=blogHTML(BLOG.slice(0,3));
 function renderBlog(){$('#blogGrid').innerHTML=blogHTML(BLOG);}
 /* recetario */
@@ -498,9 +498,9 @@ function route(){
   if(path==='productos'){state.cat=q.cat||'all';show('productos');renderCat();window.scrollTo(0,0);return;}
   if(path==='recetas'||path==='receta'){show('recetas');renderRecetas();window.scrollTo(0,0);return;}
   if(path==='blog'){show('blog');renderBlog();window.scrollTo(0,0);return;}
-  if(path.indexOf('p/')===0){location.replace('productos/'+path.slice(2)+'.html');return;}
-  if(path.indexOf('r/')===0){location.replace('recetas/'+path.slice(2)+'.html');return;}
-  if(path.indexOf('b/')===0){location.replace('blog/'+path.slice(2)+'.html');return;}
+  if(path.indexOf('p/')===0){location.replace((BY[path.slice(2)]||{href:'#productos'}).href);return;}
+  if(path.indexOf('r/')===0){location.replace((RBY[path.slice(2)]||{href:'#recetas'}).href);return;}
+  if(path.indexOf('b/')===0){location.replace((BLOG.filter(function(x){return x.slug===path.slice(2)})[0]||{href:'blog/'}).href);return;}
   if(path==='nosotros'){show('nosotros');window.scrollTo(0,0);return;}
   if(path==='home'){show('home');window.scrollTo(0,0);return;}
   var el=document.getElementById(path);
