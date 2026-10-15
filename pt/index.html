@@ -16,7 +16,7 @@
 <link rel="alternate" hreflang="pt" href="https://crm-lasingluten.github.io/bocadofoods.com/pt/">
 <link rel="alternate" hreflang="x-default" href="https://crm-lasingluten.github.io/bocadofoods.com/">
 <meta property="og:locale" content="pt_PT">
-<link rel="stylesheet" href="../css/estilos.css?v=202610141047">
+<link rel="stylesheet" href="../css/estilos.css?v=202610151022">
 </head>
 <body>
 
@@ -321,7 +321,38 @@
   </section>
 </main>
 
-<footer class="ftr" id="contacto">
+<section class="sec contact" id="contacto" aria-labelledby="c-t">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Contacto</div>
+      <h2 id="c-t">Vamos falar?</h2>
+      <p class="lead">Escreva-nos para qualquer questão sobre os nossos produtos, a sua encomenda, a distribuição no seu país ou um projeto de private label. Responderemos o mais rapidamente possível.</p>
+      <div class="contact-alt">
+        <small>Ou, se preferir:</small>
+        <a href="mailto:hola@bocadofoods.com">hola@bocadofoods.com</a>
+        <a href="tel:+34931592650">+34 931 592 650</a>
+        <a href="https://wa.me/34646698281">WhatsApp +34 646 698 281</a>
+        <span style="color:var(--muted);font-size:14px;margin-top:6px"><i>Segunda a quinta, das 8h às 15h<br>Sexta, das 8h às 14h (CET)</i></span>
+      </div>
+    </div>
+    <form class="cform" id="cform" novalidate data-ok="Obrigado! Recebemos a sua mensagem e responderemos o mais rapidamente possível." data-err="Não foi possível enviar a mensagem. Tente novamente ou escreva-nos para hola@bocadofoods.com." data-sending="A enviar…" data-lang="pt">
+      <label class="f">Nome *<input type="text" name="nombre" required autocomplete="name" maxlength="120"></label>
+      <label class="f">E-mail *<input type="email" name="email" required autocomplete="email" maxlength="160"></label>
+      <label class="f">Telefone<input type="tel" name="telefono" autocomplete="tel" maxlength="40"></label>
+      <label class="f">Empresa<input type="text" name="empresa" autocomplete="organization" maxlength="120"></label>
+      <label class="f">País<input type="text" name="pais" autocomplete="country-name" maxlength="80"></label>
+      <label class="f">Assunto<select name="motivo"><option>Questão sobre produtos</option><option>Encomenda da loja online</option><option>Private label</option><option>Distribuição / venda no meu país</option><option>Outro</option></select></label>
+      <label class="f full">Mensagem *<textarea name="mensaje" required maxlength="4000"></textarea></label>
+      <label class="hp" aria-hidden="true">No rellenar<input type="checkbox" name="botcheck" tabindex="-1"></label>
+      <label class="ok-row full"><input type="checkbox" name="acepto" required><span>Li a <a href="legal/politica-de-privacidade.html">política de privacidade</a> e aceito que os meus dados sejam tratados para responder à minha questão.</span></label>
+      <p class="finfo full"><b>Responsável:</b> Bauer Lemans, S.L. <b>Finalidade:</b> responder à sua questão. <b>Fundamento jurídico:</b> o seu consentimento. <b>Destinatários:</b> o fornecedor do serviço de envio do formulário, como subcontratante; não são cedidos dados a terceiros, salvo obrigação legal. <b>Direitos:</b> acesso, retificação, apagamento e outros, através de hola@bocadofoods.com.</p>
+      <p class="fmsg full" role="status" aria-live="polite" hidden></p>
+      <div class="full" style="display:flex;flex-wrap:wrap;gap:14px;align-items:center"><button class="btn" type="submit">Enviar mensagem</button><span class="freq">* Campos obrigatórios</span></div>
+    </form>
+  </div>
+</section>
+
+<footer class="ftr" id="pie">
   <div class="wrap">
     <div class="ftr-social">
       <a href="https://www.facebook.com/bocado.functional.foods" aria-label="Facebook"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><rect width="30" height="30" rx="4" fill="#111"/><path d="M20.5 30V18.6h3.6l.6-4.3h-4.2v-2.7c0-1.2.4-2.1 2.1-2.1h2.2V5.7c-.4 0-1.7-.2-3.2-.2-3.2 0-5.3 1.9-5.3 5.5v3.3h-3.6v4.3h3.6V30z" fill="#fff"/></svg></a>
@@ -527,6 +558,25 @@ wireShop(document);
 $$('[data-close]').forEach(function(b){b.addEventListener('click',function(){$('#aviso').hidden=true;})});
 $('#aviso').addEventListener('click',function(e){if(e.target===this)this.hidden=true});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){$('#aviso').hidden=true;$$('details.langdd[open]').forEach(function(d){d.open=false})}});
+/* ---- contact form ---- */
+(function(){var f=$('#cform');if(!f)return;var KEY='',msg=$('.fmsg',f),btn=$('button[type=submit]',f);
+function show(ok,txt){msg.hidden=false;msg.className='fmsg full '+(ok?'ok':'err');msg.textContent=txt;}
+f.addEventListener('submit',function(e){e.preventDefault();e.stopImmediatePropagation();
+  if(!f.checkValidity()){f.reportValidity();return;}
+  if(f.botcheck.checked)return;
+  var d={};['nombre','email','telefono','empresa','pais','motivo','mensaje'].forEach(function(k){d[k]=f[k].value.trim()});
+  var subject='Web Bocado ('+f.dataset.lang.toUpperCase()+') · '+d.motivo+' · '+d.nombre;
+  if(!KEY){var body='Nombre: '+d.nombre+'\nEmail: '+d.email+'\nTeléfono: '+d.telefono+'\nEmpresa: '+d.empresa+'\nPaís: '+d.pais+'\nMotivo: '+d.motivo+'\n\n'+d.mensaje;
+    location.href='mailto:hola@bocadofoods.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);return;}
+  var t0=btn.textContent;btn.disabled=true;btn.textContent=f.dataset.sending;
+  fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+    body:JSON.stringify({access_key:KEY,subject:subject,from_name:'Web Bocado Functional Foods',replyto:d.email,botcheck:'',
+      Nombre:d.nombre,Email:d.email,'Teléfono':d.telefono,Empresa:d.empresa,'País':d.pais,Motivo:d.motivo,Idioma:f.dataset.lang,Mensaje:d.mensaje})})
+  .then(function(r){return r.json()}).then(function(j){if(j&&j.success){show(true,f.dataset.ok);f.reset();}else show(false,f.dataset.err);})
+  .catch(function(){show(false,f.dataset.err)}).then(function(){btn.disabled=false;btn.textContent=t0;});
+},true);
+})();
+
 $$('form').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault()})});
 
 fillImgs(document);
