@@ -3,370 +3,139 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>Panel Bocado Contigo</title>
-<link rel="icon" href="../assets/marca/logo-negro.png">
-<style>
-@font-face{font-family:'Concasse';src:url(../assets/fonts/Concasse-Regular.woff2) format('woff2');font-weight:400}
-@font-face{font-family:'Concasse';src:url(../assets/fonts/Concasse-Bold.woff2) format('woff2');font-weight:700}
-@font-face{font-family:'Concasse';src:url(../assets/fonts/Concasse-Black.woff2) format('woff2');font-weight:900}
-:root{--ink:#111;--cream:#f6f3ee;--line:#e6e1d9;--muted:#5c5852;--red:#d42a25;--green:#1f6b40}
-*{box-sizing:border-box}
-body{margin:0;font-family:'Concasse','Trebuchet MS',sans-serif;color:var(--ink);background:var(--cream);font-size:15px}
-button,input,select,textarea{font:inherit;color:inherit}
-header{background:var(--ink);color:#fff;padding:14px 24px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-header img{height:30px}
-header h1{font-size:18px;margin:0;flex:1}
-header button{background:none;border:1px solid #fff5;color:#fff;border-radius:99px;padding:6px 14px;cursor:pointer}
-main{max-width:1180px;margin:0 auto;padding:24px 16px 60px}
-.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:18px}
-.tabs button{border:1.5px solid var(--line);background:#fff;border-radius:99px;padding:9px 16px;font-weight:700;cursor:pointer}
-.tabs button.on{background:var(--ink);color:#fff;border-color:var(--ink)}
-.tabs .n{display:inline-block;min-width:20px;padding:0 6px;margin-left:6px;border-radius:99px;background:var(--red);color:#fff;font-size:12px}
-.box{background:#fff;border-radius:16px;padding:22px;margin-bottom:16px;border:1px solid var(--line)}
-h2{font-size:22px;margin:0 0 14px}
-label{display:block;font-weight:700;font-size:13px;margin-bottom:12px}
-input,select,textarea{display:block;width:100%;margin-top:5px;min-height:42px;padding:8px 12px;border:1.5px solid #cfc8bd;border-radius:10px;background:#fff;font-weight:400}
-.row{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 16px;border-radius:99px;border:1.5px solid var(--ink);background:var(--ink);color:#fff;font-weight:700;cursor:pointer;text-decoration:none;font-size:14px;white-space:nowrap}
-.btn.g{background:#fff;color:var(--ink)}.btn.r{background:var(--red);border-color:var(--red)}.btn.ok{background:var(--green);border-color:var(--green)}
-.btn:disabled{opacity:.4;cursor:default}
-.msg{font-weight:700;margin:10px 0 0}.msg.e{color:var(--red)}.msg.k{color:var(--green)}
-.cj{border:1.5px solid var(--line);border-radius:14px;padding:16px;margin-bottom:12px;display:grid;grid-template-columns:1.2fr 1fr auto;gap:16px;align-items:start}
-.cj b.code{font-size:20px;font-weight:900;letter-spacing:.02em;display:block}
-.cj dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:14px}.cj dt{color:var(--muted)}.cj dd{margin:0;font-weight:700}
-.cj .acts{display:flex;flex-direction:column;gap:8px}
-.steps{font-size:13px;color:var(--muted);line-height:1.6;margin:8px 0 0;padding-left:18px}
-.tag{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;padding:3px 9px;border-radius:99px;background:var(--cream)}
-.tag.pendiente{background:#fff1cc;color:#7a5600}.tag.resta{background:#fde4e2;color:var(--red)}.tag.activo{background:#dff3e6;color:var(--green)}
-table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.tw{overflow-x:auto}
-.empty{color:var(--muted)}
-.prev{background:var(--cream);border-radius:10px;padding:10px 14px;margin:0 0 12px;font-weight:700}
-.alert{background:var(--red);color:#fff;border-radius:12px;padding:12px 16px;margin-top:12px;font-weight:700}
-.demo{background:#fff6d8;border:1px solid #efd98a;border-radius:12px;padding:10px 14px;margin-bottom:16px}
-.drop{display:block;border:2px dashed #cfc8bd;border-radius:14px;padding:26px;text-align:center;cursor:pointer;background:var(--cream);font-weight:400}
-.drop.on{border-color:var(--ink);background:#fff}
-.drop input{display:none}
-.drop b{display:block;font-size:17px;margin-bottom:4px}
-details.how{background:var(--cream);border-radius:12px;padding:12px 16px;margin-bottom:16px}
-details.how summary{font-weight:700;cursor:pointer}
-details.how ol{line-height:1.7;margin:10px 0 0;padding-left:20px}
-pre.q{background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:12px;overflow-x:auto;white-space:pre;margin:8px 0}
-.sum{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
-.chip{border-radius:99px;padding:6px 12px;font-weight:700;font-size:13px;background:var(--cream)}
-.chip.s{background:#dff3e6;color:var(--green)}.chip.x{background:#fde4e2;color:var(--red)}.chip.e{background:#fff1cc;color:#7a5600}
-td.pos{color:var(--green);font-weight:700}td.neg{color:var(--red);font-weight:700}
-tr.mute td{color:var(--muted)}
-.row2{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
-.row2 label{display:flex;gap:8px;align-items:center;margin:0;font-weight:400}.row2 input[type=checkbox]{width:auto;min-height:0;margin:0}
-#login{max-width:380px;margin:60px auto}
-[hidden]{display:none!important}
-@media(max-width:760px){.cj{grid-template-columns:1fr}.cj .acts{flex-direction:row;flex-wrap:wrap}}
-</style>
+<title>Bocado Contigo | Bocado Functional Foods</title>
+<meta name="description" content="Bocado Contigo, el programa de fidelización de Bocado: únete gratis, suma 1 punto por cada euro de compra y canjéalos por descuentos. Además, recibe las primicias de cada lanzamiento.">
+<link rel="canonical" href="https://crm-lasingluten.github.io/bocadofoods.com/bocado-contigo.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bocado Contigo | Bocado Functional Foods">
+<meta property="og:description" content="Bocado Contigo, el programa de fidelización de Bocado: únete gratis, suma 1 punto por cada euro de compra y canjéalos por descuentos. Además, recibe las primicias de cada lanzamiento.">
+<meta property="og:url" content="https://crm-lasingluten.github.io/bocadofoods.com/bocado-contigo.html">
+<meta property="og:image" content="https://crm-lasingluten.github.io/bocadofoods.com/assets/marca/logo-negro.png">
+<meta property="og:site_name" content="Bocado Functional Foods">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/marca/logo-negro.png">
+<link rel="stylesheet" href="css/estilos.css?v=202610141047">
 </head>
 <body>
-<header><img src="../assets/marca/logo-blanco.png" alt="Bocado"><h1>Panel Bocado Contigo</h1><span id="who"></span><button id="logout" hidden>Salir</button></header>
-<main>
-<p class="demo" id="demo" hidden>Modo demostración: comparte los datos con la página de Bocado Contigo de este mismo navegador. <button class="btn g" id="reset" style="min-height:30px">Reiniciar datos de prueba</button></p>
-
-<form id="login" class="box" hidden>
-  <h2>Acceso del equipo</h2>
-  <label>Correo<input name="email" type="email" autocomplete="username" required></label>
-  <label>Contraseña<input name="pass" type="password" autocomplete="current-password" required></label>
-  <button class="btn" type="submit">Entrar</button><p class="msg e"></p>
-</form>
-
-<div id="app" hidden>
-  <nav class="tabs">
-    <button data-t="pend" class="on">Cupones por activar<span class="n" id="npend" hidden></span></button>
-    <button data-t="compra">Sumar compra</button>
-    <button data-t="importar">Importar pedidos</button>
-    <button data-t="activos">Cupones activos</button>
-    <button data-t="afil">Afiliados</button>
-    <button data-t="ajustes">Primicias y campañas</button>
-  </nav>
-
-  <section data-p="pend"><div class="box"><h2>Cupones por activar</h2><div id="lpend"></div></div></section>
-
-  <section data-p="compra" hidden><form class="box" id="fcompra">
-    <h2>Sumar puntos de una compra</h2>
-    <p class="empty" style="margin-top:-6px">Cuando un pedido de PrestaShop se envíe, busca si el correo del cliente es de Bocado Contigo y registra aquí el importe de los productos (IVA incluido, sin envío, después de descuentos).</p>
-    <div class="row">
-      <label>Código BC o correo del cliente<input name="ref" required></label>
-      <label>Referencia del pedido<input name="pedido" required placeholder="p. ej. XKBRLMQSW"></label>
-      <label>Importe de productos (€)<input name="importe" type="number" step="0.01" min="0" required></label>
+<div class="announce">Envío gratis en España peninsular a partir de 45 €</div>
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="logo" href="index.html" aria-label="Bocado Functional Foods — inicio"><img src="assets/marca/logo-negro.png" alt="Bocado functional foods"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html#productos">Productos</a>
+      <a href="index.html#recetas">Recetas</a>
+      <a href="blog/">Blog</a>
+      <a href="index.html#nosotros">Nosotros</a>
+      <a href="juega-y-gana.html">Juega y gana</a>
+      <a href="bocado-contigo.html" aria-current="page">Bocado Contigo</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="hdr-actions">
+      <details class="langdd"><summary class="lang" aria-label="Idioma: Español">ES<svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5"/></svg></summary><div class="langmenu"><a href="bocado-contigo.html" hreflang="es" lang="es" data-lang="es" aria-current="true">Español</a><a href="ca/" hreflang="ca" lang="ca" data-lang="ca" aria-current="false">Català</a><a href="en/" hreflang="en" lang="en" data-lang="en" aria-current="false">English</a><a href="it/" hreflang="it" lang="it" data-lang="it" aria-current="false">Italiano</a><a href="fr/" hreflang="fr" lang="fr" data-lang="fr" aria-current="false">Français</a><a href="de/" hreflang="de" lang="de" data-lang="de" aria-current="false">Deutsch</a><a href="pt/" hreflang="pt" lang="pt" data-lang="pt" aria-current="false">Português</a></div></details>
+      <a class="shop" href="https://shop.bocadofoods.com">SHOP<svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 2h2l1.6 8.2h7.2L14 5H5"/><circle cx="6.5" cy="13.2" r="1"/><circle cx="12" cy="13.2" r="1"/></svg></a>
     </div>
-    <p class="prev" id="pcompra">Suma 0 puntos</p>
-    <button class="btn r" type="submit">Sumar puntos</button><p class="msg"></p><div id="primalert"></div>
-  </form>
-  <form class="box" id="fajuste">
-    <h2>Regalo o ajuste manual</h2>
-    <div class="row">
-      <label>Código BC o correo<input name="ref" required></label>
-      <label>Puntos (negativo para restar)<input name="puntos" type="number" step="1" required></label>
-      <label>Tipo<select name="tipo"><option value="bonus">Regalo (aparece con el motivo)</option><option value="ajuste">Ajuste / devolución de pedido</option></select></label>
-      <label>Motivo<input name="nota" required placeholder="p. ej. Reseña en Instagram"></label>
+  </div>
+  <nav class="mobile-nav" aria-label="Principal móvil"><a href="index.html#productos">Productos</a><a href="index.html#recetas">Recetas</a><a href="blog/">Blog</a><a href="index.html#nosotros">Nosotros</a><a href="juega-y-gana.html">Juega y gana</a><a href="bocado-contigo.html" aria-current="page">Bocado Contigo</a><a href="index.html#contacto">Contacto</a></nav>
+</header>
+<link rel="stylesheet" href="css/contigo.css?v=202610171930">
+<main class="bc">
+<section class="bc-hero">
+  <div class="wrap bc-hero-grid">
+    <div>
+      <p class="eyebrow">Programa de fidelización</p>
+      <h1>Bocado <b>Contigo</b></h1>
+      <p class="lead">El club de quienes cuidan lo que comen. Únete gratis, suma puntos con cada compra en nuestra tienda online y canjéalos por descuentos. Además, serás de los primeros en probar cada novedad.</p>
+      <div class="bc-hero-cta"><a class="btn red" href="#unete">Quiero mi tarjeta</a><a class="btn ghost" href="#unete" data-acceso>Ver mis puntos</a></div>
     </div>
-    <button class="btn" type="submit">Guardar</button><p class="msg"></p>
-  </form></section>
+    <div class="bc-hero-card">
+      <div class="bc-card" role="img" aria-label="Ejemplo de tarjeta Bocado Contigo">
+        <div class="bc-card-pat"></div>
+        <svg class="bc-card-ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="38" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round" stroke-dasharray="190 49" transform="rotate(-20 50 50)"/></svg>
+        <img class="bc-card-logo" src="assets/marca/logo-blanco.png" alt="">
+        <span class="bc-card-tag">Bocado<br>Contigo</span>
+        <div class="bc-card-code"><small>Código de afiliado</small><b>BC-7K4P9M</b></div>
+        <div class="bc-card-foot"><span class="bc-card-name">Tu nombre aquí</span><span>Desde 10/2026</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <section data-p="importar" hidden><div class="box">
-    <h2>Importar pedidos de PrestaShop</h2>
-    <p class="empty" style="margin-top:-6px">Sube el archivo de pedidos y el panel suma los puntos de los afiliados con pedidos <b>entregados</b> y resta los de pedidos <b>cancelados o reembolsados</b>. Los pedidos que ya se contaron no se repiten, así que puedes subir el mismo archivo varias veces.</p>
-    <details class="how"><summary>Cómo sacar el archivo de PrestaShop (se prepara una sola vez)</summary>
-      <ol>
-        <li>En PrestaShop: <b>Parámetros avanzados › Base de datos › Gestor SQL</b> › <b>Añadir nueva consulta SQL</b>.</li>
-        <li>Nombre: <b>Bocado Contigo · pedidos</b>. En «Consulta SQL» pega esto y guarda:
-          <pre class="q" id="psq">SELECT o.reference AS pedido, c.email AS email,
-  ROUND(o.total_paid_tax_incl - o.total_shipping_tax_incl
-        + IF(MAX(ocr.free_shipping) = 1, o.total_shipping_tax_incl, 0), 2) AS importe,
-  o.current_state AS estado, o.date_upd AS fecha
-FROM ps_orders o
-INNER JOIN ps_customer c ON (c.id_customer = o.id_customer)
-LEFT JOIN ps_order_cart_rule ocr ON (ocr.id_order = o.id_order AND ocr.free_shipping = 1)
-WHERE o.date_upd &gt;= DATE_SUB(NOW(), INTERVAL 90 DAY)
-GROUP BY o.id_order
-ORDER BY o.date_upd DESC</pre>
-          <button class="btn g" type="button" id="cpq" style="min-height:32px">Copiar consulta</button></li>
-        <li>Cada vez que quieras actualizar los puntos: en el Gestor SQL, en la fila de «Bocado Contigo · pedidos», pulsa el botón de <b>exportar</b> (el icono de descarga). Te baja un archivo .csv.</li>
-        <li>Sube ese archivo aquí abajo, revisa la vista previa y pulsa <b>Aplicar</b>.</li>
-      </ol>
-      <p class="empty" style="margin:10px 0 0">El importe es lo pagado por los productos con IVA, después de descuentos y sin gastos de envío. La consulta trae los pedidos de los últimos 90 días. Si al guardarla PrestaShop dice que la tabla no existe, es que tu tienda usa otro prefijo en lugar de <code>ps_</code>: cámbialo en las tres tablas.</p>
-    </details>
-    <label class="drop" id="drop"><input type="file" id="fcsv" accept=".csv,.txt,text/csv"><b>Elige o arrastra aquí el archivo .csv</b><span class="empty">Columnas: pedido, email, importe, estado y, opcional, fecha</span></label>
-    <p class="msg e" id="imsg"></p>
-    <div id="iprev"></div>
-  </div></section>
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head"><h2 class="h2">Así <b>funciona</b></h2></div>
+    <div class="bc-steps">
+      <div class="bc-step"><i>01</i><h3>Únete gratis</h3><p>Déjanos tus datos y recibe al momento tu tarjeta virtual con tu código de afiliado. Te regalamos 50 puntos de bienvenida.</p></div>
+      <div class="bc-step"><i>02</i><h3>Compra y suma</h3><p>Cada euro que gastas en la tienda online suma 1 punto. Solo tienes que comprar con el mismo correo con el que te diste de alta.</p></div>
+      <div class="bc-step"><i>03</i><h3>Canjea tus puntos</h3><p>Desde 100 puntos, elige cuántos quieres canjear y te generamos un cupón de descuento para tu próximo pedido: 20 puntos = 1 €.</p></div>
+    </div>
+  </div>
+</section>
 
-  <section data-p="activos" hidden><div class="box"><h2>Cupones activos</h2><p class="empty" style="margin-top:-6px">Cuando un cliente use su cupón en la tienda, márcalo como usado. Si hubo un error, anúlalo (y desactívalo también en PrestaShop): se le devuelven los puntos.</p><div id="lact"></div></div></section>
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="bc-perks">
+      <div class="bc-perk"><b>50 puntos</b><span>de regalo al unirte</span></div>
+      <div class="bc-perk"><b>1 € = 1 punto</b><span>en todas tus compras online</span></div>
+      <div class="bc-perk"><b>100 = 5 €</b><span>cada 100 puntos, 5 € de descuento</span></div>
+      <div class="bc-perk"><b>Primicias</b><span>muestras de cada lanzamiento con tus pedidos y acceso antes que nadie</span></div>
+    </div>
+  </div>
+</section>
 
-  <section data-p="afil" hidden><div class="box"><h2>Afiliados</h2>
-    <label>Buscar por nombre, correo o código<input id="q" placeholder="Escribe para buscar…"></label>
-    <div class="tw"><table><thead><tr><th>Código</th><th>Nombre</th><th>Correo</th><th>Puntos</th><th>Compras</th><th>Última compra</th><th>Primicias</th><th>Alta</th></tr></thead><tbody id="lafil"></tbody></table></div>
-    <p class="empty" id="nafil"></p>
-  </div></section>
+<section class="bc-app-sec" id="unete" style="background:#fbfaf7;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div id="bc-app"><noscript><p>Activa JavaScript en tu navegador para usar Bocado Contigo.</p></noscript></div>
+  </div>
+</section>
 
-  <section data-p="ajustes" hidden><form class="box" id="fregl">
-    <h2>Primicia en curso</h2>
-    <p class="empty" style="margin-top:-6px">Se muestra en el área de los afiliados que aceptan primicias, y este panel te recuerda incluir la muestra al sumar sus compras. Déjalo vacío cuando termine el lanzamiento.</p>
-    <label>Producto en lanzamiento<input name="primicia_nombre" placeholder="p. ej. Protein Bagel Soft"></label>
-    <label>Texto para los afiliados<textarea name="primicia_texto" rows="3" placeholder="Este mes, con tu pedido te llega una muestra del nuevo…"></textarea></label>
-    <h2 style="margin-top:20px">Campaña de puntos</h2>
-    <label style="max-width:320px">Multiplicador de puntos<select name="multiplicador"><option value="1">Normal (×1)</option><option value="1.5">Puntos ×1,5</option><option value="2">Puntos dobles (×2)</option><option value="3">Puntos triples (×3)</option></select></label>
-    <button class="btn" type="submit">Guardar</button><p class="msg"></p>
-  </form></section>
-</div>
+<section class="sec">
+  <div class="wrap" style="max-width:900px">
+    <div class="sec-head"><h2 class="h2">¿Cuánto <b>valen tus puntos?</b></h2></div>
+    <table class="bc-table">
+      <thead><tr><th>Puntos</th><th>Compras acumuladas aprox.</th><th>Descuento</th></tr></thead>
+      <tbody>
+        <tr><td>100</td><td>50 € + regalo de bienvenida</td><td>5 €</td></tr>
+        <tr><td>200</td><td>150 €</td><td>10 €</td></tr>
+        <tr><td>400</td><td>350 €</td><td>20 €</td></tr>
+        <tr><td>600</td><td>550 €</td><td>30 €</td></tr>
+      </tbody>
+    </table>
+    <p class="bc-mini">El cupón se puede usar en compras a partir del doble de su valor (por ejemplo, un cupón de 5 € en pedidos desde 10 €).</p>
+
+    <div class="sec-head" style="margin-top:56px"><h2 class="h2">Preguntas <b>frecuentes</b></h2></div>
+    <div class="bc-faq">
+      <details><summary>¿Cómo sumo puntos?</summary><p>Comprando en <a href="https://shop.bocadofoods.com">shop.bocadofoods.com</a> con el mismo correo electrónico con el que te uniste a Bocado Contigo. Ganas 1 punto por cada euro del importe de los productos (IVA incluido, después de descuentos y sin contar los gastos de envío).</p></details>
+      <details><summary>¿Cuándo aparecen los puntos de mi compra?</summary><p>En los días siguientes al envío de tu pedido. Si ves que falta alguno, escríbenos a hola@bocadofoods.com con el número de pedido.</p></details>
+      <details><summary>¿Cómo canjeo mis puntos?</summary><p>Entra en «Mi Bocado Contigo» con tu código y tu correo, escribe cuántos puntos quieres canjear (mínimo 100, en bloques de 20) y pulsa «Generar mi cupón». Lo activamos en la tienda en un máximo de 24 h laborables y te avisamos por correo. El código aparecerá también en tu área.</p></details>
+      <details><summary>¿Cómo funciona el cupón?</summary><p>Es personal y de un solo uso, sirve para pedidos a partir del doble de su valor y es válido durante 90 días. No se puede combinar con otros cupones de descuento ni cambiar por dinero.</p></details>
+      <details><summary>¿Qué son las primicias?</summary><p>Cada vez que lanzamos un producto, los afiliados lo reciben antes que nadie: te enviamos una muestra con tu pedido durante el mes del lanzamiento y te avisamos de las novedades y ofertas exclusivas.</p></details>
+      <details><summary>¿Caducan los puntos?</summary><p>Tus puntos se mantienen mientras sigas comprando. Caducan si pasan 12 meses sin ninguna compra.</p></details>
+    </div>
+    <p class="bc-mini" style="margin-top:28px">Consulta las <a href="legal/condiciones-bocado-contigo.html">condiciones de Bocado Contigo</a>.</p>
+  </div>
+</section>
 </main>
+<script src="js/contigo.js?v=202610171930" data-root="" data-cond="legal/condiciones-bocado-contigo.html" data-priv="legal/politica-de-privacidad.html" defer></script>
+<script>document.querySelectorAll('[data-acceso]').forEach(function(a){a.addEventListener('click',function(){setTimeout(function(){var i=document.querySelector('.bc-acceso input');if(i)i.focus({preventScroll:true})},500)})})</script>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<footer class="ftr" id="contacto">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div><img src="assets/marca/logo-negro.png" alt="Bocado functional foods" class="ftr-logo"></div>
+      <div><h4>Sobre nosotros</h4><p>Travessia Industrial, 191<br>08907 L'Hospitalet de Llobregat<br>(Barcelona)</p>
+        <h4 style="margin-top:22px">Atención al cliente</h4><p><i>Lunes a jueves de 8 a 15 h<br>Viernes de 8 a 14 h</i></p>
+        <a href="mailto:hola@bocadofoods.com">hola@bocadofoods.com</a><a href="tel:+34931592650">+34 931 592 650</a><a href="https://wa.me/34646698281">WhatsApp +34 646 698 281</a></div>
+      <div><h4>Información</h4><a href="legal/condiciones-de-venta.html"><b>Condiciones generales de venta</b></a><a href="index.html#productos">Productos</a><a href="index.html#private-label">Private label</a><a href="bocado-contigo.html">Bocado Contigo</a></div>
+      <div><h4>Legal</h4><a href="legal/aviso-legal.html">Aviso legal</a><a href="legal/politica-de-privacidad.html">Política de privacidad</a><a href="legal/privacidad-redes-sociales.html">Política de privacidad en redes sociales</a><a href="legal/politica-de-cookies.html">Política de cookies</a></div>
+    </div>
+    <div class="ftr-bottom"><span>© 2026 Bocado Functional Foods</span><nav aria-label="Idiomas"><a href="bocado-contigo.html" hreflang="es" lang="es" data-lang="es" aria-current="true">Español</a><a href="ca/" hreflang="ca" lang="ca" data-lang="ca" aria-current="false">Català</a><a href="en/" hreflang="en" lang="en" data-lang="en" aria-current="false">English</a><a href="it/" hreflang="it" lang="it" data-lang="it" aria-current="false">Italiano</a><a href="fr/" hreflang="fr" lang="fr" data-lang="fr" aria-current="false">Français</a><a href="de/" hreflang="de" lang="de" data-lang="de" aria-current="false">Deutsch</a><a href="pt/" hreflang="pt" lang="pt" data-lang="pt" aria-current="false">Português</a></nav></div>
+  </div>
+</footer>
+
 <script>
-(function(){
-var SB_URL='https://lbbpnnvwtanurtjqgcqv.supabase.co';
-var SB_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxiYnBubnZ3dGFudXJ0anFnY3F2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3NjM2NDEsImV4cCI6MjA5MjMzOTY0MX0.a25lrgUlzDM4TSp4c6KOCQ3ERZnSk8-5r2y9DbhRPxg';
-var SHOP='shop.bocadofoods.com';
-var DEMO=/[?&]demo=1/.test(location.search);
-function $(s,c){return (c||document).querySelector(s)}function $$(s,c){return [].slice.call((c||document).querySelectorAll(s))}
-function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
-var nf=new Intl.NumberFormat('es-ES');
-function eur(n){n=Number(n)||0;return new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR',minimumFractionDigits:n%1?2:0}).format(n)}
-function fecha(d){if(!d)return '—';var x=new Date(String(d).length===10?d+'T12:00:00':d);return x.toLocaleDateString('es-ES',{day:'2-digit',month:'2-digit',year:'numeric'})}
-var REG={puntos_por_euro:1,multiplicador:1};
-
-/* ---------- capa de datos (Supabase real o demostración) ---------- */
-var sb=null,API;
-if(DEMO){
-  $('#demo').hidden=false;
-  API={
-    login:function(){return Promise.resolve()},logout:function(){return Promise.resolve()},session:function(){return Promise.resolve({email:'demo@bocadofoods.com'})},
-    rpc:function(n,p){return BocadoContigoDemo.rpc(n,p)},canjes:function(e){return BocadoContigoDemo.canjes(e)},
-    resumen:function(q){return BocadoContigoDemo.resumen(q)},reglas:function(){return BocadoContigoDemo.reglas()}
-  };
-}else{
-  sb=supabase.createClient(SB_URL,SB_KEY);
-  function q(r){return r.then(function(x){if(x.error)throw x.error;return x.data})}
-  API={
-    login:function(e,p){return sb.auth.signInWithPassword({email:e,password:p}).then(function(x){if(x.error)throw x.error;
-      return q(sb.rpc('contigo_es_staff')).then(function(ok){if(!ok){sb.auth.signOut();throw new Error('Este usuario no tiene acceso al panel.')}})})},
-    logout:function(){return sb.auth.signOut()},
-    session:function(){return sb.auth.getSession().then(function(x){var s=x.data.session;if(!s)return null;return q(sb.rpc('contigo_es_staff')).then(function(ok){return ok?s.user:null})})},
-    rpc:function(n,p){return q(sb.rpc(n,p))},
-    canjes:function(e){return q(sb.from('contigo_canjes_vista').select('*').in('estado',e).order('created_at',{ascending:false}))},
-    resumen:function(t){var r=sb.from('contigo_resumen').select('*').order('created_at',{ascending:false}).limit(200);
-      if(t){t=t.replace(/[,()%]/g,' ').trim();r=r.or('nombre.ilike.%'+t+'%,apellidos.ilike.%'+t+'%,email.ilike.%'+t+'%,codigo.ilike.%'+t+'%')}return q(r)},
-    reglas:function(){return q(sb.from('contigo_reglas').select('*').eq('id',1).single())}
-  };
-}
-function arrancar(){
-  API.session().then(function(u){if(u)entrar(u);else $('#login').hidden=false}).catch(function(){$('#login').hidden=false});
-}
-if(DEMO){var s=document.createElement('script');s.src='../js/contigo-demo.js';s.onload=arrancar;document.head.appendChild(s);$('#reset').onclick=function(){BocadoContigoDemo.reset();cargarTodo()}}
-else arrancar();
-
-$('#login').addEventListener('submit',function(e){e.preventDefault();var f=e.target,m=$('.msg',f);m.textContent='';
-  API.login(f.email.value,f.pass.value).then(function(){return API.session()}).then(entrar).catch(function(x){m.textContent=x.message==='Invalid login credentials'?'Correo o contraseña incorrectos.':x.message})});
-$('#logout').onclick=function(){API.logout().then(function(){location.reload()})};
-
-function entrar(u){$('#login').hidden=true;$('#app').hidden=false;$('#logout').hidden=false;$('#who').textContent=u.email||'';cargarTodo()}
-function cargarTodo(){API.reglas().then(function(r){REG=r;var f=$('#fregl');f.primicia_nombre.value=r.primicia_nombre||'';f.primicia_texto.value=r.primicia_texto||'';f.multiplicador.value=String(Number(r.multiplicador));prevCompra()});
-  cargarPend();cargarAct();buscar()}
-
-/* ---------- pestañas ---------- */
-$$('.tabs button').forEach(function(b){b.onclick=function(){$$('.tabs button').forEach(function(x){x.classList.toggle('on',x===b)});
-  $$('section[data-p]').forEach(function(s){s.hidden=s.getAttribute('data-p')!==b.getAttribute('data-t')})}});
-
-/* ---------- cupones por activar ---------- */
-function respuesta(c){
-  var body='¡Hola, '+c.nombre+'!\n\nTu cupón de Bocado Contigo ya está activo:\n\n'+
-    '   Código: '+c.cupon+'\n   Descuento: '+eur(c.euros)+'\n   Compra mínima: '+eur(c.compra_minima)+'\n   Válido hasta el '+fecha(c.caduca)+'\n   Un solo uso\n\n'+
-    'Escríbelo en el carrito de '+SHOP+' al finalizar tu compra (con este mismo correo).\n\n¡Gracias por estar con Bocado!\nEquipo Bocado Functional Foods';
-  return {body:body,mailto:'mailto:'+encodeURIComponent(c.email)+'?subject='+encodeURIComponent('Tu cupón Bocado Contigo de '+eur(c.euros)+' ya está activo')+'&body='+encodeURIComponent(body)};
-}
-function cargarPend(){API.canjes(['pendiente']).then(function(l){
-  var n=$('#npend');n.hidden=!l.length;n.textContent=l.length;
-  $('#lpend').innerHTML=l.length?l.map(function(c){return '<div class="cj" data-id="'+c.id+'">'+
-    '<div><span class="tag pendiente">Pendiente</span><b class="code" style="margin-top:8px">'+esc(c.cupon)+'</b>'+
-      '<span>'+esc(c.nombre+' '+c.apellidos)+' · '+esc(c.email)+' · '+esc(c.codigo)+'</span>'+
-      '<ol class="steps"><li>PrestaShop › Catálogo › Descuentos › Reglas del carrito › <b>Añadir nueva</b>.</li><li>Información: nombre y código <b>'+esc(c.cupon)+'</b>, cantidad total 1, por usuario 1.</li><li>Condiciones: cliente <b>'+esc(c.email)+'</b>, válido hasta <b>'+fecha(c.caduca)+'</b>, importe mínimo <b>'+eur(c.compra_minima)+'</b> IVA incl.</li><li>Acciones: importe <b>'+eur(c.euros)+'</b> IVA incluido. Guardar.</li></ol></div>'+
-    '<dl><dt>Descuento</dt><dd>'+eur(c.euros)+'</dd><dt>Compra mínima</dt><dd>'+eur(c.compra_minima)+'</dd><dt>Válido hasta</dt><dd>'+fecha(c.caduca)+'</dd><dt>Puntos</dt><dd>'+nf.format(c.puntos)+'</dd><dt>Pedido el</dt><dd>'+fecha(c.created_at)+'</dd><dt>Nº canje</dt><dd>'+c.id+'</dd></dl>'+
-    '<div class="acts"><button class="btn g" data-copy="'+esc(c.cupon)+'">Copiar código</button><button class="btn ok" data-act>Ya está creado: activar y avisar</button><button class="btn g" data-anular>Anular y devolver puntos</button></div></div>'}).join(''):'<p class="empty">No hay cupones pendientes. 🎉</p>';
-  $$('#lpend .cj').forEach(function(el){var c=l.filter(function(x){return x.id==el.getAttribute('data-id')})[0];
-    $('[data-copy]',el).onclick=function(){var b=this;navigator.clipboard&&navigator.clipboard.writeText(c.cupon);b.textContent='¡Copiado!';setTimeout(function(){b.textContent='Copiar código'},1500)};
-    $('[data-act]',el).onclick=function(){var b=this;
-      if(!b.getAttribute('data-ok')){b.setAttribute('data-ok','1');b.textContent='Confirmar: ya existe en PrestaShop';return}
-      b.disabled=true;
-      API.rpc('contigo_admin_activar',{p_canje:c.id}).then(function(r){
-        if(!r.ok){el.innerHTML='<p class="msg e">Este canje ya no está pendiente.</p>';return}
-        var r2=respuesta(c);
-        el.innerHTML='<div><span class="tag activo">Activado</span><b class="code" style="margin-top:8px">'+esc(c.cupon)+'</b><span>Ahora avisa a '+esc(c.nombre)+' ('+esc(c.email)+'): responde al correo de aviso o usa este texto.</span>'+
-          '<textarea rows="9" readonly style="margin-top:10px">'+esc(r2.body)+'</textarea></div><div></div><div class="acts"><a class="btn ok" href="'+r2.mailto+'">Abrir correo para el cliente</a><button class="btn g" data-cr>Copiar texto</button><button class="btn g" data-ok2>Hecho</button></div>';
-        $('[data-cr]',el).onclick=function(){var t=$('textarea',el),bb=this;t.select();try{navigator.clipboard.writeText(t.value).catch(function(){})}catch(x){}bb.textContent='¡Copiado!'};
-        $('[data-ok2]',el).onclick=function(){cargarPend()};
-        cargarAct();var n=$('#npend');n.textContent=Math.max(0,(+n.textContent||1)-1);n.hidden=n.textContent==='0';
-      }).catch(function(e){b.disabled=false;b.textContent=e.message})};
-    $('[data-anular]',el).onclick=function(){var b=this,box=$('.anu',el);
-      if(!box){box=document.createElement('div');box.className='anu';box.innerHTML='<label>Motivo (se devuelven '+c.puntos+' puntos)<input></label><button class="btn r">Anular canje</button>';$('.acts',el).appendChild(box);
-        $('button',box).onclick=function(){API.rpc('contigo_admin_anular',{p_canje:c.id,p_motivo:$('input',box).value||null}).then(function(){cargarPend();buscar()}).catch(function(e){$('button',box).textContent=e.message})};}
-    };
-  });
-}).catch(err)}
-function cargarAct(){API.canjes(['activo']).then(function(l){
-  $('#lact').innerHTML=l.length?'<div class="tw"><table><thead><tr><th>Cupón</th><th>Cliente</th><th>Descuento</th><th>Mínimo</th><th>Caduca</th><th></th></tr></thead><tbody>'+l.map(function(c){
-    return '<tr data-id="'+c.id+'"><td><b>'+esc(c.cupon)+'</b></td><td>'+esc(c.nombre+' '+c.apellidos)+'<br><small>'+esc(c.email)+'</small></td><td>'+eur(c.euros)+'</td><td>'+eur(c.compra_minima)+'</td><td>'+fecha(c.caduca)+'</td><td style="white-space:nowrap"><button class="btn g" data-u>Usado</button> <button class="btn g" data-x>Anular</button></td></tr>'}).join('')+'</tbody></table></div>':'<p class="empty">No hay cupones activos.</p>';
-  $$('#lact tr[data-id]').forEach(function(tr){var id=+tr.getAttribute('data-id');
-    $('[data-u]',tr).onclick=function(){API.rpc('contigo_admin_usado',{p_canje:id}).then(cargarAct)};
-    $('[data-x]',tr).onclick=function(){var b=this;if(!b.getAttribute('data-ok')){b.setAttribute('data-ok','1');b.textContent='¿Anular y devolver puntos?';return}
-      API.rpc('contigo_admin_anular',{p_canje:id,p_motivo:'Anulado desde cupones activos'}).then(function(){cargarAct();buscar()})};
-  });
-}).catch(err)}
-
-/* ---------- sumar compra / ajustes ---------- */
-var fc=$('#fcompra');
-function prevCompra(){var i=parseFloat(fc.importe.value)||0,m=Number(REG.multiplicador)||1;$('#pcompra').textContent='Suma '+nf.format(Math.floor(i*(Number(REG.puntos_por_euro)||1)*m))+' puntos'+(m>1?' (campaña ×'+String(m).replace('.',',')+')':'')}
-fc.importe.addEventListener('input',prevCompra);
-fc.addEventListener('submit',function(e){e.preventDefault();var m=$('.msg',fc),b=$('button',fc);m.className='msg';m.textContent='';$('#primalert').innerHTML='';b.disabled=true;
-  API.rpc('contigo_admin_compra',{p_ref:fc.ref.value,p_pedido:fc.pedido.value,p_importe:parseFloat(fc.importe.value),p_nota:null}).then(function(r){b.disabled=false;
-    if(!r.ok){m.className='msg e';m.textContent={no_encontrado:'No hay ningún afiliado con ese código o correo.',pedido_duplicado:'Ese pedido ya sumó puntos.',datos:'Revisa la referencia y el importe.'}[r.error]||r.error;return}
-    m.className='msg k';m.textContent='+'+nf.format(r.puntos)+' puntos para '+r.nombre+'. Saldo: '+nf.format(r.saldo)+' puntos.';
-    if(r.primicias&&r.primicia)$('#primalert').innerHTML='<div class="alert">Afiliado con primicias: incluye una muestra de '+esc(r.primicia)+' en este pedido.</div>';
-    fc.pedido.value='';fc.importe.value='';prevCompra();buscar();
-  }).catch(function(x){b.disabled=false;m.className='msg e';m.textContent=x.message})});
-var fa=$('#fajuste');
-fa.addEventListener('submit',function(e){e.preventDefault();var m=$('.msg',fa);m.className='msg';
-  API.rpc('contigo_admin_ajuste',{p_ref:fa.ref.value,p_puntos:parseInt(fa.puntos.value,10),p_tipo:fa.tipo.value,p_nota:fa.nota.value}).then(function(r){
-    if(!r.ok){m.className='msg e';m.textContent={no_encontrado:'No hay ningún afiliado con ese código o correo.',saldo:'El saldo no puede quedar en negativo.',datos:'Revisa los puntos.'}[r.error]||r.error;return}
-    m.className='msg k';m.textContent='Hecho. Nuevo saldo: '+nf.format(r.saldo)+' puntos.';fa.reset();buscar()}).catch(function(x){m.className='msg e';m.textContent=x.message})});
-
-/* ---------- importar pedidos ---------- */
-var IMP=null; // filas leídas del archivo
-var ACC={sumar:['Suma puntos','s'],restar:['Resta puntos','x'],ya_sumado:['Ya sumado',''],ya_restado:['Ya restado',''],no_afiliado:['No es afiliado',''],
-  otro_estado:['Aún no entregado',''],anterior_alta:['Anterior al alta',''],sin_puntos:['Cancelado, no tenía puntos',''],duplicado:['Repetido en el archivo',''],error:['Revisar','e']};
-$('#cpq').onclick=function(){var b=this,t=$('#psq').textContent;try{navigator.clipboard.writeText(t).then(function(){b.textContent='¡Copiada!'},function(){})}catch(e){}
-  var r=document.createRange();r.selectNodeContents($('#psq'));var sl=getSelection();sl.removeAllRanges();sl.addRange(r);setTimeout(function(){b.textContent='Copiar consulta'},1800)};
-var drop=$('#drop');
-['dragenter','dragover'].forEach(function(e){drop.addEventListener(e,function(ev){ev.preventDefault();drop.classList.add('on')})});
-['dragleave','drop'].forEach(function(e){drop.addEventListener(e,function(ev){ev.preventDefault();drop.classList.remove('on')})});
-drop.addEventListener('drop',function(ev){var f=ev.dataTransfer.files[0];if(f)leerCSV(f)});
-$('#fcsv').addEventListener('change',function(){if(this.files[0])leerCSV(this.files[0]);this.value=''});
-
-function sinAcentos(t){return String(t).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
-function parseCSV(txt){
-  txt=txt.replace(/^﻿/,'');var l1=txt.split(/\r?\n/)[0]||'';
-  var d=[';',',','\t'].sort(function(a,b){return l1.split(b).length-l1.split(a).length})[0];
-  var rows=[],row=[],cur='',q=false;
-  for(var i=0;i<txt.length;i++){var c=txt[i];
-    if(q){if(c==='"'){if(txt[i+1]==='"'){cur+='"';i++}else q=false}else cur+=c}
-    else if(c==='"')q=true;else if(c===d){row.push(cur);cur=''}
-    else if(c==='\n'||c==='\r'){if(c==='\r'&&txt[i+1]==='\n')i++;row.push(cur);cur='';if(row.some(function(x){return x.trim()}))rows.push(row);row=[]}
-    else cur+=c}
-  row.push(cur);if(row.some(function(x){return x.trim()}))rows.push(row);return rows;
-}
-function numero(v){v=String(v||'').replace(/[€\s]/g,'');if(!v)return '';
-  if(v.indexOf(',')>=0&&v.indexOf('.')>=0){if(v.lastIndexOf(',')>v.lastIndexOf('.'))v=v.replace(/\./g,'').replace(',','.');else v=v.replace(/,/g,'')}
-  else v=v.replace(',','.');return v}
-function fechaISO(v){v=String(v||'').trim();var m=v.match(/^(\d{1,2})[\/\-.](\d{1,2})[\/\-.](\d{4})(.*)$/);
-  if(m)return m[3]+'-'+('0'+m[2]).slice(-2)+'-'+('0'+m[1]).slice(-2)+m[4];return v}
-var COLS={pedido:['pedido','referencia','reference','ref','referencia pedido'],email:['email','correo','e mail','correo electronico','mail'],
-  importe:['importe','total','total pagado','total paid tax incl','importe productos'],estado:['estado','current state','id estado','state','id order state'],
-  fecha:['fecha','date upd','date add','fecha actualizacion','fecha pedido']};
-function leerCSV(file){
-  var msg=$('#imsg');msg.textContent='';$('#iprev').innerHTML='<p class="empty">Leyendo '+esc(file.name)+'…</p>';
-  var fr=new FileReader();fr.onload=function(){
-    var buf=fr.result,txt=new TextDecoder('utf-8').decode(buf);
-    if(txt.indexOf('\uFFFD')>=0)txt=new TextDecoder('windows-1252').decode(buf);   // exportaciones en ISO-8859-1
-    var rows=parseCSV(txt);if(rows.length<2){$('#iprev').innerHTML='';msg.textContent='El archivo está vacío o no tiene filas de pedidos.';return}
-    var h=rows[0].map(sinAcentos),idx={};
-    Object.keys(COLS).forEach(function(k){idx[k]=h.findIndex(function(x){return COLS[k].indexOf(x)>=0})});
-    var falta=['pedido','email','importe','estado'].filter(function(k){return idx[k]<0});
-    if(falta.length){$('#iprev').innerHTML='';msg.textContent='Al archivo le faltan estas columnas: '+falta.join(', ')+'. Usa el archivo que sale de la consulta del Gestor SQL (ver «Cómo sacar el archivo»).';return}
-    IMP=rows.slice(1).map(function(r){return{pedido:(r[idx.pedido]||'').trim(),email:(r[idx.email]||'').trim(),importe:numero(r[idx.importe]),
-      estado:String(r[idx.estado]||'').trim(),fecha:idx.fecha>=0?fechaISO(r[idx.fecha]):''}});
-    importar(true,file.name);
-  };fr.onerror=function(){msg.textContent='No se ha podido leer el archivo.'};fr.readAsArrayBuffer(file);
-}
-function importar(sim,nombre){
-  var box=$('#iprev');if(!sim)$('[data-apl]',box).disabled=true;
-  API.rpc('contigo_admin_importar',{p_filas:IMP,p_simular:sim}).then(function(r){
-    var cnt={};r.filas.forEach(function(f){cnt[f.accion]=(cnt[f.accion]||0)+1});
-    var orden=['sumar','restar','error','ya_sumado','ya_restado','anterior_alta','sin_puntos','otro_estado','duplicado','no_afiliado'];
-    var filas=r.filas.slice().sort(function(a,b){return orden.indexOf(a.accion)-orden.indexOf(b.accion)});
-    var hayCambios=r.sumar+r.restar>0;
-    var head=sim
-      ?'<p><b>Vista previa'+(nombre?' de '+esc(nombre):'')+'</b> · '+r.filas.length+' pedidos en el archivo. Todavía no se ha guardado nada.</p>'
-      :'<p class="msg k">Hecho: '+(r.sumar?'+'+nf.format(r.puntos_sumados)+' puntos en '+r.sumar+' pedido'+(r.sumar>1?'s':''):'')+(r.sumar&&r.restar?' · ':'')+(r.restar?nf.format(r.puntos_restados)+' puntos en '+r.restar+' devolución'+(r.restar>1?'es':''):'')+(!hayCambios?'no había nada que cambiar':'')+'.</p>';
-    var chips='<div class="sum">'+orden.filter(function(k){return cnt[k]}).map(function(k){return '<span class="chip '+ACC[k][1]+'">'+ACC[k][0]+': '+cnt[k]+'</span>'}).join('')+'</div>';
-    var prim=r.primicia&&r.filas.some(function(f){return f.accion==='sumar'&&f.primicias})?'<div class="alert" style="margin:0 0 12px">Hay afiliados con primicias en estos pedidos: si aún no han salido, incluye una muestra de '+esc(r.primicia)+'.</div>':'';
-    function tr(f){var a=ACC[f.accion]||[f.accion,''],act=f.accion==='sumar'||f.accion==='restar'||f.accion==='error';
-      return '<tr class="'+(act?'':'mute')+'" data-k="'+f.accion+'"><td><b>'+esc(f.pedido||'—')+'</b></td><td>'+esc(f.afiliado||'')+'<br><small>'+esc(f.email)+'</small></td><td>'+(f.importe!=null?eur(f.importe):'—')+'</td><td>'+esc(f.estado==null?'—':f.estado)+'</td>'+
-        '<td><span class="tag '+(f.accion==='sumar'?'activo':f.accion==='restar'?'resta':f.accion==='error'?'pendiente':'')+'">'+a[0]+'</span>'+(f.detalle?'<br><small>'+esc(f.detalle)+'</small>':'')+'</td>'+
-        '<td class="'+(f.puntos>0?'pos':f.puntos<0?'neg':'')+'">'+(f.puntos!=null?(f.puntos>0?'+':'')+nf.format(f.puntos):'')+'</td></tr>'}
-    box.innerHTML=head+chips+prim+
-      '<div class="tw"><table><thead><tr><th>Pedido</th><th>Cliente</th><th>Importe</th><th>Estado</th><th>Qué pasa</th><th>Puntos</th></tr></thead><tbody>'+filas.map(tr).join('')+'</tbody></table></div>'+
-      '<div class="row2">'+(sim&&hayCambios?'<button class="btn r" data-apl>Aplicar: '+(r.sumar?'sumar '+nf.format(r.puntos_sumados)+' puntos':'')+(r.sumar&&r.restar?' y ':'')+(r.restar?'restar '+nf.format(-r.puntos_restados):'')+'</button>':'')+
-      (sim&&!hayCambios?'<p class="empty" style="margin:0">No hay puntos que sumar ni restar en este archivo.</p>':'')+
-      '<label><input type="checkbox" data-all> Mostrar también los pedidos que no cambian</label></div>';
-    var all=$('[data-all]',box);function filtro(){$$('tbody tr',box).forEach(function(t){t.hidden=!all.checked&&t.classList.contains('mute')})}
-    all.onchange=filtro;filtro();
-    var ap=$('[data-apl]',box);if(ap)ap.onclick=function(){if(!ap.getAttribute('data-ok')){ap.setAttribute('data-ok','1');ap.textContent='Confirmar: guardar los cambios';return}importar(false)};
-    if(!sim)buscar();
-  }).catch(function(x){$('#imsg').textContent=x.message==='sin_permiso'?'Tu usuario no tiene acceso al panel.':/contigo_admin_importar/.test(x.message||'')?'Falta ejecutar en Supabase la actualización bocado-contigo-importar.sql.':x.message});
-}
-
-/* ---------- afiliados ---------- */
-var tq;$('#q').addEventListener('input',function(){clearTimeout(tq);tq=setTimeout(buscar,300)});
-function buscar(){API.resumen($('#q').value).then(function(l){
-  $('#lafil').innerHTML=l.map(function(a){return '<tr><td><b>'+esc(a.codigo)+'</b></td><td>'+esc(a.nombre+' '+a.apellidos)+'</td><td>'+esc(a.email)+'</td><td><b>'+nf.format(a.saldo)+'</b></td><td>'+eur(a.total_compras)+'</td><td>'+fecha(a.ultima_compra)+'</td><td>'+(a.primicias?'Sí':'No')+'</td><td>'+fecha(a.created_at)+'</td></tr>'}).join('');
-  $('#nafil').textContent=l.length?l.length+' afiliado'+(l.length>1?'s':''):'Sin resultados.';
-}).catch(err)}
-
-/* ---------- primicias y campañas ---------- */
-$('#fregl').addEventListener('submit',function(e){e.preventDefault();var f=e.target,m=$('.msg',f);
-  API.rpc('contigo_admin_reglas',{p:{multiplicador:parseFloat(f.multiplicador.value),primicia_nombre:f.primicia_nombre.value.trim(),primicia_texto:f.primicia_texto.value.trim()}}).then(function(r){
-    REG.multiplicador=r.multiplicador;prevCompra();m.className='msg k';m.textContent='Guardado.'}).catch(function(x){m.className='msg e';m.textContent=x.message})});
-
-function err(e){console.error(e)}
-})();
+document.addEventListener('click',function(e){document.querySelectorAll('details.langdd[open]').forEach(function(d){if(!d.contains(e.target))d.open=false})});
 </script>
 </body>
 </html>
