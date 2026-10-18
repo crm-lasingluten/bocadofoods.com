@@ -182,7 +182,7 @@ function entrar(codigo,email,onErr){
   }).catch(function(){if(onErr)onErr(ERR.red);else vistaInvitado(ERR.red)});
 }
 
-var TIPO={bienvenida:'Regalo de bienvenida',compra:'Compra',canje:'Canje por cupón',reintegro:'Puntos devueltos',bonus:'Regalo',ajuste:'Ajuste',caducidad:'Puntos caducados'};
+var TIPO={bienvenida:'Regalo de bienvenida',compra:'Compra',canje:'Canje por cupón',reintegro:'Puntos devueltos',bonus:'Regalo',ajuste:'Ajuste',caducidad:'Puntos caducados',devolucion:'Pedido devuelto'};
 var ESTADO={pendiente:'Pendiente de activación',activo:'Activo',usado:'Usado',anulado:'Anulado'};
 
 function vistaArea(a,aviso){
@@ -214,7 +214,7 @@ function vistaArea(a,aviso){
       '</div></li>'}).join(''):'<li class="bc-empty">Todavía no has canjeado puntos.</li>';
 
   var movs=a.movimientos.map(function(m){
-    var t=TIPO[m.tipo]||m.tipo,d=m.tipo==='compra'?(m.pedido?'Pedido '+esc(m.pedido):'')+(m.importe?' · '+eur(m.importe):''):esc(m.nota||'');
+    var t=TIPO[m.tipo]||m.tipo,d=(m.tipo==='compra'||m.tipo==='devolucion')?(m.pedido?'Pedido '+esc(m.pedido):'')+(m.importe?' · '+eur(m.importe):''):esc(m.nota||'');
     if(m.tipo==='bonus'&&m.nota)t=esc(m.nota),d='';if(d===t)d='';
     return '<li><div><b>'+t+'</b><span>'+fecha(m.created_at)+(d?' · '+d:'')+'</span></div><strong class="'+(m.puntos<0?'neg':'pos')+'">'+(m.puntos>0?'+':'')+nf.format(m.puntos)+'</strong></li>'}).join('');
 

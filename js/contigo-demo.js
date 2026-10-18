@@ -7,7 +7,7 @@ function seed(){
   var now=Date.now(), d=864e5;
   var a={id:'a1',codigo:'BC-7K4P9M',nombre:'Laura',apellidos:'Martín',email:'laura@ejemplo.com',telefono:'',primicias:true,activo:true,created_at:new Date(now-60*d).toISOString()};
   return {seq:10,
-    reglas:{puntos_por_euro:1,puntos_por_euro_dto:20,canje_minimo:100,bienvenida:50,bonus_cumple:50,factor_compra_min:2,cupon_validez_dias:90,caducidad_meses:12,multiplicador:1,
+    reglas:{puntos_por_euro:1,puntos_por_euro_dto:20,canje_minimo:100,bienvenida:50,bonus_cumple:50,factor_compra_min:2,cupon_validez_dias:90,caducidad_meses:12,multiplicador:1,estados_suma:[5],estados_resta:[6,7],
       primicia_nombre:'Protein Bagel Soft',primicia_texto:'Este mes, con tu pedido te llega una muestra del nuevo Protein Bagel Soft antes de que salga a la venta.'},
     afiliados:[a],
     movs:[
@@ -64,6 +64,41 @@ var F={
     return{ok:true,canje_id:c.id,cupon:c.cupon,puntos:pts,euros:eur,compra_minima:c.compra_minima,caduca:c.caduca,saldo:saldo(a.id),nombre:a.nombre,apellidos:a.apellidos,email:a.email,codigo:a.codigo};
   },
   /* panel interno */
+  contigo_admin_importar:function(p){
+    var r=DB.reglas,sim=p.p_simular!==false,res=[],vistos={},ns=0,nr=0,ps=0,pr=0;
+    var es=r.estados_suma||[5],er=r.estados_resta||[6,7];
+    (p.p_filas||[]).forEach(function(f){
+      var ped=String(f.pedido||'').trim(),em=String(f.email||'').trim().toLowerCase(),
+          imp=/^-?\d+(\.\d+)?$/.test(String(f.importe||'').trim())?parseFloat(f.importe):null,
+          est=/^\d+$/.test(String(f.estado||'').trim())?parseInt(f.estado,10):null,
+          fe=f.fecha?new Date(String(f.fecha).replace(' ','T')):null,acc,pts=null,det=null,a=null;
+      if(fe&&isNaN(fe))fe=null;
+      if(!ped||!em){acc='error';det='Falta la referencia del pedido o el correo'}
+      else if(vistos[ped])acc='duplicado';
+      else{vistos[ped]=1;a=DB.afiliados.filter(function(x){return x.email===em})[0]||null;
+        if(est==null){acc='error';det='El estado tiene que ser el número del estado de PrestaShop'}
+        else if(es.indexOf(est)>=0){
+          if(!a)acc='no_afiliado';
+          else if(DB.movs.some(function(m){return m.tipo==='compra'&&m.pedido===ped}))acc='ya_sumado';
+          else if(fe&&fe<new Date(a.created_at.slice(0,10)))acc='anterior_alta';
+          else if(!(imp>0)){acc='error';det='Importe no válido'}
+          else{acc='sumar';pts=Math.floor(imp*r.puntos_por_euro*r.multiplicador);ns++;ps+=pts;
+            if(!sim)mov({afiliado_id:a.id,tipo:'compra',puntos:pts,importe:imp,pedido:ped,nota:'Importado de PrestaShop'})}
+        }else if(er.indexOf(est)>=0){
+          var m=DB.movs.filter(function(x){return x.tipo==='compra'&&x.pedido===ped})[0];
+          if(!m)acc=a?'sin_puntos':'no_afiliado';
+          else if(DB.movs.some(function(x){return x.tipo==='devolucion'&&x.pedido===ped}))acc='ya_restado';
+          else{a=DB.afiliados.filter(function(x){return x.id===m.afiliado_id})[0];acc='restar';
+            pts=-Math.min(m.puntos,Math.max(saldo(m.afiliado_id),0));if(-pts<m.puntos)det='Solo quedaban '+(-pts)+' puntos en el saldo';
+            nr++;pr+=pts;if(!sim)mov({afiliado_id:m.afiliado_id,tipo:'devolucion',puntos:pts,pedido:ped,nota:'Pedido cancelado o devuelto'})}
+        }else acc=a?'otro_estado':'no_afiliado';
+      }
+      res.push({pedido:ped||null,email:em,importe:imp,estado:est,fecha:f.fecha||null,accion:acc,puntos:pts,detalle:det,
+        afiliado:a?(a.nombre+' '+a.apellidos).trim():null,codigo:a?a.codigo:null,primicias:a?a.primicias:false});
+    });
+    if(!sim)save();
+    return{ok:true,simulado:sim,filas:res,sumar:ns,puntos_sumados:ps,restar:nr,puntos_restados:pr,primicia:r.primicia_nombre};
+  },
   contigo_admin_compra:function(p){
     var a=ref(p.p_ref),r=DB.reglas,imp=parseFloat(p.p_importe);if(!a)return{ok:false,error:'no_encontrado'};
     if(!String(p.p_pedido||'').trim()||!(imp>0))return{ok:false,error:'datos'};
@@ -93,7 +128,7 @@ window.BocadoContigoDemo={
       return !q||(a.nombre+' '+a.apellidos+' '+a.email+' '+a.codigo).toLowerCase().indexOf(q)>=0}).map(function(a){
       var ms=DB.movs.filter(function(m){return m.afiliado_id===a.id});
       return{id:a.id,codigo:a.codigo,nombre:a.nombre,apellidos:a.apellidos,email:a.email,telefono:a.telefono,primicias:a.primicias,created_at:a.created_at,saldo:saldo(a.id),
-        total_compras:ms.filter(function(m){return m.tipo==='compra'}).reduce(function(s,m){return s+m.importe},0),
+        total_compras:ms.filter(function(m){return m.tipo==='compra'&&!ms.some(function(d){return d.tipo==='devolucion'&&d.pedido===m.pedido})}).reduce(function(s,m){return s+m.importe},0),
         ultima_compra:(ms.filter(function(m){return m.tipo==='compra'}).pop()||{}).created_at||null}}).reverse())},
   canjes:function(estados){DB=load();return Promise.resolve(DB.canjes.filter(function(c){return estados.indexOf(c.estado)>=0}).map(function(c){
       var a=DB.afiliados.filter(function(x){return x.id===c.afiliado_id})[0]||{};var o={};for(var k in c)o[k]=c[k];o.codigo=a.codigo;o.nombre=a.nombre;o.apellidos=a.apellidos;o.email=a.email;return o}).reverse())},
