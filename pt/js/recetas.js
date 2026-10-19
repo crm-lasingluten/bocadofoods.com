@@ -117,7 +117,7 @@ var RECIPES = [
 "Levar ao forno com queijo 10 min a 160 °C",
 "Juntar os toppings: frango, guacamole, molho, queijo-creme e coentros"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": null,
 "href": "receitas/nachos-com-frango-e-guacamole.html"
 },
@@ -188,7 +188,7 @@ var RECIPES = [
 "Rechear com queijo, rúcula, canónigos e salmão",
 "Enrolar e cortar"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": null,
 "href": "receitas/bocadinhos-de-wrap-com-salmao.html"
 },
@@ -232,7 +232,7 @@ var RECIPES = [
 "Rechear com o salteado e ovo batido",
 "Levar ao forno"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": null,
 "href": "receitas/tarteletes-de-alho-frances-e-bacon.html"
 },
@@ -303,7 +303,7 @@ var RECIPES = [
 "Misturar abacate, queijo-creme, limão, salmão e pimenta",
 "Rechear os cones"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": null,
 "href": "receitas/cones-recheados-de-natal.html"
 },
@@ -448,7 +448,7 @@ var RECIPES = [
 "Juntar a mistura de ovo e brócolos com rodelas de queijo de cabra",
 "Levar ao forno"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": "ECuwmS6OX3A",
 "href": "receitas/tarte-salgada-de-brocolos-com-wrap.html"
 },
@@ -658,7 +658,7 @@ var RECIPES = [
 "Cobrir com queijo ralado",
 "Levar ao forno"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": "iqSarAyYzcM",
 "href": "receitas/mini-tacos-de-picado-vegetal.html"
 },
@@ -680,7 +680,7 @@ var RECIPES = [
 "Pincelar com azeite e especiarias",
 "Levar ao forno"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": "dQMx6h8Qve4",
 "href": "receitas/quesadilla-de-halloween.html"
 },
@@ -816,7 +816,7 @@ var RECIPES = [
 "Juntar palitos de cenoura, pimento e pepino",
 "Enrolar e cortar ao meio"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": null,
 "href": "receitas/rolinhos-de-humus-e-legumes.html"
 },
@@ -863,7 +863,7 @@ var RECIPES = [
 "Air fryer uns minutos até o chocolate derreter",
 "Acompanhar com iogurte"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": null,
 "href": "receitas/bocadinhos-de-banana.html"
 },
@@ -909,7 +909,7 @@ var RECIPES = [
 "Pincelar com ovo e polvilhar com sésamo",
 "Levar ao forno"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": "JVXXhPz2OE0",
 "href": "receitas/folhados-recheados-de-fiambre-e-queijo.html"
 },
@@ -999,7 +999,7 @@ var RECIPES = [
 "Cortar, rechear e dobrar o wrap em triângulos",
 "Alourar na air fryer, na frigideira ou no forno"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": "bJzmfnEtpyw",
 "href": "receitas/triangulos-recheados-de-frango-e-espinafres.html"
 },
@@ -1063,7 +1063,7 @@ var RECIPES = [
 "Rechear com húmus e abacate",
 "Dobrar e levar à chapa"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra, adequado para veganos",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra, adequado para veganos",
 "video": "aeLrPJJbxus",
 "href": "receitas/mini-quesadillas.html"
 },
@@ -1107,7 +1107,7 @@ var RECIPES = [
 "Juntar queijo e ovos mexidos",
 "Dobrar e passar pela chapa"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": "ql4e49ayU6w",
 "href": "receitas/pequeno-almoco-ideal-com-wrap.html"
 },
@@ -1198,7 +1198,7 @@ var RECIPES = [
 "Rechear a gosto (tomate e ovo)",
 "Cozinhar na frigideira"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": null,
 "href": "receitas/galette-com-bordos-recheados-doce.html"
 },
@@ -1334,7 +1334,7 @@ var RECIPES = [
 "Cobrir com mais queijo ralado",
 "Air fryer 15 min a 170 °C"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 3 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": "-Wt276b0LDM",
 "href": "receitas/pizza-quesadilla.html"
 },
@@ -1449,7 +1449,7 @@ var RECIPES = [
 "Juntar queijo, alface, tomate e molhos",
 "Dobrar ao meio"
 ],
-"nut": "1 tortilha (40 g): 14 g de hidratos de carbono, 9 g de proteína, 2,5 g de fibra",
+"nut": "1 tortilha (40 g): 16 g de hidratos de carbono, 7,2 g de proteína, 2,4 g de fibra",
 "video": "-LJmgKUqeFA",
 "href": "receitas/taco-burger.html"
 },
