@@ -32,7 +32,7 @@ var nf=new Intl.NumberFormat('es-ES');
 function eur(n){n=Number(n)||0;return new Intl.NumberFormat('es-ES',{style:'currency',currency:'EUR',minimumFractionDigits:n%1?2:0,maximumFractionDigits:2}).format(n)}
 function fecha(d){if(!d)return '';var x=new Date(String(d).length===10?d+'T12:00:00':d);return x.toLocaleDateString('es-ES',{day:'2-digit',month:'2-digit',year:'numeric'})}
 function mesAnio(d){var x=new Date(d);return ('0'+(x.getMonth()+1)).slice(-2)+'/'+x.getFullYear()}
-function ses(v){try{if(v===undefined)return JSON.parse(localStorage.getItem(STORE));if(v===null)localStorage.removeItem(STORE);else localStorage.setItem(STORE,JSON.stringify(v))}catch(e){return null}}
+function ses(v){try{if(v&&v.codigo)localStorage.setItem('bocadoContigoSocio','1');if(v===undefined)return JSON.parse(localStorage.getItem(STORE));if(v===null)localStorage.removeItem(STORE);else localStorage.setItem(STORE,JSON.stringify(v))}catch(e){return null}}
 
 function rpc(name,params){
   if(DEMO&&window.BocadoContigoDemo)return window.BocadoContigoDemo.rpc(name,params);
