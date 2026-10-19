@@ -117,7 +117,7 @@ var RECIPES = [
 "Coure al forn amb formatge 10 min a 160 °C",
 "Afegir-hi els toppings: pollastre, guacamole, salsa, formatge cremós i coriandre"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": null,
 "href": "receptes/nachos-amb-pollastre-i-guacamole.html"
 },
@@ -188,7 +188,7 @@ var RECIPES = [
 "Farcir amb formatge, ruca, canonges i salmó",
 "Enrotllar i tallar"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": null,
 "href": "receptes/mossets-de-wrap-amb-salmo.html"
 },
@@ -232,7 +232,7 @@ var RECIPES = [
 "Farcir amb el saltat i ou batut",
 "Coure al forn"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": null,
 "href": "receptes/tartaletes-de-porro-i-baco.html"
 },
@@ -303,7 +303,7 @@ var RECIPES = [
 "Barrejar alvocat, formatge cremós, llimona, salmó i pebre",
 "Farcir els conets"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": null,
 "href": "receptes/conets-farcits-de-nadal.html"
 },
@@ -448,7 +448,7 @@ var RECIPES = [
 "Afegir-hi la barreja d’ou i bròquil, amb rodanxes de formatge de cabra",
 "Coure al forn"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": "ECuwmS6OX3A",
 "href": "receptes/pastis-salat-de-broquil-amb-wrap.html"
 },
@@ -658,7 +658,7 @@ var RECIPES = [
 "Cobrir amb formatge ratllat",
 "Coure al forn"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": "iqSarAyYzcM",
 "href": "receptes/mini-tacos-de-picada-vegetal.html"
 },
@@ -680,7 +680,7 @@ var RECIPES = [
 "Pintar amb oli i espècies",
 "Coure al forn"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": "dQMx6h8Qve4",
 "href": "receptes/quesadilla-de-halloween.html"
 },
@@ -816,7 +816,7 @@ var RECIPES = [
 "Afegir-hi bastonets de pastanaga, pebrot i cogombre",
 "Enrotllar i tallar per la meitat"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": null,
 "href": "receptes/rotllets-d-hummus-i-verduretes.html"
 },
@@ -863,7 +863,7 @@ var RECIPES = [
 "Fregidora d’aire uns minuts fins que es fongui la xocolata",
 "Acompanyar amb iogurt"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": null,
 "href": "receptes/mossets-de-platan.html"
 },
@@ -909,7 +909,7 @@ var RECIPES = [
 "Pintar amb ou i llavors de sèsam",
 "Coure al forn"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": "JVXXhPz2OE0",
 "href": "receptes/napolitanes-farcides-de-pernil-i-formatge.html"
 },
@@ -999,7 +999,7 @@ var RECIPES = [
 "Tallar, farcir i plegar el wrap en triangles",
 "Daurar a la fregidora d’aire, a la paella o al forn"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": "bJzmfnEtpyw",
 "href": "receptes/triangles-farcits-de-pollastre-i-espinacs.html"
 },
@@ -1063,7 +1063,7 @@ var RECIPES = [
 "Farcir amb hummus i alvocat",
 "Plegar i fer a la planxa"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra, apte per a vegans",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra, apte per a vegans",
 "video": "aeLrPJJbxus",
 "href": "receptes/mini-quesadillas.html"
 },
@@ -1107,7 +1107,7 @@ var RECIPES = [
 "Afegir-hi formatge i ou remenat",
 "Plegar i passar per la planxa"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": "ql4e49ayU6w",
 "href": "receptes/esmorzar-ideal-amb-wrap.html"
 },
@@ -1198,7 +1198,7 @@ var RECIPES = [
 "Farcir al gust (tomàquet i ou)",
 "Coure a la paella"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": null,
 "href": "receptes/galette-amb-vores-farcides-dolca.html"
 },
@@ -1334,7 +1334,7 @@ var RECIPES = [
 "Cobrir amb més formatge ratllat",
 "Fregidora d’aire 15 min a 170 °C"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 3 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": "-Wt276b0LDM",
 "href": "receptes/pizza-quesadilla.html"
 },
@@ -1449,7 +1449,7 @@ var RECIPES = [
 "Afegir-hi formatge, enciam, tomàquet i salses",
 "Plegar per la meitat"
 ],
-"nut": "1 truita (40 g): 14 g d’hidrats de carboni, 9 g de proteïnes, 2,5 g de fibra",
+"nut": "1 truita (40 g): 16 g d’hidrats de carboni, 7,2 g de proteïnes, 2,4 g de fibra",
 "video": "-LJmgKUqeFA",
 "href": "receptes/taco-burger.html"
 },
