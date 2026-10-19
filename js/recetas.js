@@ -117,7 +117,7 @@ var RECIPES = [
 "Hornear con queso 10 min a 160°C",
 "Añadir toppings: pollo, guacamole, salsa, queso crema y cilantro"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": null,
 "href": "recetas/nachos-con-pollo-y-guacamole.html"
 },
@@ -188,7 +188,7 @@ var RECIPES = [
 "Rellenar con queso, rúcula, canónigos y salmón",
 "Enrollar y cortar"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": null,
 "href": "recetas/bocaditos-de-wrap-con-salmon.html"
 },
@@ -232,7 +232,7 @@ var RECIPES = [
 "Rellenar con el salteado y huevo batido",
 "Hornear"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": null,
 "href": "recetas/tartaletas-de-puerro-y-bacon.html"
 },
@@ -303,7 +303,7 @@ var RECIPES = [
 "Mezclar aguacate, queso crema, limón, salmón y pimienta",
 "Rellenar los conitos"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": null,
 "href": "recetas/conitos-rellenos-navidenos.html"
 },
@@ -448,7 +448,7 @@ var RECIPES = [
 "Añadir la mezcla de huevo y brócoli, con rodajas de queso de cabra",
 "Hornear"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": "ECuwmS6OX3A",
 "href": "recetas/tarta-salada-de-brocoli-con-wrap.html"
 },
@@ -658,7 +658,7 @@ var RECIPES = [
 "Cubrir con queso rallado",
 "Hornear"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": "iqSarAyYzcM",
 "href": "recetas/mini-tacos-de-picada-vegetal.html"
 },
@@ -680,7 +680,7 @@ var RECIPES = [
 "Pincelar con aceite y especias",
 "Hornear"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": "dQMx6h8Qve4",
 "href": "recetas/quesadilla-de-halloween.html"
 },
@@ -816,7 +816,7 @@ var RECIPES = [
 "Añadir palitos de zanahoria, pimiento y pepino",
 "Enrollar y cortar a la mitad"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": null,
 "href": "recetas/rollitos-de-hummus-y-verduritas.html"
 },
@@ -863,7 +863,7 @@ var RECIPES = [
 "Airfryer unos minutos hasta derretir el chocolate",
 "Acompañar con yogur"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": null,
 "href": "recetas/bocaditos-de-platano.html"
 },
@@ -909,7 +909,7 @@ var RECIPES = [
 "Pintar con huevo y semillas de sésamo",
 "Hornear"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": "JVXXhPz2OE0",
 "href": "recetas/napolitanas-rellenas-de-jamon-y-queso.html"
 },
@@ -999,7 +999,7 @@ var RECIPES = [
 "Cortar, rellenar y doblar el wrap en triángulos",
 "Dorar en airfryer, sartén u horno"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": "bJzmfnEtpyw",
 "href": "recetas/triangulos-rellenos-de-pollo-y-espinacas.html"
 },
@@ -1063,7 +1063,7 @@ var RECIPES = [
 "Rellenar con hummus y aguacate",
 "Doblar y hacer a la plancha"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra, apto vegano",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra, apto vegano",
 "video": "aeLrPJJbxus",
 "href": "recetas/mini-quesadillas.html"
 },
@@ -1107,7 +1107,7 @@ var RECIPES = [
 "Añadir queso y huevo revuelto",
 "Doblar y pasar por la plancha"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": "ql4e49ayU6w",
 "href": "recetas/desayuno-ideal-con-wrap.html"
 },
@@ -1198,7 +1198,7 @@ var RECIPES = [
 "Rellenar a gusto (tomate y huevo)",
 "Cocinar en sartén"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": null,
 "href": "recetas/galette-con-bordes-rellenos-dulce.html"
 },
@@ -1334,7 +1334,7 @@ var RECIPES = [
 "Cubrir con más queso rallado",
 "Airfryer 15 min a 170°C"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 3g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": "-Wt276b0LDM",
 "href": "recetas/pizza-quesadilla.html"
 },
@@ -1449,7 +1449,7 @@ var RECIPES = [
 "Añadir queso, lechuga, tomate y salsas",
 "Doblar a la mitad"
 ],
-"nut": "1 tortilla (40g): 14g carbohidratos, 9g proteínas, 2,5g fibra",
+"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
 "video": "-LJmgKUqeFA",
 "href": "recetas/taco-burger.html"
 },
