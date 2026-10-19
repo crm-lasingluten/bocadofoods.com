@@ -117,7 +117,7 @@ var RECIPES = [
 "Cuocere in forno con il formaggio per 10 min a 160 °C",
 "Aggiungere i topping: pollo, guacamole, salsa, formaggio cremoso e coriandolo"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": null,
 "href": "ricette/nachos-con-pollo-e-guacamole.html"
 },
@@ -188,7 +188,7 @@ var RECIPES = [
 "Farcire con formaggio, rucola, valeriana e salmone",
 "Arrotolare e tagliare"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": null,
 "href": "ricette/bocconcini-di-wrap-al-salmone.html"
 },
@@ -232,7 +232,7 @@ var RECIPES = [
 "Farcire con il soffritto e l’uovo sbattuto",
 "Cuocere in forno"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": null,
 "href": "ricette/tortine-di-porri-e-bacon.html"
 },
@@ -303,7 +303,7 @@ var RECIPES = [
 "Mescolare avocado, formaggio cremoso, limone, salmone e pepe",
 "Farcire i coni"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": null,
 "href": "ricette/coni-ripieni-natalizi.html"
 },
@@ -448,7 +448,7 @@ var RECIPES = [
 "Versare il composto di uova e broccoli e aggiungere fette di formaggio di capra",
 "Cuocere in forno"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": "ECuwmS6OX3A",
 "href": "ricette/torta-salata-di-broccoli-con-wrap.html"
 },
@@ -658,7 +658,7 @@ var RECIPES = [
 "Coprire con formaggio grattugiato",
 "Cuocere in forno"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": "iqSarAyYzcM",
 "href": "ricette/mini-tacos-di-macinato-vegetale.html"
 },
@@ -680,7 +680,7 @@ var RECIPES = [
 "Spennellare con olio e spezie",
 "Cuocere in forno"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": "dQMx6h8Qve4",
 "href": "ricette/quesadilla-di-halloween.html"
 },
@@ -816,7 +816,7 @@ var RECIPES = [
 "Aggiungere bastoncini di carota, peperone e cetriolo",
 "Arrotolare e tagliare a metà"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": null,
 "href": "ricette/involtini-di-hummus-e-verdurine.html"
 },
@@ -863,7 +863,7 @@ var RECIPES = [
 "Friggitrice ad aria per qualche minuto finché il cioccolato si scioglie",
 "Servire con yogurt"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": null,
 "href": "ricette/bocconcini-di-banana.html"
 },
@@ -909,7 +909,7 @@ var RECIPES = [
 "Spennellare con uovo e cospargere di sesamo",
 "Cuocere in forno"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": "JVXXhPz2OE0",
 "href": "ricette/fagottini-ripieni-di-prosciutto-e-formaggio.html"
 },
@@ -999,7 +999,7 @@ var RECIPES = [
 "Tagliare, farcire e piegare il wrap a triangoli",
 "Dorare in friggitrice ad aria, in padella o in forno"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": "bJzmfnEtpyw",
 "href": "ricette/triangoli-ripieni-di-pollo-e-spinaci.html"
 },
@@ -1063,7 +1063,7 @@ var RECIPES = [
 "Farcire con hummus e avocado",
 "Piegare e cuocere sulla piastra"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre, adatto ai vegani",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre, adatto ai vegani",
 "video": "aeLrPJJbxus",
 "href": "ricette/mini-quesadillas.html"
 },
@@ -1107,7 +1107,7 @@ var RECIPES = [
 "Aggiungere formaggio e uova strapazzate",
 "Piegare e passare sulla piastra"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": "ql4e49ayU6w",
 "href": "ricette/colazione-ideale-con-wrap.html"
 },
@@ -1198,7 +1198,7 @@ var RECIPES = [
 "Farcire a piacere (pomodoro e uovo)",
 "Cuocere in padella"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": null,
 "href": "ricette/galette-con-bordi-ripieni-dolce.html"
 },
@@ -1334,7 +1334,7 @@ var RECIPES = [
 "Cospargere con altro formaggio grattugiato",
 "Friggitrice ad aria 15 min a 170 °C"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 3 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": "-Wt276b0LDM",
 "href": "ricette/pizza-quesadilla.html"
 },
@@ -1449,7 +1449,7 @@ var RECIPES = [
 "Aggiungere formaggio, lattuga, pomodoro e salse",
 "Piegare a metà"
 ],
-"nut": "1 tortilla (40 g): 14 g di carboidrati, 9 g di proteine, 2,5 g di fibre",
+"nut": "1 tortilla (40 g): 16 g di carboidrati, 7,2 g di proteine, 2,4 g di fibre",
 "video": "-LJmgKUqeFA",
 "href": "ricette/taco-burger.html"
 },
