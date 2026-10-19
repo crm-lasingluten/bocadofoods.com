@@ -1,32 +1,32 @@
-// Recetario (es)
+// Recetario (fr)
 var RECIPES = [
 {
 "slug": "bocadillo-de-atun-veraniego",
-"title": "Bocadillo de Atún Veraniego",
+"title": "Sandwich d’été au thon",
 "img": "recipe_001",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Proteicos",
-"Atún",
-"Pepinillos",
-"Aceitunas",
-"Zumo de limón",
-"Yogur",
-"Pimienta",
-"Cebollino"
+"Petits pains protéinés",
+"Thon",
+"Cornichons",
+"Olives",
+"Jus de citron",
+"Yaourt",
+"Poivre",
+"Ciboulette"
 ],
 "steps": [
-"Mezclar todos los ingredientes del relleno",
-"Rellenar los panecillos"
+"Mélanger tous les ingrédients de la garniture",
+"Garnir les petits pains"
 ],
-"nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
+"nut": "1 petit pain (50 g) : 6,5 g de glucides, 14,5 g de protéines, 4,1 g de fibres",
 "video": "NQH9-sNL5zU",
-"href": "recetas/bocadillo-de-atun-veraniego.html"
+"href": "recettes/sandwich-d-ete-au-thon.html"
 },
 {
 "slug": "baguettes-dulce-salado-de-verano",
-"title": "Baguettes Dulce-Salado de Verano",
+"title": "Baguettes d’été sucré-salé",
 "img": "recipe_002",
 "product": "baguettes-low-carb",
 "cat": "Baguette Low Carb",
@@ -34,1621 +34,1621 @@ var RECIPES = [
 "Baguettes low carb",
 "Pesto",
 "Burrata",
-"Jamón",
-"Melocotón",
-"Cebollino"
+"Jambon",
+"Pêche",
+"Ciboulette"
 ],
 "steps": [
-"Tostar las baguettes",
-"Poner pesto, burrata, jamón y melocotón",
-"Terminar con cebollino"
+"Griller les baguettes",
+"Ajouter le pesto, la burrata, le jambon et la pêche",
+"Terminer avec de la ciboulette"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/baguettes-dulce-salado-de-verano.html"
+"href": "recettes/baguettes-d-ete-sucre-sale.html"
 },
 {
 "slug": "hamburguesas-vegetales-rellenas-de-queso",
-"title": "Hamburguesas Vegetales Rellenas de Queso",
+"title": "Burgers végétaux farcis au fromage",
 "img": "recipe_003",
 "product": "mezcla-picada-vegetal-150",
 "cat": "Picada Vegetal",
 "ing": [
-"Picada vegetal Bocado",
-"Calabacín",
-"Zanahoria",
-"Especias",
-"Mostaza Dijón",
-"Queso"
+"Haché végétal Bocado",
+"Courgette",
+"Carotte",
+"Épices",
+"Moutarde de Dijon",
+"Fromage"
 ],
 "steps": [
-"Hidratar la picada vegetal",
-"Añadir verduras cocinadas al vapor",
-"Añadir especias y mostaza Dijón",
-"Formar hamburguesas rellenas de queso",
-"Cocinar en sartén"
+"Hydrater le haché végétal",
+"Ajouter des légumes cuits à la vapeur",
+"Ajouter les épices et la moutarde de Dijon",
+"Former des burgers farcis au fromage",
+"Cuire à la poêle"
 ],
-"nut": "",
+"nut": null,
 "video": "JyKoSk2LrbQ",
-"href": "recetas/hamburguesas-vegetales-rellenas-de-queso.html"
+"href": "recettes/burgers-vegetaux-farcis-au-fromage.html"
 },
 {
 "slug": "tostadas-veraniegas-con-sandia",
-"title": "Tostadas Veraniegas con Sandía",
+"title": "Tartines d’été à la pastèque",
 "img": "recipe_004",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan The Original Protein Bread",
-"Yogur griego",
-"Sandía",
-"Hierbabuena",
-"Zumo de lima",
-"Queso feta"
+"Pain The Original Protein Bread",
+"Yaourt grec",
+"Pastèque",
+"Menthe",
+"Jus de citron vert",
+"Feta"
 ],
 "steps": [
-"Tostar dos rebanadas de pan",
-"Poner yogur griego de base",
-"Añadir sandía en cubitos, hierbabuena, lima y queso feta"
+"Griller deux tranches de pain",
+"Tartiner de yaourt grec",
+"Ajouter la pastèque en dés, la menthe, le citron vert et la feta"
 ],
-"nut": "",
+"nut": null,
 "video": "P4Zr0aEbkQ0",
-"href": "recetas/tostadas-veraniegas-con-sandia.html"
+"href": "recettes/tartines-d-ete-a-la-pasteque.html"
 },
 {
 "slug": "nachos-con-pollo-y-guacamole",
-"title": "Nachos con Pollo y Guacamole",
+"title": "Nachos au poulet et guacamole",
 "img": "recipe_005",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Aceite y especias mexicanas",
-"Queso",
-"Pollo desmenuzado",
+"Huile et épices mexicaines",
+"Fromage",
+"Poulet effiloché",
 "Guacamole",
-"Salsa mexicana",
-"Queso crema",
-"Cilantro"
+"Sauce mexicaine",
+"Fromage frais",
+"Coriandre"
 ],
 "steps": [
-"Cortar los wraps en triángulos",
-"Rociar con aceite y especias mexicanas",
-"Hornear con queso 10 min a 160°C",
-"Añadir toppings: pollo, guacamole, salsa, queso crema y cilantro"
+"Couper les wraps en triangles",
+"Arroser d’huile et d’épices mexicaines",
+"Cuire au four avec le fromage 10 min à 160 °C",
+"Ajouter les garnitures : poulet, guacamole, sauce, fromage frais et coriandre"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": null,
-"href": "recetas/nachos-con-pollo-y-guacamole.html"
+"href": "recettes/nachos-au-poulet-et-guacamole.html"
 },
 {
 "slug": "cheesecake-de-frutos-rojos-con-tostadas",
-"title": "Cheesecake de Frutos Rojos con Tostadas",
+"title": "Cheesecake aux fruits rouges et pains grillés",
 "img": "recipe_006",
 "product": "tostadas-low-carb",
 "cat": "Tostada Low Carb",
 "ing": [
-"Tostadas Low Carb",
-"Crema de frutos secos",
-"Yogur",
-"Queso crema",
-"Esencia de vainilla",
-"Edulcorante",
-"Zumo de limón",
-"Frutos rojos congelados"
+"Pains grillés Low Carb",
+"Purée d’oléagineux",
+"Yaourt",
+"Fromage frais",
+"Extrait de vanille",
+"Édulcorant",
+"Jus de citron",
+"Fruits rouges surgelés"
 ],
 "steps": [
-"Triturar las tostadas con crema de frutos secos para la base",
-"Mezclar yogur, queso crema y esencia de vainilla para el relleno",
-"Preparar mermelada de frutos rojos reduciéndolos con edulcorante y limón",
-"Montar la cheesecake por capas"
+"Mixer les pains grillés avec la purée d’oléagineux pour la base",
+"Mélanger le yaourt, le fromage frais et l’extrait de vanille pour la garniture",
+"Préparer une confiture de fruits rouges en les faisant réduire avec l’édulcorant et le citron",
+"Monter le cheesecake en couches"
 ],
-"nut": "",
+"nut": null,
 "video": "t0iq2uo2aNY",
-"href": "recetas/cheesecake-de-frutos-rojos-con-tostadas.html"
+"href": "recettes/cheesecake-aux-fruits-rouges-et-pains-grilles.html"
 },
 {
 "slug": "pizza-de-calabacin",
-"title": "Pizza de Calabacín",
+"title": "Pizza à la courgette",
 "img": "recipe_007",
 "product": "mezcla-pizza-proteica",
 "cat": "Pizza",
 "ing": [
 "Pizza Low Carb Bocado",
-"Queso crema",
-"Rodajas de calabacín",
-"Queso grana padano"
+"Fromage frais",
+"Rondelles de courgette",
+"Grana Padano"
 ],
 "steps": [
-"Untar la base con queso crema",
-"Añadir calabacín y grana padano",
-"Hornear"
+"Tartiner la base de fromage frais",
+"Ajouter la courgette et le Grana Padano",
+"Cuire au four"
 ],
-"nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
+"nut": "Portion (66 g) : 18 g de protéines, 8,8 g de fibres, 7,8 g de glucides",
 "video": null,
-"href": "recetas/pizza-de-calabacin.html"
+"href": "recettes/pizza-a-la-courgette.html"
 },
 {
 "slug": "bocaditos-de-wrap-con-salmon",
-"title": "Bocaditos de Wrap con Salmón",
+"title": "Bouchées de wrap au saumon",
 "img": "recipe_008",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Huevo",
-"Queso",
-"Rúcula",
-"Canónigos",
-"Salmón ahumado"
+"Œuf",
+"Fromage",
+"Roquette",
+"Mâche",
+"Saumon fumé"
 ],
 "steps": [
-"Batir dos huevos en sartén caliente",
-"Poner un wrap encima y cocinar",
-"Rellenar con queso, rúcula, canónigos y salmón",
-"Enrollar y cortar"
+"Battre deux œufs dans une poêle chaude",
+"Poser un wrap dessus et cuire",
+"Garnir de fromage, de roquette, de mâche et de saumon",
+"Rouler et couper"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": null,
-"href": "recetas/bocaditos-de-wrap-con-salmon.html"
+"href": "recettes/bouchees-de-wrap-au-saumon.html"
 },
 {
 "slug": "bocaditos-de-sandwich-con-atun",
-"title": "Bocaditos de Sándwich con Atún",
+"title": "Bouchées de sandwich au thon",
 "img": "recipe_009",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"Aguacate",
-"Queso crema",
-"Atún",
-"Especias"
+"Avocat",
+"Fromage frais",
+"Thon",
+"Épices"
 ],
 "steps": [
-"Cortar el pan en bocaditos",
-"Mezclar aguacate, queso crema, atún y especias",
-"Rellenar los bocaditos"
+"Couper le pain en bouchées",
+"Mélanger l’avocat, le fromage frais, le thon et les épices",
+"Garnir les bouchées"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG24",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres, IG24",
 "video": null,
-"href": "recetas/bocaditos-de-sandwich-con-atun.html"
+"href": "recettes/bouchees-de-sandwich-au-thon.html"
 },
 {
 "slug": "tartaletas-de-puerro-y-bacon",
-"title": "Tartaletas de Puerro y Bacon",
+"title": "Tartelettes poireau et bacon",
 "img": "recipe_010",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Puerro",
+"Poireau",
 "Bacon",
-"Huevo"
+"Œuf"
 ],
 "steps": [
-"Cortar los wraps y colocar en molde de muffins",
-"Saltear puerro y bacon",
-"Rellenar con el salteado y huevo batido",
-"Hornear"
+"Découper les wraps et les placer dans un moule à muffins",
+"Faire sauter le poireau et le bacon",
+"Garnir de la poêlée et d’œuf battu",
+"Cuire au four"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": null,
-"href": "recetas/tartaletas-de-puerro-y-bacon.html"
+"href": "recettes/tartelettes-poireau-et-bacon.html"
 },
 {
 "slug": "baguette-rellena-mundial",
-"title": "Baguette Rellena Mundial",
+"title": "Baguette farcie spéciale Coupe du monde",
 "img": "recipe_011",
 "product": "baguettes-low-carb",
 "cat": "Baguette Low Carb",
 "ing": [
 "Baguette Low Carb",
-"Champiñones",
-"Cebolla",
-"Huevo",
-"Queso rallado"
+"Champignons de Paris",
+"Oignon",
+"Œuf",
+"Fromage râpé"
 ],
 "steps": [
-"Vaciar la miga de la baguette",
-"Rellenar con salteado de champiñones y cebolla, huevo batido y queso rallado",
-"Hornear"
+"Évider la mie de la baguette",
+"Garnir de champignons et d’oignon sautés, d’œuf battu et de fromage râpé",
+"Cuire au four"
 ],
-"nut": "1 baguette (110g): 14g carbohidratos, 30g proteínas, 13g fibra",
+"nut": "1 baguette (110 g) : 14 g de glucides, 30 g de protéines, 13 g de fibres",
 "video": null,
-"href": "recetas/baguette-rellena-mundial.html"
+"href": "recettes/baguette-farcie-speciale-coupe-du-monde.html"
 },
 {
 "slug": "3-ideas-de-tostas-hummus-salmon-aguacate",
-"title": "3 Ideas de Tostas (Hummus, Salmón, Aguacate)",
+"title": "3 idées de tartines (houmous, saumon, avocat)",
 "img": "recipe_012",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Proteicos Bocado",
-"Tomate cherry",
-"Salmón",
-"Queso crema",
-"Albahaca",
-"Nueces",
-"Aguacate",
-"Huevo de codorniz"
+"Petits pains protéinés Bocado",
+"Tomates cerises",
+"Saumon",
+"Fromage frais",
+"Basilic",
+"Noix",
+"Avocat",
+"Œufs de caille"
 ],
 "steps": [
-"Hornear tomates cherry con aceite y especias para la primera tosta con hummus",
-"Triturar queso crema con albahaca y nueces para la segunda con salmón",
-"Untar aguacate y poner huevos de codorniz para la tercera"
+"Rôtir des tomates cerises avec de l’huile et des épices pour la première tartine, au houmous",
+"Mixer le fromage frais avec le basilic et les noix pour la deuxième, au saumon",
+"Tartiner d’avocat et ajouter des œufs de caille pour la troisième"
 ],
-"nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
+"nut": "1 petit pain (50 g) : 6,5 g de glucides, 14,5 g de protéines, 4,1 g de fibres",
 "video": null,
-"href": "recetas/3-ideas-de-tostas-hummus-salmon-aguacate.html"
+"href": "recettes/3-idees-de-tartines-houmous-saumon-avocat.html"
 },
 {
 "slug": "conitos-rellenos-navidenos",
-"title": "Conitos Rellenos Navideños",
+"title": "Petits cornets farcis de Noël",
 "img": "recipe_013",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb Bocado",
-"Aguacate",
-"Queso crema",
-"Limón",
-"Salmón ahumado",
-"Pimienta"
+"Avocat",
+"Fromage frais",
+"Citron",
+"Saumon fumé",
+"Poivre"
 ],
 "steps": [
-"Cortar y enrollar los wraps en forma de cono",
-"Airfryer 5 minutos",
-"Mezclar aguacate, queso crema, limón, salmón y pimienta",
-"Rellenar los conitos"
+"Couper et rouler les wraps en forme de cône",
+"Friteuse à air 5 minutes",
+"Mélanger l’avocat, le fromage frais, le citron, le saumon et le poivre",
+"Garnir les cornets"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": null,
-"href": "recetas/conitos-rellenos-navidenos.html"
+"href": "recettes/petits-cornets-farcis-de-noel.html"
 },
 {
 "slug": "tostadas-dulces-saladas-fin-de-ano",
-"title": "Tostadas Dulces-Saladas Fin de Año",
+"title": "Pains grillés sucré-salé du Nouvel An",
 "img": "recipe_014",
 "product": "tostadas-low-carb",
 "cat": "Tostada Low Carb",
 "ing": [
-"Tostadas Low Carb",
-"Mermelada sin azúcar de fresa o frambuesa",
-"Queso fresco de cabra",
-"Jamón",
-"Perejil"
+"Pains grillés Low Carb",
+"Confiture de fraise ou de framboise sans sucre",
+"Fromage de chèvre frais",
+"Jambon",
+"Persil"
 ],
 "steps": [
-"Colocar las tostadas en una bandeja",
-"Añadir mermelada",
-"Colocar queso de cabra y jamón",
-"Terminar con perejil"
+"Disposer les pains grillés sur un plateau",
+"Ajouter la confiture",
+"Ajouter le fromage de chèvre et le jambon",
+"Terminer avec du persil"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/tostadas-dulces-saladas-fin-de-ano.html"
+"href": "recettes/pains-grilles-sucre-sale-du-nouvel-an.html"
 },
 {
 "slug": "baguettes-rellenas",
-"title": "Baguettes Rellenas",
+"title": "Baguettes farcies",
 "img": "recipe_015",
 "product": "baguettes-low-carb",
 "cat": "Baguette Low Carb",
 "ing": [
 "Baguettes",
-"Huevos",
-"Especias",
-"Queso rallado",
-"Pavo",
-"Espinacas"
+"Œufs",
+"Épices",
+"Fromage râpé",
+"Dinde",
+"Épinards"
 ],
 "steps": [
-"Vaciar las baguettes y quitar la miga",
-"Mezclar huevos, especias, queso rallado, pavo y espinacas",
-"Rellenar las baguettes",
-"Hornear a 160°C unos 15 min"
+"Évider les baguettes en retirant la mie",
+"Mélanger les œufs, les épices, le fromage râpé, la dinde et les épinards",
+"Garnir les baguettes",
+"Cuire au four à 160 °C environ 15 min"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/baguettes-rellenas.html"
+"href": "recettes/baguettes-farcies.html"
 },
 {
 "slug": "tostadas-tarta-de-manzana",
-"title": "Tostadas Tarta de Manzana",
+"title": "Tartines façon tarte aux pommes",
 "img": "recipe_016",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan The Original Protein Bread",
-"Yogur",
-"Huevo",
-"Edulcorante",
-"Manzana",
-"Canela"
+"Pain The Original Protein Bread",
+"Yaourt",
+"Œuf",
+"Édulcorant",
+"Pomme",
+"Cannelle"
 ],
 "steps": [
-"Hacer un hueco en las rebanadas de pan",
-"Mezclar yogur, huevo y edulcorante",
-"Rellenar los huecos con la mezcla",
-"Añadir rodajas de manzana y canela",
-"Airfryer 5 min"
+"Creuser un puits dans les tranches de pain",
+"Mélanger le yaourt, l’œuf et l’édulcorant",
+"Remplir les puits avec le mélange",
+"Ajouter des lamelles de pomme et de la cannelle",
+"Friteuse à air 5 min"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/tostadas-tarta-de-manzana.html"
+"href": "recettes/tartines-facon-tarte-aux-pommes.html"
 },
 {
 "slug": "tostadas-con-langostinos",
-"title": "Tostadas con Langostinos",
+"title": "Tartines aux crevettes",
 "img": "recipe_017",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan The Original Protein Bread",
-"Pimiento rojo",
-"Pimiento verde",
-"Cebolla",
-"Zumo de lima",
-"Sal",
-"AOVE",
+"Pain The Original Protein Bread",
+"Poivron rouge",
+"Poivron vert",
+"Oignon",
+"Jus de citron vert",
+"Sel",
+"Huile d’olive vierge extra",
 "Guacamole",
-"Langostinos"
+"Crevettes"
 ],
 "steps": [
-"Preparar un pico de gallo con pimientos, cebolla, lima, sal y AOVE",
-"Tostar dos rebanadas de pan",
-"Montar las tostadas con guacamole, pico de gallo y langostinos"
+"Préparer un pico de gallo avec les poivrons, l’oignon, le citron vert, le sel et l’huile d’olive vierge extra",
+"Griller deux tranches de pain",
+"Garnir les tartines de guacamole, de pico de gallo et de crevettes"
 ],
-"nut": "",
+"nut": null,
 "video": "WW5jdmpGrPk",
-"href": "recetas/tostadas-con-langostinos.html"
+"href": "recettes/tartines-aux-crevettes.html"
 },
 {
 "slug": "sandwich-viral-de-huevo-dia-del-sandwich",
-"title": "Sándwich Viral de Huevo (Día del Sándwich)",
+"title": "Sandwich viral à l’œuf (Journée du sandwich)",
 "img": "recipe_018",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan The Original Protein Bread",
-"Huevo",
-"Queso",
+"Pain The Original Protein Bread",
+"Œuf",
+"Fromage",
 "Tomate",
-"Espinacas",
-"Relleno a gusto"
+"Épinards",
+"Garniture au choix"
 ],
 "steps": [
-"Batir dos huevos y verter en sartén caliente",
-"Poner dos rebanadas de pan sobre los huevos, tapar y cocinar",
-"Dar la vuelta y rellenar con queso, tomate y espinacas",
-"Cerrar el sándwich"
+"Battre deux œufs et les verser dans une poêle chaude",
+"Poser deux tranches de pain sur les œufs, couvrir et cuire",
+"Retourner et garnir de fromage, de tomate et d’épinards",
+"Refermer le sandwich"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres",
 "video": null,
-"href": "recetas/sandwich-viral-de-huevo-dia-del-sandwich.html"
+"href": "recettes/sandwich-viral-a-l-uf-journee-du-sandwich.html"
 },
 {
 "slug": "tarta-salada-de-brocoli-con-wrap",
-"title": "Tarta Salada de Brócoli con Wrap",
+"title": "Tarte salée au brocoli sur wrap",
 "img": "recipe_019",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Huevo",
-"Especias",
-"Brócoli",
-"Queso de cabra"
+"Œuf",
+"Épices",
+"Brocoli",
+"Fromage de chèvre"
 ],
 "steps": [
-"Mezclar huevos, especias y brócoli hervido",
-"Poner un wrap en un molde",
-"Añadir la mezcla de huevo y brócoli, con rodajas de queso de cabra",
-"Hornear"
+"Mélanger les œufs, les épices et le brocoli cuit",
+"Placer un wrap dans un moule",
+"Verser le mélange œufs-brocoli et ajouter des rondelles de chèvre",
+"Cuire au four"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": "ECuwmS6OX3A",
-"href": "recetas/tarta-salada-de-brocoli-con-wrap.html"
+"href": "recettes/tarte-salee-au-brocoli-sur-wrap.html"
 },
 {
 "slug": "bocadillo-mundial",
-"title": "Bocadillo Mundial",
+"title": "Sandwich spécial Coupe du monde",
 "img": "recipe_020",
 "product": "baguettes-low-carb",
 "cat": "Baguette Low Carb",
 "ing": [
 "Baguette Low Carb Bocado",
-"Berenjenas",
-"Pollo",
-"Pimientos asados",
-"Queso",
-"Yogur griego",
-"Mostaza",
-"Albahaca",
-"Ajo en polvo"
+"Aubergines",
+"Poulet",
+"Poivrons grillés",
+"Fromage",
+"Yaourt grec",
+"Moutarde",
+"Basilic",
+"Ail en poudre"
 ],
 "steps": [
-"Cortar y tostar la baguette",
-"Hacer berenjenas y pollo a la plancha",
-"Preparar salsa con yogur, mostaza, albahaca y ajo en polvo",
-"Montar el bocadillo con pimientos asados y queso"
+"Couper et griller la baguette",
+"Griller les aubergines et le poulet à la plancha",
+"Préparer une sauce avec le yaourt, la moutarde, le basilic et l’ail en poudre",
+"Monter le sandwich avec les poivrons grillés et le fromage"
 ],
-"nut": "1 baguette (110g): 14g carbohidratos, 30g proteínas, 13g fibra",
+"nut": "1 baguette (110 g) : 14 g de glucides, 30 g de protéines, 13 g de fibres",
 "video": null,
-"href": "recetas/bocadillo-mundial.html"
+"href": "recettes/sandwich-special-coupe-du-monde.html"
 },
 {
 "slug": "tostadas-sabor-tarta-de-manzana",
-"title": "Tostadas Sabor Tarta de Manzana",
+"title": "Tartines goût tarte aux pommes",
 "img": "recipe_021",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"Yogur",
-"Huevo",
-"Edulcorante",
-"Manzana",
-"Canela"
+"Yaourt",
+"Œuf",
+"Édulcorant",
+"Pomme",
+"Cannelle"
 ],
 "steps": [
-"Hacer un hueco en las rebanadas de pan",
-"Mezclar yogur, huevo y edulcorante",
-"Rellenar el hueco con la mezcla",
-"Añadir manzana y canela",
-"Airfryer 5 min"
+"Creuser un puits dans les tranches de pain",
+"Mélanger le yaourt, l’œuf et l’édulcorant",
+"Remplir le puits avec le mélange",
+"Ajouter la pomme et la cannelle",
+"Friteuse à air 5 min"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres",
 "video": "jovD3jRV33A",
-"href": "recetas/tostadas-sabor-tarta-de-manzana.html"
+"href": "recettes/tartines-gout-tarte-aux-pommes.html"
 },
 {
 "slug": "pizza-de-verduras",
-"title": "Pizza de Verduras",
+"title": "Pizza aux légumes",
 "img": "recipe_022",
 "product": "mezcla-pizza-proteica",
 "cat": "Pizza",
 "ing": [
 "Pizza Low Carb Bocado",
-"Salsa de tomate",
-"Queso rallado",
-"Alcachofas",
-"Pimientos asados",
-"Pechuga de pollo"
+"Sauce tomate",
+"Fromage râpé",
+"Artichauts",
+"Poivrons grillés",
+"Blanc de poulet"
 ],
 "steps": [
-"Añadir los toppings a la base de pizza",
-"Hornear"
+"Ajouter les garnitures sur la base de pizza",
+"Cuire au four"
 ],
-"nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
+"nut": "Portion (66 g) : 18 g de protéines, 8,8 g de fibres, 7,8 g de glucides",
 "video": "cQVAwwOV8bY",
-"href": "recetas/pizza-de-verduras.html"
+"href": "recettes/pizza-aux-legumes.html"
 },
 {
 "slug": "pizza-de-calabaza-con-sabor-a-otono",
-"title": "Pizza de Calabaza con Sabor a Otoño",
+"title": "Pizza au potiron aux saveurs d’automne",
 "img": "recipe_023",
 "product": "mezcla-pizza-proteica",
 "cat": "Pizza",
 "ing": [
 "Base de pizza Low Carb Bocado",
-"Calabaza",
-"Aceite de oliva y tomillo",
-"Salsa de tomate",
-"Jamón Serrano",
-"Queso Azul"
+"Potiron",
+"Huile d’olive et thym",
+"Sauce tomate",
+"Jambon serrano",
+"Fromage bleu"
 ],
 "steps": [
-"Hornear trocitos de calabaza con aceite y tomillo",
-"Añadir salsa de tomate, jamón serrano, calabaza y queso azul sobre la base",
-"Hornear"
+"Rôtir des dés de potiron avec l’huile et le thym",
+"Garnir la base de sauce tomate, de jambon serrano, de potiron et de fromage bleu",
+"Cuire au four"
 ],
-"nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
+"nut": "Portion (66 g) : 18 g de protéines, 8,8 g de fibres, 7,8 g de glucides",
 "video": null,
-"href": "recetas/pizza-de-calabaza-con-sabor-a-otono.html"
+"href": "recettes/pizza-au-potiron-aux-saveurs-d-automne.html"
 },
 {
 "slug": "tacos-vegetales-con-base-de-lechuga",
-"title": "Tacos Vegetales con Base de Lechuga",
+"title": "Tacos végétaux en feuilles de laitue",
 "img": "recipe_024",
 "product": "mezcla-picada-vegetal-150",
 "cat": "Picada Vegetal",
 "ing": [
-"Picada vegetal Bocado",
-"Lechuga",
+"Haché végétal Bocado",
+"Laitue",
 "Guacamole",
 "Tomate",
-"Yogur natural"
+"Yaourt nature"
 ],
 "steps": [
-"Hidratar la picada vegetal y cocinar un poco en sartén",
-"Rellenar cogollos de lechuga con picada vegetal, guacamole, tomate y yogur",
-"Especiar al gusto"
+"Hydrater le haché végétal et le faire revenir à la poêle",
+"Garnir des cœurs de laitue de haché végétal, de guacamole, de tomate et de yaourt",
+"Épicer selon votre goût"
 ],
-"nut": "Alto en proteína, bajo en grasas, fuente de fibra, sin colesterol, gluten free, vegano",
+"nut": "Riche en protéines, pauvre en matières grasses, source de fibres, sans cholestérol, sans gluten, végan",
 "video": "AtBnyGm3nnc",
-"href": "recetas/tacos-vegetales-con-base-de-lechuga.html"
+"href": "recettes/tacos-vegetaux-en-feuilles-de-laitue.html"
 },
 {
 "slug": "mini-quiches-de-pan-de-proteinas",
-"title": "Mini Quiches de Pan de Proteínas",
+"title": "Mini-quiches au pain protéiné",
 "img": "recipe_025",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan de proteínas",
-"Huevo",
-"Jamón",
-"Queso",
-"Verduras al gusto"
+"Pain protéiné",
+"Œuf",
+"Jambon",
+"Fromage",
+"Légumes au choix"
 ],
 "steps": [
-"Aplastar las rebanadas con un rodillo",
-"Colocar sobre un molde de muffins",
-"Rellenar con huevo, jamón, queso y verduras",
-"Hornear"
+"Aplatir les tranches au rouleau",
+"Les placer dans un moule à muffins",
+"Garnir d’œuf, de jambon, de fromage et de légumes",
+"Cuire au four"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/mini-quiches-de-pan-de-proteinas.html"
+"href": "recettes/mini-quiches-au-pain-proteine.html"
 },
 {
 "slug": "panecillos-rellenos-de-pesto-y-huevo",
-"title": "Panecillos Rellenos de Pesto y Huevo",
+"title": "Petits pains farcis au pesto et à l’œuf",
 "img": "recipe_026",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Proteicos Bocado",
+"Petits pains protéinés Bocado",
 "Pesto",
-"Huevo",
-"Tomate cherry"
+"Œuf",
+"Tomates cerises"
 ],
 "steps": [
-"Quitar la miga al panecillo",
-"Rellenar con pesto, huevo y tomates cherry",
-"Hornear"
+"Retirer la mie du petit pain",
+"Garnir de pesto, d’œuf et de tomates cerises",
+"Cuire au four"
 ],
-"nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
+"nut": "1 petit pain (50 g) : 6,5 g de glucides, 14,5 g de protéines, 4,1 g de fibres",
 "video": "-rS00CdsJZo",
-"href": "recetas/panecillos-rellenos-de-pesto-y-huevo.html"
+"href": "recettes/petits-pains-farcis-au-pesto-et-a-l-uf.html"
 },
 {
 "slug": "pizza-rolls",
-"title": "Pizza Rolls",
+"title": "Pizza rolls",
 "img": "recipe_027",
 "product": "mezcla-pizza-proteica",
 "cat": "Pizza",
 "ing": [
 "Pizza Low Carb Bocado",
-"Salsa de tomate",
-"Jamón cocido",
-"Queso mozzarella"
+"Sauce tomate",
+"Jambon blanc",
+"Mozzarella"
 ],
 "steps": [
-"Cortar la base de pizza en 3",
-"Rellenar con salsa de tomate y jamón, enrollar",
-"Colocar los rolls en bandeja de horno",
-"Cubrir con mozzarella y orégano",
-"Hornear"
+"Couper la base de pizza en 3",
+"Garnir de sauce tomate et de jambon, puis rouler",
+"Disposer les rolls sur une plaque de four",
+"Couvrir de mozzarella et d’origan",
+"Cuire au four"
 ],
-"nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
+"nut": "Portion (66 g) : 18 g de protéines, 8,8 g de fibres, 7,8 g de glucides",
 "video": "fo6PPEA7MOE",
-"href": "recetas/pizza-rolls.html"
+"href": "recettes/pizza-rolls.html"
 },
 {
 "slug": "mini-tacos-de-picada-vegetal",
-"title": "Mini Tacos de Picada Vegetal",
+"title": "Mini-tacos au haché végétal",
 "img": "recipe_028",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Picada vegetal Bocado",
-"Salsa de tomate",
-"Aguacate",
-"Queso rallado"
+"Haché végétal Bocado",
+"Sauce tomate",
+"Avocat",
+"Fromage râpé"
 ],
 "steps": [
-"Cortar los wraps en circulitos",
-"Hidratar la picada vegetal",
-"Rellenar con picada vegetal, salsa de tomate y aguacate",
-"Cubrir con queso rallado",
-"Hornear"
+"Découper les wraps en petits cercles",
+"Hydrater le haché végétal",
+"Garnir de haché végétal, de sauce tomate et d’avocat",
+"Couvrir de fromage râpé",
+"Cuire au four"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": "iqSarAyYzcM",
-"href": "recetas/mini-tacos-de-picada-vegetal.html"
+"href": "recettes/mini-tacos-au-hache-vegetal.html"
 },
 {
 "slug": "quesadilla-de-halloween",
-"title": "Quesadilla de Halloween",
+"title": "Quesadilla d’Halloween",
 "img": "recipe_029",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "2 Wraps Low Carb",
-"Relleno a gusto (queso, jamón)",
-"Aceite y especias"
+"Garniture au choix (fromage, jambon)",
+"Huile et épices"
 ],
 "steps": [
-"Recortar la forma de una cara en un wrap",
-"Colocar relleno en el otro wrap",
-"Cubrir con el wrap recortado",
-"Pincelar con aceite y especias",
-"Hornear"
+"Découper un visage dans un wrap",
+"Mettre la garniture sur l’autre wrap",
+"Recouvrir avec le wrap découpé",
+"Badigeonner d’huile et d’épices",
+"Cuire au four"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": "dQMx6h8Qve4",
-"href": "recetas/quesadilla-de-halloween.html"
+"href": "recettes/quesadilla-d-halloween.html"
 },
 {
 "slug": "sandwich-de-huevo-vuelta-al-cole",
-"title": "Sándwich de Huevo Vuelta al Cole",
+"title": "Sandwich à l’œuf de la rentrée",
 "img": "recipe_030",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Proteicos",
-"Huevo",
-"Yogur",
-"Mostaza dijón",
-"Sal y pimienta"
+"Petits pains protéinés",
+"Œuf",
+"Yaourt",
+"Moutarde de Dijon",
+"Sel et poivre"
 ],
 "steps": [
-"Cocer 3 huevos y separar claras de yemas",
-"Mezclar yemas con yogur, mostaza, sal y pimienta",
-"Añadir las claras cortadas en daditos",
-"Rellenar los panecillos"
+"Cuire 3 œufs durs et séparer les blancs des jaunes",
+"Mélanger les jaunes avec le yaourt, la moutarde, le sel et le poivre",
+"Ajouter les blancs coupés en dés",
+"Garnir les petits pains"
 ],
-"nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
+"nut": "1 petit pain (50 g) : 6,5 g de glucides, 14,5 g de protéines, 4,1 g de fibres",
 "video": null,
-"href": "recetas/sandwich-de-huevo-vuelta-al-cole.html"
+"href": "recettes/sandwich-a-l-uf-de-la-rentree.html"
 },
 {
 "slug": "canelones-de-berenjena-con-picada-vegetal",
-"title": "Canelones de Berenjena con Picada Vegetal",
+"title": "Cannellonis d’aubergine au haché végétal",
 "img": "recipe_031",
 "product": "mezcla-picada-vegetal-150",
 "cat": "Picada Vegetal",
 "ing": [
-"Picada Vegetal Bocado",
-"Berenjena",
-"Queso crema",
+"Haché végétal Bocado",
+"Aubergine",
+"Fromage frais",
 "Tomate",
-"Queso rallado"
+"Fromage râpé"
 ],
 "steps": [
-"Laminar la berenjena y pasar por la plancha",
-"Hidratar la picada vegetal y mezclar con queso crema",
-"Rellenar y enrollar las láminas de berenjena",
-"Colocar sobre tomate y cubrir con queso rallado",
-"Hornear hasta gratinar"
+"Couper l’aubergine en fines tranches et la griller",
+"Hydrater le haché végétal et le mélanger au fromage frais",
+"Garnir et rouler les tranches d’aubergine",
+"Les disposer sur la tomate et couvrir de fromage râpé",
+"Cuire au four jusqu’à ce que ce soit gratiné"
 ],
-"nut": "Alto en proteína, bajo en grasas, fuente de fibra, sin colesterol, gluten free",
+"nut": "Riche en protéines, pauvre en matières grasses, source de fibres, sans cholestérol, sans gluten",
 "video": null,
-"href": "recetas/canelones-de-berenjena-con-picada-vegetal.html"
+"href": "recettes/cannellonis-d-aubergine-au-hache-vegetal.html"
 },
 {
 "slug": "bocadillo-de-pollo-y-verduras-asadas",
-"title": "Bocadillo de Pollo y Verduras Asadas",
+"title": "Sandwich au poulet et légumes rôtis",
 "img": "recipe_032",
 "product": "baguettes-low-carb",
 "cat": "Baguette Low Carb",
 "ing": [
 "Baguette Low Carb Bocado",
 "Guacamole",
-"Pechuga de pollo",
-"Verduras asadas"
+"Blanc de poulet",
+"Légumes rôtis"
 ],
 "steps": [
-"Tostar la baguette",
-"Hacer la pechuga a la plancha",
-"Asar las verduras",
-"Montar el sándwich"
+"Griller la baguette",
+"Cuire le blanc de poulet à la plancha",
+"Rôtir les légumes",
+"Monter le sandwich"
 ],
-"nut": "1 baguette (110g): 14g carbohidratos, 30g proteínas, 13g fibra",
+"nut": "1 baguette (110 g) : 14 g de glucides, 30 g de protéines, 13 g de fibres",
 "video": "f7bFZ4LNhik",
-"href": "recetas/bocadillo-de-pollo-y-verduras-asadas.html"
+"href": "recettes/sandwich-au-poulet-et-legumes-rotis.html"
 },
 {
 "slug": "sandwich-de-espinacas-y-queso",
-"title": "Sándwich de Espinacas y Queso",
+"title": "Sandwich épinards et fromage",
 "img": "recipe_033",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Ajo",
-"Espinacas",
-"Queso feta",
-"Pan The Original Protein Bread",
-"Queso mozzarella"
+"Ail",
+"Épinards",
+"Feta",
+"Pain The Original Protein Bread",
+"Mozzarella"
 ],
 "steps": [
-"Cocinar ajo y espinacas en sartén",
-"Añadir queso feta",
-"Rellenar el pan con mozzarella y la mezcla de espinacas",
-"Tostar"
+"Faire revenir l’ail et les épinards à la poêle",
+"Ajouter la feta",
+"Garnir le pain de mozzarella et du mélange aux épinards",
+"Griller"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres",
 "video": "gYPTRU4dMqM",
-"href": "recetas/sandwich-de-espinacas-y-queso.html"
+"href": "recettes/sandwich-epinards-et-fromage.html"
 },
 {
 "slug": "pizza-de-salmon-queso-y-rucula",
-"title": "Pizza de Salmón, Queso y Rúcula",
+"title": "Pizza saumon, fromage et roquette",
 "img": "recipe_034",
 "product": "mezcla-pizza-proteica",
 "cat": "Pizza",
 "ing": [
 "Pizza low carb Bocado",
-"Queso mozzarella",
-"Salmón",
-"Queso brie",
-"Rúcula"
+"Mozzarella",
+"Saumon",
+"Brie",
+"Roquette"
 ],
 "steps": [
-"Añadir mozzarella, salmón y brie a la base",
-"Hornear",
-"Añadir rúcula fresca al sacar del horno"
+"Garnir la base de mozzarella, de saumon et de brie",
+"Cuire au four",
+"Ajouter de la roquette fraîche à la sortie du four"
 ],
-"nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
+"nut": "Portion (66 g) : 18 g de protéines, 8,8 g de fibres, 7,8 g de glucides",
 "video": "pn2vgx9_l24",
-"href": "recetas/pizza-de-salmon-queso-y-rucula.html"
+"href": "recettes/pizza-saumon-fromage-et-roquette.html"
 },
 {
 "slug": "rollitos-de-hummus-y-verduritas",
-"title": "Rollitos de Hummus y Verduritas",
+"title": "Roulés au houmous et petits légumes",
 "img": "recipe_035",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
-"Wrap bajo en carbohidratos Bocado",
-"Hummus",
-"Zanahoria",
-"Pimiento rojo",
-"Pepino"
+"Wrap pauvre en glucides Bocado",
+"Houmous",
+"Carotte",
+"Poivron rouge",
+"Concombre"
 ],
 "steps": [
-"Poner hummus en la base del wrap",
-"Añadir palitos de zanahoria, pimiento y pepino",
-"Enrollar y cortar a la mitad"
+"Étaler le houmous sur le wrap",
+"Ajouter des bâtonnets de carotte, de poivron et de concombre",
+"Rouler et couper en deux"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": null,
-"href": "recetas/rollitos-de-hummus-y-verduritas.html"
+"href": "recettes/roules-au-houmous-et-petits-legumes.html"
 },
 {
 "slug": "sandwich-saludable-vuelta-a-la-rutina",
-"title": "Sandwich Saludable Vuelta a la Rutina",
+"title": "Sandwich sain de la rentrée",
 "img": "recipe_036",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan The Original Protein Bread",
-"Aguacate",
+"Pain The Original Protein Bread",
+"Avocat",
 "Pesto",
-"Huevo",
-"Espinaca"
+"Œuf",
+"Épinards"
 ],
 "steps": [
-"Tostar las rebanadas de pan",
-"Untar una rebanada con aguacate y la otra con pesto",
-"Rellenar con huevo a la plancha y espinacas"
+"Griller les tranches de pain",
+"Tartiner une tranche d’avocat et l’autre de pesto",
+"Garnir d’un œuf à la plancha et d’épinards"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG bajo",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres, IG bas",
 "video": null,
-"href": "recetas/sandwich-saludable-vuelta-a-la-rutina.html"
+"href": "recettes/sandwich-sain-de-la-rentree.html"
 },
 {
 "slug": "bocaditos-de-platano",
-"title": "Bocaditos de Plátano",
+"title": "Bouchées à la banane",
 "img": "recipe_037",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Crema de frutos secos (cacahuete o almendra)",
-"Plátano",
-"Pepitas de chocolate sin azúcar",
-"Yogur"
+"Purée d’oléagineux (cacahuète ou amande)",
+"Banane",
+"Pépites de chocolat sans sucre",
+"Yaourt"
 ],
 "steps": [
-"Untar el wrap con crema de frutos secos",
-"Poner un plátano en el centro y enrollar",
-"Cortar a rodajas",
-"Añadir pepitas de chocolate encima",
-"Airfryer unos minutos hasta derretir el chocolate",
-"Acompañar con yogur"
+"Tartiner le wrap de purée d’oléagineux",
+"Placer une banane au centre et rouler",
+"Couper en rondelles",
+"Parsemer de pépites de chocolat",
+"Friteuse à air quelques minutes jusqu’à ce que le chocolat fonde",
+"Servir avec du yaourt"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": null,
-"href": "recetas/bocaditos-de-platano.html"
+"href": "recettes/bouchees-a-la-banane.html"
 },
 {
 "slug": "bocadillo-de-berenjenas",
-"title": "Bocadillo de Berenjenas",
+"title": "Sandwich aux aubergines",
 "img": "recipe_038",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Proteicos",
-"Berenjena",
-"Aceite de oliva",
-"Tomate triturado natural",
-"Queso"
+"Petits pains protéinés",
+"Aubergine",
+"Huile d’olive",
+"Tomate concassée",
+"Fromage"
 ],
 "steps": [
-"Cocinar rodajas de berenjena a la plancha con aceite",
-"Partir el panecillo a la mitad",
-"Rellenar con tomate triturado, berenjenas y queso",
-"Llevar a la plancha o tostadora"
+"Griller des rondelles d’aubergine à la plancha avec de l’huile",
+"Couper le petit pain en deux",
+"Garnir de tomate concassée, d’aubergines et de fromage",
+"Passer à la plancha ou au grille-pain"
 ],
-"nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
+"nut": "1 petit pain (50 g) : 6,5 g de glucides, 14,5 g de protéines, 4,1 g de fibres",
 "video": null,
-"href": "recetas/bocadillo-de-berenjenas.html"
+"href": "recettes/sandwich-aux-aubergines.html"
 },
 {
 "slug": "napolitanas-rellenas-de-jamon-y-queso",
-"title": "Napolitanas Rellenas de Jamón y Queso",
+"title": "Feuilletés jambon-fromage",
 "img": "recipe_039",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Jamón",
-"Queso",
-"Huevo para pintar",
-"Semillas de sésamo"
+"Jambon",
+"Fromage",
+"Œuf pour dorer",
+"Graines de sésame"
 ],
 "steps": [
-"Rellenar los wraps con jamón y queso",
-"Cortar y doblar",
-"Pintar con huevo y semillas de sésamo",
-"Hornear"
+"Garnir les wraps de jambon et de fromage",
+"Couper et plier",
+"Dorer à l’œuf et parsemer de sésame",
+"Cuire au four"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": "JVXXhPz2OE0",
-"href": "recetas/napolitanas-rellenas-de-jamon-y-queso.html"
+"href": "recettes/feuilletes-jambon-fromage.html"
 },
 {
 "slug": "tostadas-de-huevo",
-"title": "Tostadas de Huevo",
+"title": "Tartines à l’œuf",
 "img": "recipe_040",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"Huevo",
-"Queso",
-"Tomatitos",
-"Orégano"
+"Œuf",
+"Fromage",
+"Tomates cerises",
+"Origan"
 ],
 "steps": [
-"Hacer un hueco en la rebanada de pan con una cuchara",
-"Rellenar con huevo, queso, tomatitos y orégano",
-"Hornear en airfryer, horno o sartén con tapa"
+"Creuser un puits dans la tranche de pain avec une cuillère",
+"Garnir d’œuf, de fromage, de tomates et d’origan",
+"Cuire à la friteuse à air, au four ou à la poêle avec un couvercle"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG 24",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres, IG 24",
 "video": null,
-"href": "recetas/tostadas-de-huevo.html"
+"href": "recettes/tartines-a-l-uf.html"
 },
 {
 "slug": "tostadas-de-atun",
-"title": "Tostadas de Atún",
+"title": "Tartines au thon",
 "img": "recipe_041",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"Huevo",
-"Aguacate",
-"Limón",
-"Atún",
-"Yogur griego",
-"Sal"
+"Œuf",
+"Avocat",
+"Citron",
+"Thon",
+"Yaourt grec",
+"Sel"
 ],
 "steps": [
-"Tostar dos rebanadas de pan",
-"Mezclar huevo cocido, aguacate, limón, sal, atún y yogur griego",
-"Colocar el relleno encima de las tostadas"
+"Griller deux tranches de pain",
+"Mélanger l’œuf dur, l’avocat, le citron, le sel, le thon et le yaourt grec",
+"Répartir la garniture sur les tartines"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG 24",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres, IG 24",
 "video": null,
-"href": "recetas/tostadas-de-atun.html"
+"href": "recettes/tartines-au-thon.html"
 },
 {
 "slug": "pizza-caprese",
-"title": "Pizza Caprese",
+"title": "Pizza caprese",
 "img": "recipe_042",
 "product": "mezcla-pizza-proteica",
 "cat": "Pizza",
 "ing": [
 "Pizza Low Carb BOCADO",
-"Salsa de tomate",
+"Sauce tomate",
 "Mozzarella",
-"Tomatitos",
-"Albahaca",
-"Crema de vinagre balsámico"
+"Tomates cerises",
+"Basilic",
+"Crème de vinaigre balsamique"
 ],
 "steps": [
-"Poner salsa de tomate casera, mozzarella y tomatitos en la base",
-"Hornear hasta fundir el queso",
-"Añadir albahaca fresca y crema de vinagre balsámico"
+"Garnir la base de sauce tomate maison, de mozzarella et de tomates",
+"Cuire au four jusqu’à ce que le fromage fonde",
+"Ajouter du basilic frais et de la crème de balsamique"
 ],
-"nut": "Porción (66g): 18g proteínas, 8,8g fibra, 7,8g carbohidratos",
+"nut": "Portion (66 g) : 18 g de protéines, 8,8 g de fibres, 7,8 g de glucides",
 "video": "vXZQqdO_pxo",
-"href": "recetas/pizza-caprese.html"
+"href": "recettes/pizza-caprese.html"
 },
 {
 "slug": "triangulos-rellenos-de-pollo-y-espinacas",
-"title": "Triángulos Rellenos de Pollo y Espinacas",
+"title": "Triangles farcis au poulet et aux épinards",
 "img": "recipe_043",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Espinaca",
-"Pollo",
-"Queso crema"
+"Épinards",
+"Poulet",
+"Fromage frais"
 ],
 "steps": [
-"Preparar el relleno de espinacas, pollo y queso crema en sartén",
-"Cortar, rellenar y doblar el wrap en triángulos",
-"Dorar en airfryer, sartén u horno"
+"Préparer à la poêle la garniture d’épinards, de poulet et de fromage frais",
+"Couper, garnir et plier le wrap en triangles",
+"Faire dorer à la friteuse à air, à la poêle ou au four"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": "bJzmfnEtpyw",
-"href": "recetas/triangulos-rellenos-de-pollo-y-espinacas.html"
+"href": "recettes/triangles-farcis-au-poulet-et-aux-epinards.html"
 },
 {
 "slug": "panecillos-rellenos",
-"title": "Panecillos Rellenos",
+"title": "Petits pains farcis",
 "img": "recipe_044",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Proteicos Bocado",
-"Pavo o jamón cocido",
-"Huevo",
-"Queso"
+"Petits pains protéinés Bocado",
+"Dinde ou jambon blanc",
+"Œuf",
+"Fromage"
 ],
 "steps": [
-"Cortar a la mitad y vaciar la miga",
-"Rellenar con salsa de tomate, pavo o jamón, huevo batido y queso",
-"Hornear 10 min a 180°C"
+"Couper en deux et évider",
+"Garnir de sauce tomate, de dinde ou de jambon, d’œuf battu et de fromage",
+"Cuire au four 10 min à 180 °C"
 ],
-"nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
+"nut": "1 petit pain (50 g) : 6,5 g de glucides, 14,5 g de protéines, 4,1 g de fibres",
 "video": null,
-"href": "recetas/panecillos-rellenos.html"
+"href": "recettes/petits-pains-farcis.html"
 },
 {
 "slug": "brochetas-de-sandwich",
-"title": "Brochetas de Sandwich",
+"title": "Brochettes de sandwich",
 "img": "recipe_045",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"Queso",
-"Jamón",
+"Fromage",
+"Jambon",
 "Tomate",
-"Aceituna"
+"Olive"
 ],
 "steps": [
-"Hacer un sandwich mixto de jamón y queso",
-"Cortar en 4",
-"Montar brochetas intercalando tomate",
-"Terminar con una aceituna"
+"Préparer un croque jambon-fromage",
+"Le couper en 4",
+"Monter des brochettes en intercalant de la tomate",
+"Terminer par une olive"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG 24",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres, IG 24",
 "video": "9r6JJGlKMgI",
-"href": "recetas/brochetas-de-sandwich.html"
+"href": "recettes/brochettes-de-sandwich.html"
 },
 {
 "slug": "mini-quesadillas",
-"title": "Mini Quesadillas",
+"title": "Mini-quesadillas",
 "img": "recipe_046",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Hummus",
-"Aguacate"
+"Houmous",
+"Avocat"
 ],
 "steps": [
-"Cortar los wraps en círculos pequeños",
-"Rellenar con hummus y aguacate",
-"Doblar y hacer a la plancha"
+"Découper les wraps en petits cercles",
+"Garnir de houmous et d’avocat",
+"Plier et cuire à la plancha"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra, apto vegano",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres, convient aux végans",
 "video": "aeLrPJJbxus",
-"href": "recetas/mini-quesadillas.html"
+"href": "recettes/mini-quesadillas.html"
 },
 {
 "slug": "tostadas-de-pizza",
-"title": "Tostadas de Pizza",
+"title": "Tartines pizza",
 "img": "recipe_047",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"Salsa de tomate casera",
-"Atún al natural",
-"Queso",
-"Rodaja de tomate",
-"Albahaca"
+"Sauce tomate maison",
+"Thon au naturel",
+"Fromage",
+"Rondelle de tomate",
+"Basilic"
 ],
 "steps": [
-"Poner salsa de tomate, atún, queso y tomate sobre el pan",
-"Espolvorear albahaca",
-"Airfryer u horno"
+"Garnir le pain de sauce tomate, de thon, de fromage et de tomate",
+"Parsemer de basilic",
+"Friteuse à air ou four"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres",
 "video": null,
-"href": "recetas/tostadas-de-pizza.html"
+"href": "recettes/tartines-pizza.html"
 },
 {
 "slug": "desayuno-ideal-con-wrap",
-"title": "Desayuno Ideal con Wrap",
+"title": "Le petit-déjeuner idéal en wrap",
 "img": "recipe_048",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wraps Low Carb",
-"Aguacate",
-"Queso",
-"Huevo revuelto"
+"Avocat",
+"Fromage",
+"Œufs brouillés"
 ],
 "steps": [
-"Machacar el aguacate sobre el wrap",
-"Añadir queso y huevo revuelto",
-"Doblar y pasar por la plancha"
+"Écraser l’avocat sur le wrap",
+"Ajouter le fromage et les œufs brouillés",
+"Plier et passer à la plancha"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": "ql4e49ayU6w",
-"href": "recetas/desayuno-ideal-con-wrap.html"
+"href": "recettes/le-petit-dejeuner-ideal-en-wrap.html"
 },
 {
 "slug": "hamburguesas-vegetales-rellenas-de-queso-2",
-"title": "Hamburguesas Vegetales Rellenas de Queso",
+"title": "Burgers végétaux farcis au fromage",
 "img": "recipe_049",
 "product": "mezcla-picada-vegetal-150",
 "cat": "Picada Vegetal",
 "ing": [
-"Picada Vegetal Bocado",
-"Espárrago",
-"Zanahoria",
-"Queso"
+"Haché végétal Bocado",
+"Asperges",
+"Carotte",
+"Fromage"
 ],
 "steps": [
-"Saltear espárragos y zanahoria",
-"Hidratar la picada vegetal",
-"Mezclar con las verduras salteadas",
-"Dar forma de hamburguesa rellenando de queso",
-"Cocinar a la sartén"
+"Faire sauter les asperges et la carotte",
+"Hydrater le haché végétal",
+"Le mélanger avec les légumes sautés",
+"Former des burgers en les farcissant de fromage",
+"Cuire à la poêle"
 ],
-"nut": "Alto en proteína, bajo en grasas, fuente de fibra, sin colesterol, gluten free, apto vegano",
+"nut": "Riche en protéines, pauvre en matières grasses, source de fibres, sans cholestérol, sans gluten, convient aux végans",
 "video": "JyKoSk2LrbQ",
-"href": "recetas/hamburguesas-vegetales-rellenas-de-queso-2.html"
+"href": "recettes/burgers-vegetaux-farcis-au-fromage-2.html"
 },
 {
 "slug": "pizza-sin-gluten-proteica",
-"title": "Pizza Sin Gluten Proteica",
+"title": "Pizza protéinée sans gluten",
 "img": "recipe_050",
 "product": "mezcla-pizza-proteica",
 "cat": "Pizza",
 "ing": [
-"Mezcla Pizza Proteica Sin Gluten",
-"Agua",
-"Aceite de oliva",
-"Levadura",
-"Toppings al gusto (salsa de tomate, queso, pollo, tomates, orégano)"
+"Préparation pour pizza protéinée sans gluten",
+"Eau",
+"Huile d’olive",
+"Levure",
+"Garnitures au choix (sauce tomate, fromage, poulet, tomates, origan)"
 ],
 "steps": [
-"Mezclar agua, aceite y levadura según instrucciones",
-"Amasar y dejar reposar",
-"Dar forma a la masa",
-"Añadir toppings",
-"Hornear"
+"Mélanger l’eau, l’huile et la levure selon les instructions",
+"Pétrir et laisser reposer",
+"Façonner la pâte",
+"Ajouter les garnitures",
+"Cuire au four"
 ],
-"nut": "Sin gluten, alta en proteínas, apto vegano/veggie",
+"nut": "Sans gluten, riche en protéines, convient aux végans et végétariens",
 "video": null,
-"href": "recetas/pizza-sin-gluten-proteica.html"
+"href": "recettes/pizza-proteinee-sans-gluten.html"
 },
 {
 "slug": "tostadas-de-hummus-con-queso-feta",
-"title": "Tostadas de Hummus con Queso Feta",
+"title": "Tartines houmous et feta",
 "img": "recipe_051",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"2 rebanadas de The Original Protein Bread",
-"Hummus casero",
-"Tomate natural",
-"Queso feta"
+"2 tranches de The Original Protein Bread",
+"Houmous maison",
+"Tomate fraîche",
+"Feta"
 ],
 "steps": [
-"Tostar el pan",
-"Untar hummus",
-"Añadir tomate en rodajas y especias",
-"Terminar con queso feta"
+"Griller le pain",
+"Tartiner de houmous",
+"Ajouter des rondelles de tomate et des épices",
+"Terminer avec la feta"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG24",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres, IG24",
 "video": null,
-"href": "recetas/tostadas-de-hummus-con-queso-feta.html"
+"href": "recettes/tartines-houmous-et-feta.html"
 },
 {
 "slug": "galette-con-bordes-rellenos-dulce",
-"title": "Galette con Bordes Rellenos (dulce)",
+"title": "Galette à bords farcis (sucrée)",
 "img": "recipe_052",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wraps Low Carb",
-"Queso",
-"Tomate o relleno a gusto",
-"Huevo"
+"Fromage",
+"Tomate ou garniture au choix",
+"Œuf"
 ],
 "steps": [
-"Colocar trocitos de queso en los bordes del wrap",
-"Enrollar y fijar con palillos",
-"Rellenar a gusto (tomate y huevo)",
-"Cocinar en sartén"
+"Placer des morceaux de fromage sur le bord du wrap",
+"Rouler les bords et les fixer avec des cure-dents",
+"Garnir selon vos envies (tomate et œuf)",
+"Cuire à la poêle"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": null,
-"href": "recetas/galette-con-bordes-rellenos-dulce.html"
+"href": "recettes/galette-a-bords-farcis-sucree.html"
 },
 {
 "slug": "galette-con-bordes-rellenos-salada",
-"title": "Galette con Bordes Rellenos (salada)",
+"title": "Galette à bords farcis (salée)",
 "img": "recipe_053",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wraps low carb",
-"Queso",
-"Tomate triturado",
-"Jamón en taquitos",
-"Huevo"
+"Fromage",
+"Tomate concassée",
+"Dés de jambon",
+"Œuf"
 ],
 "steps": [
-"Poner trozos de queso en los bordes del wrap, enrollar y cerrar con palillo",
-"Rellenar con tomate, jamón y huevo",
-"Cocinar en sartén a fuego bajo con tapa"
+"Placer des morceaux de fromage sur le bord du wrap, rouler et fixer avec un cure-dent",
+"Garnir de tomate, de jambon et d’œuf",
+"Cuire à la poêle à feu doux avec un couvercle"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/galette-con-bordes-rellenos-salada.html"
+"href": "recettes/galette-a-bords-farcis-salee.html"
 },
 {
 "slug": "sandwich-saludable-para-llevar-a-la-playa",
-"title": "Sandwich Saludable Para Llevar a la Playa",
+"title": "Sandwich sain à emporter à la plage",
 "img": "recipe_054",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"2 huevos cocidos",
+"2 œufs durs",
 "Guacamole",
-"Zumo de lima o limón",
-"Pimienta"
+"Jus de citron vert ou de citron",
+"Poivre"
 ],
 "steps": [
-"Chafar huevos cocidos con guacamole",
-"Añadir zumo de limón y pimienta",
-"Rellenar el sándwich"
+"Écraser les œufs durs avec le guacamole",
+"Ajouter le jus de citron et le poivre",
+"Garnir le sandwich"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres",
 "video": "zvKAlQRqIIM",
-"href": "recetas/sandwich-saludable-para-llevar-a-la-playa.html"
+"href": "recettes/sandwich-sain-a-emporter-a-la-plage.html"
 },
 {
 "slug": "paninis-proteicos",
-"title": "Paninis Proteicos",
+"title": "Paninis protéinés",
 "img": "recipe_055",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Proteicos BOCADO",
-"Queso crema",
-"Especias al gusto",
-"Queso",
-"Pimientos de colores",
-"Calabacín"
+"Petits pains protéinés BOCADO",
+"Fromage frais",
+"Épices au choix",
+"Fromage",
+"Poivrons de couleur",
+"Courgette"
 ],
 "steps": [
-"Partir el panecillo en dos",
-"Untar queso crema y especias",
-"Añadir toppings de queso, pimientos y calabacín",
-"Hornear hasta fundir el queso"
+"Couper le petit pain en deux",
+"Tartiner de fromage frais et d’épices",
+"Ajouter le fromage, les poivrons et la courgette",
+"Cuire au four jusqu’à ce que le fromage fonde"
 ],
-"nut": "1 panecillo (50g): 6,5g carbohidratos, 14,5g proteínas, 4,1g fibra",
+"nut": "1 petit pain (50 g) : 6,5 g de glucides, 14,5 g de protéines, 4,1 g de fibres",
 "video": "L-fQKm7XRG0",
-"href": "recetas/paninis-proteicos.html"
+"href": "recettes/paninis-proteines.html"
 },
 {
 "slug": "raviolis-de-calabacin-con-picada-vegetal",
-"title": "Raviolis de Calabacín con Picada Vegetal",
+"title": "Raviolis de courgette au haché végétal",
 "img": "recipe_056",
 "product": "mezcla-picada-vegetal-150",
 "cat": "Picada Vegetal",
 "ing": [
-"Calabacín",
-"Picada vegetal Bocado",
-"Tomate natural triturado",
-"Orégano"
+"Courgette",
+"Haché végétal Bocado",
+"Tomate concassée",
+"Origan"
 ],
 "steps": [
-"Laminar el calabacín con mandolina",
-"Hidratar la picada vegetal",
-"Rellenar y cerrar en saquitos entre láminas de calabacín",
-"Colocar sobre tomate en bandeja de horno",
-"Hornear 15-20 min"
+"Couper la courgette en fines lamelles à la mandoline",
+"Hydrater le haché végétal",
+"Garnir et refermer en aumônières entre les lamelles de courgette",
+"Les disposer sur la tomate dans un plat allant au four",
+"Cuire au four 15-20 min"
 ],
-"nut": "Alto en proteína, bajo en grasas, fuente de fibra, sin colesterol, gluten free, vegano",
+"nut": "Riche en protéines, pauvre en matières grasses, source de fibres, sans cholestérol, sans gluten, végan",
 "video": "tlu3aUvuK4I",
-"href": "recetas/raviolis-de-calabacin-con-picada-vegetal.html"
+"href": "recettes/raviolis-de-courgette-au-hache-vegetal.html"
 },
 {
 "slug": "tostada-con-huevo-al-hueco",
-"title": "Tostada con Huevo al Hueco",
+"title": "Tartine œuf dans le trou",
 "img": "recipe_057",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan The Original Protein Bread",
-"Huevos",
-"Sal",
-"Orégano"
+"Pain The Original Protein Bread",
+"Œufs",
+"Sel",
+"Origan"
 ],
 "steps": [
-"Hacer un agujero en la rebanada con un vaso",
-"Colocar en sartén y poner un huevo en el hueco",
-"Tapar y cocinar",
-"Tostar el pan sobrante"
+"Découper un trou dans la tranche avec un verre",
+"La placer dans la poêle et casser un œuf dans le trou",
+"Couvrir et cuire",
+"Griller le pain restant"
 ],
-"nut": "2 rebanadas (62g): 3g carbohidratos, 17g proteínas, 9g fibra, IG 24",
+"nut": "2 tranches (62 g) : 3 g de glucides, 17 g de protéines, 9 g de fibres, IG 24",
 "video": null,
-"href": "recetas/tostada-con-huevo-al-hueco.html"
+"href": "recettes/tartine-uf-dans-le-trou.html"
 },
 {
 "slug": "pizza-quesadilla",
-"title": "Pizza Quesadilla",
+"title": "Pizza quesadilla",
 "img": "recipe_058",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wraps low carb BOCADO",
-"Tomate natural",
-"Calabacín",
-"Jamón cocido o fiambre de pavo",
-"Queso rallado"
+"Tomate fraîche",
+"Courgette",
+"Jambon blanc ou blanc de dinde",
+"Fromage râpé"
 ],
 "steps": [
-"Poner toppings sobre un wrap base: tomate, calabacín, jamón y queso",
-"Tapar con otro wrap con tomate arriba y abajo",
-"Cubrir con más queso rallado",
-"Airfryer 15 min a 170°C"
+"Garnir un wrap de base : tomate, courgette, jambon et fromage",
+"Recouvrir d’un autre wrap avec de la tomate dessus et dessous",
+"Parsemer de fromage râpé",
+"Friteuse à air 15 min à 170 °C"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": "-Wt276b0LDM",
-"href": "recetas/pizza-quesadilla.html"
+"href": "recettes/pizza-quesadilla.html"
 },
 {
 "slug": "sandwich-de-huevo-al-curry",
-"title": "Sandwich de Huevo al Curry",
+"title": "Sandwich œuf au curry",
 "img": "recipe_059",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan The Original Protein Bread",
-"2 huevos cocidos",
-"1 cucharada de queso de untar",
-"Especias de curry",
-"Sal",
-"Lechuga"
+"Pain The Original Protein Bread",
+"2 œufs durs",
+"1 cuillère à soupe de fromage à tartiner",
+"Épices à curry",
+"Sel",
+"Laitue"
 ],
 "steps": [
-"Mezclar huevos cocidos, queso de untar, curry y sal",
-"Montar el sándwich con el pan, la lechuga y el relleno"
+"Mélanger les œufs durs, le fromage à tartiner, le curry et le sel",
+"Monter le sandwich avec le pain, la laitue et la garniture"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/sandwich-de-huevo-al-curry.html"
+"href": "recettes/sandwich-uf-au-curry.html"
 },
 {
 "slug": "panecillos-rellenos-de-atun",
-"title": "Panecillos Rellenos de Atún",
+"title": "Petits pains farcis au thon",
 "img": "recipe_060",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Proteicos",
-"1 lata de atún",
-"Pepinillos",
-"Cebolla",
-"Queso crema"
+"Petits pains protéinés",
+"1 boîte de thon",
+"Cornichons",
+"Oignon",
+"Fromage frais"
 ],
 "steps": [
-"Mezclar todos los ingredientes del relleno",
-"Abrir el panecillo a la mitad y rellenar"
+"Mélanger tous les ingrédients de la garniture",
+"Ouvrir le petit pain en deux et le garnir"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/panecillos-rellenos-de-atun.html"
+"href": "recettes/petits-pains-farcis-au-thon.html"
 },
 {
 "slug": "sandwich-de-pollo",
-"title": "Sandwich de Pollo",
+"title": "Sandwich au poulet",
 "img": "recipe_061",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"2 rebanadas de pan The Original Protein Bread",
-"2 pechugas de pollo",
-"1 diente de ajo",
-"Medio pimiento rojo",
-"Sal",
-"Orégano",
-"2 cucharadas de yogur griego",
-"Cebollino"
+"2 tranches de pain The Original Protein Bread",
+"2 blancs de poulet",
+"1 gousse d’ail",
+"Un demi-poivron rouge",
+"Sel",
+"Origan",
+"2 cuillères à soupe de yaourt grec",
+"Ciboulette"
 ],
 "steps": [
-"Hervir 20 min las pechugas con ajo, pimiento, sal y orégano",
-"Sacar del agua y triturar",
-"Añadir yogur y cebollino a la mezcla",
-"Rellenar el sándwich"
+"Faire cuire les blancs de poulet 20 min dans l’eau avec l’ail, le poivron, le sel et l’origan",
+"Les égoutter et les effilocher",
+"Ajouter le yaourt et la ciboulette",
+"Garnir le sandwich"
 ],
-"nut": "",
+"nut": null,
 "video": "Jn53L0u9n58",
-"href": "recetas/sandwich-de-pollo.html"
+"href": "recettes/sandwich-au-poulet.html"
 },
 {
 "slug": "baguette-rellena",
-"title": "Baguette Rellena",
+"title": "Baguette farcie",
 "img": "recipe_062",
 "product": "baguettes-low-carb",
 "cat": "Baguette Low Carb",
 "ing": [
 "Baguette low carb",
-"Pesto rojo",
-"Huevos",
-"Queso azul"
+"Pesto rouge",
+"Œufs",
+"Fromage bleu"
 ],
 "steps": [
-"Hacer cortes en la baguette y sacar la miga",
-"Rellenar con el resto de ingredientes",
-"Hornear"
+"Entailler la baguette et retirer la mie",
+"Garnir avec le reste des ingrédients",
+"Cuire au four"
 ],
-"nut": "",
+"nut": null,
 "video": "N7Wak5W3b38",
-"href": "recetas/baguette-rellena.html"
+"href": "recettes/baguette-farcie.html"
 },
 {
 "slug": "taco-burger",
-"title": "Taco Burger",
+"title": "Taco burger",
 "img": "recipe_063",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"Carne picada",
-"Queso",
-"Lechuga",
+"Viande hachée",
+"Fromage",
+"Laitue",
 "Tomate",
-"Mostaza",
+"Moutarde",
 "Ketchup"
 ],
 "steps": [
-"Aplastar la carne picada sobre el wrap",
-"Cocinar por un lado y tostar por el otro",
-"Añadir queso, lechuga, tomate y salsas",
-"Doblar a la mitad"
+"Étaler la viande hachée sur le wrap en l’aplatissant",
+"Cuire d’un côté et griller de l’autre",
+"Ajouter le fromage, la laitue, la tomate et les sauces",
+"Plier en deux"
 ],
-"nut": "1 tortilla (40g): 16g carbohidratos, 7,2g proteínas, 2,4g fibra",
+"nut": "1 tortilla (40 g) : 16 g de glucides, 7,2 g de protéines, 2,4 g de fibres",
 "video": "-LJmgKUqeFA",
-"href": "recetas/taco-burger.html"
+"href": "recettes/taco-burger.html"
 },
 {
 "slug": "sandwich-de-queso-cottage-y-salmon",
-"title": "Sandwich de Queso Cottage y Salmón",
+"title": "Sandwich cottage cheese et saumon",
 "img": "recipe_064",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"2 rebanadas de pan The Original Protein Bread",
-"2 cucharaditas de queso cottage",
-"1 cucharadita de mostaza Dijon",
-"Salmón ahumado",
-"Pepino"
+"2 tranches de pain The Original Protein Bread",
+"2 cuillères à café de cottage cheese",
+"1 cuillère à café de moutarde de Dijon",
+"Saumon fumé",
+"Concombre"
 ],
 "steps": [
-"Tostar las rebanadas",
-"Mezclar queso cottage con mostaza y untar",
-"Rellenar con salmón ahumado y pepino"
+"Griller les tranches",
+"Mélanger le cottage cheese avec la moutarde et tartiner",
+"Garnir de saumon fumé et de concombre"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/sandwich-de-queso-cottage-y-salmon.html"
+"href": "recettes/sandwich-cottage-cheese-et-saumon.html"
 },
 {
 "slug": "crackers-de-halloween-fantasmas",
-"title": "Crackers de Halloween (fantasmas)",
+"title": "Crackers d’Halloween (fantômes)",
 "img": "recipe_065",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wraps low carb",
-"Aceite de oliva",
-"Sal"
+"Huile d’olive",
+"Sel"
 ],
 "steps": [
-"Cortar los wraps con cortador de galletas en forma de fantasma",
-"Hacer ojos y boca con una pajita",
-"Rociar con aceite y sal en bandeja",
-"Hornear con cuidado"
+"Découper les wraps avec un emporte-pièce en forme de fantôme",
+"Faire les yeux et la bouche avec une paille",
+"Arroser d’huile et de sel sur une plaque",
+"Cuire au four en surveillant"
 ],
-"nut": "",
+"nut": null,
 "video": "a1TAIMgboFE",
-"href": "recetas/crackers-de-halloween-fantasmas.html"
+"href": "recettes/crackers-d-halloween-fantomes.html"
 },
 {
 "slug": "tostadas-francesas-saladas-ig24",
-"title": "Tostadas Francesas Saladas (IG24)",
+"title": "Pain perdu salé (IG24)",
 "img": "recipe_066",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan IG24",
-"Jamón cocido",
-"Queso",
-"Huevo",
-"Sal, orégano"
+"Pain IG24",
+"Jambon blanc",
+"Fromage",
+"Œuf",
+"Sel, origan"
 ],
 "steps": [
-"Batir huevo con leche y especias",
-"Rellenar dos tostadas con jamón y queso",
-"Pasar por la mezcla de huevo",
-"Cocinar a la plancha"
+"Battre l’œuf avec du lait et des épices",
+"Garnir deux tranches de jambon et de fromage",
+"Les tremper dans le mélange à l’œuf",
+"Cuire à la plancha"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/tostadas-francesas-saladas-ig24.html"
+"href": "recettes/pain-perdu-sale-ig24.html"
 },
 {
 "slug": "tiramisu-expres",
-"title": "Tiramisú Exprés",
+"title": "Tiramisu express",
 "img": "recipe_067",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan IG24",
-"Yogur griego",
-"Proteína en polvo sabor vainilla",
+"Pain IG24",
+"Yaourt grec",
+"Protéine en poudre goût vanille",
 "Café",
-"Cacao en polvo"
+"Cacao en poudre"
 ],
 "steps": [
-"Mezclar yogur griego con proteína en polvo",
-"Empapar el pan en café",
-"Montar por capas: pan, crema, pan, crema",
-"Terminar con cacao en polvo"
+"Mélanger le yaourt grec avec la protéine en poudre",
+"Imbiber le pain de café",
+"Monter en couches : pain, crème, pain, crème",
+"Terminer avec du cacao en poudre"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/tiramisu-expres.html"
+"href": "recettes/tiramisu-express.html"
 },
 {
 "slug": "panecillos-4-quesos",
-"title": "Panecillos 4 Quesos",
+"title": "Petits pains aux 4 fromages",
 "img": "recipe_068",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Proteicos",
-"Queso crema",
-"Queso azul",
-"Queso cheddar",
-"Queso emmental",
-"Hierbas provenzales"
+"Petits pains protéinés",
+"Fromage frais",
+"Fromage bleu",
+"Cheddar",
+"Emmental",
+"Herbes de Provence"
 ],
 "steps": [
-"Mezclar quesos crema, azul y cheddar con hierbas provenzales",
-"Cortar y vaciar la miga del panecillo",
-"Rellenar con la mezcla de quesos",
-"Cubrir con emmental",
-"Airfryer 10 min a 180°C"
+"Mélanger le fromage frais, le bleu et le cheddar avec les herbes de Provence",
+"Couper le petit pain et retirer la mie",
+"Garnir du mélange de fromages",
+"Couvrir d’emmental",
+"Friteuse à air 10 min à 180 °C"
 ],
-"nut": "",
+"nut": null,
 "video": "gfvBm-O32I4",
-"href": "recetas/panecillos-4-quesos.html"
+"href": "recettes/petits-pains-aux-4-fromages.html"
 },
 {
 "slug": "bocaditos-de-cacao",
-"title": "Bocaditos de Cacao",
+"title": "Bouchées au cacao",
 "img": "recipe_069",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"The original protein bread",
-"Crema de cacao saludable",
-"Huevo",
-"Leche"
+"The Original Protein Bread",
+"Pâte à tartiner au cacao saine",
+"Œuf",
+"Lait"
 ],
 "steps": [
-"Quitar la corteza a las rebanadas",
-"Rellenar con crema de cacao y avellanas sin azúcar",
-"Batir huevo con leche",
-"Mojar los bocaditos y cocinar en sartén",
-"Terminar con cacao en polvo y sirope sin azúcar"
+"Retirer la croûte des tranches",
+"Garnir de pâte à tartiner cacao-noisette sans sucre",
+"Battre l’œuf avec le lait",
+"Tremper les bouchées et les cuire à la poêle",
+"Terminer avec du cacao en poudre et un sirop sans sucre"
 ],
-"nut": "",
+"nut": null,
 "video": "GuWVfJtZlCM",
-"href": "recetas/bocaditos-de-cacao.html"
+"href": "recettes/bouchees-au-cacao.html"
 },
 {
 "slug": "cestitas-con-salmon-y-aguacate",
-"title": "Cestitas con Salmón y Aguacate",
+"title": "Petites corbeilles saumon et avocat",
 "img": "recipe_070",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wraps",
-"Salmón ahumado",
-"Aguacate",
-"Mostaza"
+"Saumon fumé",
+"Avocat",
+"Moutarde"
 ],
 "steps": [
-"Cortar los wraps en círculos pequeños y hornear en moldes de magdalenas 10 min para formar cestitas",
-"Mezclar salmón, aguacate y mostaza para el relleno",
-"Rellenar las cestitas"
+"Découper les wraps en petits cercles et les cuire 10 min dans des moules à muffins pour former des corbeilles",
+"Mélanger le saumon, l’avocat et la moutarde pour la garniture",
+"Garnir les corbeilles"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/cestitas-con-salmon-y-aguacate.html"
+"href": "recettes/petites-corbeilles-saumon-et-avocat.html"
 },
 {
 "slug": "sandwich-navideno",
-"title": "Sandwich Navideño",
+"title": "Sandwich de Noël",
 "img": "recipe_071",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"Pan The Original Protein Bread",
+"Pain The Original Protein Bread",
 "Pesto",
-"Jamón cocido"
+"Jambon blanc"
 ],
 "steps": [
-"Untar una rebanada con pesto, jamón cocido y más pesto",
-"Cortar la otra rebanada con forma navideña",
-"Montar el sándwich"
+"Tartiner une tranche de pesto, ajouter le jambon blanc et encore du pesto",
+"Découper l’autre tranche en forme de Noël",
+"Monter le sandwich"
 ],
-"nut": "",
+"nut": null,
 "video": null,
-"href": "recetas/sandwich-navideno.html"
+"href": "recettes/sandwich-de-noel.html"
 },
 {
 "slug": "tostada-feta-crunchy",
-"title": "Tostada Feta Crunchy",
+"title": "Tartine croustillante à la feta",
 "img": "recipe_072",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"Huevo",
-"Queso feta"
+"Œuf",
+"Feta"
 ],
 "steps": [
-"Cocinar el huevo a la plancha sobre la tostada",
-"Añadir queso feta en los bordes hasta que quede crujiente"
+"Cuire l’œuf à la plancha sur la tartine",
+"Ajouter la feta sur les bords jusqu’à ce qu’elle soit croustillante"
 ],
-"nut": "1 unidad: 20g proteína, 1g carbohidratos, 4g fibra (aprox)",
+"nut": "1 portion : 20 g de protéines, 1 g de glucides, 4 g de fibres (environ)",
 "video": null,
-"href": "recetas/tostada-feta-crunchy.html"
+"href": "recettes/tartine-croustillante-a-la-feta.html"
 },
 {
 "slug": "pancakes-sweet-protein-chocolate",
@@ -1657,506 +1657,506 @@ var RECIPES = [
 "product": "sweet-protein-chocolate",
 "cat": "Sweet Protein Chocolate",
 "ing": [
-"1 taza de mezcla Sweet Protein Chocolate",
-"1 taza de leche (la que prefieras)",
-"1 huevo",
-"1 cucharada de aceite neutro"
+"1 tasse de préparation Sweet Protein Chocolate",
+"1 tasse de lait (celui de votre choix)",
+"1 œuf",
+"1 cuillère à soupe d’huile neutre"
 ],
 "steps": [
-"Mezclar todos los ingredientes hasta integrar",
-"Cocinar en sartén como pancakes tradicionales"
+"Mélanger tous les ingrédients jusqu’à obtenir une pâte homogène",
+"Cuire à la poêle comme des pancakes classiques"
 ],
-"nut": "Más del doble de proteína que unos pancakes clásicos, sin azúcar agregada, alto en fibra",
+"nut": "Plus du double de protéines que des pancakes classiques, sans sucres ajoutés, riches en fibres",
 "video": null,
-"href": "recetas/pancakes-sweet-protein-chocolate.html"
+"href": "recettes/pancakes-sweet-protein-chocolate.html"
 },
 {
 "slug": "nachos-con-guacamole",
-"title": "Nachos con Guacamole",
+"title": "Nachos au guacamole",
 "img": "recipe_074",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "2 Wraps Low Carb",
-"Aceite de oliva virgen extra",
-"Pimentón dulce",
-"Queso rallado",
-"Condimentos al gusto (picante, ajo en polvo, orégano)"
+"Huile d’olive vierge extra",
+"Paprika doux",
+"Fromage râpé",
+"Assaisonnement au choix (piment, ail en poudre, origan)"
 ],
 "steps": [
-"Cortar los wraps en 8 triángulos cada uno",
-"Mezclar en un bol con AOVE, pimentón dulce y queso rallado",
-"Separar bien en una fuente para horno",
-"Hornear al máximo por 3 minutos",
-"Servir con guacamole"
+"Couper chaque wrap en 8 triangles",
+"Les mélanger dans un bol avec l’huile d’olive, le paprika doux et le fromage râpé",
+"Bien les étaler sur une plaque de four",
+"Cuire au four à puissance maximale pendant 3 minutes",
+"Servir avec du guacamole"
 ],
-"nut": "Con 2 wraps (16 nachos): 18g proteína, 5g fibra",
+"nut": "Avec 2 wraps (16 nachos) : 18 g de protéines, 5 g de fibres",
 "video": null,
-"href": "recetas/nachos-con-guacamole.html"
+"href": "recettes/nachos-au-guacamole.html"
 },
 {
 "slug": "mona-mix-vainilla",
-"title": "Mona Mix Vainilla",
+"title": "Mona Mix Vanille (gâteau de Pâques)",
 "img": "recipe_075",
 "product": "sweet-protein-chocolate",
 "cat": "Sweet Protein Chocolate",
 "ing": [
-"3 huevos",
-"2 cucharadas de aceite vegetal",
-"1 1/2 taza de leche o bebida vegetal",
-"2 tazas de mezcla Sweet Protein Chocolate"
+"3 œufs",
+"2 cuillères à soupe d’huile végétale",
+"1 tasse et demie de lait ou de boisson végétale",
+"2 tasses de préparation Sweet Protein Chocolate"
 ],
 "steps": [
-"Batir los huevos hasta espumar",
-"Añadir el aceite en forma de hilo mientras se bate",
-"Añadir la mezcla Sweet Protein Chocolate y la leche, integrando con espátula",
-"Hornear 30-45 minutos a 180°C",
-"Dejar enfriar y decorar"
+"Battre les œufs jusqu’à ce qu’ils moussent",
+"Verser l’huile en filet tout en battant",
+"Incorporer la préparation Sweet Protein Chocolate et le lait à la spatule",
+"Cuire au four 30-45 minutes à 180 °C",
+"Laisser refroidir et décorer"
 ],
-"nut": "20% proteína, sin azúcares añadidos",
+"nut": "20 % de protéines, sans sucres ajoutés",
 "video": null,
-"href": "recetas/mona-mix-vainilla.html"
+"href": "recettes/mona-mix-vanille-gateau-de-paques.html"
 },
 {
 "slug": "hamburguesa-vegana",
-"title": "Hamburguesa Vegana",
+"title": "Burger végan",
 "img": "recipe_076",
 "product": "mezcla-picada-vegetal-150",
 "cat": "Picada Vegetal",
 "ing": [
-"Pan de Hamburguesa Low Carb",
-"100g de Mezcla de Picada Vegetal",
-"200ml de agua",
-"Vegetales a gusto",
-"Aceite de oliva",
-"Sal",
-"Comino en polvo",
-"Mayonesa o toppings a gusto"
+"Pain burger Low Carb",
+"100 g de préparation pour haché végétal",
+"200 ml d’eau",
+"Légumes au choix",
+"Huile d’olive",
+"Sel",
+"Cumin en poudre",
+"Mayonnaise ou garnitures au choix"
 ],
 "steps": [
-"Picar los vegetales y cocinarlos en sartén con aceite de oliva, sal y comino",
-"Mezclar 100g de Picada Vegetal con 200ml de agua y los vegetales cocidos",
-"Mezclar hasta unificar y llevar a la nevera 30 minutos para hidratar",
-"Formar 2 hamburguesas con la mezcla",
-"Tostar el Pan de Hamburguesa Low Carb",
-"Montar con los toppings elegidos"
+"Hacher les légumes et les faire revenir à la poêle avec l’huile d’olive, le sel et le cumin",
+"Mélanger 100 g de haché végétal avec 200 ml d’eau et les légumes cuits",
+"Mélanger jusqu’à obtenir une pâte homogène et laisser 30 minutes au réfrigérateur pour l’hydrater",
+"Former 2 burgers avec le mélange",
+"Griller le pain burger Low Carb",
+"Monter avec les garnitures choisies"
 ],
-"nut": "1 hamburguesa: 30g proteína, menos de 2g azúcares, 11g fibra",
+"nut": "1 burger : 30 g de protéines, moins de 2 g de sucres, 11 g de fibres",
 "video": null,
-"href": "recetas/hamburguesa-vegana.html"
+"href": "recettes/burger-vegan.html"
 },
 {
 "slug": "huevo-poche-sobre-tostada",
-"title": "Huevo Poché sobre Tostada",
+"title": "Œuf poché sur tartine",
 "img": "recipe_077",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"Aguacate",
-"Huevo",
-"Aceite de oliva virgen extra"
+"Avocat",
+"Œuf",
+"Huile d’olive vierge extra"
 ],
 "steps": [
-"Tostar el pan y untar con aguacate chafado",
-"Forrar un vaso con papel film y un poco de AOVE",
-"Romper un huevo dentro y cerrar bien enroscando las puntas",
-"Hervir agua en un cazo y sumergir el huevo sujeto con una pinza",
-"Cocinar 4-5 minutos",
-"Servir sobre la tostada de aguacate"
+"Griller le pain et le tartiner d’avocat écrasé",
+"Tapisser un verre de film alimentaire et d’un peu d’huile d’olive",
+"Y casser un œuf et bien fermer en torsadant les extrémités",
+"Porter de l’eau à ébullition dans une casserole et y plonger l’œuf en le tenant avec une pince",
+"Cuire 4-5 minutes",
+"Servir sur la tartine à l’avocat"
 ],
-"nut": "15g proteína, ácidos grasos Omega 3, alto en fibra, bajo en carbohidratos",
+"nut": "15 g de protéines, acides gras oméga-3, riche en fibres, pauvre en glucides",
 "video": null,
-"href": "recetas/huevo-poche-sobre-tostada.html"
+"href": "recettes/uf-poche-sur-tartine.html"
 },
 {
 "slug": "desayuno-3-ingredientes",
-"title": "Desayuno 3 Ingredientes",
+"title": "Petit-déjeuner 3 ingrédients",
 "img": "recipe_078",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"1 Panecillo Low Carb",
-"30g de mozzarella rallada",
-"1 huevo grande"
+"1 petit pain Low Carb",
+"30 g de mozzarella râpée",
+"1 gros œuf"
 ],
 "steps": [
-"Hacer un hueco en el panecillo",
-"Rellenar con la mozzarella rallada y el huevo",
-"Hornear"
+"Creuser un puits dans le petit pain",
+"Garnir de mozzarella râpée et de l’œuf",
+"Cuire au four"
 ],
-"nut": "30g de proteína, muy bajo en hidratos de carbono",
+"nut": "30 g de protéines, très pauvre en glucides",
 "video": null,
-"href": "recetas/desayuno-3-ingredientes.html"
+"href": "recettes/petit-dejeuner-3-ingredients.html"
 },
 {
 "slug": "tostadas-virales",
-"title": "Tostadas Virales",
+"title": "Tartines virales",
 "img": "recipe_079",
 "product": null,
 "cat": "Pan Bio",
 "ing": [
-"2 rebanadas de Pan Bio",
-"1/2 aguacate maduro",
-"1/4 de pepino",
-"1 cucharada grande de hummus",
-"Un puñado de ensalada",
-"5 tomates cherry",
-"5 olivas kalamata",
-"1 lata de atún al natural"
+"2 tranches de Pan Bio",
+"1/2 avocat mûr",
+"1/4 de concombre",
+"1 grosse cuillère à soupe de houmous",
+"Une poignée de salade",
+"5 tomates cerises",
+"5 olives de Kalamata",
+"1 boîte de thon au naturel"
 ],
 "steps": [
-"Tostar las rebanadas de Pan Bio",
-"Picar todos los ingredientes",
-"Montar la tostada con el hummus como base y el resto de ingredientes encima"
+"Griller les tranches de Pan Bio",
+"Hacher tous les ingrédients",
+"Monter la tartine avec le houmous en base et le reste des ingrédients par-dessus"
 ],
-"nut": "35g de proteína, ideal post entreno",
+"nut": "35 g de protéines, idéal après l’entraînement",
 "video": null,
-"href": "recetas/tostadas-virales.html"
+"href": "recettes/tartines-virales.html"
 },
 {
 "slug": "merienda-para-ninos",
-"title": "Merienda para Niños",
+"title": "Goûter pour enfants",
 "img": "recipe_080",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "Wrap Low Carb",
-"1 huevo",
-"Canela en polvo",
-"Jengibre en polvo",
-"1 cucharadita de endulzante (eritritol)",
-"Queso untable bajo en grasas",
-"Puré de manzana natural"
+"1 œuf",
+"Cannelle en poudre",
+"Gingembre en poudre",
+"1 cuillère à café d’édulcorant (érythritol)",
+"Fromage à tartiner allégé",
+"Compote de pommes sans sucre ajouté"
 ],
 "steps": [
-"Batir el huevo con canela y jengibre en polvo",
-"Incorporar el endulzante",
-"Cortar los wraps en formas divertidas o triángulos",
-"Remojar los wraps en el huevo batido",
-"Hornear u airfryer 5-7 minutos",
-"Dejar enfriar hasta que estén crujientes",
-"Batir el queso untable con puré de manzana y endulzante",
-"Decorar con canela y servir con la mezcla de queso como dip"
+"Battre l’œuf avec la cannelle et le gingembre",
+"Incorporer l’édulcorant",
+"Découper les wraps en formes amusantes ou en triangles",
+"Tremper les wraps dans l’œuf battu",
+"Cuire au four ou à la friteuse à air 5-7 minutes",
+"Laisser refroidir jusqu’à ce qu’ils soient croustillants",
+"Fouetter le fromage à tartiner avec la compote et l’édulcorant",
+"Saupoudrer de cannelle et servir avec la crème au fromage en dip"
 ],
-"nut": "Snack alto en proteína, bajo en azúcares, apto para niños",
+"nut": "En-cas riche en protéines, pauvre en sucres, adapté aux enfants",
 "video": null,
-"href": "recetas/merienda-para-ninos.html"
+"href": "recettes/gouter-pour-enfants.html"
 },
 {
 "slug": "tostadas-de-colores",
-"title": "Tostadas de Colores",
+"title": "Tartines colorées",
 "img": "recipe_081",
 "product": null,
 "cat": "Pan Bio",
 "ing": [
 "Pan Bio",
-"Queso cottage",
-"Higos frescos",
-"Nueces",
-"Aguacate",
-"Fresas"
+"Cottage cheese",
+"Figues fraîches",
+"Noix",
+"Avocat",
+"Fraises"
 ],
 "steps": [
-"Tostar el Pan Bio",
-"Primera tostada: cubrir con queso cottage, higos frescos y nueces",
-"Segunda tostada: cubrir con aguacate y fresas"
+"Griller le Pan Bio",
+"Première tartine : garnir de cottage cheese, de figues fraîches et de noix",
+"Deuxième tartine : garnir d’avocat et de fraises"
 ],
-"nut": "Pan Bio: 25,4g proteína por 100g. Queso cottage: 14g proteína por 100g",
+"nut": "Pan Bio : 25,4 g de protéines pour 100 g. Cottage cheese : 14 g de protéines pour 100 g",
 "video": null,
-"href": "recetas/tostadas-de-colores.html"
+"href": "recettes/tartines-colorees.html"
 },
 {
 "slug": "galletas-sweet-protein",
-"title": "Galletas Sweet Protein",
+"title": "Cookies Sweet Protein",
 "img": "recipe_082",
 "product": "sweet-protein-chocolate",
 "cat": "Sweet Protein Chocolate",
 "ing": [
-"1 taza de mezcla Sweet Protein Chocolate",
-"1 cucharada de crema de cacahuetes",
-"1 chorrito de AOVE (opcional)",
-"6 cucharadas de leche"
+"1 tasse de préparation Sweet Protein Chocolate",
+"1 cuillère à soupe de beurre de cacahuète",
+"1 filet d’huile d’olive vierge extra (facultatif)",
+"6 cuillères à soupe de lait"
 ],
 "steps": [
-"Integrar todos los ingredientes con espátula y luego con las manos",
-"Dar forma a las galletas",
-"Hornear 8 minutos a 200°C",
-"Opcional: bañar en chocolate"
+"Mélanger tous les ingrédients à la spatule, puis à la main",
+"Former les cookies",
+"Cuire au four 8 minutes à 200 °C",
+"Facultatif : les tremper dans du chocolat"
 ],
-"nut": "Casi 40g de proteína, sin azúcares añadidos, rica en fibra y grasas saludables",
+"nut": "Près de 40 g de protéines, sans sucres ajoutés, riche en fibres et en bonnes graisses",
 "video": null,
-"href": "recetas/galletas-sweet-protein.html"
+"href": "recettes/cookies-sweet-protein.html"
 },
 {
 "slug": "croissants-de-chocolate",
-"title": "Croissants de Chocolate",
+"title": "Croissants au chocolat",
 "img": "recipe_083",
 "product": null,
 "cat": "Protein Choco Spread",
 "ing": [
-"Masa de hojaldre",
+"Pâte feuilletée",
 "Protein Choco Spread"
 ],
 "steps": [
-"Untar una capa de masa de hojaldre con Protein Choco Spread",
-"Cubrir con más masa de hojaldre",
-"Cortar en triángulos",
-"Enrollar como croissants",
-"Hornear 15 minutos"
+"Tartiner une abaisse de pâte feuilletée de Protein Choco Spread",
+"Recouvrir d’une autre abaisse",
+"Couper en triangles",
+"Rouler en croissants",
+"Cuire au four 15 minutes"
 ],
-"nut": "Protein Choco Spread: 20% proteína, sin azúcares añadidos",
+"nut": "Protein Choco Spread : 20 % de protéines, sans sucres ajoutés",
 "video": null,
-"href": "recetas/croissants-de-chocolate.html"
+"href": "recettes/croissants-au-chocolat.html"
 },
 {
 "slug": "tortilla-express-para-llevar",
-"title": "Tortilla Express para Llevar",
+"title": "Omelette express à emporter",
 "img": "recipe_084",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
-"1 huevo",
-"Queso mozzarella rallado",
-"Espinacas frescas",
+"1 œuf",
+"Mozzarella râpée",
+"Épinards frais",
 "1 Wrap Low Carb"
 ],
 "steps": [
-"Calentar una sartén con aceite y batir el huevo directamente en ella",
-"Añadir la mozzarella y las espinacas",
-"Colocar el wrap encima y cocinar 1 minuto más"
+"Chauffer une poêle avec de l’huile et y battre l’œuf directement",
+"Ajouter la mozzarella et les épinards",
+"Poser le wrap dessus et cuire encore 1 minute"
 ],
-"nut": "Comida rápida alta en proteína, ideal para llevar",
+"nut": "Repas rapide riche en protéines, idéal à emporter",
 "video": null,
-"href": "recetas/tortilla-express-para-llevar.html"
+"href": "recettes/omelette-express-a-emporter.html"
 },
 {
 "slug": "ensalada-para-llevar-en-wrap",
-"title": "Ensalada para Llevar en Wrap",
+"title": "Salade à emporter en wrap",
 "img": "recipe_085",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
-"1 Wrap Proteico",
-"1/2 aguacate",
-"Tomates cherry",
-"Mango",
-"1 lata de atún al natural",
-"Condimentos a gusto"
+"1 wrap protéiné",
+"1/2 avocat",
+"Tomates cerises",
+"Mangue",
+"1 boîte de thon au naturel",
+"Assaisonnement au choix"
 ],
 "steps": [
-"Picar el aguacate, los tomates cherry y el mango",
-"Mezclar con el atún y los condimentos",
-"Rellenar el wrap con la ensalada y enrollar"
+"Couper en dés l’avocat, les tomates cerises et la mangue",
+"Mélanger avec le thon et l’assaisonnement",
+"Garnir le wrap de salade et rouler"
 ],
-"nut": "Ensalada fresca para llevar, alta en nutrientes",
+"nut": "Salade fraîche à emporter, riche en nutriments",
 "video": null,
-"href": "recetas/ensalada-para-llevar-en-wrap.html"
+"href": "recettes/salade-a-emporter-en-wrap.html"
 },
 {
 "slug": "helado-proteico-de-chocolate",
-"title": "Helado Proteico de Chocolate",
+"title": "Glace protéinée au chocolat",
 "img": "recipe_086",
 "product": null,
 "cat": "Protein Choco Spread",
 "ing": [
-"200g de queso cottage",
-"200g de Protein Choco Spread"
+"200 g de cottage cheese",
+"200 g de Protein Choco Spread"
 ],
 "steps": [
-"Procesar ambos ingredientes juntos",
-"Verter en moldes de helado",
-"Congelar"
+"Mixer les deux ingrédients ensemble",
+"Verser dans des moules à glace",
+"Congeler"
 ],
-"nut": "28g de proteína por helado, muy bajo en hidratos",
+"nut": "28 g de protéines par glace, très pauvre en glucides",
 "video": null,
-"href": "recetas/helado-proteico-de-chocolate.html"
+"href": "recettes/glace-proteinee-au-chocolat.html"
 },
 {
 "slug": "bocadillo-playero",
-"title": "Bocadillo Playero",
+"title": "Sandwich de plage",
 "img": "recipe_087",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"1 Panecillo Protein Bread",
-"1/4 de aguacate",
-"1 huevo duro",
-"Jamón serrano",
-"Queso bajo en grasas",
-"Canónigos",
-"Tomate cherry"
+"1 petit pain Protein Bread",
+"1/4 d’avocat",
+"1 œuf dur",
+"Jambon serrano",
+"Fromage allégé",
+"Mâche",
+"Tomates cerises"
 ],
 "steps": [
-"Cortar el panecillo a la mitad",
-"Rellenar con el aguacate, huevo duro en rodajas, jamón, queso, canónigos y tomate cherry"
+"Couper le petit pain en deux",
+"Garnir d’avocat, d’œuf dur en rondelles, de jambon, de fromage, de mâche et de tomates cerises"
 ],
-"nut": "Bocadillo completo, alto en proteína",
+"nut": "Sandwich complet, riche en protéines",
 "video": null,
-"href": "recetas/bocadillo-playero.html"
+"href": "recettes/sandwich-de-plage.html"
 },
 {
 "slug": "tupper-triple-de-protein-bread",
-"title": "Tupper Triple de Protein Bread",
+"title": "Lunch box triple au Protein Bread",
 "img": "recipe_088",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"3 rebanadas de Protein Bread",
-"Queso light",
-"1/4 de aguacate",
-"Pavo",
-"1 huevo a la plancha",
-"Rodajas de tomate",
-"Fruta fresca (para acompañar)"
+"3 tranches de Protein Bread",
+"Fromage allégé",
+"1/4 d’avocat",
+"Dinde",
+"1 œuf à la plancha",
+"Rondelles de tomate",
+"Fruits frais (en accompagnement)"
 ],
 "steps": [
-"Montar la primera capa con queso light, aguacate y pavo",
-"Añadir la segunda capa con huevo a la plancha y tomate",
-"Cerrar el sándwich triple",
-"Guardar en tupper con fruta fresca"
+"Monter la première couche avec le fromage allégé, l’avocat et la dinde",
+"Ajouter la deuxième couche avec l’œuf à la plancha et la tomate",
+"Refermer le sandwich triple",
+"Ranger dans la lunch box avec des fruits frais"
 ],
-"nut": "3 rebanadas de pan aportan 22,5g de proteína",
+"nut": "3 tranches de pain apportent 22,5 g de protéines",
 "video": null,
-"href": "recetas/tupper-triple-de-protein-bread.html"
+"href": "recettes/lunch-box-triple-au-protein-bread.html"
 },
 {
 "slug": "burger-de-camping",
-"title": "Burger de Camping",
+"title": "Burger du camping",
 "img": "recipe_089",
 "product": "mezcla-pan-de-hamburguesa",
 "cat": "Pan de Hamburguesa",
 "ing": [
-"Pan de Hamburguesa Low Carb Bocado",
-"Carne de ternera ecológica",
-"Ensalada de lentejas y vegetales",
-"Queso mozzarella fresco"
+"Pain burger Low Carb Bocado",
+"Bœuf bio",
+"Salade de lentilles et légumes",
+"Mozzarella fraîche"
 ],
 "steps": [
-"Cocinar la hamburguesa de carne a la parrilla o sartén",
-"Preparar la ensalada de lentejas y vegetales",
-"Montar la burger con el pan, la carne, el queso mozzarella y la ensalada"
+"Cuire le steak au barbecue ou à la poêle",
+"Préparer la salade de lentilles et de légumes",
+"Monter le burger avec le pain, la viande, la mozzarella et la salade"
 ],
-"nut": "Pan de Hamburguesa Low Carb, alto en proteína para recuperación muscular",
+"nut": "Pain burger Low Carb, riche en protéines pour la récupération musculaire",
 "video": null,
-"href": "recetas/burger-de-camping.html"
+"href": "recettes/burger-du-camping.html"
 },
 {
 "slug": "bruschettas-de-pesto-mozzarella-y-jamon-serrano",
-"title": "Bruschettas de Pesto, Mozzarella y Jamón Serrano",
+"title": "Bruschettas pesto, mozzarella et jambon serrano",
 "img": "recipe_090",
 "product": "baguettes-low-carb",
 "cat": "Baguette Low Carb",
 "ing": [
 "1 baguette low carb",
-"Aceite de oliva",
-"2 cucharadas de pesto",
-"2 puñados de queso mozzarella rallado",
-"Jamón serrano"
+"Huile d’olive",
+"2 cuillères à soupe de pesto",
+"2 poignées de mozzarella râpée",
+"Jambon serrano"
 ],
 "steps": [
-"Cortar la baguette en rebanadas",
-"Untar con pesto y aceite de oliva",
-"Cubrir con mozzarella rallada y jamón serrano",
-"Hornear hasta gratinar",
-"Servir con uvas, pasas y frutos secos"
+"Couper la baguette en tranches",
+"Tartiner de pesto et d’huile d’olive",
+"Couvrir de mozzarella râpée et de jambon serrano",
+"Cuire au four jusqu’à ce que ce soit gratiné",
+"Servir avec du raisin, des raisins secs et des fruits secs"
 ],
-"nut": "Receta con solo 4 ingredientes",
+"nut": "Une recette avec seulement 4 ingrédients",
 "video": null,
-"href": "recetas/bruschettas-de-pesto-mozzarella-y-jamon-serrano.html"
+"href": "recettes/bruschettas-pesto-mozzarella-et-jambon-serrano.html"
 },
 {
 "slug": "merienda-vuelta-al-cole",
-"title": "Merienda Vuelta al Cole",
+"title": "Goûter de la rentrée",
 "img": "recipe_091",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos Low Carb",
+"Petits pains Low Carb",
 "Protein Choco Spread",
-"Fresas, plátano o arándanos"
+"Fraises, banane ou myrtilles"
 ],
 "steps": [
-"Cortar el panecillo a la mitad",
-"Untar ambas mitades con Protein Choco Spread",
-"Cubrir con fruta en rodajas"
+"Couper le petit pain en deux",
+"Tartiner les deux moitiés de Protein Choco Spread",
+"Couvrir de fruits en tranches"
 ],
-"nut": "Sin azúcares añadidos, alta en proteína y fibra",
+"nut": "Sans sucres ajoutés, riche en protéines et en fibres",
 "video": null,
-"href": "recetas/merienda-vuelta-al-cole.html"
+"href": "recettes/gouter-de-la-rentree.html"
 },
 {
 "slug": "tupper-para-toda-la-familia",
-"title": "Tupper para Toda la Familia",
+"title": "Lunch box pour toute la famille",
 "img": "recipe_092",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "The Original Protein Bread",
-"Judías redondas",
-"Zanahoria",
-"Pepino",
-"Queso fresco",
-"Aguacate",
-"1 lata de atún al natural",
-"Yogur griego natural",
-"Tomates cherry"
+"Haricots plats",
+"Carotte",
+"Concombre",
+"Fromage frais",
+"Avocat",
+"1 boîte de thon au naturel",
+"Yaourt grec nature",
+"Tomates cerises"
 ],
 "steps": [
-"Saltear las judías en sartén con aceite de oliva y reservar",
-"Rallar la zanahoria y el pepino",
-"Mezclar el queso fresco con el aguacate chafado",
-"Incorporar el atún y las judías",
-"Untar el pan con yogur griego natural",
-"Rellenar con la preparación y acompañar con tomates cherry"
+"Faire sauter les haricots à la poêle avec de l’huile d’olive et réserver",
+"Râper la carotte et le concombre",
+"Mélanger le fromage frais avec l’avocat écrasé",
+"Incorporer le thon et les haricots",
+"Tartiner le pain de yaourt grec nature",
+"Garnir de la préparation et servir avec des tomates cerises"
 ],
-"nut": "28% de la proteína diaria requerida, 15% de fibra",
+"nut": "28 % des besoins quotidiens en protéines, 15 % des fibres",
 "video": null,
-"href": "recetas/tupper-para-toda-la-familia.html"
+"href": "recettes/lunch-box-pour-toute-la-famille.html"
 },
 {
 "slug": "tostadas-virales-de-pan-ig24",
-"title": "Tostadas Virales de Pan IG24",
+"title": "Tartines virales au Pain IG24",
 "img": "recipe_093",
 "product": "pan-ig24",
 "cat": "Pan IG24",
 "ing": [
-"2 claras",
-"2 huevos enteros",
-"2 rebanadas de Pan IG24",
-"Aguacate",
+"2 blancs d’œuf",
+"2 œufs entiers",
+"2 tranches de Pain IG24",
+"Avocat",
 "Tomate"
 ],
 "steps": [
-"Batir las claras y los huevos para hacer una tortilla en sartén caliente",
-"Colocar las 2 rebanadas de pan encima de la tortilla",
-"Dar vuelta para terminar de cocinar",
-"Añadir aguacate y tomate antes de doblar y servir"
+"Battre les blancs et les œufs et faire une omelette dans une poêle chaude",
+"Poser les 2 tranches de pain sur l’omelette",
+"Retourner pour terminer la cuisson",
+"Ajouter l’avocat et la tomate avant de plier et de servir"
 ],
-"nut": "37g de proteína. 2 rebanadas de Pan IG24: 17g proteína, 3g hidratos, 9g fibra",
+"nut": "37 g de protéines. 2 tranches de Pain IG24 : 17 g de protéines, 3 g de glucides, 9 g de fibres",
 "video": null,
-"href": "recetas/tostadas-virales-de-pan-ig24.html"
+"href": "recettes/tartines-virales-au-pain-ig24.html"
 },
 {
 "slug": "mantequilla-saludable-de-aove",
-"title": "Mantequilla Saludable de AOVE",
+"title": "Beurre sain d’huile d’olive vierge extra",
 "img": "recipe_094",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Aceite de Oliva Virgen Extra",
-"Panecillos IG24",
+"Huile d’olive vierge extra",
+"Petits pains IG24",
 "Tomate",
-"Albahaca"
+"Basilic"
 ],
 "steps": [
-"Poner el AOVE en un recipiente y congelar unas 3 horas hasta que espese",
-"Untar sobre los panecillos",
-"Terminar con tomate y albahaca (o especias a gusto)"
+"Verser l’huile dans un récipient et la congeler environ 3 heures jusqu’à ce qu’elle épaississe",
+"La tartiner sur les petits pains",
+"Terminer avec de la tomate et du basilic (ou des épices au choix)"
 ],
-"nut": "Snack bajo en hidratos, alto en proteínas y grasas saludables",
+"nut": "En-cas pauvre en glucides, riche en protéines et en bonnes graisses",
 "video": null,
-"href": "recetas/mantequilla-saludable-de-aove.html"
+"href": "recettes/beurre-sain-d-huile-d-olive-vierge-extra.html"
 },
 {
 "slug": "nyc-salmon-bagel",
@@ -2166,347 +2166,347 @@ var RECIPES = [
 "cat": "Protein Bagel",
 "ing": [
 "1 Protein Bagel",
-"2 cucharadas de queso untable",
-"Eneldo",
-"Canónigos",
-"Pepino",
-"1/2 aguacate",
-"Salmón ahumado"
+"2 cuillères à soupe de fromage à tartiner",
+"Aneth",
+"Mâche",
+"Concombre",
+"1/2 avocat",
+"Saumon fumé"
 ],
 "steps": [
-"Abrir el bagel y tostarlo",
-"Mezclar el queso untable con el eneldo",
-"Untar el queso en ambas mitades del bagel",
-"Añadir canónigos, aguacate en rodajas, salmón y pepino"
+"Ouvrir le bagel et le griller",
+"Mélanger le fromage à tartiner avec l’aneth",
+"Tartiner les deux moitiés du bagel",
+"Ajouter la mâche, l’avocat en tranches, le saumon et le concombre"
 ],
-"nut": "40g de proteína",
+"nut": "40 g de protéines",
 "video": null,
-"href": "recetas/nyc-salmon-bagel.html"
+"href": "recettes/nyc-salmon-bagel.html"
 },
 {
 "slug": "cestitas-de-bolognesa",
-"title": "Cestitas de Bolognesa",
+"title": "Petites corbeilles à la bolognaise",
 "img": "recipe_096",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
 "Protein Bread",
-"2 cucharadas de salsa bolognesa por rebanada",
-"Queso parmesano"
+"2 cuillères à soupe de sauce bolognaise par tranche",
+"Parmesan"
 ],
 "steps": [
-"Estirar y aplanar las rebanadas de pan con un palo de amasar",
-"Disponer las rebanadas sobre un molde de magdalenas formando cestitas",
-"Añadir la salsa bolognesa y el queso parmesano",
-"Hornear a 200°C por 10 minutos"
+"Étaler et aplatir les tranches de pain au rouleau",
+"Les placer dans un moule à muffins pour former des corbeilles",
+"Ajouter la sauce bolognaise et le parmesan",
+"Cuire au four à 200 °C pendant 10 minutes"
 ],
-"nut": "28% de proteína",
+"nut": "28 % de protéines",
 "video": null,
-"href": "recetas/cestitas-de-bolognesa.html"
+"href": "recettes/petites-corbeilles-a-la-bolognaise.html"
 },
 {
 "slug": "bagel-con-55g-de-proteina",
-"title": "Bagel con 55g de Proteína",
+"title": "Bagel à 55 g de protéines",
 "img": "recipe_097",
 "product": "protein-bagel",
 "cat": "Protein Bagel",
 "ing": [
 "1 Protein Bagel",
-"2 huevos",
-"2 lonchas de queso cheddar",
-"40g de pavo",
+"2 œufs",
+"2 tranches de cheddar",
+"40 g de dinde",
 "1/2 tomate"
 ],
 "steps": [
-"Abrir el bagel y tostarlo (opcional)",
-"Batir los huevos y cocinar en sartén como tortilla",
-"Añadir el cheddar sobre la tortilla y doblar",
-"Montar el bagel con el huevo, queso, pavo y tomate en rodajas"
+"Ouvrir le bagel et le griller (facultatif)",
+"Battre les œufs et les cuire à la poêle comme une omelette",
+"Ajouter le cheddar sur l’omelette et la plier",
+"Monter le bagel avec l’omelette, le fromage, la dinde et la tomate en rondelles"
 ],
-"nut": "55g de proteína, menos de 10g de carbohidratos, 25g de fibra",
+"nut": "55 g de protéines, moins de 10 g de glucides, 25 g de fibres",
 "video": null,
-"href": "recetas/bagel-con-55g-de-proteina.html"
+"href": "recettes/bagel-a-55-g-de-proteines.html"
 },
 {
 "slug": "muffins-de-halloween-con-frosting-de-calabaza",
-"title": "Muffins de Halloween con Frosting de Calabaza",
+"title": "Muffins d’Halloween et glaçage au potiron",
 "img": "recipe_098",
 "product": "sweet-protein-chocolate",
 "cat": "Sweet Protein Chocolate",
 "ing": [
-"500g de Sweet Protein Chocolate",
-"4 huevos",
-"60ml de agua caliente",
-"200g de aceite vegetal",
-"Canela (opcional)",
-"4 cucharadas de calabaza asada",
-"3 cucharadas de queso mascarpone"
+"500 g de Sweet Protein Chocolate",
+"4 œufs",
+"60 ml d’eau chaude",
+"200 g d’huile végétale",
+"Cannelle (facultatif)",
+"4 cuillères à soupe de potiron rôti",
+"3 cuillères à soupe de mascarpone"
 ],
 "steps": [
-"Mezclar la mezcla Sweet Protein Chocolate con huevos, agua caliente, aceite y canela",
-"Hornear a 160°C por 15 minutos",
-"Dejar enfriar",
-"Mezclar la calabaza asada con el mascarpone hasta homogeneizar",
-"Cubrir los muffins con el frosting"
+"Mélanger la préparation Sweet Protein Chocolate avec les œufs, l’eau chaude, l’huile et la cannelle",
+"Cuire au four à 160 °C pendant 15 minutes",
+"Laisser refroidir",
+"Mélanger le potiron rôti avec le mascarpone jusqu’à obtenir une crème lisse",
+"Napper les muffins de glaçage"
 ],
-"nut": "Muffins especiados sin chucherías procesadas",
+"nut": "Muffins épicés sans bonbons industriels",
 "video": null,
-"href": "recetas/muffins-de-halloween-con-frosting-de-calabaza.html"
+"href": "recettes/muffins-d-halloween-et-glacage-au-potiron.html"
 },
 {
 "slug": "apple-pie-express-en-wrap",
-"title": "Apple Pie Express en Wrap",
+"title": "Apple pie express en wrap",
 "img": "recipe_099",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
 "2 Wraps Low Carb",
-"1 manzana Fuji",
-"1 cucharada de sirope de agave (o eritritol)",
-"Canela y jengibre",
-"1 cucharada de aceite de coco virgen"
+"1 pomme Fuji",
+"1 cuillère à soupe de sirop d’agave (ou érythritol)",
+"Cannelle et gingembre",
+"1 cuillère à soupe d’huile de coco vierge"
 ],
 "steps": [
-"Cortar la manzana en cubos pequeños",
-"Mezclar en un bol apto para microondas con aceite de coco, canela, jengibre y sirope",
-"Microondas 2 minutos hasta que estén tiernas",
-"Dejar templar",
-"Rellenar los wraps con la mezcla, reservando el líquido",
-"Decorar con el líquido restante"
+"Couper la pomme en petits dés",
+"Mélanger dans un bol allant au micro-ondes avec l’huile de coco, la cannelle, le gingembre et le sirop",
+"Micro-ondes 2 minutes jusqu’à ce que la pomme soit tendre",
+"Laisser tiédir",
+"Garnir les wraps du mélange en réservant le jus",
+"Napper avec le jus restant"
 ],
-"nut": "Listo en menos de 5 minutos",
+"nut": "Prêt en moins de 5 minutes",
 "video": null,
-"href": "recetas/apple-pie-express-en-wrap.html"
+"href": "recettes/apple-pie-express-en-wrap.html"
 },
 {
 "slug": "shakshuka-con-protein-bread",
-"title": "Shakshuka con Protein Bread",
+"title": "Shakshuka au Protein Bread",
 "img": "recipe_100",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"1 rebanada de Protein Bread",
-"4 tomates pequeños maduros",
-"2 pimientos rojos",
-"1 cebolla",
-"2 huevos",
-"Perejil picado",
-"Sal, pimienta, comino, ajo en polvo, pimentón dulce",
-"Aceite de oliva virgen extra"
+"1 tranche de Protein Bread",
+"4 petites tomates mûres",
+"2 poivrons rouges",
+"1 oignon",
+"2 œufs",
+"Persil haché",
+"Sel, poivre, cumin, ail en poudre, paprika doux",
+"Huile d’olive vierge extra"
 ],
 "steps": [
-"Picar los vegetales",
-"Calentar una sartén con AOVE y los condimentos",
-"Cocinar los vegetales tapados 20 minutos hasta que estén tiernos",
-"Aplastar los vegetales, crear dos huecos y romper los huevos dentro",
-"Tapar y cocinar los huevos 3 minutos",
-"Decorar con perejil y servir con el Protein Bread"
+"Hacher les légumes",
+"Chauffer une poêle avec l’huile d’olive et les épices",
+"Cuire les légumes à couvert 20 minutes jusqu’à ce qu’ils soient tendres",
+"Écraser les légumes, creuser deux puits et y casser les œufs",
+"Couvrir et cuire les œufs 3 minutes",
+"Parsemer de persil et servir avec le Protein Bread"
 ],
-"nut": "25g de proteína con solo 350 kcal, baja en hidratos, alta en fibra",
+"nut": "25 g de protéines pour seulement 350 kcal, pauvre en glucides, riche en fibres",
 "video": null,
-"href": "recetas/shakshuka-con-protein-bread.html"
+"href": "recettes/shakshuka-au-protein-bread.html"
 },
 {
 "slug": "bagel-con-huevo-y-yema-jugosa",
-"title": "Bagel con Huevo y Yema Jugosa",
+"title": "Bagel à l’œuf et jaune coulant",
 "img": "recipe_101",
 "product": "protein-bagel",
 "cat": "Protein Bagel",
 "ing": [
 "1 Protein Bagel",
-"1 huevo (clara y yema separadas)",
-"1/2 aguacate",
+"1 œuf (blanc et jaune séparés)",
+"1/2 avocat",
 "Tomate"
 ],
 "steps": [
-"Cocinar la clara de huevo en sartén con un poco de aceite, colocando encima la mitad superior del bagel",
-"Poner la yema en el agujero del bagel y dejar cocinar",
-"Tostar la otra mitad del bagel en la misma sartén",
-"Montar el bagel con aguacate, tomate y la tapa con clara y yema"
+"Cuire le blanc d’œuf à la poêle avec un peu d’huile en posant dessus la moitié supérieure du bagel",
+"Mettre le jaune dans le trou du bagel et laisser cuire",
+"Griller l’autre moitié du bagel dans la même poêle",
+"Monter le bagel avec l’avocat, la tomate et le dessus au blanc et au jaune"
 ],
-"nut": "Más de 30g de proteína, ácidos grasos Omega 9, 20g de fibra",
+"nut": "Plus de 30 g de protéines, acides gras oméga-9, 20 g de fibres",
 "video": null,
-"href": "recetas/bagel-con-huevo-y-yema-jugosa.html"
+"href": "recettes/bagel-a-l-uf-et-jaune-coulant.html"
 },
 {
 "slug": "conos-de-espinaca-y-ricotta",
-"title": "Conos de Espinaca y Ricotta",
+"title": "Cornets épinards et ricotta",
 "img": "recipe_102",
 "product": "wrap-low-carb",
 "cat": "Wrap Low Carb",
 "ing": [
-"3 Protein Wraps (en mitades)",
-"200g de ricotta",
-"3 manojos de espinaca fresca",
+"3 Protein Wraps (coupés en deux)",
+"200 g de ricotta",
+"3 bottes d’épinards frais",
 "Bacon",
-"Queso mozzarella rallado",
-"Sal, aceite y pimienta"
+"Mozzarella râpée",
+"Sel, huile et poivre"
 ],
 "steps": [
-"Montar conos con las mitades de wrap, sujetando con un palillo",
-"Hornear 10 minutos con un poco de aceite hasta dorar",
-"Saltear las espinacas con el bacon",
-"Mezclar con la ricotta, sal, pimienta y mozzarella",
-"Rellenar los conos con la mezcla"
+"Former des cornets avec les demi-wraps en les fixant avec un cure-dent",
+"Cuire au four 10 minutes avec un peu d’huile jusqu’à ce qu’ils soient dorés",
+"Faire sauter les épinards avec le bacon",
+"Mélanger avec la ricotta, le sel, le poivre et la mozzarella",
+"Garnir les cornets du mélange"
 ],
-"nut": "Entrante para compartir en familia",
+"nut": "Entrée à partager en famille",
 "video": null,
-"href": "recetas/conos-de-espinaca-y-ricotta.html"
+"href": "recettes/cornets-epinards-et-ricotta.html"
 },
 {
 "slug": "bagel-navideno-de-reno",
-"title": "Bagel Navideño de Reno",
+"title": "Bagel renne de Noël",
 "img": "recipe_103",
 "product": "protein-bagel",
 "cat": "Protein Bagel",
 "ing": [
 "1 Protein Bagel Soft",
-"Crema de cacahuete",
-"Plátano",
-"Fresa",
-"Arándanos",
-"Almendras"
+"Beurre de cacahuète",
+"Banane",
+"Fraise",
+"Myrtilles",
+"Amandes"
 ],
 "steps": [
-"Rellenar el bagel con crema de cacahuete en ambas mitades",
-"Añadir rodajas de plátano y cerrar",
-"Decorar como reno: nariz de fresa, ojos con crema de cacahuete y arándanos, cuernos de almendras"
+"Tartiner les deux moitiés du bagel de beurre de cacahuète",
+"Ajouter des rondelles de banane et refermer",
+"Décorer en renne : nez en fraise, yeux en beurre de cacahuète et myrtilles, bois en amandes"
 ],
-"nut": "Desayuno festivo alto en proteína",
+"nut": "Petit-déjeuner festif riche en protéines",
 "video": null,
-"href": "recetas/bagel-navideno-de-reno.html"
+"href": "recettes/bagel-renne-de-noel.html"
 },
 {
 "slug": "queso-navideno-relleno-de-pistachos-y-arandanos",
-"title": "Queso Navideño Relleno de Pistachos y Arándanos",
+"title": "Fromage de Noël aux pistaches et cranberries",
 "img": "recipe_104",
 "product": "baguettes-low-carb",
 "cat": "Baguette Low Carb",
 "ing": [
 "Baguette Low Carb",
-"Queso untable firme y cremoso",
-"Pistachos",
-"Pasas de arándanos",
-"Semillas varias"
+"Fromage à tartiner ferme et crémeux",
+"Pistaches",
+"Cranberries séchées",
+"Graines variées"
 ],
 "steps": [
-"Cortar la baguette en rodajas (tostar opcional, 5 minutos al horno)",
-"Picar los pistachos y arándanos, reservando 2/3",
-"Mezclar el resto con semillas varias",
-"Mezclar con el queso untable",
-"Formar un rollo sobre papel film, compactando bien",
-"Cubrir el rollo con los pistachos, arándanos y semillas reservados",
-"Refrigerar antes de servir"
+"Couper la baguette en tranches (à griller si vous le souhaitez, 5 minutes au four)",
+"Hacher les pistaches et les cranberries, en réserver 2/3",
+"Mélanger le reste avec les graines",
+"Incorporer au fromage à tartiner",
+"Former un rouleau sur du film alimentaire en tassant bien",
+"Enrober le rouleau des pistaches, cranberries et graines réservées",
+"Réfrigérer avant de servir"
 ],
-"nut": "Queso untable navideño para compartir",
+"nut": "Fromage à tartiner festif à partager",
 "video": null,
-"href": "recetas/queso-navideno-relleno-de-pistachos-y-arandanos.html"
+"href": "recettes/fromage-de-noel-aux-pistaches-et-cranberries.html"
 },
 {
 "slug": "barquetas-de-jamon-y-queso",
-"title": "Barquetas de Jamón y Queso",
+"title": "Barquettes jambon-fromage",
 "img": "recipe_105",
 "product": "panecillos-low-carb",
 "cat": "Panecillo Proteico",
 "ing": [
-"Panecillos IG24",
-"1 huevo",
-"Jamón dulce",
-"Queso",
-"Orégano o albahaca (opcional)"
+"Petits pains IG24",
+"1 œuf",
+"Jambon blanc",
+"Fromage",
+"Origan ou basilic (facultatif)"
 ],
 "steps": [
-"Batir el huevo con el jamón y el queso",
-"Hacer un corte en el panecillo para rellenar",
-"Rellenar el panecillo",
-"Hornear a 200°C por 15 minutos"
+"Battre l’œuf avec le jambon et le fromage",
+"Entailler le petit pain pour pouvoir le garnir",
+"Garnir le petit pain",
+"Cuire au four à 200 °C pendant 15 minutes"
 ],
-"nut": "Alto en proteínas, muy bajo en hidratos de carbono",
+"nut": "Riches en protéines, très pauvres en glucides",
 "video": null,
-"href": "recetas/barquetas-de-jamon-y-queso.html"
+"href": "recettes/barquettes-jambon-fromage.html"
 },
 {
 "slug": "french-toast-de-ano-nuevo",
-"title": "French Toast de Año Nuevo",
+"title": "Pain perdu du Nouvel An",
 "img": "recipe_106",
 "product": "the-original-protein-bread",
 "cat": "The Original Protein Bread",
 "ing": [
-"2 rebanadas de Protein Bread",
-"2 cucharaditas de crema de cacahuete",
-"Arándanos frescos (o mermelada sin azúcar)",
-"1 huevo",
-"Un chorrito de leche",
-"1 cucharadita de endulzante",
-"Canela, vainilla o cacao en polvo (opcional)"
+"2 tranches de Protein Bread",
+"2 cuillères à café de beurre de cacahuète",
+"Myrtilles fraîches (ou confiture sans sucre)",
+"1 œuf",
+"Un trait de lait",
+"1 cuillère à café d’édulcorant",
+"Cannelle, vanille ou cacao en poudre (facultatif)"
 ],
 "steps": [
-"Untar las rebanadas con crema de cacahuete y poner arándanos en el centro",
-"Cerrar el bocadillo",
-"Batir el huevo con el endulzante, los opcionales y la leche",
-"Mojar ambos lados del bocadillo y aplastar los bordes con un tenedor",
-"Dejar reposar unos minutos en la mezcla",
-"Cocinar en sartén caliente con aceite de coco, vuelta y vuelta"
+"Tartiner les tranches de beurre de cacahuète et placer les myrtilles au centre",
+"Refermer le sandwich",
+"Battre l’œuf avec l’édulcorant, les ingrédients facultatifs et le lait",
+"Tremper les deux faces du sandwich et presser les bords avec une fourchette",
+"Laisser reposer quelques minutes dans le mélange",
+"Cuire dans une poêle chaude avec de l’huile de coco, en le retournant une fois"
 ],
-"nut": "Desayuno alto en proteína, 6 ingredientes",
+"nut": "Petit-déjeuner riche en protéines, 6 ingrédients",
 "video": null,
-"href": "recetas/french-toast-de-ano-nuevo.html"
+"href": "recettes/pain-perdu-du-nouvel-an.html"
 },
 {
 "slug": "bocata-de-pollo-bbq-con-cole-slaw",
-"title": "Bocata de Pollo BBQ con Cole Slaw",
+"title": "Sandwich au poulet BBQ et coleslaw",
 "img": "recipe_107",
 "product": "mezcla-pan-de-hamburguesa",
 "cat": "Pan de Hamburguesa",
 "ing": [
-"Pan de Hamburguesa Low Carb",
-"Contramuslo de pollo deshuesado y sin piel",
-"Salsa BBQ sin azúcar añadido",
-"Comino en polvo",
+"Pain burger Low Carb",
+"Haut de cuisse de poulet désossé et sans peau",
+"Sauce BBQ sans sucres ajoutés",
+"Cumin en poudre",
 "Agave",
-"Col en juliana",
-"Manzana roja rallada",
-"Pepino rallado",
-"Zanahoria rallada",
-"Remolacha rallada",
-"Mayonesa light",
-"Zumo de limón",
-"AOVE",
-"Sal"
+"Chou émincé",
+"Pomme rouge râpée",
+"Concombre râpé",
+"Carotte râpée",
+"Betterave râpée",
+"Mayonnaise allégée",
+"Jus de citron",
+"Huile d’olive vierge extra",
+"Sel"
 ],
 "steps": [
-"Marinar el pollo con salsa BBQ, comino y agave",
-"Cocinar a la plancha hasta que esté tierno y jugoso",
-"Mezclar la mayonesa light con zumo de limón, sal, agave y AOVE",
-"Combinar con los vegetales rallados para el cole slaw",
-"Montar el bocata con el pan, el pollo y el cole slaw, con queso gratinado"
+"Faire mariner le poulet avec la sauce BBQ, le cumin et l’agave",
+"Le cuire à la plancha jusqu’à ce qu’il soit tendre et juteux",
+"Mélanger la mayonnaise allégée avec le jus de citron, le sel, l’agave et l’huile d’olive",
+"Ajouter les légumes râpés pour faire le coleslaw",
+"Monter le sandwich avec le pain, le poulet et le coleslaw, avec du fromage gratiné"
 ],
-"nut": "Listo en 15 minutos",
+"nut": "Prêt en 15 minutes",
 "video": null,
-"href": "recetas/bocata-de-pollo-bbq-con-cole-slaw.html"
+"href": "recettes/sandwich-au-poulet-bbq-et-coleslaw.html"
 },
 {
 "slug": "tostada-nube-huevos-nube",
-"title": "Tostada Nube (Huevos Nube)",
+"title": "Tartine nuage (œufs nuage)",
 "img": "recipe_108",
 "product": "pan-ig24",
 "cat": "Pan IG24",
 "ing": [
-"1 huevo",
-"1 rebanada de Pan IG24",
-"Queso parmesano (opcional)",
-"Espinacas crudas (opcional)"
+"1 œuf",
+"1 tranche de Pain IG24",
+"Parmesan (facultatif)",
+"Épinards crus (facultatif)"
 ],
 "steps": [
-"Separar la clara de la yema",
-"Batir las claras con una pizca de sal hasta formar una espuma firme y brillante",
-"Colocar las claras sobre una bandeja de horno engrasada, formando un círculo con un hueco en el medio",
-"Poner la yema en el hueco",
-"Hornear a temperatura fuerte hasta cocinar, cuidando que la yema no se pase",
-"Montar sobre la tostada de Pan IG24"
+"Séparer le blanc du jaune",
+"Monter le blanc avec une pincée de sel en neige ferme et brillante",
+"Déposer le blanc sur une plaque huilée en formant un cercle avec un creux au centre",
+"Placer le jaune dans le creux",
+"Cuire au four à température élevée jusqu’à ce qu’il soit pris, en veillant à ce que le jaune ne cuise pas trop",
+"Servir sur la tartine de Pain IG24"
 ],
-"nut": "Receta baja en hidratos, solo 2 ingredientes base",
+"nut": "Recette pauvre en glucides, seulement 2 ingrédients de base",
 "video": null,
-"href": "recetas/tostada-nube-huevos-nube.html"
+"href": "recettes/tartine-nuage-ufs-nuage.html"
 }
 ];
