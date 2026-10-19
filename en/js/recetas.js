@@ -117,7 +117,7 @@ var RECIPES = [
 "Bake with cheese for 10 min at 160 °C",
 "Add the toppings: chicken, guacamole, salsa, cream cheese and coriander"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": null,
 "href": "recipes/chicken-nachos-with-guacamole.html"
 },
@@ -188,7 +188,7 @@ var RECIPES = [
 "Fill with cheese, rocket, lamb’s lettuce and salmon",
 "Roll up and slice"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": null,
 "href": "recipes/salmon-wrap-bites.html"
 },
@@ -232,7 +232,7 @@ var RECIPES = [
 "Fill with the leek mixture and beaten egg",
 "Bake"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": null,
 "href": "recipes/leek-and-bacon-tartlets.html"
 },
@@ -303,7 +303,7 @@ var RECIPES = [
 "Mix avocado, cream cheese, lemon, salmon and pepper",
 "Fill the cones"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": null,
 "href": "recipes/christmas-stuffed-cones.html"
 },
@@ -448,7 +448,7 @@ var RECIPES = [
 "Add the egg and broccoli mixture with slices of goat’s cheese",
 "Bake"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": "ECuwmS6OX3A",
 "href": "recipes/broccoli-wrap-quiche.html"
 },
@@ -658,7 +658,7 @@ var RECIPES = [
 "Top with grated cheese",
 "Bake"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": "iqSarAyYzcM",
 "href": "recipes/plant-based-mince-mini-tacos.html"
 },
@@ -680,7 +680,7 @@ var RECIPES = [
 "Brush with oil and spices",
 "Bake"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": "dQMx6h8Qve4",
 "href": "recipes/halloween-quesadilla.html"
 },
@@ -816,7 +816,7 @@ var RECIPES = [
 "Add carrot, pepper and cucumber sticks",
 "Roll up and cut in half"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": null,
 "href": "recipes/hummus-and-veggie-rolls.html"
 },
@@ -863,7 +863,7 @@ var RECIPES = [
 "Air fryer for a few minutes until the chocolate melts",
 "Serve with yoghurt"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": null,
 "href": "recipes/banana-bites.html"
 },
@@ -909,7 +909,7 @@ var RECIPES = [
 "Brush with egg and sprinkle with sesame seeds",
 "Bake"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": "JVXXhPz2OE0",
 "href": "recipes/ham-and-cheese-pastries.html"
 },
@@ -999,7 +999,7 @@ var RECIPES = [
 "Cut, fill and fold the wrap into triangles",
 "Brown in an air fryer, frying pan or oven"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": "bJzmfnEtpyw",
 "href": "recipes/chicken-and-spinach-triangles.html"
 },
@@ -1063,7 +1063,7 @@ var RECIPES = [
 "Fill with hummus and avocado",
 "Fold and cook on the griddle"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre, suitable for vegans",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre, suitable for vegans",
 "video": "aeLrPJJbxus",
 "href": "recipes/mini-quesadillas.html"
 },
@@ -1107,7 +1107,7 @@ var RECIPES = [
 "Add cheese and scrambled egg",
 "Fold and heat on the griddle"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": "ql4e49ayU6w",
 "href": "recipes/the-perfect-wrap-breakfast.html"
 },
@@ -1198,7 +1198,7 @@ var RECIPES = [
 "Fill as you like (tomato and egg)",
 "Cook in a frying pan"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": null,
 "href": "recipes/stuffed-crust-galette-sweet.html"
 },
@@ -1334,7 +1334,7 @@ var RECIPES = [
 "Top with more grated cheese",
 "Air fryer for 15 min at 170 °C"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 3 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": "-Wt276b0LDM",
 "href": "recipes/pizza-quesadilla.html"
 },
@@ -1449,7 +1449,7 @@ var RECIPES = [
 "Add cheese, lettuce, tomato and sauces",
 "Fold in half"
 ],
-"nut": "1 tortilla (40 g): 14 g carbohydrate, 9 g protein, 2.5 g fibre",
+"nut": "1 tortilla (40 g): 16 g carbohydrate, 7.2 g protein, 2.4 g fibre",
 "video": "-LJmgKUqeFA",
 "href": "recipes/taco-burger.html"
 },
