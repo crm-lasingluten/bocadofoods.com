@@ -117,7 +117,7 @@ var RECIPES = [
 "Mit Käse 10 Min. bei 160 °C backen",
 "Toppings hinzufügen: Hähnchen, Guacamole, Salsa, Frischkäse und Koriander"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": null,
 "href": "rezepte/haehnchen-nachos-mit-guacamole.html"
 },
@@ -188,7 +188,7 @@ var RECIPES = [
 "Mit Käse, Rucola, Feldsalat und Lachs belegen",
 "Aufrollen und in Stücke schneiden"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": null,
 "href": "rezepte/wrap-haeppchen-mit-lachs.html"
 },
@@ -232,7 +232,7 @@ var RECIPES = [
 "Mit der Lauchmischung und verquirltem Ei füllen",
 "Backen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": null,
 "href": "rezepte/lauch-speck-toertchen.html"
 },
@@ -303,7 +303,7 @@ var RECIPES = [
 "Avocado, Frischkäse, Zitrone, Lachs und Pfeffer vermischen",
 "Die Tütchen füllen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": null,
 "href": "rezepte/gefuellte-weihnachtstuetchen.html"
 },
@@ -448,7 +448,7 @@ var RECIPES = [
 "Die Ei-Brokkoli-Mischung einfüllen und mit Ziegenkäsescheiben belegen",
 "Backen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": "ECuwmS6OX3A",
 "href": "rezepte/herzhafte-brokkoli-tarte-im-wrap.html"
 },
@@ -658,7 +658,7 @@ var RECIPES = [
 "Mit geriebenem Käse bestreuen",
 "Backen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": "iqSarAyYzcM",
 "href": "rezepte/mini-tacos-mit-pflanzlichem-hack.html"
 },
@@ -680,7 +680,7 @@ var RECIPES = [
 "Mit Öl und Gewürzen bestreichen",
 "Backen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": "dQMx6h8Qve4",
 "href": "rezepte/halloween-quesadilla.html"
 },
@@ -816,7 +816,7 @@ var RECIPES = [
 "Karotten-, Paprika- und Gurkenstifte darauflegen",
 "Aufrollen und halbieren"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": null,
 "href": "rezepte/hummus-gemuese-roellchen.html"
 },
@@ -863,7 +863,7 @@ var RECIPES = [
 "Einige Minuten in die Heißluftfritteuse, bis die Schokolade schmilzt",
 "Mit Joghurt servieren"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": null,
 "href": "rezepte/bananen-haeppchen.html"
 },
@@ -909,7 +909,7 @@ var RECIPES = [
 "Mit Ei bestreichen und mit Sesam bestreuen",
 "Backen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": "JVXXhPz2OE0",
 "href": "rezepte/schinken-kaese-taschen.html"
 },
@@ -999,7 +999,7 @@ var RECIPES = [
 "Den Wrap zuschneiden, füllen und zu Dreiecken falten",
 "In der Heißluftfritteuse, Pfanne oder im Ofen goldbraun backen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": "bJzmfnEtpyw",
 "href": "rezepte/gefuellte-dreiecke-mit-haehnchen-und-spinat.html"
 },
@@ -1063,7 +1063,7 @@ var RECIPES = [
 "Mit Hummus und Avocado füllen",
 "Zusammenklappen und auf der Grillplatte braten"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe, vegan geeignet",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe, vegan geeignet",
 "video": "aeLrPJJbxus",
 "href": "rezepte/mini-quesadillas.html"
 },
@@ -1107,7 +1107,7 @@ var RECIPES = [
 "Käse und Rührei hinzufügen",
 "Zusammenklappen und auf der Grillplatte erhitzen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": "ql4e49ayU6w",
 "href": "rezepte/das-perfekte-wrap-fruehstueck.html"
 },
@@ -1198,7 +1198,7 @@ var RECIPES = [
 "Nach Belieben füllen (Tomate und Ei)",
 "In der Pfanne garen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": null,
 "href": "rezepte/galette-mit-gefuelltem-rand-suess.html"
 },
@@ -1334,7 +1334,7 @@ var RECIPES = [
 "Mit weiterem geriebenem Käse bestreuen",
 "15 Min. bei 170 °C in die Heißluftfritteuse"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 3 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": "-Wt276b0LDM",
 "href": "rezepte/pizza-quesadilla.html"
 },
@@ -1449,7 +1449,7 @@ var RECIPES = [
 "Käse, Salat, Tomate und Saucen hinzufügen",
 "In der Mitte zusammenklappen"
 ],
-"nut": "1 Tortilla (40 g): 14 g Kohlenhydrate, 9 g Eiweiß, 2,5 g Ballaststoffe",
+"nut": "1 Tortilla (40 g): 16 g Kohlenhydrate, 7,2 g Eiweiß, 2,4 g Ballaststoffe",
 "video": "-LJmgKUqeFA",
 "href": "rezepte/taco-burger.html"
 },
