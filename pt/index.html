@@ -150,15 +150,6 @@
   </div>
 </section>
 
-<section class="news">
-  <div class="wrap news-in">
-    <div>
-      <h2 style="margin:0 0 6px;font-size:28px">Receitas novas e novidades, todos os meses</h2>
-      <p style="margin:0;color:var(--muted)">Pode cancelar a subscrição quando quiser.</p>
-    </div>
-    <form action="#" class="nlform"><label class="sr" for="nl">E-mail</label><input id="nl" type="email" required placeholder="o-seu@email.com"><button class="btn" type="submit">Subscrever</button><label class="nlok"><input type="checkbox" required><span>Aceito receber a newsletter e li a <a href="legal/politica-de-privacidade.html">política de privacidade</a>.</span></label><p class="nlinfo"><b>Responsável:</b> Bauer Lemans, S.L. <b>Finalidade:</b> enviar-lhe receitas, novidades e promoções. <b>Fundamento jurídico:</b> o seu consentimento. <b>Destinatários:</b> não são cedidos dados, salvo obrigação legal. <b>Direitos:</b> acesso, retificação, apagamento e outros, através de hola@bocadofoods.com.</p></form>
-  </div>
-</section>
 <section class="plband" aria-labelledby="plb-t">
   <div class="wrap plband-in">
     <h2 id="plb-t" class="plt"><span>Private</span> <b>label</b></h2>
@@ -403,7 +394,7 @@
 
 
 <script src="../js/imagenes.js?v=202610141047"></script>
-<script src="js/productos.js?v=202610141047"></script>
+<script src="js/productos.js?v=202611031030"></script>
 <script src="js/recetas.js?v=202610141047"></script>
 <script src="js/blog.js?v=202610141047"></script>
 <script>
@@ -467,11 +458,11 @@ var TILES=[
   ['mezclas','Misturas','Pão, pãezinhos, pão de forma, pizza, pão de hambúrguer e crackers para fazer em casa.','9254e231','#c99a5b'],
   ['ig24','Produtos IG24','Pão e pãezinhos com índice glicémico 24, testado.','1ae5f940','#5b7db1'],
   ['veganos','Veganos','Picado vegetal de proteína de ervilha, em 150 g e 500 g.','e3dfdf02','#8cbf3f'],
-  ['singluten','Sem glúten','Brownie e misturas para pão, pizza, muffins, cookies e brownie da La Sin Gluten.','LSG','#8fc5d6']
+  ['singluten','Sem glúten','Brownie sem glúten da La Sin Gluten. Em breve: misturas para pão, pizza, muffins, cookies e brownie.','LSG','#8fc5d6']
 ];
 $('#lines').innerHTML=TILES.map(function(l){
   var n=countCat(l[0]);
-  var pic=l[3]==='LSG'?'<div class="pic"><div class="lsg-row"><img src="'+src('lsg-pan')+'" alt=""><img src="'+src('lsg-pizza')+'" alt=""><img src="'+src('lsg-brownie')+'" alt=""></div></div>':'<div class="pic"><img src="'+src(l[3])+'" alt="">'+(l[0]==='ig24'?'<img class="ovl" src="'+src('ig24-logo')+'" alt="IG24">':'')+'</div>';
+  var pic=l[3]==='LSG'?'<div class="pic"><div class="lsg-row" style="grid-template-columns:repeat(2,1fr)"><img src="'+src('lsg-brownie')+'" alt=""><img src="'+src('p2-brownie-sin-gluten')+'" alt=""></div></div>':'<div class="pic"><img src="'+src(l[3])+'" alt="">'+(l[0]==='ig24'?'<img class="ovl" src="'+src('ig24-logo')+'" alt="IG24">':'')+'</div>';
   return '<a class="ltile'+(l[3]==='LSG'?' wide':'')+'" href="#productos?cat='+l[0]+'" style="--c:'+l[4]+'"><div class="txt">'+(l[3]==='LSG'?'<img class="tile-logo" src="'+src('lsg-logo')+'" alt="La Sin Gluten">':'<span class="bar"></span>')+'<h3>'+l[1]+'</h3><p>'+l[2]+'</p><span class="go">'+n+(n===1?' produto':' produtos')+'</span></div>'+pic+'</a>';
 }).join('');
 $('#bestGrid').innerHTML=['the-original-protein-bread','panecillos-low-carb','wrap-low-carb','pan-ig24'].map(function(s){return card(BY[s])}).join('');
@@ -510,6 +501,7 @@ function renderRecetas(){
 }
 $('#rq').addEventListener('input',function(){rstate.q=this.value;renderRecetas()});
 /* ---- catalogue ---- */
+var SOON_CARD='<article class="card soon" style="--c:#8fc5d6;--ink2:#111"><div class="card-media"><span class="ph"><span>Em breve</span></span><span class="ltag">La Sin Gluten</span></div><div class="card-body"><span class="card-name">Misturas sem glúten</span><div class="card-w">Pão · Pizza · Muffins · Cookies · Brownie</div><div class="card-note">Em breve na nossa gama.</div></div></article>';
 var state={cat:'all'};
 function setCat(id){state.cat=id;history.replaceState(null,'','#productos'+(id==='all'?'':'?cat='+id));renderCat();}
 function renderCat(){
@@ -520,7 +512,7 @@ function renderCat(){
   sc.innerHTML='<button type="button" class="sub" data-sub="proteicos" aria-pressed="'+(state.cat==='proteicos')+'">Todos</button>'+CATS_SUB.map(function(s){return '<button type="button" class="sub" data-sub="'+s.id+'" aria-pressed="'+(state.cat===s.id)+'">'+s.label+'</button>'}).join('');
   $$('#subChips [data-sub]').forEach(function(b){b.onclick=function(){setCat(b.dataset.sub)}});
   var list=PRODUCTS.filter(function(p){return state.cat==='all'||p.cats.indexOf(state.cat)>=0});
-  $('#catGrid').innerHTML=list.map(card).join('');
+  $('#catGrid').innerHTML=list.map(card).join('')+((state.cat==='all'||state.cat==='singluten')?SOON_CARD:'');
   $('#empty').hidden=list.length>0;
   $('#count').textContent=(state.cat==='all'?'Todos':catLabel(state.cat))+' · '+list.length+(list.length===1?' produto':' produtos');
   $('#activeLine').innerHTML='';
@@ -558,21 +550,19 @@ wireShop(document);
 $$('[data-close]').forEach(function(b){b.addEventListener('click',function(){$('#aviso').hidden=true;})});
 $('#aviso').addEventListener('click',function(e){if(e.target===this)this.hidden=true});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'){$('#aviso').hidden=true;$$('details.langdd[open]').forEach(function(d){d.open=false})}});
-/* ---- contact form ---- */
-(function(){var f=$('#cform');if(!f)return;var KEY='',msg=$('.fmsg',f),btn=$('button[type=submit]',f);
+/* ---- contact form: Supabase Edge Function «web-mail» → Resend → hola@bocadofoods.com ---- */
+(function(){var f=$('#cform');if(!f)return;var FN='https://lbbpnnvwtanurtjqgcqv.supabase.co/functions/v1/web-mail',SBK='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxiYnBubnZ3dGFudXJ0anFnY3F2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3NjM2NDEsImV4cCI6MjA5MjMzOTY0MX0.a25lrgUlzDM4TSp4c6KOCQ3ERZnSk8-5r2y9DbhRPxg',msg=$('.fmsg',f),btn=$('button[type=submit]',f);
 function show(ok,txt){msg.hidden=false;msg.className='fmsg full '+(ok?'ok':'err');msg.textContent=txt;}
 f.addEventListener('submit',function(e){e.preventDefault();e.stopImmediatePropagation();
   if(!f.checkValidity()){f.reportValidity();return;}
   if(f.botcheck.checked)return;
   var d={};['nombre','email','telefono','empresa','pais','motivo','mensaje'].forEach(function(k){d[k]=f[k].value.trim()});
   var subject='Web Bocado ('+f.dataset.lang.toUpperCase()+') · '+d.motivo+' · '+d.nombre;
-  if(!KEY){var body='Nombre: '+d.nombre+'\nEmail: '+d.email+'\nTeléfono: '+d.telefono+'\nEmpresa: '+d.empresa+'\nPaís: '+d.pais+'\nMotivo: '+d.motivo+'\n\n'+d.mensaje;
-    location.href='mailto:hola@bocadofoods.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);return;}
   var t0=btn.textContent;btn.disabled=true;btn.textContent=f.dataset.sending;
-  fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
-    body:JSON.stringify({access_key:KEY,subject:subject,from_name:'Web Bocado Functional Foods',replyto:d.email,botcheck:'',
-      Nombre:d.nombre,Email:d.email,'Teléfono':d.telefono,Empresa:d.empresa,'País':d.pais,Motivo:d.motivo,Idioma:f.dataset.lang,Mensaje:d.mensaje})})
-  .then(function(r){return r.json()}).then(function(j){if(j&&j.success){show(true,f.dataset.ok);f.reset();}else show(false,f.dataset.err);})
+  fetch(FN,{method:'POST',headers:{'Content-Type':'application/json',apikey:SBK,Authorization:'Bearer '+SBK},
+    body:JSON.stringify({tipo:'contacto',asunto:subject,responder_a:d.email,botcheck:false,
+      campos:{Nombre:d.nombre,Email:d.email,'Teléfono':d.telefono,Empresa:d.empresa,'País':d.pais,Motivo:d.motivo,Idioma:f.dataset.lang,Mensaje:d.mensaje}})})
+  .then(function(r){return r.json()}).then(function(j){if(j&&j.ok){show(true,f.dataset.ok);f.reset();}else show(false,f.dataset.err);})
   .catch(function(){show(false,f.dataset.err)}).then(function(){btn.disabled=false;btn.textContent=t0;});
 },true);
 })();
