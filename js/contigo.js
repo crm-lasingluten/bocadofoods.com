@@ -3,7 +3,7 @@
    - Alta de afiliado → tarjeta virtual con código BC-XXXXXX
    - Área privada (código + correo): saldo, cupones, movimientos, primicias
    - Canje de puntos → cupón pendiente + aviso por correo a hola@bocadofoods.com
-   Datos en Supabase (ver supabase/bocado-contigo.sql). Correo con Web3Forms.
+   Datos en Supabase (ver supabase/bocado-contigo.sql). Correo con Resend (Edge Function web-mail).
    Atributo data-demo="1" en el <script> → funciona sin base de datos (contigo-demo.js). */
 (function(){
 var S=document.currentScript||{getAttribute:function(){return ''}};
@@ -17,8 +17,8 @@ var CFG={
   shop:'https://shop.bocadofoods.com',
   supabase:{url:'https://lbbpnnvwtanurtjqgcqv.supabase.co',
     key:'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxiYnBubnZ3dGFudXJ0anFnY3F2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY3NjM2NDEsImV4cCI6MjA5MjMzOTY0MX0.a25lrgUlzDM4TSp4c6KOCQ3ERZnSk8-5r2y9DbhRPxg'},
-  // Clave de acceso de Web3Forms creada con hola@bocadofoods.com (la misma del formulario de contacto)
-  web3formsKey:'',
+  // Correo a hola@bocadofoods.com: Supabase Edge Function «web-mail» (envía con Resend)
+  mailFn:'https://lbbpnnvwtanurtjqgcqv.supabase.co/functions/v1/web-mail',
   avisoA:'hola@bocadofoods.com'
 };
 var STORE='bocadoContigoSesion';
@@ -274,14 +274,10 @@ function vistaArea(a,aviso){
   });
 }
 
-/* ---------- aviso a hola@bocadofoods.com (Web3Forms) ---------- */
+/* ---------- aviso a hola@bocadofoods.com (Resend, vía Edge Function web-mail) ---------- */
 function avisarBocado(c){
   var nombre=(c.nombre+' '+(c.apellidos||'')).trim(),hasta=fecha(c.caduca);
   var data={
-    access_key:CFG.web3formsKey,
-    subject:'Bocado Contigo · Activar cupón '+c.cupon+' ('+eur(c.euros)+')',
-    from_name:'Bocado Contigo · web',
-    replyto:c.email,
     'Qué hay que hacer':'1) Crear el cupón en PrestaShop con estos datos. 2) Marcarlo como activo en el panel de Bocado Contigo. 3) Responder a este correo (la respuesta le llega al cliente).',
     'Cliente':nombre,
     'Correo del cliente':c.email,
@@ -296,8 +292,9 @@ function avisarBocado(c){
     'Pasos en PrestaShop':'Catálogo › Descuentos › Reglas del carrito › Añadir nueva regla. Información: nombre «Bocado Contigo '+c.cupon+'», código «'+c.cupon+'», cantidad total 1, cantidad por usuario 1. Condiciones: limitar al cliente '+c.email+', válido hasta '+hasta+', importe mínimo '+eur(c.compra_minima)+' (IVA incl.). Acciones: descuento de importe '+eur(c.euros)+' IVA incluido.',
     'Respuesta sugerida':'¡Hola, '+c.nombre+'! Tu cupón Bocado Contigo ya está activo. Código: '+c.cupon+' · Descuento: '+eur(c.euros)+' · Compra mínima: '+eur(c.compra_minima)+' · Válido hasta el '+hasta+' · Un solo uso. Escríbelo en el carrito de '+CFG.shop.replace('https://','')+'. ¡Gracias por estar con Bocado!'
   };
-  if(DEMO||!CFG.web3formsKey){if(window.console)console.info('[Bocado Contigo] Correo a '+CFG.avisoA+(DEMO?' (simulado)':' NO enviado: falta web3formsKey'),data);return Promise.resolve()}
-  return fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(data)})
+  if(DEMO){if(window.console)console.info('[Bocado Contigo] Correo a '+CFG.avisoA+' (simulado)',data);return Promise.resolve()}
+  return fetch(CFG.mailFn,{method:'POST',headers:{'Content-Type':'application/json',apikey:CFG.supabase.key,Authorization:'Bearer '+CFG.supabase.key},
+    body:JSON.stringify({tipo:'contigo',asunto:'Bocado Contigo · Activar cupón '+c.cupon+' ('+eur(c.euros)+')',responder_a:c.email,campos:data})})
     .then(function(){},function(){}); // si falla el correo, el canje ya está guardado y aparece en el panel
 }
 
