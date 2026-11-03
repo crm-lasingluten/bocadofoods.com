@@ -119,8 +119,7 @@ function vistaInvitado(msgAcceso){
     '<div class="bc-row"><label>Nombre*<input name="nombre" autocomplete="given-name" required></label><label>Apellidos<input name="apellidos" autocomplete="family-name"></label></div>'+
     '<label>Correo electrónico*<input name="email" type="email" autocomplete="email" required><small>Usa el mismo correo con el que compras en la tienda online: así tus compras suman puntos.</small></label>'+
     '<div class="bc-row"><label>Teléfono<input name="telefono" type="tel" autocomplete="tel"></label><label>Código postal<input name="cp" inputmode="numeric" autocomplete="postal-code" maxlength="5"></label></div>'+
-    '<fieldset class="bc-cumple"><legend>Tu cumpleaños <span>(te regalamos '+R.bonus_cumple+' puntos)</span></legend><select name="dia" aria-label="Día">'+dias+'</select><select name="mes" aria-label="Mes">'+meses+'</select></fieldset>'+
-    '<label class="bc-check"><input type="checkbox" name="primicias" checked><span>Quiero recibir las primicias de Bocado: lanzamientos antes que nadie, muestras con mis compras y ofertas para afiliados.</span></label>'+
+    '<label class="bc-check"><input type="checkbox" name="primicias" checked><span>Quiero recibir las primicias de Bocado: lanzamientos antes que nadie y muestras con mis compras.</span></label>'+
     '<label class="bc-check"><input type="checkbox" name="acepta" required><span>Acepto las <a href="'+ROOT+COND+'" target="_blank" rel="noopener">condiciones de Bocado Contigo</a> y la <a href="'+ROOT+PRIV+'" target="_blank" rel="noopener">política de privacidad</a>.*</span></label>'+
     '<p class="bc-msg" role="alert"></p>'+
     '<button class="btn red" type="submit">Crear mi tarjeta</button>'+
@@ -139,7 +138,7 @@ function vistaInvitado(msgAcceso){
   $('.bc-alta').addEventListener('submit',function(e){
     e.preventDefault();var f=e.target,msg=$('.bc-msg',f),btn=$('button',f);msg.textContent='';
     var d={p_nombre:f.nombre.value,p_apellidos:f.apellidos.value,p_email:f.email.value,p_telefono:f.telefono.value||null,p_cp:f.cp.value||null,
-      p_cumple_dia:f.dia.value?+f.dia.value:null,p_cumple_mes:f.mes.value?+f.mes.value:null,p_primicias:f.primicias.checked,p_acepta:f.acepta.checked};
+      p_cumple_dia:null,p_cumple_mes:null,p_primicias:f.primicias.checked,p_acepta:f.acepta.checked};
     if(!d.p_acepta){msg.textContent=ERR.condiciones;return}
     if(!d.p_nombre.trim()){msg.textContent=ERR.nombre;f.nombre.focus();return}
     if(!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(d.p_email.trim())){msg.textContent=ERR.email;f.email.focus();return}
