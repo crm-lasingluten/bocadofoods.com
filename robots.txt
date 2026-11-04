@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /interno/
 Allow: /
-Sitemap: https://crm-lasingluten.github.io/bocadofoods.com/sitemap.xml
+Sitemap: https://bocadofoods.com/sitemap.xml
