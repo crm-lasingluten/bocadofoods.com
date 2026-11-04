@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Página no encontrada | Bocado Functional Foods</title>
+<link rel="icon" href="/assets/marca/logo-negro.png">
+<script>
+/* Las direcciones antiguas de la tienda (www.bocadofoods.com/categoria/producto, index.php…)
+   ahora están en shop.bocadofoods.com con la misma ruta. Si la página no es de la web nueva,
+   se envía al visitante a la tienda. */
+(function(){
+  var p=location.pathname, first=p.split('/')[1]||'';
+  var WEB=['productos','recetas','blog','legal','ca','en','it','fr','de','pt','assets','css','js','interno'];
+  var esWeb=WEB.indexOf(first)>=0||/\.html$/.test(p);
+  if(!esWeb&&p!=='/'){location.replace('https://shop.bocadofoods.com'+p+location.search+location.hash);}
+})();
+</script>
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f7f6f3;color:#111;display:flex;min-height:100vh;align-items:center;justify-content:center;text-align:center;padding:24px;box-sizing:border-box}
+img{width:180px;margin-bottom:28px}
+h1{font-size:28px;margin:0 0 10px}
+p{color:#555;margin:0 0 24px}
+a.btn{display:inline-block;background:#111;color:#fff;text-decoration:none;padding:12px 22px;border-radius:999px;font-weight:700;margin:4px}
+a.btn.g{background:#fff;color:#111;border:1.5px solid #111}
+</style>
+</head>
+<body>
+<main>
+<img src="/assets/marca/logo-negro.png" alt="Bocado functional foods">
+<h1>No encontramos esta página</h1>
+<p>Puede que la dirección haya cambiado o ya no exista.</p>
+<a class="btn" href="/">Ir a la web</a>
+<a class="btn g" href="https://shop.bocadofoods.com">Ir a la tienda</a>
+</main>
+</body>
+</html>
