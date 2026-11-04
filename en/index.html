@@ -6,15 +6,15 @@
 <title>Bocado Functional Foods · High-protein, low-carb and low-GI breads and products</title>
 <meta name="description" content="Protein, low-carb and IG24 breads, wraps, sweet treats and baking mixes. Bocado Functional Foods, made in Barcelona.">
 <link rel="icon" href="../assets/marca/logo-negro.png">
-<link rel="canonical" href="https://crm-lasingluten.github.io/bocadofoods.com/en/">
-<link rel="alternate" hreflang="es" href="https://crm-lasingluten.github.io/bocadofoods.com/">
-<link rel="alternate" hreflang="ca" href="https://crm-lasingluten.github.io/bocadofoods.com/ca/">
-<link rel="alternate" hreflang="en" href="https://crm-lasingluten.github.io/bocadofoods.com/en/">
-<link rel="alternate" hreflang="it" href="https://crm-lasingluten.github.io/bocadofoods.com/it/">
-<link rel="alternate" hreflang="fr" href="https://crm-lasingluten.github.io/bocadofoods.com/fr/">
-<link rel="alternate" hreflang="de" href="https://crm-lasingluten.github.io/bocadofoods.com/de/">
-<link rel="alternate" hreflang="pt" href="https://crm-lasingluten.github.io/bocadofoods.com/pt/">
-<link rel="alternate" hreflang="x-default" href="https://crm-lasingluten.github.io/bocadofoods.com/">
+<link rel="canonical" href="https://bocadofoods.com/en/">
+<link rel="alternate" hreflang="es" href="https://bocadofoods.com/">
+<link rel="alternate" hreflang="ca" href="https://bocadofoods.com/ca/">
+<link rel="alternate" hreflang="en" href="https://bocadofoods.com/en/">
+<link rel="alternate" hreflang="it" href="https://bocadofoods.com/it/">
+<link rel="alternate" hreflang="fr" href="https://bocadofoods.com/fr/">
+<link rel="alternate" hreflang="de" href="https://bocadofoods.com/de/">
+<link rel="alternate" hreflang="pt" href="https://bocadofoods.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://bocadofoods.com/">
 <meta property="og:locale" content="en_GB">
 <link rel="stylesheet" href="../css/estilos.css?v=202610151022">
 </head>
@@ -418,7 +418,7 @@ function card(p){
     '<div class="card-body"><a class="card-name" href="'+p.href+'">'+esc(p.name)+'</a><div class="card-w">'+esc(p.weight)+'</div>'+
     (p.noMacros?'<div class="macros nm"><div><b>Gluten-free</b><span>'+esc(p.brand||'')+'</span></div></div>':'<div class="macros"><div><b>'+esc(m[0])+'</b><span>Protein</span></div><div><b>'+esc(m[1])+'</b><span>Carbs</span></div><div><b>'+esc(m[2])+'</b><span>Fibre</span></div></div>')+
     '<div class="card-note">'+((p.pending||p.noMacros)?'Data coming soon':(p.perUnit?esc(p.perUnit):(p.nutLabel?p.nutLabel:(p.prepared?'Per 100 g of finished product':'Per 100 g'))))+'</div>'+
-    '<div class="card-ctas"><a class="btn sm ghost" href="'+p.href+'">View product</a><a class="btn sm" href="https://shop.bocadofoods.com" data-shop>Buy</a></div></div></article>';
+    '<div class="card-ctas"><a class="btn sm ghost" href="'+p.href+'">View product</a><a class="btn sm" href="'+(p.shop||'https://shop.bocadofoods.com')+'" data-shop>Buy</a></div></div></article>';
 }
 
 /* ---- category chips ---- */
