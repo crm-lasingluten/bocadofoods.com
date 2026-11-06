@@ -4,6 +4,8 @@
 // Página temporal: envía archivos de esta carpeta a Meta Business Suite (ventana que la abrió).
 (async function(){
   var q=new URLSearchParams(location.search), files=(q.get('f')||'').split(',').filter(Boolean);
+  if(files[0]==='todo'){files=await (await fetch('lista.json',{cache:'no-store'})).json();}
+  document.body.textContent='Enviando '+files.length+' archivos a Meta Business Suite…';
   var target='https://business.facebook.com';
   if(!window.opener){document.body.textContent='Sin ventana de origen';return}
   for(const f of files){
