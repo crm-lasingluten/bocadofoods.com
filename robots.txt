@@ -1,5 +1,4 @@
 User-agent: *
 Disallow: /interno/
-Disallow: /historias-ig/
 Allow: /
 Sitemap: https://bocadofoods.com/sitemap.xml
